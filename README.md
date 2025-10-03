@@ -47,6 +47,8 @@ flowchart LR
 
 ### File Structure
 
+> Do all your nasty stuff in the workspace folder , they will not be tracked
+
 ```
 ./
 ├── binary_creator/          # Creates raw binaries (crypto + non-crypto)
