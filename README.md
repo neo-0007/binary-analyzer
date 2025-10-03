@@ -84,3 +84,49 @@ flowchart LR
 │   └── workspace/           # Temp files, checkpoints, or intermediate results
 └── README.md                # Project overview and instructions
 ```
+
+### The Aftermath
+
+Once your model is trained, the system is ready to analyze new, unknown firmware. Here's a clear, step-by-step explanation of the complete pipeline when a user inputs a new binary.
+
+**Step 1: Preprocessing and Carving**
+
+The input binary first goes to the Firmware Preprocessing pipeline.
+
+1. Analysis: The pipeline uses tools like Binwalk to figure out what's inside the binary. It looks for filesystems, compressed data, and other known formats.
+2. Extraction: It automatically extracts any identified filesystems or decompresses data blocks. If it's a raw, unknown blob, it "carves" out the parts that look like executable code based on entropy analysis.
+3. Output: The result of this step is one or more clean, analyzable binary files (like an ELF file or a raw code blob).
+
+**Step 2: Feature Extraction**
+
+The clean binary from Step 1 is then fed into the Dataset Creator's feature extraction script.
+
+1. Disassembly: The script uses a disassembler (like Ghidra) to analyze the binary and identify all the individual functions.
+2. Feature Calculation: For each function, the script calculates the exact same set of numerical features that the model was trained on (e.g., `instruction_count`, `xor_count`, `cyclomatic_complexity`, etc.).
+3. Output: This step produces a feature vector for every function found in the input binary.
+
+**Step 3: Prediction**
+
+This is where the trained model comes into play.
+
+1. Load Model: The prediction script loads your saved, trained model (e.g., `random_forest_v1.pkl`).
+2. Predict: The script feeds each function's feature vector into the model. The model processes these numbers and outputs a prediction for each one (e.g., "AES", "SHA256", or "Non-Crypto").
+
+
+**Step 4: Final Report**
+
+The system aggregates the predictions and presents a final, human-readable report. This report would typically list each function found in the original binary, its location, and what the model believes it is.
+
+Example Final Output:
+
+```
+ANALYSIS REPORT FOR: unknown_firmware.bin
+-------------------------------------------
+- Function at 0x8001240: Predicted as [AES]
+- Function at 0x80015A8: Predicted as [Non-Crypto]
+- Function at 0x800210C: Predicted as [SHA256]
+- ...
+```
+
+
+Detailed documentation about each secion is [here](/docs/index.md)
