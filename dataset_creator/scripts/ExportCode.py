@@ -6,18 +6,24 @@ from java.io import File
 import os
 
 # -----------------------------
-# Step 1: Set the output folder
+# Step 1: Set the output folder from command line argument
 # -----------------------------
-# Get the project directory (more reliable in headless mode)
-project_dir = str(currentProgram.getExecutablePath())
-print("[*] Program path: " + project_dir)
+# Get script arguments from Ghidra
+script_args = getScriptArgs()
 
-# CHANGE THIS to your desired output path
-results_dir = "/media/dhritiman/New Volume/SIH2025/results"
+print("[DEBUG] Script arguments: " + str(script_args))
+print("[DEBUG] Number of arguments: " + str(len(script_args)))
 
+if len(script_args) < 1:
+    print("[!] No output folder provided as argument. Exiting.")
+    print("[!] Usage: -postScript ExportCode.py <output_directory>")
+    exit(1)
+
+# First argument is the output directory
+results_dir = script_args[0]
 print("[*] Output directory will be: " + results_dir)
 
-# Create directory
+# Create directory if it doesn't exist
 results_file = File(results_dir)
 if not results_file.exists():
     results_file.mkdirs()
@@ -106,7 +112,6 @@ print("="*60)
 
 # List some files to verify
 print("\n[*] Sample output files:")
-results_file = File(results_dir)
 files = results_file.listFiles()
 if files:
     for i, f in enumerate(files[:10]):
