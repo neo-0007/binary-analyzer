@@ -43,3 +43,42 @@ flowchart LR
 ### Tasks Distribution
 
 ![alt text](./docs/assets/teams_division.png)
+
+
+### File Structure
+
+```
+./
+├── binary_creator/          # Creates raw binaries (crypto + non-crypto)
+│   ├── build_scripts/       # Scripts to compile source code for multiple architectures
+│   ├── outputs/             # Compiled binaries
+│   │   ├── non-stripped/    # Binaries with debug info (used for labeling)
+│   │   └── stripped/        # Binaries without symbols (simulate real firmware)
+│   ├── src/                 # Source code repository
+│   │   ├── crypto/          # Crypto algorithm implementations
+│   │   └── non-crypto/      # Non-crypto example functions
+│   └── workspace/           # Temporary build/test files
+│
+├── dataset_creator/         # Converts binaries into labeled datasets
+│   ├── outputs/
+│   │   ├── dataset/         # Final clean dataset (CSV/JSON) for ML
+│   │   └── function_maps/   # Ground-truth mapping of functions to labels
+│   ├── scripts/             # Python scripts for feature extraction & labeling
+│   └── workspace/           # Temp files or intermediate results
+│
+├── docs/                    # Documentation
+│   └── assets/              # Images, diagrams, and other documentation assets
+│    
+├── firmware_preprocessor/   # Handles real-world firmware files
+│   ├── outputs/             # Extracted binaries/code from real firmware
+│   ├── prebuild_binaries/   # Original firmware files to analyze
+│   ├── scripts/             # Tools like Binwalk to extract and preprocess firmware
+│   └── workspace/           # Temp extraction and analysis files
+│
+├── model_creator/           # AI/ML model building and training
+│   ├── models/              # Trained AI models
+│   ├── notebooks/           # Experiments, data exploration, model prototyping
+│   ├── scripts/             # Training and prediction scripts
+│   └── workspace/           # Temp files, checkpoints, or intermediate results
+└── README.md                # Project overview and instructions
+```
