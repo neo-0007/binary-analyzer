@@ -20,6 +20,15 @@ declare -A OPENSSL_PATHS=(
   ["riscv64"]="/opt/openssl/riscv64"
 )
 
+# Corresponding Libsodium build locations
+declare -A SODIUM_PATHS=(
+  ["x86_64"]="/opt/libsodium/x86_64"
+  ["arm64"]="/opt/libsodium/arm64"
+  ["armv7"]="/opt/libsodium/armv7"
+  ["riscv64"]="/opt/libsodium/riscv64"
+)
+
+
 # Correct strip utility for each architecture
 declare -A STRIPPERS=(
   ["x86_64"]="strip"
@@ -44,17 +53,44 @@ build_one() {
   local arch="$5"
 
   local ssl_path="${OPENSSL_PATHS[$arch]}"
+  local sodium_path="${SODIUM_PATHS[$arch]}"
 
   echo "[*] Building $src_file for $arch"
 
-  if [[ "$is_crypto" == "true" ]]; then
-    $compiler "$src_file" -o "$out_file" -static \
-      -I"$ssl_path/include" -L"$ssl_path/lib" \
-      -lssl -lcrypto -ldl -pthread
+  # -------------------------
+  # Detect if this file uses libsodium
+  # -------------------------
+  if grep -q "sodium_init" "$src_file"; then
+      local link_sodium=true
   else
-    $compiler "$src_file" -o "$out_file" -static
+      local link_sodium=false
+  fi
+
+  # -------------------------
+  # Compile with appropriate libraries
+  # -------------------------
+  if [[ "$is_crypto" == "true" ]]; then
+      # Start building the compiler command
+      cmd="$compiler \"$src_file\" -o \"$out_file\" -static \
+          -I\"$ssl_path/include\" -L\"$ssl_path/lib\" \
+          -lssl -lcrypto -ldl -pthread"
+
+      # Append libsodium if needed
+      if [[ "$link_sodium" == "true" ]]; then
+          cmd="$compiler \"$src_file\" -o \"$out_file\" -static \
+              -I\"$ssl_path/include\" -L\"$ssl_path/lib\" \
+              -I\"$sodium_path/include\" -L\"$sodium_path/lib\" \
+              -lssl -lcrypto -lsodium -ldl -pthread"
+      fi
+
+      # Run the command
+      eval $cmd
+  else
+      $compiler "$src_file" -o "$out_file" -static
   fi
 }
+
+
 
 # --------------------------
 # Build for each architecture
