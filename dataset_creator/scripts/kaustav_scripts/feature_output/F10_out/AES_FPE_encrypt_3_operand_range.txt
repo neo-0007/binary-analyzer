@@ -1,0 +1,8 @@
+Operand Value Range Feature
+File: AES_FPE_encrypt_3.asm
+-------------------------------
+Byte operands   : 13%
+Word operands   : 0%
+DWord operands  : 0%
+QWord operands  : 27%
+Other operands  : 58%

@@ -1,0 +1,5 @@
+0069d410 ENDBR64
+0069d414 MOV qword ptr [RDI + 0x28],RSI
+0069d418 MOV qword ptr [RDI + 0x20],RSI
+0069d41c MOV qword ptr [RDI + 0x30],RDX
+0069d420 RET

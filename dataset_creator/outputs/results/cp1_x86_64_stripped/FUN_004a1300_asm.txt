@@ -1,0 +1,6 @@
+004a1300 ENDBR64
+004a1304 MOV RAX,qword ptr [RDI]
+004a1307 MOV RDX,qword ptr [RSI]
+004a130a MOV EAX,dword ptr [RAX]
+004a130c SUB EAX,dword ptr [RDX]
+004a130e RET

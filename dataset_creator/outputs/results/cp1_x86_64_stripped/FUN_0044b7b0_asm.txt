@@ -1,0 +1,15 @@
+0044b7b0 ENDBR64
+0044b7b4 XOR EAX,EAX
+0044b7b6 CMP RDX,0xc
+0044b7ba JNZ 0x0044b7ed
+0044b7bc MOV EAX,dword ptr [RSI]
+0044b7be MOV dword ptr [RDI + 0x1a4],EAX
+0044b7c4 MOV dword ptr [RDI + 0x2f0],EAX
+0044b7ca MOV EAX,dword ptr [RSI + 0x4]
+0044b7cd MOV dword ptr [RDI + 0x1a8],EAX
+0044b7d3 MOV dword ptr [RDI + 0x2f4],EAX
+0044b7d9 MOV EAX,dword ptr [RSI + 0x8]
+0044b7dc MOV dword ptr [RDI + 0x1ac],EAX
+0044b7e2 MOV dword ptr [RDI + 0x2f8],EAX
+0044b7e8 MOV EAX,0x1
+0044b7ed RET

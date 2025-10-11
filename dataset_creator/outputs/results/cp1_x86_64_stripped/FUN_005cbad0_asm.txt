@@ -1,0 +1,5 @@
+005cbad0 ENDBR64
+005cbad4 CMP qword ptr [0x009427c0],0x0
+005cbadc JZ 0x005cbae3
+005cbade JMP 0x005cb9d0
+005cbae3 RET

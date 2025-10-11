@@ -1,0 +1,5 @@
+0049ee60 ENDBR64
+0049ee64 MOV qword ptr [RDI + 0x40],RSI
+0049ee68 MOV qword ptr [RDI + 0x48],RDX
+0049ee6c MOV qword ptr [RDI + 0x50],RCX
+0049ee70 RET

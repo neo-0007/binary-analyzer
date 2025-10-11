@@ -1,0 +1,3 @@
+0057ae60 ENDBR64
+0057ae64 MOV EAX,dword ptr [RDI + 0x2c]
+0057ae67 RET

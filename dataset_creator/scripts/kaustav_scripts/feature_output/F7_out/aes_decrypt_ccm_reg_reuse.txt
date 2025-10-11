@@ -1,0 +1,4 @@
+File: /home/kaustav/sih2025/bn/binary-analyzer/dataset_creator/workspace/feature_extraction/AES_asm_files/aes_decrypt_ccm.asm
+Unique Registers: 19
+Total Register Uses: 319
+Average Register Reuse Frequency: 15.78

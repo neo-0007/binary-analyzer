@@ -1,0 +1,9 @@
+005b0ed0 MOV R8,qword ptr [RSP + 0x8]
+005b0ed5 BT R8,0x1e
+005b0eda JNC 0x005b0ee3
+005b0edc CMP RDX,qword ptr [RAX]
+005b0edf JZ 0x005b0ee3
+005b0ee1 PUSHFQ
+005b0ee2 POPFQ
+005b0ee3 MOV qword ptr [RAX],RDX
+005b0ee6 RET

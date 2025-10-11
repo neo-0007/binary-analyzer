@@ -1,0 +1,41 @@
+0078b4b0 ENDBR64
+0078b4b4 PUSH RBX
+0078b4b5 MOV RBX,RSP
+0078b4b8 AND RSP,-0x40
+0078b4bc SUB RSP,qword ptr [0x0094b000]
+0078b4c3 MOV qword ptr [RSP],RAX
+0078b4c7 MOV qword ptr [RSP + 0x8],RCX
+0078b4cc MOV qword ptr [RSP + 0x10],RDX
+0078b4d1 MOV qword ptr [RSP + 0x18],RSI
+0078b4d6 MOV qword ptr [RSP + 0x20],RDI
+0078b4db MOV qword ptr [RSP + 0x28],R8
+0078b4e0 MOV qword ptr [RSP + 0x30],R9
+0078b4e5 MOV EAX,0xee
+0078b4ea XOR EDX,EDX
+0078b4ec MOV qword ptr [RSP + 0x240],RDX
+0078b4f4 MOV qword ptr [RSP + 0x248],RDX
+0078b4fc MOV qword ptr [RSP + 0x250],RDX
+0078b504 MOV qword ptr [RSP + 0x258],RDX
+0078b50c MOV qword ptr [RSP + 0x260],RDX
+0078b514 MOV qword ptr [RSP + 0x268],RDX
+0078b51c MOV qword ptr [RSP + 0x270],RDX
+0078b524 MOV qword ptr [RSP + 0x278],RDX
+0078b52c XSAVE [RSP + 0x40]
+0078b531 MOV RSI,qword ptr [RBX + 0x10]
+0078b535 MOV RDI,qword ptr [RBX + 0x8]
+0078b539 CALL 0x007ba5a0
+0078b53e MOV R11,RAX
+0078b541 MOV EAX,0xee
+0078b546 XOR EDX,EDX
+0078b548 XRSTOR [RSP + 0x40]
+0078b54d MOV R9,qword ptr [RSP + 0x30]
+0078b552 MOV R8,qword ptr [RSP + 0x28]
+0078b557 MOV RDI,qword ptr [RSP + 0x20]
+0078b55c MOV RSI,qword ptr [RSP + 0x18]
+0078b561 MOV RDX,qword ptr [RSP + 0x10]
+0078b566 MOV RCX,qword ptr [RSP + 0x8]
+0078b56b MOV RAX,qword ptr [RSP]
+0078b56f MOV RSP,RBX
+0078b572 MOV RBX,qword ptr [RSP]
+0078b576 ADD RSP,0x18
+0078b57a JMP R11

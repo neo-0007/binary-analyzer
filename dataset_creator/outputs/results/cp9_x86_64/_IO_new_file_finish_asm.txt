@@ -1,0 +1,40 @@
+006fbf50 ENDBR64
+006fbf54 PUSH RBP
+006fbf55 MOV RBP,RDI
+006fbf58 PUSH RBX
+006fbf59 SUB RSP,0x8
+006fbf5d CMP dword ptr [RDI + 0x70],-0x1
+006fbf61 JZ 0x006fbfbb
+006fbf63 MOV EAX,dword ptr [RDI + 0xc0]
+006fbf69 TEST EAX,EAX
+006fbf6b JLE 0x006fbfd0
+006fbf6d MOV RAX,qword ptr [RDI + 0xa0]
+006fbf74 MOV RSI,qword ptr [RAX + 0x18]
+006fbf78 MOV RDX,qword ptr [RAX + 0x20]
+006fbf7c SUB RDX,RSI
+006fbf7f SAR RDX,0x2
+006fbf83 CALL 0x006f7940
+006fbf88 TEST byte ptr [RBP],0x40
+006fbf8c JNZ 0x006fbfbb
+006fbf8e MOV RBX,qword ptr [RBP + 0xd8]
+006fbf95 MOV RAX,0x9329a8
+006fbf9c SUB RAX,0x932180
+006fbfa3 MOV RDX,RBX
+006fbfa6 SUB RDX,0x932180
+006fbfad CMP RAX,RDX
+006fbfb0 JBE 0x006fbfe8
+006fbfb2 MOV RDI,RBP
+006fbfb5 CALL qword ptr [RBX + 0x88]
+006fbfbb ADD RSP,0x8
+006fbfbf MOV RDI,RBP
+006fbfc2 XOR ESI,ESI
+006fbfc4 POP RBX
+006fbfc5 POP RBP
+006fbfc6 JMP 0x006fdb60
+006fbfd0 MOV RSI,qword ptr [RDI + 0x20]
+006fbfd4 MOV RDX,qword ptr [RDI + 0x28]
+006fbfd8 SUB RDX,RSI
+006fbfdb CALL 0x006fb570
+006fbfe0 JMP 0x006fbf88
+006fbfe8 CALL 0x006f9720
+006fbfed JMP 0x006fbfb2

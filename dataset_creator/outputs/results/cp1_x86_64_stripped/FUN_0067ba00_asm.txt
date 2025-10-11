@@ -1,0 +1,9 @@
+0067ba00 ENDBR64
+0067ba04 MOVSX R10D,byte ptr [RSP + 0x10]
+0067ba0a MOV RAX,qword ptr [RDI]
+0067ba0d MOVSX R8D,R8B
+0067ba11 MOV dword ptr [RSP + 0x10],R10D
+0067ba16 MOVSX R10D,byte ptr [RSP + 0x8]
+0067ba1c MOV dword ptr [RSP + 0x8],R10D
+0067ba21 MOV RAX,qword ptr [RAX + 0x10]
+0067ba25 JMP RAX

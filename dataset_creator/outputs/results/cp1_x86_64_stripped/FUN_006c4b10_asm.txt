@@ -1,0 +1,6 @@
+006c4b10 ENDBR64
+006c4b14 MOV RAX,qword ptr [RSP + 0x10]
+006c4b19 MOV qword ptr [R8],RDX
+006c4b1c MOV qword ptr [RAX],R9
+006c4b1f MOV EAX,0x3
+006c4b24 RET

@@ -1,0 +1,5 @@
+006e842f ADD byte ptr [RAX + -0x39],CL
+006e8432 ROR byte ptr [RDI],0x0
+006e8435 ADD byte ptr [RAX],AL
+006e8437 SYSCALL
+006e8439 NOP dword ptr [RAX]

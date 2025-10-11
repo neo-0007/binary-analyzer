@@ -1,0 +1,9 @@
+004ecc20 ENDBR64
+004ecc24 XOR EAX,EAX
+004ecc26 CMP dword ptr [RDI + 0x98],0x1
+004ecc2d JZ 0x004ecc30
+004ecc2f RET
+004ecc30 XOR EAX,EAX
+004ecc32 CMP qword ptr [RDI + 0xa0],0x0
+004ecc3a SETNZ AL
+004ecc3d RET

@@ -1,0 +1,6 @@
+004badc0 ENDBR64
+004badc4 MOV R8,RDI
+004badc7 MOV EDI,dword ptr [RDX + 0x110]
+004badcd MOV RCX,RSI
+004badd0 MOV RSI,R8
+004badd3 JMP 0x004b8ed0

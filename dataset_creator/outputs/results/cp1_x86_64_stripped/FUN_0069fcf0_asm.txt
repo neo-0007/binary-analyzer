@@ -1,0 +1,4 @@
+0069fcf0 ENDBR64
+0069fcf4 MOV RDX,qword ptr [RSI + 0x8]
+0069fcf8 MOV RSI,qword ptr [RSI]
+0069fcfb JMP 0x0069fc40

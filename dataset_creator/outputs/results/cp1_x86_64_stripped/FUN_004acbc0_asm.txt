@@ -1,0 +1,6 @@
+004acbc0 ENDBR64
+004acbc4 MOV RAX,0x4ac960
+004acbcb MOV qword ptr [RDI + 0x28],RSI
+004acbcf MOV qword ptr [RDI + 0x20],RAX
+004acbd3 MOV EAX,0x1
+004acbd8 RET

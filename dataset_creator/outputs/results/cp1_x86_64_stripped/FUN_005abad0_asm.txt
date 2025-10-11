@@ -1,0 +1,3 @@
+005abad0 ENDBR64
+005abad4 LEA RAX,[0x912a20]
+005abadb RET

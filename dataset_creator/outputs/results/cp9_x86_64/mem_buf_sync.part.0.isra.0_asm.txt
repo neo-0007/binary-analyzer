@@ -1,0 +1,21 @@
+005ad1f0 TEST RDI,RDI
+005ad1f3 JZ 0x005ad230
+005ad1f5 PUSH RBX
+005ad1f6 MOV RAX,qword ptr [RDI + 0x8]
+005ad1fa MOV RBX,RDI
+005ad1fd MOV RDX,qword ptr [RDI]
+005ad200 MOV RSI,qword ptr [RAX + 0x8]
+005ad204 MOV RDI,qword ptr [RDX + 0x8]
+005ad208 CMP RSI,RDI
+005ad20b JZ 0x005ad22a
+005ad20d MOV RDX,qword ptr [RAX]
+005ad210 CALL 0x004010f0
+005ad215 MOV RAX,qword ptr [RBX + 0x8]
+005ad219 MOV RDX,qword ptr [RBX]
+005ad21c MOV RCX,qword ptr [RAX]
+005ad21f MOV qword ptr [RDX],RCX
+005ad222 MOV RDX,qword ptr [RDX + 0x8]
+005ad226 MOV qword ptr [RAX + 0x8],RDX
+005ad22a POP RBX
+005ad22b RET
+005ad230 RET

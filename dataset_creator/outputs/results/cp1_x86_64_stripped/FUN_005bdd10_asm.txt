@@ -1,0 +1,2 @@
+005bdd10 ENDBR64
+005bdd14 RET

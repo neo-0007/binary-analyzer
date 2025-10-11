@@ -1,0 +1,4 @@
+006a04c0 ENDBR64
+006a04c4 MOV RCX,qword ptr [RSI + 0x8]
+006a04c8 MOV RSI,qword ptr [RSI]
+006a04cb JMP 0x006a0450

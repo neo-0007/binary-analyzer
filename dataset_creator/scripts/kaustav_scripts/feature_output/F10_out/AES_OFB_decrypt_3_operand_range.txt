@@ -1,0 +1,8 @@
+Operand Value Range Feature
+File: AES_OFB_decrypt_3.asm
+-------------------------------
+Byte operands   : 3%
+Word operands   : 0%
+DWord operands  : 0%
+QWord operands  : 33%
+Other operands  : 63%

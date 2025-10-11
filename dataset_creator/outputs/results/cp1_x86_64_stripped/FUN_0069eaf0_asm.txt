@@ -1,0 +1,4 @@
+0069eaf0 ENDBR64
+0069eaf4 CMP qword ptr [RDI + 0x8],0x0
+0069eaf9 SETZ AL
+0069eafc RET

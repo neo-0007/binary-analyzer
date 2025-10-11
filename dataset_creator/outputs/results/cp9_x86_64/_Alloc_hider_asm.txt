@@ -1,0 +1,3 @@
+006ab000 ENDBR64
+006ab004 MOV qword ptr [RDI],RSI
+006ab007 RET

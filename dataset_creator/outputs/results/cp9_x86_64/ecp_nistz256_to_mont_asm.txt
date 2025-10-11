@@ -1,0 +1,4 @@
+005ec1c0 MOV ECX,0x80100
+005ec1c5 AND ECX,dword ptr [0x0093e5a0]
+005ec1cb LEA RDX,[0x5eb020]
+005ec1d2 JMP 0x005ec1eb

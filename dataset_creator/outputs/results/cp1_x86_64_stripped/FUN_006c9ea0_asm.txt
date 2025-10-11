@@ -1,0 +1,2 @@
+006c9ea0 ENDBR64
+006c9ea4 RET

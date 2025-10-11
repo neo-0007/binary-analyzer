@@ -1,0 +1,14 @@
+0063a4a0 ENDBR64
+0063a4a4 MOV RAX,qword ptr [RDI]
+0063a4a7 MOV EDX,dword ptr [RAX + -0x8]
+0063a4aa TEST EDX,EDX
+0063a4ac JNS 0x0063a4b5
+0063a4ae MOV dword ptr [RAX + -0x8],0x0
+0063a4b5 MOV RDX,qword ptr [RSI]
+0063a4b8 MOV ECX,dword ptr [RDX + -0x8]
+0063a4bb TEST ECX,ECX
+0063a4bd JNS 0x0063a4c6
+0063a4bf MOV dword ptr [RDX + -0x8],0x0
+0063a4c6 MOV qword ptr [RDI],RDX
+0063a4c9 MOV qword ptr [RSI],RAX
+0063a4cc RET

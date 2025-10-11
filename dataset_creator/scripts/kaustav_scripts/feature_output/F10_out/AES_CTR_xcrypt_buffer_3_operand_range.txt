@@ -1,0 +1,8 @@
+Operand Value Range Feature
+File: AES_CTR_xcrypt_buffer_3.asm
+-------------------------------
+Byte operands   : 9%
+Word operands   : 0%
+DWord operands  : 0%
+QWord operands  : 35%
+Other operands  : 54%

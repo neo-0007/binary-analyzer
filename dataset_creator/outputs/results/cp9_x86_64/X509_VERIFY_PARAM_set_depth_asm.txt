@@ -1,0 +1,3 @@
+00595bd0 ENDBR64
+00595bd4 MOV dword ptr [RDI + 0x28],ESI
+00595bd7 RET

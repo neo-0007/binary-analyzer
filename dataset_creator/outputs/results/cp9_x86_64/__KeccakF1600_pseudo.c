@@ -1,0 +1,146 @@
+
+void __KeccakF1600(long param_1,long param_2)
+
+{
+  ulong uVar1;
+  ulong uVar2;
+  ulong uVar3;
+  ulong uVar4;
+  ulong uVar5;
+  ulong uVar6;
+  ulong uVar7;
+  ulong uVar8;
+  long lVar9;
+  ulong uVar10;
+  ulong uVar11;
+  ulong uVar12;
+  ulong uVar13;
+  ulong uVar14;
+  ulong uVar15;
+  ulong *unaff_R15;
+  
+  uVar1 = *(ulong *)(param_1 + 0x3c);
+  uVar8 = *(ulong *)(param_1 + 0x44);
+  uVar5 = *(ulong *)(param_1 + 0x4c);
+  uVar11 = *(ulong *)(param_1 + 0x54);
+  uVar13 = *(ulong *)(param_1 + 0x5c);
+  do {
+    lVar9 = param_2;
+    uVar3 = uVar5 ^ *(ulong *)(param_1 + -0x54) ^ *(ulong *)(param_1 + -0x2c) ^
+            *(ulong *)(param_1 + -4) ^ *(ulong *)(param_1 + 0x24);
+    uVar1 = uVar1 ^ *(ulong *)(param_1 + -100) ^ *(ulong *)(param_1 + -0x3c) ^
+            *(ulong *)(param_1 + -0x14) ^ *(ulong *)(param_1 + 0x14);
+    uVar4 = (uVar3 << 1 | (ulong)((long)uVar3 < 0)) ^ uVar1;
+    uVar5 = uVar11 ^ *(ulong *)(param_1 + -0x4c) ^ *(ulong *)(param_1 + -0x24) ^
+            *(ulong *)(param_1 + 4) ^ *(ulong *)(param_1 + 0x2c);
+    uVar2 = (uVar1 << 1 | (ulong)((long)uVar1 < 0)) ^ uVar5;
+    uVar1 = uVar8 ^ *(ulong *)(param_1 + -0x5c) ^ *(ulong *)(param_1 + -0x34) ^
+            *(ulong *)(param_1 + -0xc) ^ *(ulong *)(param_1 + 0x1c);
+    uVar6 = (uVar5 << 1 | (ulong)((long)uVar5 < 0)) ^ uVar1;
+    uVar8 = uVar13 ^ *(ulong *)(param_1 + -0x44) ^ *(ulong *)(param_1 + -0x1c) ^
+            *(ulong *)(param_1 + 0xc) ^ *(ulong *)(param_1 + 0x34);
+    uVar7 = (uVar1 << 1 | (ulong)((long)uVar1 < 0)) ^ uVar8;
+    uVar3 = (uVar8 << 1 | (ulong)((long)uVar8 < 0)) ^ uVar3;
+    uVar1 = *(ulong *)(param_1 + -0x34) ^ uVar4;
+    uVar8 = *(ulong *)(param_1 + -4) ^ uVar6;
+    uVar11 = uVar1 << 0x2c | uVar1 >> 0x14;
+    uVar1 = *(ulong *)(param_1 + 0x2c) ^ uVar3;
+    uVar8 = uVar8 << 0x2b | uVar8 >> 0x15;
+    uVar10 = *(ulong *)(param_1 + -100) ^ uVar7;
+    uVar12 = uVar1 << 0x15 | uVar1 >> 0x2b;
+    uVar14 = (uVar13 ^ uVar2) << 0xe | (uVar13 ^ uVar2) >> 0x32;
+    uVar1 = *unaff_R15;
+    unaff_R15 = unaff_R15 + 1;
+    *(ulong *)(lVar9 + -100) = (uVar11 | uVar8) ^ uVar10 ^ uVar1;
+    *(ulong *)(lVar9 + -0x54) = uVar14 & uVar12 ^ uVar8;
+    uVar1 = *(ulong *)(param_1 + 0x4c);
+    *(ulong *)(lVar9 + -0x5c) = (~uVar8 | uVar12) ^ uVar11;
+    uVar8 = *(ulong *)(param_1 + -0x1c);
+    uVar5 = *(ulong *)(param_1 + -0x14);
+    *(ulong *)(lVar9 + -0x44) = uVar11 & uVar10 ^ uVar14;
+    uVar11 = *(ulong *)(param_1 + -0x4c);
+    uVar13 = *(ulong *)(param_1 + 0x1c);
+    *(ulong *)(lVar9 + -0x4c) = (uVar14 | uVar10) ^ uVar12;
+    uVar11 = uVar11 ^ uVar3;
+    uVar1 = uVar1 ^ uVar6;
+    uVar10 = uVar11 << 0x1c | uVar11 >> 0x24;
+    uVar13 = uVar13 ^ uVar4;
+    uVar8 = uVar8 ^ uVar2;
+    uVar15 = uVar1 << 0x3d | uVar1 >> 3;
+    uVar11 = uVar13 << 0x2d | uVar13 >> 0x13;
+    uVar5 = uVar5 ^ uVar7;
+    uVar12 = uVar8 << 0x14 | uVar8 >> 0x2c;
+    uVar14 = uVar5 << 3 | uVar5 >> 0x3d;
+    *(ulong *)(lVar9 + -0x24) = (uVar10 | uVar15) ^ uVar11;
+    uVar1 = *(ulong *)(param_1 + -0x5c);
+    *(ulong *)(lVar9 + -0x1c) = uVar12 & uVar10 ^ uVar15;
+    uVar8 = *(ulong *)(param_1 + -0x2c);
+    *(ulong *)(lVar9 + -0x2c) = (~uVar15 | uVar11) ^ uVar14;
+    uVar5 = *(ulong *)(param_1 + 0x3c);
+    *(ulong *)(lVar9 + -0x34) = uVar11 & uVar14 ^ uVar12;
+    uVar11 = *(ulong *)(param_1 + 4);
+    uVar13 = *(ulong *)(param_1 + 0x34);
+    *(ulong *)(lVar9 + -0x3c) = (uVar12 | uVar14) ^ uVar10;
+    uVar11 = uVar11 ^ uVar3;
+    uVar13 = uVar13 ^ uVar2;
+    uVar10 = uVar11 << 0x19 | uVar11 >> 0x27;
+    uVar8 = uVar8 ^ uVar6;
+    uVar12 = uVar13 << 8 | uVar13 >> 0x38;
+    uVar5 = uVar5 ^ uVar7;
+    uVar11 = uVar8 << 6 | uVar8 >> 0x3a;
+    uVar1 = uVar1 ^ uVar4;
+    uVar15 = uVar5 << 0x12 | uVar5 >> 0x2e;
+    uVar13 = uVar1 << 1 | (ulong)((long)uVar1 < 0);
+    uVar14 = ~uVar12;
+    *(ulong *)(lVar9 + -0xc) = uVar10 & uVar12 ^ uVar11;
+    uVar1 = *(ulong *)(param_1 + -0xc);
+    *(ulong *)(lVar9 + -4) = uVar15 & uVar14 ^ uVar10;
+    uVar8 = *(ulong *)(param_1 + 0x54);
+    *(ulong *)(lVar9 + -0x14) = (uVar10 | uVar11) ^ uVar13;
+    *(ulong *)(lVar9 + 0xc) = uVar11 & uVar13 ^ uVar15;
+    uVar5 = *(ulong *)(param_1 + -0x3c);
+    uVar11 = *(ulong *)(param_1 + 0x24);
+    *(ulong *)(lVar9 + 4) = (uVar15 | uVar13) ^ uVar14;
+    uVar1 = uVar1 ^ uVar4;
+    uVar11 = uVar11 ^ uVar6;
+    uVar13 = uVar1 << 10 | uVar1 >> 0x36;
+    uVar5 = uVar5 ^ uVar7;
+    uVar11 = uVar11 << 0xf | uVar11 >> 0x31;
+    uVar8 = uVar8 ^ uVar3;
+    uVar5 = uVar5 << 0x24 | uVar5 >> 0x1c;
+    uVar1 = *(ulong *)(param_1 + -0x44) ^ uVar2;
+    uVar10 = uVar8 << 0x38 | uVar8 >> 8;
+    uVar1 = uVar1 << 0x1b | uVar1 >> 0x25;
+    uVar8 = ~uVar11;
+    *(ulong *)(lVar9 + 0x1c) = (uVar13 | uVar11) ^ uVar5;
+    *(ulong *)(lVar9 + 0x24) = (uVar10 | uVar8) ^ uVar13;
+    *(ulong *)(lVar9 + 0x14) = uVar13 & uVar5 ^ uVar1;
+    *(ulong *)(lVar9 + 0x34) = (uVar5 | uVar1) ^ uVar10;
+    *(ulong *)(lVar9 + 0x2c) = uVar1 & uVar10 ^ uVar8;
+    uVar6 = uVar6 ^ *(ulong *)(param_1 + -0x54);
+    uVar3 = uVar3 ^ *(ulong *)(param_1 + -0x24);
+    uVar11 = uVar6 << 0x3e | uVar6 >> 2;
+    uVar4 = uVar4 ^ *(ulong *)(param_1 + 0x44);
+    uVar1 = uVar3 << 0x37 | uVar3 >> 9;
+    uVar2 = uVar2 ^ *(ulong *)(param_1 + 0xc);
+    uVar5 = uVar4 << 2 | uVar4 >> 0x3e;
+    uVar7 = uVar7 ^ *(ulong *)(param_1 + 0x14);
+    uVar2 = uVar2 << 0x27 | uVar2 >> 0x19;
+    uVar3 = uVar7 << 0x29 | uVar7 >> 0x17;
+    uVar8 = ~uVar1;
+    uVar13 = uVar11 & uVar1 ^ uVar5;
+    *(ulong *)(lVar9 + 0x5c) = uVar13;
+    uVar1 = uVar2 & uVar8 ^ uVar11;
+    *(ulong *)(lVar9 + 0x3c) = uVar1;
+    uVar11 = (uVar11 | uVar5) ^ uVar3;
+    *(ulong *)(lVar9 + 0x54) = uVar11;
+    uVar5 = uVar5 & uVar3 ^ uVar2;
+    *(ulong *)(lVar9 + 0x4c) = uVar5;
+    uVar8 = (uVar3 | uVar2) ^ uVar8;
+    *(ulong *)(lVar9 + 0x44) = uVar8;
+    param_2 = param_1;
+    param_1 = lVar9;
+  } while (((ulong)unaff_R15 & 0xff) != 0);
+  return;
+}
+

@@ -1,0 +1,11 @@
+005fec00 ENDBR64
+005fec04 SUB RSP,0x8
+005fec08 PUSH 0x0
+005fec0a PUSH 0x0
+005fec0c PUSH qword ptr [RSP + 0x38]
+005fec10 PUSH qword ptr [RSP + 0x38]
+005fec14 PUSH qword ptr [RSP + 0x38]
+005fec18 PUSH qword ptr [RSP + 0x38]
+005fec1c CALL 0x005fe8c0
+005fec21 ADD RSP,0x38
+005fec25 RET

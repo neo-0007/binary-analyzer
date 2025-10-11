@@ -1,0 +1,8 @@
+Operand Value Range Feature
+File: AES_InvMixColumns_2.asm
+-------------------------------
+Byte operands   : 4%
+Word operands   : 0%
+DWord operands  : 0%
+QWord operands  : 25%
+Other operands  : 69%

@@ -1,0 +1,4 @@
+0040fba0 ENDBR64
+0040fba4 MOVSXD RSI,ESI
+0040fba7 OR qword ptr [RDI + 0x18],RSI
+0040fbab RET

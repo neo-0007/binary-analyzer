@@ -1,0 +1,19 @@
+
+int UI_dup_verify_string
+              (UI *ui,char *prompt,int flags,char *result_buf,int minsize,int maxsize,char *test_buf
+              )
+
+{
+  int iVar1;
+  
+  if ((prompt != (char *)0x0) &&
+     (prompt = CRYPTO_strdup(prompt,"../crypto/ui/ui_lib.c",0xf0), prompt == (char *)0x0)) {
+    ERR_new();
+    ERR_set_debug("../crypto/ui/ui_lib.c",0xf2,0x7ffc00);
+    ERR_set_error(0x28,0xc0100,0);
+    return -1;
+  }
+  iVar1 = general_allocate_string(ui,prompt,1,2,flags,result_buf,minsize,maxsize,test_buf);
+  return iVar1;
+}
+

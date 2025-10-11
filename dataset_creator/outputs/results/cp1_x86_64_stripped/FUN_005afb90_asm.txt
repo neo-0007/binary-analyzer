@@ -1,0 +1,11 @@
+005afb90 ENDBR64
+005afb94 TEST RDI,RDI
+005afb97 JZ 0x005afba0
+005afb99 MOV RAX,qword ptr [RDX + 0x18]
+005afb9d MOV qword ptr [RDI],RAX
+005afba0 TEST RSI,RSI
+005afba3 JZ 0x005afbac
+005afba5 MOV RAX,qword ptr [RDX + 0x20]
+005afba9 MOV qword ptr [RSI],RAX
+005afbac MOV EAX,0x1
+005afbb1 RET

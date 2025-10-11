@@ -1,0 +1,24 @@
+0066be30 ENDBR64
+0066be34 PUSH RBX
+0066be35 MOV RBX,RDI
+0066be38 MOV RDI,qword ptr [RDI]
+0066be3b MOV dword ptr [RDI + 0x78],0x0
+0066be42 MOV byte ptr [RDI + 0xc0],0x0
+0066be49 CALL 0x00667b50
+0066be4e MOV RAX,qword ptr [RBX]
+0066be51 XOR EDX,EDX
+0066be53 MOV word ptr [RAX + 0xa9],DX
+0066be5a MOV RDX,qword ptr [RAX + 0x98]
+0066be61 MOV qword ptr [RAX + 0x28],0x0
+0066be69 MOV qword ptr [RAX + 0x8],RDX
+0066be6d MOV qword ptr [RAX + 0x10],RDX
+0066be71 MOV qword ptr [RAX + 0x18],RDX
+0066be75 MOV RDX,qword ptr [RAX + 0x7c]
+0066be79 MOV qword ptr [RAX + 0x20],0x0
+0066be81 MOV qword ptr [RAX + 0x84],RDX
+0066be88 MOV qword ptr [RAX + 0x30],0x0
+0066be90 MOV RAX,qword ptr [RBX]
+0066be93 MOV RDX,qword ptr [RAX + 0x84]
+0066be9a MOV qword ptr [RAX + 0x8c],RDX
+0066bea1 POP RBX
+0066bea2 RET

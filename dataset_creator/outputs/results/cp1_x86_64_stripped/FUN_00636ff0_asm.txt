@@ -1,0 +1,5 @@
+00636ff0 ENDBR64
+00636ff4 MOV RDX,qword ptr [RSI]
+00636ff7 MOV RAX,RDI
+00636ffa MOV qword ptr [RDI],RDX
+00636ffd RET

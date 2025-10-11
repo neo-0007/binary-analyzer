@@ -1,0 +1,4 @@
+007a2c60 ENDBR64
+007a2c64 MOV RAX,qword ptr [RDI]
+007a2c67 MOV qword ptr [0x0093f0c8],RAX
+007a2c6e RET

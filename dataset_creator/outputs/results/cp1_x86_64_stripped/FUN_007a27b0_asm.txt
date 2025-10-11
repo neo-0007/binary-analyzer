@@ -1,0 +1,7 @@
+007a27b0 ENDBR64
+007a27b4 MOV qword ptr [RDI],RSI
+007a27b7 MOV qword ptr [RDI + 0x8],RDX
+007a27bb MOV RAX,qword ptr FS:[0x2f8]
+007a27c4 MOV qword ptr [RDI + 0x18],RAX
+007a27c8 MOV qword ptr FS:[0x2f8],RDI
+007a27d1 RET

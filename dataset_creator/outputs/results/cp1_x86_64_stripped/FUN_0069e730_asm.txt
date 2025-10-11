@@ -1,0 +1,4 @@
+0069e730 ENDBR64
+0069e734 MOV RAX,qword ptr [RDI]
+0069e737 ADD RAX,qword ptr [RDI + 0x8]
+0069e73b RET

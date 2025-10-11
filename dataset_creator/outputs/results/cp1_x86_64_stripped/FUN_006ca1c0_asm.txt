@@ -1,0 +1,7 @@
+006ca1c0 ENDBR64
+006ca1c4 MOV R8,qword ptr [RDI + 0x8]
+006ca1c8 MOV ESI,dword ptr [RDI]
+006ca1ca MOV RAX,qword ptr [R8]
+006ca1cd MOV RDI,R8
+006ca1d0 MOV RAX,qword ptr [RAX + 0x28]
+006ca1d4 JMP RAX

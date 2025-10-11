@@ -1,0 +1,3 @@
+0069e810 ENDBR64
+0069e814 MOV RAX,0x3fffffffffffffff
+0069e81e RET

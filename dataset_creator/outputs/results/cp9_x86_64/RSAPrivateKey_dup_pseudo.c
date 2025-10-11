@@ -1,0 +1,12 @@
+
+RSA * RSAPrivateKey_dup(RSA *rsa)
+
+{
+  ASN1_ITEM *it;
+  RSA *pRVar1;
+  
+  it = (ASN1_ITEM *)RSAPrivateKey_it();
+  pRVar1 = (RSA *)ASN1_item_dup(it,rsa);
+  return pRVar1;
+}
+

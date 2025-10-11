@@ -1,0 +1,3 @@
+0041bc50 ENDBR64
+0041bc54 MOV EAX,dword ptr [0x0093fcf8]
+0041bc5a RET

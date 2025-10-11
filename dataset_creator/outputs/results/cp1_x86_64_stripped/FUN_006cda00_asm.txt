@@ -1,0 +1,7 @@
+006cda00 ENDBR64
+006cda04 MOV RCX,qword ptr [RDX + 0x8]
+006cda08 MOV EAX,0x1
+006cda0d CMP qword ptr [RSI + 0x8],RCX
+006cda11 JA 0x006cda15
+006cda13 SBB EAX,EAX
+006cda15 RET

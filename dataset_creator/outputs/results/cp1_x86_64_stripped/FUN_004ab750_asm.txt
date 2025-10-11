@@ -1,0 +1,4 @@
+004ab750 ENDBR64
+004ab754 MOV RAX,qword ptr [RDI + 0x8]
+004ab758 MOV RAX,qword ptr [RAX + 0x8]
+004ab75c RET

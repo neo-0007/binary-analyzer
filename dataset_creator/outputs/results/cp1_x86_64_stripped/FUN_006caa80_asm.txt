@@ -1,0 +1,19 @@
+006caa80 ENDBR64
+006caa84 MOV byte ptr [0x00945610],0x8
+006caa8b MOV byte ptr [0x00945611],0x8
+006caa92 MOV byte ptr [0x00945612],0x8
+006caa99 MOV byte ptr [0x00945613],0x8
+006caaa0 MOV byte ptr [0x00945614],0x8
+006caaa7 MOV byte ptr [0x00945615],0x8
+006caaae MOV byte ptr [0x00945616],0x8
+006caab5 MOV byte ptr [0x00945617],0x8
+006caabc MOV byte ptr [0x00945618],0x8
+006caac3 MOV byte ptr [0x00945619],0x8
+006caaca MOV byte ptr [0x0094561a],0x8
+006caad1 MOV byte ptr [0x0094561b],0x8
+006caad8 MOV byte ptr [0x0094561c],0x8
+006caadf MOV byte ptr [0x0094561d],0x8
+006caae6 MOV byte ptr [0x0094561e],0x8
+006caaed MOV byte ptr [0x0094561f],0x8
+006caaf4 MOV byte ptr [0x00945620],0x8
+006caafb RET

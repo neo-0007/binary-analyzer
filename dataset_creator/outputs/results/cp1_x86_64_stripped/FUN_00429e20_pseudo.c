@@ -1,0 +1,24 @@
+
+undefined8 * FUN_00429e20(undefined8 param_1,undefined8 param_2,undefined8 param_3)
+
+{
+  undefined8 *puVar1;
+  
+  puVar1 = (undefined8 *)FUN_0041aec0(0x40,"../crypto/rand/rand_pool.c",0x44);
+  if (puVar1 == (undefined8 *)0x0) {
+    FUN_0051f420();
+    FUN_0051f540("../crypto/rand/rand_pool.c",0x47,"ossl_rand_pool_attach");
+    FUN_0051f8f0(0x24,0xc0100,0);
+  }
+  else {
+    *puVar1 = param_1;
+    puVar1[1] = param_2;
+    *(undefined4 *)(puVar1 + 2) = 1;
+    puVar1[5] = param_2;
+    puVar1[4] = param_2;
+    puVar1[3] = param_2;
+    puVar1[6] = param_3;
+  }
+  return puVar1;
+}
+

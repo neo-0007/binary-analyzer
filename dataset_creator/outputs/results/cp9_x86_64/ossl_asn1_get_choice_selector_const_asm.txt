@@ -1,0 +1,5 @@
+004a56f0 ENDBR64
+004a56f4 MOV RDX,qword ptr [RDI]
+004a56f7 MOV RAX,qword ptr [RSI + 0x8]
+004a56fb MOV EAX,dword ptr [RDX + RAX*0x1]
+004a56fe RET

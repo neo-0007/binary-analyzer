@@ -1,0 +1,40 @@
+0040eab0 ENDBR64
+0040eab4 PUSH RBX
+0040eab5 PXOR XMM0,XMM0
+0040eab9 MOV RBX,RDI
+0040eabc LEA RSI,[0x81442f]
+0040eac3 SUB RSP,0xa0
+0040eaca MOV RAX,qword ptr FS:[0x28]
+0040ead3 MOV qword ptr [RSP + 0x98],RAX
+0040eadb MOV EAX,dword ptr [RDI + 0x58]
+0040eade LEA RDX,[RSP + 0x3c]
+0040eae3 MOV RDI,RSP
+0040eae6 MOVAPS xmmword ptr [RSP + 0x40],XMM0
+0040eaeb MOVAPS xmmword ptr [RSP + 0x50],XMM0
+0040eaf0 MOVAPS xmmword ptr [RSP + 0x60],XMM0
+0040eaf5 MOVAPS xmmword ptr [RSP + 0x70],XMM0
+0040eafa MOVAPS xmmword ptr [RSP + 0x80],XMM0
+0040eb02 MOV dword ptr [RSP + 0x3c],EAX
+0040eb06 CALL 0x0041b8e0
+0040eb0b MOVDQU XMM1,xmmword ptr [RSP]
+0040eb10 MOV RDI,qword ptr [RBX]
+0040eb13 LEA RDX,[RSP + 0x40]
+0040eb18 MOVDQU XMM2,xmmword ptr [RSP + 0x10]
+0040eb1e MOV RAX,qword ptr [RSP + 0x20]
+0040eb23 MOV RSI,qword ptr [RBX + 0xa8]
+0040eb2a MOVAPS xmmword ptr [RSP + 0x40],XMM1
+0040eb2f MOV qword ptr [RSP + 0x60],RAX
+0040eb34 MOVAPS xmmword ptr [RSP + 0x50],XMM2
+0040eb39 CALL 0x00410330
+0040eb3e TEST EAX,EAX
+0040eb40 JZ 0x0040eb68
+0040eb42 MOV EAX,dword ptr [RSP + 0x3c]
+0040eb46 MOV RDX,qword ptr [RSP + 0x98]
+0040eb4e SUB RDX,qword ptr FS:[0x28]
+0040eb57 JNZ 0x0040eb6f
+0040eb59 ADD RSP,0xa0
+0040eb60 POP RBX
+0040eb61 RET
+0040eb68 MOV EAX,0xffffffff
+0040eb6d JMP 0x0040eb46
+0040eb6f CALL 0x00768630

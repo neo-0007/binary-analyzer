@@ -1,0 +1,3 @@
+0040fb70 ENDBR64
+0040fb74 MOV RAX,qword ptr [RDI + 0x20]
+0040fb78 RET

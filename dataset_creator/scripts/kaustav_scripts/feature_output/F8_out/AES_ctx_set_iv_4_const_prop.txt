@@ -1,0 +1,4 @@
+File: /home/kaustav/sih2025/bn/binary-analyzer/dataset_creator/workspace/feature_extraction/AES_asm_files/AES_ctx_set_iv_4.asm
+Total Instructions: 15
+Instructions with Immediate Constants: 55
+Constant Propagation Ratio: 3.6666

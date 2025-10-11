@@ -1,0 +1,3 @@
+0053fe70 ENDBR64
+0053fe74 MOV RAX,qword ptr [RDI]
+0053fe77 RET

@@ -1,0 +1,4 @@
+0053bab0 ENDBR64
+0053bab4 OR byte ptr [RDI + 0x18],0x1
+0053bab8 MOV EAX,0x1
+0053babd RET

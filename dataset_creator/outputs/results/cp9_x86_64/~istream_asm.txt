@@ -1,0 +1,8 @@
+0066ea40 ENDBR64
+0066ea44 MOV RAX,qword ptr [RSI]
+0066ea47 MOV qword ptr [RDI],RAX
+0066ea4a MOV RAX,qword ptr [RAX + -0x18]
+0066ea4e MOV RDX,qword ptr [RSI + 0x8]
+0066ea52 MOV qword ptr [RDI + RAX*0x1],RDX
+0066ea56 MOV qword ptr [RDI + 0x8],0x0
+0066ea5e RET

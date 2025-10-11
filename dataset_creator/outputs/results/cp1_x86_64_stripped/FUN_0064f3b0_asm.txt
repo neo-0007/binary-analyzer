@@ -1,0 +1,6 @@
+0064f3b0 ENDBR64
+0064f3b4 MOV RCX,RDX
+0064f3b7 MOV RDI,qword ptr [RDI + 0x20]
+0064f3bb MOV RDX,qword ptr [RSI + 0x8]
+0064f3bf MOV RSI,qword ptr [RSI]
+0064f3c2 JMP 0x006339c0

@@ -1,0 +1,3 @@
+0058e9d0 ENDBR64
+0058e9d4 MOV EAX,dword ptr [RDI + 0x2c]
+0058e9d7 RET

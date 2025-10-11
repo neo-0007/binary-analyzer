@@ -1,0 +1,16 @@
+004efcc0 ENDBR64
+004efcc4 TEST RDI,RDI
+004efcc7 JZ 0x004efcf0
+004efcc9 PUSH RBP
+004efcca MOV RAX,qword ptr [RDI]
+004efccd MOV RBP,RDI
+004efcd0 MOV RAX,qword ptr [RAX + 0x58]
+004efcd4 TEST RAX,RAX
+004efcd7 JZ 0x004efcdb
+004efcd9 CALL RAX
+004efcdb MOV RDI,RBP
+004efcde MOV EDX,0x2f1
+004efce3 LEA RSI,[0x7fe32b]
+004efcea POP RBP
+004efceb JMP 0x0041ad60
+004efcf0 RET

@@ -1,0 +1,31 @@
+0062cea0 ENDBR64
+0062cea4 PUSH RBP
+0062cea5 PUSH RBX
+0062cea6 MOV RBX,R8
+0062cea9 SUB RSP,0x38
+0062cead MOV RAX,qword ptr FS:[0x28]
+0062ceb6 MOV qword ptr [RSP + 0x28],RAX
+0062cebb XOR EAX,EAX
+0062cebd MOV RAX,qword ptr [RSP + 0x50]
+0062cec2 MOV qword ptr [RSP],RDX
+0062cec6 LEA RSI,[RSP + 0x10]
+0062cecb MOV qword ptr [RSP + 0x8],RCX
+0062ced0 MOV EDX,0x10ffff
+0062ced5 MOV RDI,RSP
+0062ced8 XOR ECX,ECX
+0062ceda MOV RBP,qword ptr [RSP + 0x58]
+0062cedf MOV qword ptr [RSP + 0x10],R9
+0062cee4 MOV qword ptr [RSP + 0x18],RAX
+0062cee9 CALL 0x0062cde0
+0062ceee MOV RDX,qword ptr [RSP]
+0062cef2 MOV qword ptr [RBX],RDX
+0062cef5 MOV RDX,qword ptr [RSP + 0x10]
+0062cefa MOV qword ptr [RBP],RDX
+0062cefe MOV RDX,qword ptr [RSP + 0x28]
+0062cf03 SUB RDX,qword ptr FS:[0x28]
+0062cf0c JNZ 0x0062cf15
+0062cf0e ADD RSP,0x38
+0062cf12 POP RBX
+0062cf13 POP RBP
+0062cf14 RET
+0062cf15 CALL 0x00771f60

@@ -1,0 +1,9 @@
+0049ee30 ENDBR64
+0049ee34 MOV RAX,qword ptr [RSP + 0x8]
+0049ee39 MOV qword ptr [RDI + 0x20],RSI
+0049ee3d MOV qword ptr [RDI + 0x28],RDX
+0049ee41 MOV qword ptr [RDI + 0x30],RCX
+0049ee45 MOV qword ptr [RDI + 0x38],R8
+0049ee49 MOV qword ptr [RDI + 0x58],R9
+0049ee4d MOV qword ptr [RDI + 0x60],RAX
+0049ee51 RET

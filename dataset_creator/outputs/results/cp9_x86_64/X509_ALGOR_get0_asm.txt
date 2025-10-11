@@ -1,0 +1,19 @@
+004a5d90 ENDBR64
+004a5d94 TEST RDI,RDI
+004a5d97 JZ 0x004a5d9f
+004a5d99 MOV RAX,qword ptr [RCX]
+004a5d9c MOV qword ptr [RDI],RAX
+004a5d9f TEST RSI,RSI
+004a5da2 JZ 0x004a5dbd
+004a5da4 MOV RAX,qword ptr [RCX + 0x8]
+004a5da8 TEST RAX,RAX
+004a5dab JZ 0x004a5dc0
+004a5dad MOV ECX,dword ptr [RAX]
+004a5daf MOV dword ptr [RSI],ECX
+004a5db1 TEST RDX,RDX
+004a5db4 JZ 0x004a5dbd
+004a5db6 MOV RAX,qword ptr [RAX + 0x8]
+004a5dba MOV qword ptr [RDX],RAX
+004a5dbd RET
+004a5dc0 MOV dword ptr [RSI],0xffffffff
+004a5dc6 RET

@@ -1,0 +1,17 @@
+006cce10 ENDBR64
+006cce14 CMP ESI,0x11
+006cce17 JG 0x004046ac
+006cce1d MOVSXD RSI,ESI
+006cce20 LEA RAX,[0x945610]
+006cce27 MOVZX EAX,byte ptr [RAX + RSI*0x1]
+006cce2b TEST byte ptr [RDI + 0xc7],0x40
+006cce32 JZ 0x006cce3e
+006cce34 CMP byte ptr [RDI + RSI*0x1 + 0xd8],0x0
+006cce3c JNZ 0x006cce50
+006cce3e MOV RCX,qword ptr [RDI + RSI*0x8]
+006cce42 CMP AL,0x8
+006cce44 JNZ 0x004046ac
+006cce4a MOV qword ptr [RCX],RDX
+006cce4d RET
+006cce50 MOV qword ptr [RDI + RSI*0x8],RDX
+006cce54 RET

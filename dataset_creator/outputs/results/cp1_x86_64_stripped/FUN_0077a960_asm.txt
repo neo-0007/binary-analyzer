@@ -1,0 +1,42 @@
+0077a960 ENDBR64
+0077a964 MOV RAX,qword ptr [0x0094ad00]
+0077a96b CMP byte ptr [RDI + 0xbc],0x0
+0077a972 JZ 0x0077aa10
+0077a978 TEST RAX,RAX
+0077a97b JZ 0x0077aa21
+0077a981 MOVDQU XMM0,xmmword ptr [RDI]
+0077a985 MOVUPS xmmword ptr [RAX],XMM0
+0077a988 MOVDQU XMM1,xmmword ptr [RDI + 0x10]
+0077a98d MOVUPS xmmword ptr [RAX + 0x10],XMM1
+0077a991 MOVDQU XMM2,xmmword ptr [RDI + 0x20]
+0077a996 MOVUPS xmmword ptr [RAX + 0x20],XMM2
+0077a99a MOVDQU XMM3,xmmword ptr [RDI + 0x30]
+0077a99f MOVUPS xmmword ptr [RAX + 0x30],XMM3
+0077a9a3 MOVDQU XMM4,xmmword ptr [RDI + 0x40]
+0077a9a8 MOVUPS xmmword ptr [RAX + 0x40],XMM4
+0077a9ac MOVDQU XMM5,xmmword ptr [RDI + 0x50]
+0077a9b1 MOVUPS xmmword ptr [RAX + 0x50],XMM5
+0077a9b5 MOVDQU XMM6,xmmword ptr [RDI + 0x60]
+0077a9ba MOVUPS xmmword ptr [RAX + 0x60],XMM6
+0077a9be MOVDQU XMM7,xmmword ptr [RDI + 0x70]
+0077a9c3 MOVUPS xmmword ptr [RAX + 0x70],XMM7
+0077a9c7 MOVDQU XMM0,xmmword ptr [RDI + 0x80]
+0077a9cf MOVUPS xmmword ptr [RAX + 0x80],XMM0
+0077a9d6 MOVDQU XMM1,xmmword ptr [RDI + 0x90]
+0077a9de MOVUPS xmmword ptr [RAX + 0x90],XMM1
+0077a9e5 MOVDQU XMM2,xmmword ptr [RDI + 0xa0]
+0077a9ed MOVUPS xmmword ptr [RAX + 0xa0],XMM2
+0077a9f4 MOVDQU XMM3,xmmword ptr [RDI + 0xb0]
+0077a9fc MOV dword ptr [RAX + 0xc0],0x0
+0077aa06 MOVUPS xmmword ptr [RAX + 0xb0],XMM3
+0077aa0d RET
+0077aa10 TEST RAX,RAX
+0077aa13 JZ 0x0077aa20
+0077aa15 MOV qword ptr [0x0094ad00],0x0
+0077aa20 RET
+0077aa21 PUSH RAX
+0077aa22 LEA RCX,[0x82e890]
+0077aa29 MOV EDX,0x209
+0077aa2e LEA RSI,[0x82e84d]
+0077aa35 LEA RDI,[0x82e874]
+0077aa3c CALL 0x006e2220

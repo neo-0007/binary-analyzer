@@ -1,0 +1,8 @@
+Operand Value Range Feature
+File: AES_KeySchedule128_2.asm
+-------------------------------
+Byte operands   : 6%
+Word operands   : 0%
+DWord operands  : 0%
+QWord operands  : 32%
+Other operands  : 61%

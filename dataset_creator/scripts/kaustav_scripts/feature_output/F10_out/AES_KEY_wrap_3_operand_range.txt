@@ -1,0 +1,8 @@
+Operand Value Range Feature
+File: AES_KEY_wrap_3.asm
+-------------------------------
+Byte operands   : 8%
+Word operands   : 0%
+DWord operands  : 0%
+QWord operands  : 27%
+Other operands  : 63%

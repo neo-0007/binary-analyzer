@@ -1,0 +1,4 @@
+006df7b0 ENDBR64
+006df7b4 MOV RDX,qword ptr [0x0092e168]
+006df7bb XOR ESI,ESI
+006df7bd JMP 0x006df9c0

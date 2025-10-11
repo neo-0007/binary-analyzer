@@ -1,0 +1,6 @@
+0069e4c0 ENDBR64
+0069e4c4 LEA RAX,[RDI + 0x10]
+0069e4c8 MOV qword ptr [RDI + 0x8],0x0
+0069e4d0 MOV qword ptr [RDI],RAX
+0069e4d3 MOV byte ptr [RDI + 0x10],0x0
+0069e4d7 RET

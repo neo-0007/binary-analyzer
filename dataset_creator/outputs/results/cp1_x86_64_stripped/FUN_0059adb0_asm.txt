@@ -1,0 +1,3 @@
+0059adb0 ENDBR64
+0059adb4 MOV EAX,dword ptr [RDI + 0x4]
+0059adb7 RET

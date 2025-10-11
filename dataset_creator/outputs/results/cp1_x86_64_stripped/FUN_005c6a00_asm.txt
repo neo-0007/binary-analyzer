@@ -1,0 +1,63 @@
+005c6a00 PUSH RBX
+005c6a01 PUSH RBP
+005c6a02 PUSH R12
+005c6a04 PUSH R13
+005c6a06 PUSH R14
+005c6a08 PUSH R15
+005c6a0a SUB RSP,0x98
+005c6a11 MOVQ XMM0,RDI
+005c6a16 MOVQ XMM1,RCX
+005c6a1b MOV qword ptr [RSP + 0x80],R8
+005c6a23 MOV R11D,0x80100
+005c6a29 AND R11D,dword ptr [0x0094b5a0]
+005c6a30 CMP R11D,0x80100
+005c6a37 JZ 0x005c6a80
+005c6a39 MOV RBX,qword ptr [RDX]
+005c6a3c MOV RBP,RDX
+005c6a3f CALL 0x005c76c0
+005c6a44 MOVQ RDI,XMM0
+005c6a49 MOVQ RBP,XMM1
+005c6a4e MOV R8,qword ptr [RSP]
+005c6a52 MOV R9,qword ptr [RSP + 0x8]
+005c6a57 MOV R10,qword ptr [RSP + 0x10]
+005c6a5c MOV R11,qword ptr [RSP + 0x18]
+005c6a61 MOV R12,qword ptr [RSP + 0x20]
+005c6a66 MOV R13,qword ptr [RSP + 0x28]
+005c6a6b MOV R14,qword ptr [RSP + 0x30]
+005c6a70 MOV R15,qword ptr [RSP + 0x38]
+005c6a75 CALL 0x005c7420
+005c6a7a JMP 0x005c6ac9
+005c6a80 MOV RBP,RDX
+005c6a83 MOV RDX,qword ptr [RDX]
+005c6a86 CALL 0x005c7860
+005c6a8b MOVQ RDI,XMM0
+005c6a90 MOVQ RBP,XMM1
+005c6a95 MOV RDX,qword ptr [RSP + 0x80]
+005c6a9d MOV R8,qword ptr [RSP]
+005c6aa1 MOV R9,qword ptr [RSP + 0x8]
+005c6aa6 MOV R10,qword ptr [RSP + 0x10]
+005c6aab MOV R11,qword ptr [RSP + 0x18]
+005c6ab0 MOV R12,qword ptr [RSP + 0x20]
+005c6ab5 MOV R13,qword ptr [RSP + 0x28]
+005c6aba MOV R14,qword ptr [RSP + 0x30]
+005c6abf MOV R15,qword ptr [RSP + 0x38]
+005c6ac4 CALL 0x005c7520
+005c6ac9 ADD R8,qword ptr [RSP + 0x40]
+005c6ace ADC R9,qword ptr [RSP + 0x48]
+005c6ad3 ADC R10,qword ptr [RSP + 0x50]
+005c6ad8 ADC R11,qword ptr [RSP + 0x58]
+005c6add ADC R12,qword ptr [RSP + 0x60]
+005c6ae2 ADC R13,qword ptr [RSP + 0x68]
+005c6ae7 ADC R14,qword ptr [RSP + 0x70]
+005c6aec ADC R15,qword ptr [RSP + 0x78]
+005c6af1 SBB RCX,RCX
+005c6af4 CALL 0x005c7600
+005c6af9 LEA RAX,[RSP + 0xc8]
+005c6b01 MOV R15,qword ptr [RAX + -0x30]
+005c6b05 MOV R14,qword ptr [RAX + -0x28]
+005c6b09 MOV R13,qword ptr [RAX + -0x20]
+005c6b0d MOV R12,qword ptr [RAX + -0x18]
+005c6b11 MOV RBP,qword ptr [RAX + -0x10]
+005c6b15 MOV RBX,qword ptr [RAX + -0x8]
+005c6b19 LEA RSP,[RAX]
+005c6b1c RET

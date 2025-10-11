@@ -1,0 +1,14 @@
+00000000004057ac T aes_decrypt
+00000000004019c5 T aes_decrypt_cbc
+0000000000402014 T aes_decrypt_ccm
+0000000000401c79 T aes_decrypt_ctr
+00000000004051db T aes_encrypt
+00000000004017a1 T aes_encrypt_cbc
+00000000004018bd T aes_encrypt_cbc_mac
+0000000000401cc5 T aes_encrypt_ccm
+0000000000401b43 T aes_encrypt_ctr
+000000000049c120 r aes_invsbox
+000000000040273e T aes_key_setup
+000000000049c020 r aes_sbox
+
+

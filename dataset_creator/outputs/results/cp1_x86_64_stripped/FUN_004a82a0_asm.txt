@@ -1,0 +1,7 @@
+004a82a0 ENDBR64
+004a82a4 MOV RAX,qword ptr [RDX + 0x8]
+004a82a8 ADD RAX,qword ptr [RDI]
+004a82ab MOV R8D,dword ptr [RAX]
+004a82ae MOV dword ptr [RAX],ESI
+004a82b0 MOV EAX,R8D
+004a82b3 RET

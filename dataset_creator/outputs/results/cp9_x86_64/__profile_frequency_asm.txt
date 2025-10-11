@@ -1,0 +1,3 @@
+007b6f00 ENDBR64
+007b6f04 MOV EAX,dword ptr [0x0093dde0]
+007b6f0a RET

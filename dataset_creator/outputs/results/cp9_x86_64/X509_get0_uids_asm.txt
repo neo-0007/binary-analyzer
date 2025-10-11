@@ -1,0 +1,10 @@
+0058ead0 ENDBR64
+0058ead4 TEST RSI,RSI
+0058ead7 JZ 0x0058eae0
+0058ead9 MOV RAX,qword ptr [RDI + 0x58]
+0058eadd MOV qword ptr [RSI],RAX
+0058eae0 TEST RDX,RDX
+0058eae3 JZ 0x0058eaec
+0058eae5 MOV RAX,qword ptr [RDI + 0x60]
+0058eae9 MOV qword ptr [RDX],RAX
+0058eaec RET

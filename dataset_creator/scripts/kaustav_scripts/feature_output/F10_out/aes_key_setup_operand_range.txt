@@ -1,0 +1,8 @@
+Operand Value Range Feature
+File: aes_key_setup.asm
+-------------------------------
+Byte operands   : 9%
+Word operands   : 0%
+DWord operands  : 5%
+QWord operands  : 31%
+Other operands  : 53%

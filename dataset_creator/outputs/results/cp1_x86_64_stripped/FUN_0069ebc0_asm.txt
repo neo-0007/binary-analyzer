@@ -1,0 +1,5 @@
+0069ebc0 ENDBR64
+0069ebc4 MOV RAX,qword ptr [RDI + 0x8]
+0069ebc8 MOV RDX,qword ptr [RDI]
+0069ebcb LEA RAX,[RDX + RAX*0x1 + -0x1]
+0069ebd0 RET

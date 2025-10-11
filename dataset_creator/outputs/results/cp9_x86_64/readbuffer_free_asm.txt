@@ -1,0 +1,27 @@
+005abcc0 ENDBR64
+005abcc4 TEST RDI,RDI
+005abcc7 JZ 0x005abd28
+005abcc9 PUSH RBP
+005abcca LEA RBP,[0x805e22]
+005abcd1 MOV EDX,0x4f
+005abcd6 PUSH RBX
+005abcd7 MOV RBX,RDI
+005abcda MOV RSI,RBP
+005abcdd SUB RSP,0x8
+005abce1 MOV RAX,qword ptr [RDI + 0x40]
+005abce5 MOV RDI,qword ptr [RAX + 0x8]
+005abce9 CALL 0x00419770
+005abcee MOV RDI,qword ptr [RBX + 0x40]
+005abcf2 MOV RSI,RBP
+005abcf5 MOV EDX,0x50
+005abcfa CALL 0x00419770
+005abcff MOV qword ptr [RBX + 0x40],0x0
+005abd07 MOV EAX,0x1
+005abd0c MOV dword ptr [RBX + 0x28],0x0
+005abd13 MOV dword ptr [RBX + 0x30],0x0
+005abd1a ADD RSP,0x8
+005abd1e POP RBX
+005abd1f POP RBP
+005abd20 RET
+005abd28 XOR EAX,EAX
+005abd2a RET

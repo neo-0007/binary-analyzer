@@ -1,0 +1,4 @@
+00635af0 ENDBR64
+00635af4 MOV RSI,qword ptr [RSI]
+00635af7 MOV RDX,qword ptr [RSI + -0x18]
+00635afb JMP 0x00692ac0

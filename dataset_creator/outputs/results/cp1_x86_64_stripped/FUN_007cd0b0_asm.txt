@@ -1,0 +1,7 @@
+007cd0b0 ENDBR64
+007cd0b4 SUB RSP,0x8
+007cd0b8 MOV RDI,qword ptr [0x0094ad00]
+007cd0bf CALL 0x007104f0
+007cd0c4 MOV qword ptr [0x0094ad00],0x0
+007cd0cf ADD RSP,0x8
+007cd0d3 RET

@@ -1,0 +1,4 @@
+00429a10 ENDBR64
+00429a14 MOV RAX,qword ptr [RDI + 0x8]
+00429a18 ADD dword ptr [RAX + 0x10],0x1
+00429a1c RET

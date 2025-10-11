@@ -1,0 +1,3 @@
+006cce90 ENDBR64
+006cce94 MOV qword ptr [RDI + 0x98],RSI
+006cce9b RET

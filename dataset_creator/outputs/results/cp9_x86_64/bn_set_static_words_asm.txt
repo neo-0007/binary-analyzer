@@ -1,0 +1,7 @@
+004af7c0 ENDBR64
+004af7c4 OR dword ptr [RDI + 0x14],0x2
+004af7c8 MOV qword ptr [RDI],RSI
+004af7cb MOV dword ptr [RDI + 0x8],EDX
+004af7ce MOV dword ptr [RDI + 0xc],EDX
+004af7d1 MOV dword ptr [RDI + 0x10],0x0
+004af7d8 JMP 0x004b0800

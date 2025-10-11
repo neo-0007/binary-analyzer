@@ -1,0 +1,8 @@
+0041ca90 ENDBR64
+0041ca94 MOV qword ptr [RDI],RSI
+0041ca97 MOV RAX,RDI
+0041ca9a MOV dword ptr [RDI + 0x8],0x3
+0041caa1 MOV qword ptr [RDI + 0x10],RDX
+0041caa5 MOV qword ptr [RDI + 0x18],0x8
+0041caad MOV qword ptr [RDI + 0x20],-0x1
+0041cab5 RET

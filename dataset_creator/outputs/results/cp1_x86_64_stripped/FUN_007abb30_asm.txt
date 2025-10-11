@@ -1,0 +1,47 @@
+007abb30 ENDBR64
+007abb34 PUSH RBX
+007abb35 MOV RBX,RDI
+007abb38 SUB RSP,0xa0
+007abb3f MOV RAX,qword ptr FS:[0x28]
+007abb48 MOV qword ptr [RSP + 0x98],RAX
+007abb50 XOR EAX,EAX
+007abb52 TEST RSI,RSI
+007abb55 JZ 0x007abbb8
+007abb57 MOV RDI,RSI
+007abb5a CALL 0x00702290
+007abb5f MOV RSI,RSP
+007abb62 MOV EDI,EAX
+007abb64 CALL 0x0076d7f0
+007abb69 MOV R8D,EAX
+007abb6c XOR EAX,EAX
+007abb6e TEST R8D,R8D
+007abb71 JZ 0x007abb90
+007abb73 MOV RDX,qword ptr [RSP + 0x98]
+007abb7b SUB RDX,qword ptr FS:[0x28]
+007abb84 JNZ 0x007abbff
+007abb86 ADD RSP,0xa0
+007abb8d POP RBX
+007abb8e RET
+007abb90 MOV EAX,dword ptr [RSP + 0x18]
+007abb94 AND EAX,0xf000
+007abb99 CMP EAX,0x4000
+007abb9e JZ 0x007abbb8
+007abba0 CMP EAX,0x8000
+007abba5 JZ 0x007abbd0
+007abba7 MOV qword ptr [RBX],-0x1
+007abbae MOV EAX,0x1
+007abbb3 JMP 0x007abb73
+007abbb8 MOV qword ptr [RBX],0x0
+007abbbf MOV EAX,0x1
+007abbc4 JMP 0x007abb73
+007abbd0 MOV RAX,qword ptr [RSP + 0x30]
+007abbd5 MOVDQU XMM0,xmmword ptr [RSP + 0x58]
+007abbdb MOVDQU XMM1,xmmword ptr [RSP + 0x68]
+007abbe1 MOV qword ptr [RBX],RAX
+007abbe4 MOV RAX,qword ptr [RSP + 0x8]
+007abbe9 MOVUPS xmmword ptr [RBX + 0x10],XMM0
+007abbed MOV qword ptr [RBX + 0x8],RAX
+007abbf1 MOV EAX,0x1
+007abbf6 MOVUPS xmmword ptr [RBX + 0x20],XMM1
+007abbfa JMP 0x007abb73
+007abbff CALL 0x00771f60

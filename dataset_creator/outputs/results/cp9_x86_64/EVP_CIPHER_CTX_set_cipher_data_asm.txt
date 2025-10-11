@@ -1,0 +1,4 @@
+0040e3e0 ENDBR64
+0040e3e4 MOV RAX,qword ptr [RDI + 0x78]
+0040e3e8 MOV qword ptr [RDI + 0x78],RSI
+0040e3ec RET

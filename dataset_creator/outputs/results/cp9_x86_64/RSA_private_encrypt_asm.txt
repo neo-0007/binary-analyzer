@@ -1,0 +1,3 @@
+00555ba0 ENDBR64
+00555ba4 MOV RAX,qword ptr [RCX + 0x18]
+00555ba8 JMP qword ptr [RAX + 0x18]

@@ -1,0 +1,4 @@
+File: /home/kaustav/sih2025/bn/binary-analyzer/dataset_creator/workspace/feature_extraction/AES_asm_files/aes_encrypt_ctr.asm
+Total Instructions: 84
+Instructions with Immediate Constants: 370
+Constant Propagation Ratio: 4.4047

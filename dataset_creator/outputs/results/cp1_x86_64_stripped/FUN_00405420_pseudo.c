@@ -1,0 +1,9 @@
+
+void FUN_00405420(void)
+
+{
+  FUN_00624550(&DAT_0093f9f0);
+  FUN_006e93d0(FUN_00624d70,&DAT_0093f9f0,&DAT_0093b168);
+  return;
+}
+

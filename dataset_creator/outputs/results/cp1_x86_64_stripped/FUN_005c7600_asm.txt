@@ -1,0 +1,49 @@
+005c7600 MOV qword ptr [RDI],R8
+005c7603 MOV qword ptr [RDI + 0x8],R9
+005c7607 MOV qword ptr [RDI + 0x10],R10
+005c760b MOV qword ptr [RDI + 0x18],R11
+005c760f MOV qword ptr [RDI + 0x20],R12
+005c7613 MOV qword ptr [RDI + 0x28],R13
+005c7617 MOV qword ptr [RDI + 0x30],R14
+005c761b MOV qword ptr [RDI + 0x38],R15
+005c761f MOV R8,qword ptr [RBP]
+005c7623 MOV R9,qword ptr [RBP + 0x8]
+005c7627 NEG R8
+005c762a NOT R9
+005c762d AND R8,RCX
+005c7630 MOV R10,qword ptr [RBP + 0x10]
+005c7634 AND R9,RCX
+005c7637 NOT R10
+005c763a MOV R11,qword ptr [RBP + 0x18]
+005c763e AND R10,RCX
+005c7641 NOT R11
+005c7644 MOV R12,qword ptr [RBP + 0x20]
+005c7648 AND R11,RCX
+005c764b NOT R12
+005c764e MOV R13,qword ptr [RBP + 0x28]
+005c7652 AND R12,RCX
+005c7655 NOT R13
+005c7658 MOV R14,qword ptr [RBP + 0x30]
+005c765c AND R13,RCX
+005c765f NOT R14
+005c7662 MOV R15,qword ptr [RBP + 0x38]
+005c7666 AND R14,RCX
+005c7669 NOT R15
+005c766c AND R15,RCX
+005c766f ADD R8,qword ptr [RDI]
+005c7672 ADC R9,qword ptr [RDI + 0x8]
+005c7676 ADC R10,qword ptr [RDI + 0x10]
+005c767a ADC R11,qword ptr [RDI + 0x18]
+005c767e ADC R12,qword ptr [RDI + 0x20]
+005c7682 ADC R13,qword ptr [RDI + 0x28]
+005c7686 ADC R14,qword ptr [RDI + 0x30]
+005c768a ADC R15,qword ptr [RDI + 0x38]
+005c768e MOV qword ptr [RDI],R8
+005c7691 MOV qword ptr [RDI + 0x8],R9
+005c7695 MOV qword ptr [RDI + 0x10],R10
+005c7699 MOV qword ptr [RDI + 0x18],R11
+005c769d MOV qword ptr [RDI + 0x20],R12
+005c76a1 MOV qword ptr [RDI + 0x28],R13
+005c76a5 MOV qword ptr [RDI + 0x30],R14
+005c76a9 MOV qword ptr [RDI + 0x38],R15
+005c76ad RET

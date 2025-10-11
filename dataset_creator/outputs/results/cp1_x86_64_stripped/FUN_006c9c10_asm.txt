@@ -1,0 +1,4 @@
+006c9c10 ENDBR64
+006c9c14 MOV RDX,qword ptr [RSI + 0x8]
+006c9c18 MOV RSI,qword ptr [RSI]
+006c9c1b JMP 0x00635bb0

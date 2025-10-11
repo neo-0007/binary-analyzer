@@ -1,0 +1,6 @@
+005a3ca0 ENDBR64
+005a3ca4 MOV RAX,qword ptr [RDI]
+005a3ca7 MOV RDX,qword ptr [RSI]
+005a3caa MOV EAX,dword ptr [RAX]
+005a3cac SUB EAX,dword ptr [RDX]
+005a3cae RET

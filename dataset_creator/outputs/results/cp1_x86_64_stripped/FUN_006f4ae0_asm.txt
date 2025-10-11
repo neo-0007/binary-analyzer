@@ -1,0 +1,34 @@
+006f4ae0 ENDBR64
+006f4ae4 SUB RSP,0xd8
+006f4aeb MOV qword ptr [RSP + 0x30],RDX
+006f4af0 MOV qword ptr [RSP + 0x38],RCX
+006f4af5 MOV qword ptr [RSP + 0x40],R8
+006f4afa MOV qword ptr [RSP + 0x48],R9
+006f4aff TEST AL,AL
+006f4b01 JZ 0x006f4b3a
+006f4b03 MOVAPS xmmword ptr [RSP + 0x50],XMM0
+006f4b08 MOVAPS xmmword ptr [RSP + 0x60],XMM1
+006f4b0d MOVAPS xmmword ptr [RSP + 0x70],XMM2
+006f4b12 MOVAPS xmmword ptr [RSP + 0x80],XMM3
+006f4b1a MOVAPS xmmword ptr [RSP + 0x90],XMM4
+006f4b22 MOVAPS xmmword ptr [RSP + 0xa0],XMM5
+006f4b2a MOVAPS xmmword ptr [RSP + 0xb0],XMM6
+006f4b32 MOVAPS xmmword ptr [RSP + 0xc0],XMM7
+006f4b3a MOV RAX,qword ptr FS:[0x28]
+006f4b43 MOV qword ptr [RSP + 0x18],RAX
+006f4b48 XOR EAX,EAX
+006f4b4a LEA RAX,[RSP + 0xe0]
+006f4b52 MOV RDX,RSP
+006f4b55 XOR ECX,ECX
+006f4b57 MOV qword ptr [RSP + 0x8],RAX
+006f4b5c LEA RAX,[RSP + 0x20]
+006f4b61 MOV dword ptr [RSP],0x10
+006f4b68 MOV dword ptr [RSP + 0x4],0x30
+006f4b70 MOV qword ptr [RSP + 0x10],RAX
+006f4b75 CALL 0x00702740
+006f4b7a MOV RDX,qword ptr [RSP + 0x18]
+006f4b7f SUB RDX,qword ptr FS:[0x28]
+006f4b88 JNZ 0x006f4b92
+006f4b8a ADD RSP,0xd8
+006f4b91 RET
+006f4b92 CALL 0x00771f60

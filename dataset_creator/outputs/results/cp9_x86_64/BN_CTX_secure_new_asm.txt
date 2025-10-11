@@ -1,0 +1,3 @@
+004aeee0 ENDBR64
+004aeee4 XOR EDI,EDI
+004aeee6 JMP 0x004aeec0

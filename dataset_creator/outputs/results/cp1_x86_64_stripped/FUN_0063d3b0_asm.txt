@@ -1,0 +1,5 @@
+0063d3b0 ENDBR64
+0063d3b4 MOV RAX,qword ptr [RSI]
+0063d3b7 CMP qword ptr [RDI],RAX
+0063d3ba SETZ AL
+0063d3bd RET

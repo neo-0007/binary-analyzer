@@ -1,0 +1,4 @@
+006b7be0 ENDBR64
+006b7be4 MOV RCX,qword ptr [RSI + 0x8]
+006b7be8 MOV RSI,qword ptr [RSI]
+006b7beb JMP 0x006b7b70

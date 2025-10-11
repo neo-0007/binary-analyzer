@@ -1,0 +1,18 @@
+0070aed0 ENDBR64
+0070aed4 TEST RSI,RSI
+0070aed7 LEA RAX,[0x7cf6d0]
+0070aede PXOR XMM0,XMM0
+0070aee2 MOV qword ptr [RDI + 0x30],0x0
+0070aeea CMOVZ RSI,RAX
+0070aeee MOVUPS xmmword ptr [RDI + 0x10],XMM0
+0070aef2 MOVUPS xmmword ptr [RDI],XMM0
+0070aef5 MOVUPS xmmword ptr [RDI + 0x20],XMM0
+0070aef9 MOV EAX,dword ptr [RSI]
+0070aefb MOV EDX,dword ptr [RSI + 0x4]
+0070aefe MOV dword ptr [RDI + 0x30],EAX
+0070af01 XOR EAX,EAX
+0070af03 TEST EDX,EDX
+0070af05 SETNZ AL
+0070af08 MOV dword ptr [RDI + 0x1c],EAX
+0070af0b XOR EAX,EAX
+0070af0d RET

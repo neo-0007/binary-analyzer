@@ -1,0 +1,8 @@
+004aeec0 ENDBR64
+004aeec4 SUB RSP,0x8
+004aeec8 CALL 0x004aee10
+004aeecd TEST RAX,RAX
+004aeed0 JZ 0x004aeed9
+004aeed2 MOV dword ptr [RAX + 0x3c],0x8
+004aeed9 ADD RSP,0x8
+004aeedd RET

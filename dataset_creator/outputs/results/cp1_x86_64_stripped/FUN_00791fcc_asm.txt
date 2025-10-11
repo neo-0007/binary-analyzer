@@ -1,0 +1,2 @@
+00791fcc XOR EAX,EAX
+00791fce RET

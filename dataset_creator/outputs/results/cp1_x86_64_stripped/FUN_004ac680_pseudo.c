@@ -1,0 +1,12 @@
+
+void FUN_004ac680(void)
+
+{
+  FUN_004aef30();
+  FUN_00422300(DAT_00942790);
+  DAT_00942790 = 0;
+  FUN_00422300(DAT_00940fb8);
+  DAT_00940fb8 = 0;
+  return;
+}
+

@@ -1,0 +1,3 @@
+004ab670 ENDBR64
+004ab674 MOV dword ptr [RDI + 0x2c],ESI
+004ab677 RET

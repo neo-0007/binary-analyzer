@@ -1,0 +1,2 @@
+0053c770 ENDBR64
+0053c774 JMP qword ptr [RDX]

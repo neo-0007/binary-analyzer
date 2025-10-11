@@ -1,0 +1,7 @@
+00696ea0 ENDBR64
+00696ea4 MOV RAX,qword ptr [RDI + 0x10]
+00696ea8 MOV RDX,qword ptr [RAX + 0x10]
+00696eac MOV qword ptr [RSI],RDX
+00696eaf MOV RAX,qword ptr [RAX + 0x18]
+00696eb3 MOV qword ptr [RSI + 0x8],RAX
+00696eb7 RET

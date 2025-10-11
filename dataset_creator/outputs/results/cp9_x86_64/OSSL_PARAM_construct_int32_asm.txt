@@ -1,0 +1,8 @@
+0041bc20 ENDBR64
+0041bc24 MOV qword ptr [RDI],RSI
+0041bc27 MOV RAX,RDI
+0041bc2a MOV dword ptr [RDI + 0x8],0x1
+0041bc31 MOV qword ptr [RDI + 0x10],RDX
+0041bc35 MOV qword ptr [RDI + 0x18],0x4
+0041bc3d MOV qword ptr [RDI + 0x20],-0x1
+0041bc45 RET

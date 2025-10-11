@@ -1,0 +1,17 @@
+0067b660 ENDBR64
+0067b664 MOV RAX,qword ptr [RDI + 0x10]
+0067b668 MOV RDX,qword ptr [RAX + 0x90]
+0067b66f MOV qword ptr [RSI],RDX
+0067b672 MOV RDX,qword ptr [RAX + 0x98]
+0067b679 MOV qword ptr [RSI + 0x8],RDX
+0067b67d MOV RDX,qword ptr [RAX + 0xa0]
+0067b684 MOV qword ptr [RSI + 0x10],RDX
+0067b688 MOV RDX,qword ptr [RAX + 0xa8]
+0067b68f MOV qword ptr [RSI + 0x18],RDX
+0067b693 MOV RDX,qword ptr [RAX + 0xb0]
+0067b69a MOV qword ptr [RSI + 0x20],RDX
+0067b69e MOV RDX,qword ptr [RAX + 0xb8]
+0067b6a5 MOV qword ptr [RSI + 0x28],RDX
+0067b6a9 MOV RAX,qword ptr [RAX + 0xc0]
+0067b6b0 MOV qword ptr [RSI + 0x30],RAX
+0067b6b4 RET

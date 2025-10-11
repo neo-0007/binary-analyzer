@@ -1,0 +1,48 @@
+004aed80 ENDBR64
+004aed84 PUSH RBP
+004aed85 MOV RBP,RDI
+004aed88 PUSH RBX
+004aed89 MOV RBX,RSI
+004aed8c SUB RSP,0x8
+004aed90 MOVZX EAX,byte ptr [RSI]
+004aed93 CMP AL,0x2d
+004aed95 JNZ 0x004aed9f
+004aed97 MOVZX EAX,byte ptr [RBX + 0x1]
+004aed9b LEA RSI,[RSI + 0x1]
+004aed9f CMP AL,0x30
+004aeda1 JNZ 0x004aedae
+004aeda3 MOVZX EAX,byte ptr [RSI + 0x1]
+004aeda7 AND EAX,0xffffffdf
+004aedaa CMP AL,0x58
+004aedac JZ 0x004aedf0
+004aedae MOV RDI,RBP
+004aedb1 CALL 0x004aeb90
+004aedb6 TEST EAX,EAX
+004aedb8 JZ 0x004aee00
+004aedba CMP byte ptr [RBX],0x2d
+004aedbd MOV EAX,0x1
+004aedc2 JZ 0x004aedd0
+004aedc4 ADD RSP,0x8
+004aedc8 POP RBX
+004aedc9 POP RBP
+004aedca RET
+004aedd0 MOV RDX,qword ptr [RBP]
+004aedd4 MOV EAX,0x1
+004aedd9 MOV ECX,dword ptr [RDX + 0x8]
+004aeddc TEST ECX,ECX
+004aedde JZ 0x004aedc4
+004aede0 MOV dword ptr [RDX + 0x10],0x1
+004aede7 ADD RSP,0x8
+004aedeb POP RBX
+004aedec POP RBP
+004aeded RET
+004aedf0 ADD RSI,0x2
+004aedf4 MOV RDI,RBP
+004aedf7 CALL 0x004ae930
+004aedfc TEST EAX,EAX
+004aedfe JNZ 0x004aedba
+004aee00 ADD RSP,0x8
+004aee04 XOR EAX,EAX
+004aee06 POP RBX
+004aee07 POP RBP
+004aee08 RET

@@ -1,0 +1,3 @@
+005a0ea0 ENDBR64
+005a0ea4 MOV RAX,qword ptr [RDI]
+005a0ea7 RET

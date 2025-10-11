@@ -1,0 +1,3 @@
+0049ef60 ENDBR64
+0049ef64 MOV qword ptr [RDI + 0x108],RSI
+0049ef6b RET

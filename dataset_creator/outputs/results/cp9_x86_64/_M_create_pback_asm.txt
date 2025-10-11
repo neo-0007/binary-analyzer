@@ -1,0 +1,14 @@
+00664280 ENDBR64
+00664284 CMP byte ptr [RDI + 0xc0],0x0
+0066428b JNZ 0x006642c4
+0066428d MOV RAX,qword ptr [RDI + 0x10]
+00664291 MOV byte ptr [RDI + 0xc0],0x1
+00664298 MOV qword ptr [RDI + 0xb0],RAX
+0066429f MOV RAX,qword ptr [RDI + 0x18]
+006642a3 MOV qword ptr [RDI + 0xb8],RAX
+006642aa LEA RAX,[RDI + 0xac]
+006642b1 MOV qword ptr [RDI + 0x8],RAX
+006642b5 MOV qword ptr [RDI + 0x10],RAX
+006642b9 LEA RAX,[RDI + 0xb0]
+006642c0 MOV qword ptr [RDI + 0x18],RAX
+006642c4 RET

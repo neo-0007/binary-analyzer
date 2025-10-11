@@ -1,0 +1,1 @@
+Average Data Dependency Chain Length: 5.87

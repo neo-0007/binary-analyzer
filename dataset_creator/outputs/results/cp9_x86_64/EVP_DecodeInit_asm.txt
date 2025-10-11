@@ -1,0 +1,4 @@
+005f3ba0 ENDBR64
+005f3ba4 MOV qword ptr [RDI],0x0
+005f3bab MOV qword ptr [RDI + 0x58],0x0
+005f3bb3 RET

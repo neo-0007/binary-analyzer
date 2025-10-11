@@ -1,0 +1,3 @@
+0064a430 ENDBR64
+0064a434 MOV RAX,qword ptr [RDI]
+0064a437 JMP qword ptr [RAX + 0x28]

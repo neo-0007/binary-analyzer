@@ -1,0 +1,8 @@
+
+void EVP_PKEY_CTX_set_tls1_prf_md(long param_1,undefined8 param_2)
+
+{
+  evp_pkey_ctx_set_md_constprop_0(param_1,param_2,*(long *)(param_1 + 0x30) == 0,0x800,0x1000);
+  return;
+}
+

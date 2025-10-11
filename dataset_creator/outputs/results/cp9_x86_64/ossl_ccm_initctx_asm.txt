@@ -1,0 +1,9 @@
+004856c0 ENDBR64
+004856c4 SHR RSI,0x3
+004856c8 AND byte ptr [RDI],0xe1
+004856cb MOV qword ptr [RDI + 0x18],RSI
+004856cf MOV qword ptr [RDI + 0x8],0x8
+004856d7 MOV qword ptr [RDI + 0x10],0xc
+004856df MOV qword ptr [RDI + 0x20],-0x1
+004856e7 MOV qword ptr [RDI + 0x90],RDX
+004856ee RET

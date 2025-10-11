@@ -1,0 +1,68 @@
+00668ea0 ENDBR64
+00668ea4 PUSH R14
+00668ea6 PUSH R13
+00668ea8 PUSH R12
+00668eaa MOV R12,RDX
+00668ead PUSH RBP
+00668eae MOV RBP,RDI
+00668eb1 PUSH RBX
+00668eb2 MOV RAX,qword ptr [RSI + 0x10]
+00668eb6 MOV RBX,RSI
+00668eb9 MOV RCX,qword ptr [RSI + 0x18]
+00668ebd MOV RDX,qword ptr [RAX + -0x18]
+00668ec1 MOV qword ptr [RDI],RAX
+00668ec4 MOV qword ptr [RDI + RDX*0x1],RCX
+00668ec8 MOV RDX,qword ptr [R12 + 0x8]
+00668ecd MOV qword ptr [RDI + 0x8],RDX
+00668ed1 MOV R13,qword ptr [RAX + -0x18]
+00668ed5 MOV RAX,qword ptr [R12]
+00668ed9 ADD R13,RDI
+00668edc MOV R14,qword ptr [RAX + -0x18]
+00668ee0 MOV RDI,R13
+00668ee3 ADD R14,R12
+00668ee6 MOV RSI,R14
+00668ee9 CALL 0x006703b0
+00668eee LEA RSI,[R13 + 0xd0]
+00668ef5 MOV RDI,R13
+00668ef8 CALL 0x0066f990
+00668efd MOV RAX,qword ptr [R14 + 0xd8]
+00668f04 LEA RSI,[R12 + 0x18]
+00668f09 MOV qword ptr [R13 + 0xe8],0x0
+00668f14 MOV qword ptr [R14 + 0xd8],0x0
+00668f1f MOV qword ptr [R13 + 0xd8],RAX
+00668f26 MOV EAX,dword ptr [R14 + 0xe0]
+00668f2d MOV RDX,qword ptr [RBX + 0x28]
+00668f31 MOV dword ptr [R13 + 0xe0],EAX
+00668f38 MOVZX EAX,byte ptr [R14 + 0xe4]
+00668f40 MOV byte ptr [R13 + 0xe4],AL
+00668f47 MOV RAX,qword ptr [RBX + 0x20]
+00668f4b LEA R13,[RBP + 0x18]
+00668f4f MOV qword ptr [R12 + 0x8],0x0
+00668f58 MOV RDI,R13
+00668f5b MOV qword ptr [RBP + 0x10],RAX
+00668f5f MOV RAX,qword ptr [RAX + -0x18]
+00668f63 MOV qword ptr [RBP + RAX*0x1 + 0x10],RDX
+00668f68 MOV RAX,qword ptr [RBX + 0x8]
+00668f6c MOV RDX,qword ptr [RBX + 0x30]
+00668f70 MOV qword ptr [RBP],RAX
+00668f74 MOV RAX,qword ptr [RAX + -0x18]
+00668f78 MOV qword ptr [RBP + RAX*0x1],RDX
+00668f7d MOV RAX,qword ptr [RBX + 0x38]
+00668f81 MOV qword ptr [RBP + 0x10],RAX
+00668f85 MOV RAX,qword ptr [RBX]
+00668f88 MOV RDX,qword ptr [RBX + 0x40]
+00668f8c MOV qword ptr [RBP],RAX
+00668f90 MOV RAX,qword ptr [RAX + -0x18]
+00668f94 MOV qword ptr [RBP + RAX*0x1],RDX
+00668f99 MOV RAX,qword ptr [RBX + 0x48]
+00668f9d MOV qword ptr [RBP + 0x10],RAX
+00668fa1 CALL 0x00667650
+00668fa6 MOV RAX,qword ptr [RBP]
+00668faa MOV RAX,qword ptr [RAX + -0x18]
+00668fae MOV qword ptr [RBP + RAX*0x1 + 0xe8],R13
+00668fb6 POP RBX
+00668fb7 POP RBP
+00668fb8 POP R12
+00668fba POP R13
+00668fbc POP R14
+00668fbe RET

@@ -1,0 +1,29 @@
+007acd40 ENDBR64
+007acd44 CMP qword ptr [RDX + 0x30],0x8
+007acd49 MOV RAX,RDX
+007acd4c JNZ 0x007acda6
+007acd4e MOV R8,qword ptr [RDX + 0x28]
+007acd52 CMP R8,0xc
+007acd56 JBE 0x007acda6
+007acd58 MOV RDX,qword ptr [RDI]
+007acd5b MOV ESI,0xc
+007acd60 ADD RDX,qword ptr [RAX + 0x10]
+007acd64 SUB RSI,RDX
+007acd67 JMP 0x007acd90
+007acd70 MOV ECX,dword ptr [RDX + 0x4]
+007acd73 ADD RAX,0x13
+007acd77 AND RAX,-0x8
+007acd7b LEA RAX,[RAX + RCX*0x1 + 0x7]
+007acd80 AND RAX,-0x8
+007acd84 ADD RDX,RAX
+007acd87 LEA RAX,[RDX + RSI*0x1]
+007acd8b CMP RAX,R8
+007acd8e JNC 0x007acda6
+007acd90 MOV EAX,dword ptr [RDX]
+007acd92 CMP EAX,0x4
+007acd95 JNZ 0x007acd70
+007acd97 CMP dword ptr [RDX + 0x8],0x5
+007acd9b JNZ 0x007acd70
+007acd9d CMP dword ptr [RDX + 0xc],0x554e47
+007acda4 JNZ 0x007acd70
+007acda6 RET

@@ -1,0 +1,3 @@
+006dda70 ENDBR64
+006dda74 MOV RAX,qword ptr [0x00946100]
+006dda7b RET

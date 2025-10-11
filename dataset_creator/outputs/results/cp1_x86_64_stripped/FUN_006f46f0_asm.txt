@@ -1,0 +1,10 @@
+006f46f0 ENDBR64
+006f46f4 ADD SI,0x3fff
+006f46f9 MOV RAX,qword ptr [RDI]
+006f46fc SHL EDX,0xf
+006f46ff AND SI,0x7fff
+006f4704 OR ESI,EDX
+006f4706 MOV qword ptr [RSP + -0x18],RAX
+006f470b MOV word ptr [RSP + -0x10],SI
+006f4710 FLD extended double ptr [RSP + -0x18]
+006f4714 RET

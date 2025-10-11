@@ -1,0 +1,3 @@
+005abaf0 ENDBR64
+005abaf4 XOR EAX,EAX
+005abaf6 RET

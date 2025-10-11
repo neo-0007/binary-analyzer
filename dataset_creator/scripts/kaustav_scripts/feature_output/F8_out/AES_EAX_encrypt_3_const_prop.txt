@@ -1,0 +1,4 @@
+File: /home/kaustav/sih2025/bn/binary-analyzer/dataset_creator/workspace/feature_extraction/AES_asm_files/AES_EAX_encrypt_3.asm
+Total Instructions: 94
+Instructions with Immediate Constants: 416
+Constant Propagation Ratio: 4.4255

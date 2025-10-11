@@ -1,0 +1,4 @@
+004b7b50 ENDBR64
+004b7b54 MOV dword ptr [RDI + 0x10],0x0
+004b7b5b MOV dword ptr [RDI + 0x8],0x0
+004b7b62 RET

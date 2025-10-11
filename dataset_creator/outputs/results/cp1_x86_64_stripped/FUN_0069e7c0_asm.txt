@@ -1,0 +1,6 @@
+0069e7c0 ENDBR64
+0069e7c4 MOV RDX,qword ptr [RSI]
+0069e7c7 ADD RDX,qword ptr [RSI + 0x8]
+0069e7cb MOV RAX,RDI
+0069e7ce MOV qword ptr [RDI],RDX
+0069e7d1 RET

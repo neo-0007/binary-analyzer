@@ -1,0 +1,2 @@
+004041ee MOV qword ptr [RSP + 0x8],RBX
+004041f3 JMP 0x0040414d

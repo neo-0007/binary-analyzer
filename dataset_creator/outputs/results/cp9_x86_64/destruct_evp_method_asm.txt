@@ -1,0 +1,2 @@
+0040cc30 ENDBR64
+0040cc34 JMP qword ptr [RSI + 0x40]

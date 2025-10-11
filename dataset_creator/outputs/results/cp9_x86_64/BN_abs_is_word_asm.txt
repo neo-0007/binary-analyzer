@@ -1,0 +1,15 @@
+004afee0 ENDBR64
+004afee4 MOV EAX,dword ptr [RDI + 0x8]
+004afee7 CMP EAX,0x1
+004afeea JZ 0x004aff00
+004afeec TEST RSI,RSI
+004afeef SETZ DL
+004afef2 TEST EAX,EAX
+004afef4 SETZ AL
+004afef7 MOVZX EAX,AL
+004afefa AND EAX,EDX
+004afefc RET
+004aff00 MOV RDX,qword ptr [RDI]
+004aff03 CMP qword ptr [RDX],RSI
+004aff06 JNZ 0x004afeec
+004aff08 RET

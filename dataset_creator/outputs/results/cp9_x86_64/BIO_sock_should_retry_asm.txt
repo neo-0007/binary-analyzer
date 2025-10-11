@@ -1,0 +1,11 @@
+004adfa0 ENDBR64
+004adfa4 ADD EDI,0x1
+004adfa7 CMP EDI,0x1
+004adfaa JBE 0x004adfb0
+004adfac XOR EAX,EAX
+004adfae RET
+004adfb0 SUB RSP,0x8
+004adfb4 CALL 0x006c8cf0
+004adfb9 MOV EDI,dword ptr [RAX]
+004adfbb ADD RSP,0x8
+004adfbf JMP 0x004adf60

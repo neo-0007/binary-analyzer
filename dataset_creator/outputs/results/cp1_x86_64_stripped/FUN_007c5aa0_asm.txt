@@ -1,0 +1,53 @@
+007c5aa0 MOVZX EAX,word ptr [RDI]
+007c5aa3 CMP AX,word ptr [RSI]
+007c5aa6 JZ 0x007c5b00
+007c5aa8 CMP AX,0x2
+007c5aac JZ 0x007c5ae8
+007c5aae MOVZX ECX,word ptr [RSI + 0x2]
+007c5ab2 XOR EAX,EAX
+007c5ab4 CMP word ptr [RDI + 0x2],CX
+007c5ab8 JZ 0x007c5ac0
+007c5aba RET
+007c5ac0 MOV ECX,dword ptr [RDI + 0x8]
+007c5ac3 TEST ECX,ECX
+007c5ac5 JNZ 0x007c5aba
+007c5ac7 MOV EDX,dword ptr [RDI + 0xc]
+007c5aca TEST EDX,EDX
+007c5acc JNZ 0x007c5aba
+007c5ace CMP dword ptr [RDI + 0x10],0xffff0000
+007c5ad5 JNZ 0x007c5aba
+007c5ad7 MOV EAX,dword ptr [RSI + 0x4]
+007c5ada CMP dword ptr [RDI + 0x14],EAX
+007c5add SETZ AL
+007c5ae0 MOVZX EAX,AL
+007c5ae3 RET
+007c5ae8 MOV RAX,RDI
+007c5aeb MOV RDI,RSI
+007c5aee MOV RSI,RAX
+007c5af1 XOR EAX,EAX
+007c5af3 MOVZX ECX,word ptr [RSI + 0x2]
+007c5af7 CMP word ptr [RDI + 0x2],CX
+007c5afb JNZ 0x007c5aba
+007c5afd JMP 0x007c5ac0
+007c5b00 CMP AX,0x2
+007c5b04 MOVZX ECX,word ptr [RDI + 0x2]
+007c5b08 MOVZX EDX,word ptr [RSI + 0x2]
+007c5b0c MOV EAX,0x0
+007c5b11 JZ 0x007c5b38
+007c5b13 CMP CX,DX
+007c5b16 JNZ 0x007c5aba
+007c5b18 MOV RDX,qword ptr [RDI + 0x8]
+007c5b1c MOV RAX,qword ptr [RDI + 0x10]
+007c5b20 XOR RDX,qword ptr [RSI + 0x8]
+007c5b24 XOR RAX,qword ptr [RSI + 0x10]
+007c5b28 OR RAX,RDX
+007c5b2b SETZ AL
+007c5b2e MOVZX EAX,AL
+007c5b31 RET
+007c5b38 CMP CX,DX
+007c5b3b JNZ 0x007c5aba
+007c5b41 MOV EAX,dword ptr [RSI + 0x4]
+007c5b44 CMP dword ptr [RDI + 0x4],EAX
+007c5b47 SETZ AL
+007c5b4a MOVZX EAX,AL
+007c5b4d RET

@@ -1,0 +1,19 @@
+006c1070 ENDBR64
+006c1074 MOV byte ptr [0x00938610],0x8
+006c107b MOV byte ptr [0x00938611],0x8
+006c1082 MOV byte ptr [0x00938612],0x8
+006c1089 MOV byte ptr [0x00938613],0x8
+006c1090 MOV byte ptr [0x00938614],0x8
+006c1097 MOV byte ptr [0x00938615],0x8
+006c109e MOV byte ptr [0x00938616],0x8
+006c10a5 MOV byte ptr [0x00938617],0x8
+006c10ac MOV byte ptr [0x00938618],0x8
+006c10b3 MOV byte ptr [0x00938619],0x8
+006c10ba MOV byte ptr [0x0093861a],0x8
+006c10c1 MOV byte ptr [0x0093861b],0x8
+006c10c8 MOV byte ptr [0x0093861c],0x8
+006c10cf MOV byte ptr [0x0093861d],0x8
+006c10d6 MOV byte ptr [0x0093861e],0x8
+006c10dd MOV byte ptr [0x0093861f],0x8
+006c10e4 MOV byte ptr [0x00938620],0x8
+006c10eb RET

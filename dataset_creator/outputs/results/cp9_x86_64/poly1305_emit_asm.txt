@@ -1,0 +1,16 @@
+0054bcc0 MOV R8,qword ptr [RDI]
+0054bcc3 MOV R9,qword ptr [RDI + 0x8]
+0054bcc7 MOV R10,qword ptr [RDI + 0x10]
+0054bccb MOV RAX,R8
+0054bcce ADD R8,0x5
+0054bcd2 MOV RCX,R9
+0054bcd5 ADC R9,0x0
+0054bcd9 ADC R10,0x0
+0054bcdd SHR R10,0x2
+0054bce1 CMOVNZ RAX,R8
+0054bce5 CMOVNZ RCX,R9
+0054bce9 ADD RAX,qword ptr [RDX]
+0054bcec ADC RCX,qword ptr [RDX + 0x8]
+0054bcf0 MOV qword ptr [RSI],RAX
+0054bcf3 MOV qword ptr [RSI + 0x8],RCX
+0054bcf7 RET

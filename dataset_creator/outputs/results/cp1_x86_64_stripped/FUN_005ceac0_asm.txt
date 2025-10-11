@@ -1,0 +1,10 @@
+005ceac0 ENDBR64
+005ceac4 PUSH RBX
+005ceac5 MOV RBX,RDI
+005ceac8 MOV RDI,qword ptr [RDI + 0x40]
+005ceacc CALL 0x004b7fa0
+005cead1 MOV RDI,qword ptr [RBX + 0x60]
+005cead5 CALL 0x004b7fa0
+005ceada MOV RDI,qword ptr [RBX + 0x68]
+005ceade POP RBX
+005ceadf JMP 0x004b7fa0

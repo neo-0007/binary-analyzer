@@ -1,0 +1,25 @@
+006fda10 ENDBR64
+006fda14 MOV EDX,dword ptr [0x0093991c]
+006fda1a OR ESI,0xfbad0000
+006fda20 XOR EAX,EAX
+006fda22 PXOR XMM0,XMM0
+006fda26 MOV dword ptr [RDI],ESI
+006fda28 TEST EDX,EDX
+006fda2a MOV qword ptr [RDI + 0x68],0x0
+006fda32 SETNZ AL
+006fda35 XOR ECX,ECX
+006fda37 MOVUPS xmmword ptr [RDI + 0x8],XMM0
+006fda3b SHL EAX,0x7
+006fda3e MOV word ptr [RDI + 0x80],CX
+006fda45 MOV dword ptr [RDI + 0x74],EAX
+006fda48 MOV RAX,qword ptr [RDI + 0x88]
+006fda4f MOVUPS xmmword ptr [RDI + 0x18],XMM0
+006fda53 MOVUPS xmmword ptr [RDI + 0x28],XMM0
+006fda57 MOVUPS xmmword ptr [RDI + 0x38],XMM0
+006fda5b MOVUPS xmmword ptr [RDI + 0x48],XMM0
+006fda5f MOVUPS xmmword ptr [RDI + 0x58],XMM0
+006fda63 TEST RAX,RAX
+006fda66 JZ 0x006fda77
+006fda68 MOV qword ptr [RAX],0x0
+006fda6f MOV qword ptr [RAX + 0x8],0x0
+006fda77 RET

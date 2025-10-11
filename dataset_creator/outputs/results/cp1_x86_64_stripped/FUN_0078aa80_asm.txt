@@ -1,0 +1,183 @@
+0078aa80 ENDBR64
+0078aa84 SUB RSP,0x20
+0078aa88 MOV qword ptr [RSP],RBX
+0078aa8c MOV qword ptr [RSP + 0x8],RAX
+0078aa91 MOV RBX,RSP
+0078aa94 AND RSP,-0x40
+0078aa98 SUB RSP,0x380
+0078aa9f MOV qword ptr [RBX + 0x18],RSP
+0078aaa3 MOV qword ptr [RSP],RDX
+0078aaa7 MOV qword ptr [RSP + 0x8],R8
+0078aaac MOV qword ptr [RSP + 0x10],R9
+0078aab1 MOV qword ptr [RSP + 0x18],RCX
+0078aab6 MOV qword ptr [RSP + 0x20],RSI
+0078aabb MOV qword ptr [RSP + 0x28],RDI
+0078aac0 MOV qword ptr [RSP + 0x30],RBP
+0078aac5 LEA RAX,[RBX + 0x30]
+0078aac9 MOV qword ptr [RSP + 0x38],RAX
+0078aace MOVAPS xmmword ptr [RSP + 0x40],XMM0
+0078aad3 MOVAPS xmmword ptr [RSP + 0x50],XMM1
+0078aad8 MOVAPS xmmword ptr [RSP + 0x60],XMM2
+0078aadd MOVAPS xmmword ptr [RSP + 0x70],XMM3
+0078aae2 MOVAPS xmmword ptr [RSP + 0x80],XMM4
+0078aaea MOVAPS xmmword ptr [RSP + 0x90],XMM5
+0078aaf2 MOVAPS xmmword ptr [RSP + 0xa0],XMM6
+0078aafa MOVAPS xmmword ptr [RSP + 0xb0],XMM7
+0078ab02 VMOVDQA64 zmmword ptr [RSP + 0xc0],ZMM0
+0078ab0a VMOVDQA64 zmmword ptr [RSP + 0x100],ZMM1
+0078ab12 VMOVDQA64 zmmword ptr [RSP + 0x140],ZMM2
+0078ab1a VMOVDQA64 zmmword ptr [RSP + 0x180],ZMM3
+0078ab22 VMOVDQA64 zmmword ptr [RSP + 0x1c0],ZMM4
+0078ab2a VMOVDQA64 zmmword ptr [RSP + 0x200],ZMM5
+0078ab32 VMOVDQA64 zmmword ptr [RSP + 0x240],ZMM6
+0078ab3a VMOVDQA64 zmmword ptr [RSP + 0x280],ZMM7
+0078ab42 VMOVDQA xmmword ptr [RSP + 0x300],XMM0
+0078ab4b VMOVDQA xmmword ptr [RSP + 0x310],XMM1
+0078ab54 VMOVDQA xmmword ptr [RSP + 0x320],XMM2
+0078ab5d VMOVDQA xmmword ptr [RSP + 0x330],XMM3
+0078ab66 VMOVDQA xmmword ptr [RSP + 0x340],XMM4
+0078ab6f VMOVDQA xmmword ptr [RSP + 0x350],XMM5
+0078ab78 VMOVDQA xmmword ptr [RSP + 0x360],XMM6
+0078ab81 VMOVDQA xmmword ptr [RSP + 0x370],XMM7
+0078ab8a MOV RCX,RSP
+0078ab8d MOV RDX,qword ptr [RBX + 0x30]
+0078ab91 MOV RSI,qword ptr [RBX + 0x28]
+0078ab95 MOV RDI,qword ptr [RBX + 0x20]
+0078ab99 LEA R8,[RBX + 0x10]
+0078ab9d CALL 0x007ba770
+0078aba2 MOV R11,RAX
+0078aba5 MOV RAX,qword ptr [RBX + 0x8]
+0078aba9 MOV RDX,qword ptr [RSP]
+0078abad MOV R8,qword ptr [RSP + 0x8]
+0078abb2 MOV R9,qword ptr [RSP + 0x10]
+0078abb7 MOVAPS XMM0,xmmword ptr [RSP + 0x40]
+0078abbc MOVAPS XMM1,xmmword ptr [RSP + 0x50]
+0078abc1 MOVAPS XMM2,xmmword ptr [RSP + 0x60]
+0078abc6 MOVAPS XMM3,xmmword ptr [RSP + 0x70]
+0078abcb MOVAPS XMM4,xmmword ptr [RSP + 0x80]
+0078abd3 MOVAPS XMM5,xmmword ptr [RSP + 0x90]
+0078abdb MOVAPS XMM6,xmmword ptr [RSP + 0xa0]
+0078abe3 MOVAPS XMM7,xmmword ptr [RSP + 0xb0]
+0078abeb VPCMPEQQ XMM8,XMM0,xmmword ptr [RSP + 0x300]
+0078abf5 VPMOVMSKB ESI,XMM8
+0078abfa CMP ESI,0xffff
+0078ac00 JZ 0x0078ac0d
+0078ac02 VMOVDQA xmmword ptr [RSP + 0xc0],XMM0
+0078ac0b JMP 0x0078ac1b
+0078ac0d VMOVDQA64 ZMM0,zmmword ptr [RSP + 0xc0]
+0078ac15 VMOVDQA xmmword ptr [RSP + 0x40],XMM0
+0078ac1b VPCMPEQQ XMM8,XMM1,xmmword ptr [RSP + 0x310]
+0078ac25 VPMOVMSKB ESI,XMM8
+0078ac2a CMP ESI,0xffff
+0078ac30 JZ 0x0078ac3d
+0078ac32 VMOVDQA xmmword ptr [RSP + 0x100],XMM1
+0078ac3b JMP 0x0078ac4b
+0078ac3d VMOVDQA64 ZMM1,zmmword ptr [RSP + 0x100]
+0078ac45 VMOVDQA xmmword ptr [RSP + 0x50],XMM1
+0078ac4b VPCMPEQQ XMM8,XMM2,xmmword ptr [RSP + 0x320]
+0078ac55 VPMOVMSKB ESI,XMM8
+0078ac5a CMP ESI,0xffff
+0078ac60 JZ 0x0078ac6d
+0078ac62 VMOVDQA xmmword ptr [RSP + 0x140],XMM2
+0078ac6b JMP 0x0078ac7b
+0078ac6d VMOVDQA64 ZMM2,zmmword ptr [RSP + 0x140]
+0078ac75 VMOVDQA xmmword ptr [RSP + 0x60],XMM2
+0078ac7b VPCMPEQQ XMM8,XMM3,xmmword ptr [RSP + 0x330]
+0078ac85 VPMOVMSKB ESI,XMM8
+0078ac8a CMP ESI,0xffff
+0078ac90 JZ 0x0078ac9d
+0078ac92 VMOVDQA xmmword ptr [RSP + 0x180],XMM3
+0078ac9b JMP 0x0078acab
+0078ac9d VMOVDQA64 ZMM3,zmmword ptr [RSP + 0x180]
+0078aca5 VMOVDQA xmmword ptr [RSP + 0x70],XMM3
+0078acab VPCMPEQQ XMM8,XMM4,xmmword ptr [RSP + 0x340]
+0078acb5 VPMOVMSKB ESI,XMM8
+0078acba CMP ESI,0xffff
+0078acc0 JZ 0x0078accd
+0078acc2 VMOVDQA xmmword ptr [RSP + 0x1c0],XMM4
+0078accb JMP 0x0078acde
+0078accd VMOVDQA64 ZMM4,zmmword ptr [RSP + 0x1c0]
+0078acd5 VMOVDQA xmmword ptr [RSP + 0x80],XMM4
+0078acde VPCMPEQQ XMM8,XMM5,xmmword ptr [RSP + 0x350]
+0078ace8 VPMOVMSKB ESI,XMM8
+0078aced CMP ESI,0xffff
+0078acf3 JZ 0x0078ad00
+0078acf5 VMOVDQA xmmword ptr [RSP + 0x200],XMM5
+0078acfe JMP 0x0078ad11
+0078ad00 VMOVDQA64 ZMM5,zmmword ptr [RSP + 0x200]
+0078ad08 VMOVDQA xmmword ptr [RSP + 0x90],XMM5
+0078ad11 VPCMPEQQ XMM8,XMM6,xmmword ptr [RSP + 0x360]
+0078ad1b VPMOVMSKB ESI,XMM8
+0078ad20 CMP ESI,0xffff
+0078ad26 JZ 0x0078ad33
+0078ad28 VMOVDQA xmmword ptr [RSP + 0x240],XMM6
+0078ad31 JMP 0x0078ad44
+0078ad33 VMOVDQA64 ZMM6,zmmword ptr [RSP + 0x240]
+0078ad3b VMOVDQA xmmword ptr [RSP + 0xa0],XMM6
+0078ad44 VPCMPEQQ XMM8,XMM7,xmmword ptr [RSP + 0x370]
+0078ad4e VPMOVMSKB ESI,XMM8
+0078ad53 CMP ESI,0xffff
+0078ad59 JZ 0x0078ad66
+0078ad5b VMOVDQA xmmword ptr [RSP + 0x280],XMM7
+0078ad64 JMP 0x0078ad77
+0078ad66 VMOVDQA64 ZMM7,zmmword ptr [RSP + 0x280]
+0078ad6e VMOVDQA xmmword ptr [RSP + 0xb0],XMM7
+0078ad77 MOV R10,qword ptr [RBX + 0x10]
+0078ad7b TEST R10,R10
+0078ad7e JNS 0x0078ad9d
+0078ad80 MOV RCX,qword ptr [RSP + 0x18]
+0078ad85 MOV RSI,qword ptr [RSP + 0x20]
+0078ad8a MOV RDI,qword ptr [RSP + 0x28]
+0078ad8f MOV RSP,RBX
+0078ad92 MOV RBX,qword ptr [RSP]
+0078ad96 ADD RSP,0x30
+0078ad9a JMP R11
+0078ad9d LEA RSI,[RBX + 0x38]
+0078ada1 ADD R10,0x8
+0078ada5 AND R10,-0x10
+0078ada9 MOV RCX,R10
+0078adac SUB RSP,R10
+0078adaf MOV RDI,RSP
+0078adb2 SHR RCX,0x3
+0078adb6 MOVSQ.REP RDI,RSI
+0078adb9 MOV RCX,qword ptr [RDI + 0x18]
+0078adbd MOV RSI,qword ptr [RDI + 0x20]
+0078adc1 MOV RDI,qword ptr [RDI + 0x28]
+0078adc5 CALL R11
+0078adc8 MOV RSP,qword ptr [RBX + 0x18]
+0078adcc SUB RSP,0x110
+0078add3 MOV RCX,RSP
+0078add6 MOV qword ptr [RCX],RAX
+0078add9 MOV qword ptr [RCX + 0x8],RDX
+0078addd MOVAPS xmmword ptr [RCX + 0x10],XMM0
+0078ade1 MOVAPS xmmword ptr [RCX + 0x20],XMM1
+0078ade5 VMOVDQA64 zmmword ptr [RCX + 0x50],ZMM0
+0078adef VMOVDQA64 zmmword ptr [RCX + 0x90],ZMM1
+0078adf9 VMOVDQA xmmword ptr [RCX + 0xf0],XMM0
+0078ae01 VMOVDQA xmmword ptr [RCX + 0x100],XMM1
+0078ae09 FSTP extended double ptr [RCX + 0x30]
+0078ae0c FSTP extended double ptr [RCX + 0x40]
+0078ae0f MOV RDX,qword ptr [RBX + 0x18]
+0078ae13 MOV RSI,qword ptr [RBX + 0x28]
+0078ae17 MOV RDI,qword ptr [RBX + 0x20]
+0078ae1b CALL 0x0078f3f0
+0078ae20 MOV RAX,qword ptr [RSP]
+0078ae24 MOV RDX,qword ptr [RSP + 0x8]
+0078ae29 MOVAPS XMM0,xmmword ptr [RSP + 0x10]
+0078ae2e MOVAPS XMM1,xmmword ptr [RSP + 0x20]
+0078ae33 VPCMPEQQ XMM2,XMM0,xmmword ptr [RSP + 0xf0]
+0078ae3d VPMOVMSKB ESI,XMM2
+0078ae41 CMP ESI,0xffff
+0078ae47 JNZ 0x0078ae54
+0078ae49 VMOVDQA64 ZMM0,zmmword ptr [RSP + 0x50]
+0078ae54 VPCMPEQQ XMM2,XMM1,xmmword ptr [RSP + 0x100]
+0078ae5e VPMOVMSKB ESI,XMM2
+0078ae62 CMP ESI,0xffff
+0078ae68 JNZ 0x0078ae75
+0078ae6a VMOVDQA64 ZMM1,zmmword ptr [RSP + 0x90]
+0078ae75 FLD extended double ptr [RSP + 0x40]
+0078ae79 FLD extended double ptr [RSP + 0x30]
+0078ae7d MOV RSP,RBX
+0078ae80 MOV RBX,qword ptr [RSP]
+0078ae84 ADD RSP,0x30
+0078ae88 RET

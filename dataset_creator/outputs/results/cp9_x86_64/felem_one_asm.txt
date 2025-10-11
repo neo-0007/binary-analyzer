@@ -1,0 +1,11 @@
+004f86d0 ENDBR64
+004f86d4 MOV qword ptr [RDI],0x1
+004f86db MOV qword ptr [RDI + 0x8],0x0
+004f86e3 MOV qword ptr [RDI + 0x10],0x0
+004f86eb MOV qword ptr [RDI + 0x18],0x0
+004f86f3 MOV qword ptr [RDI + 0x20],0x0
+004f86fb MOV qword ptr [RDI + 0x28],0x0
+004f8703 MOV qword ptr [RDI + 0x30],0x0
+004f870b MOV qword ptr [RDI + 0x38],0x0
+004f8713 MOV qword ptr [RDI + 0x40],0x0
+004f871b RET

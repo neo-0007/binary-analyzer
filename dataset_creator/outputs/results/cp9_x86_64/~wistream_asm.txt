@@ -1,0 +1,8 @@
+00671f20 ENDBR64
+00671f24 MOV RAX,qword ptr [RSI]
+00671f27 MOV qword ptr [RDI],RAX
+00671f2a MOV RAX,qword ptr [RAX + -0x18]
+00671f2e MOV RDX,qword ptr [RSI + 0x8]
+00671f32 MOV qword ptr [RDI + RAX*0x1],RDX
+00671f36 MOV qword ptr [RDI + 0x8],0x0
+00671f3e RET

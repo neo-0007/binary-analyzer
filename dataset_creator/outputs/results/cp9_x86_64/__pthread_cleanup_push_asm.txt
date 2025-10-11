@@ -1,0 +1,7 @@
+00798e80 ENDBR64
+00798e84 MOV qword ptr [RDI],RSI
+00798e87 MOV qword ptr [RDI + 0x8],RDX
+00798e8b MOV RAX,qword ptr FS:[0x2f8]
+00798e94 MOV qword ptr [RDI + 0x18],RAX
+00798e98 MOV qword ptr FS:[0x2f8],RDI
+00798ea1 RET

@@ -1,0 +1,8 @@
+Operand Value Range Feature
+File: AES_CBC_decrypt_buffer_4.asm
+-------------------------------
+Byte operands   : 5%
+Word operands   : 0%
+DWord operands  : 0%
+QWord operands  : 33%
+Other operands  : 61%

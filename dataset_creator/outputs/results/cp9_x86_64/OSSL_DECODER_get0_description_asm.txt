@@ -1,0 +1,4 @@
+005090a0 ENDBR64
+005090a4 MOV RAX,qword ptr [RDI + 0x18]
+005090a8 MOV RAX,qword ptr [RAX + 0x18]
+005090ac RET

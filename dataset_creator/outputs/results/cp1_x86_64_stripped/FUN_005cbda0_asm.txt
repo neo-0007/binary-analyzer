@@ -1,0 +1,10 @@
+005cbda0 ENDBR64
+005cbda4 MOV RAX,qword ptr [0x009427c0]
+005cbdab LEA RCX,[RDI + RDI*0x2]
+005cbdaf LEA RAX,[RAX + RCX*0x8]
+005cbdb3 MOV RCX,qword ptr [RAX]
+005cbdb6 MOV qword ptr [RSI],RCX
+005cbdb9 MOV RCX,qword ptr [RAX + 0x10]
+005cbdbd MOV RAX,qword ptr [RAX + 0x8]
+005cbdc1 MOV qword ptr [RDX],RCX
+005cbdc4 RET

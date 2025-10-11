@@ -1,0 +1,7 @@
+00479b60 ENDBR64
+00479b64 MOV dword ptr [0x00933f20],0xffffffff
+00479b6e MOV EAX,0x1
+00479b73 MOV dword ptr [0x00933f48],0xffffffff
+00479b7d MOV dword ptr [0x00933f70],0xffffffff
+00479b87 MOV dword ptr [0x00933f98],0xffffffff
+00479b91 RET

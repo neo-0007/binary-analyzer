@@ -1,0 +1,30 @@
+004d70c0 SUB RSP,0x88
+004d70c7 MOVDQU XMM0,xmmword ptr [RSI]
+004d70cb MOVDQU XMM1,xmmword ptr [RSI + 0x10]
+004d70d0 MOV RAX,qword ptr FS:[0x28]
+004d70d9 MOV qword ptr [RSP + 0x78],RAX
+004d70de XOR EAX,EAX
+004d70e0 MOV RAX,qword ptr [RSI + 0x20]
+004d70e4 MOVDQU XMM2,xmmword ptr [RSI + 0x28]
+004d70e9 MOVDQU XMM3,xmmword ptr [RSI + 0x38]
+004d70ee MOVDQU XMM4,xmmword ptr [RSI + 0x50]
+004d70f3 MOVAPS xmmword ptr [RSP],XMM0
+004d70f7 MOV qword ptr [RSP + 0x20],RAX
+004d70fc MOV RAX,qword ptr [RSI + 0x48]
+004d7100 MOVDQU XMM5,xmmword ptr [RSI + 0x60]
+004d7105 MOVAPS xmmword ptr [RSP + 0x10],XMM1
+004d710a MOV qword ptr [RSP + 0x48],RAX
+004d710f MOV RAX,qword ptr [RSI + 0x70]
+004d7113 MOV RSI,RSP
+004d7116 MOVUPS xmmword ptr [RSP + 0x28],XMM2
+004d711b MOV qword ptr [RSP + 0x70],RAX
+004d7120 MOVUPS xmmword ptr [RSP + 0x38],XMM3
+004d7125 MOVAPS xmmword ptr [RSP + 0x50],XMM4
+004d712a MOVAPS xmmword ptr [RSP + 0x60],XMM5
+004d712f CALL 0x004d6ac0
+004d7134 MOV RAX,qword ptr [RSP + 0x78]
+004d7139 SUB RAX,qword ptr FS:[0x28]
+004d7142 JNZ 0x004d714c
+004d7144 ADD RSP,0x88
+004d714b RET
+004d714c CALL 0x00768630

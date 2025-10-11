@@ -1,0 +1,31 @@
+006b3cd0 ENDBR64
+006b3cd4 PUSH R15
+006b3cd6 PUSH R14
+006b3cd8 PUSH R13
+006b3cda PUSH R12
+006b3cdc PUSH RBP
+006b3cdd LEA RBP,[R9 + 0xd0]
+006b3ce4 PUSH RBX
+006b3ce5 MOV RDI,RBP
+006b3ce8 MOV RBX,R9
+006b3ceb SUB RSP,0xc8
+006b3cf2 MOV RAX,qword ptr [RSP + 0x100]
+006b3cfa MOV qword ptr [RSP + 0x80],RSI
+006b3d02 MOV qword ptr [RSP + 0x88],RDX
+006b3d0a MOV qword ptr [RSP + 0x50],RAX
+006b3d0f MOV RAX,qword ptr [RSP + 0x108]
+006b3d17 MOV qword ptr [RSP + 0x70],RCX
+006b3d1c MOV qword ptr [RSP + 0x78],R8
+006b3d21 MOV qword ptr [RSP + 0x58],R9
+006b3d26 MOV qword ptr [RSP + 0x68],RAX
+006b3d2b MOV RAX,qword ptr FS:[0x28]
+006b3d34 MOV qword ptr [RSP + 0xb8],RAX
+006b3d3c XOR EAX,EAX
+006b3d3e CALL 0x006a4ba0
+006b3d43 MOV RDI,0x945550
+006b3d4a MOV qword ptr [RSP + 0x30],RAX
+006b3d4f CALL 0x00625ba0
+006b3d54 MOV R12,RAX
+006b3d57 MOV RAX,qword ptr [RBX + 0xd0]
+006b3d5e MOV RAX,qword ptr [RAX + 0x18]
+006b3d62 LEA RBX,[RAX + R12*0x8]

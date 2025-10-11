@@ -1,0 +1,4 @@
+004ab6d0 ENDBR64
+004ab6d4 MOV EAX,dword ptr [RDI + 0x30]
+004ab6d7 AND EAX,ESI
+004ab6d9 RET

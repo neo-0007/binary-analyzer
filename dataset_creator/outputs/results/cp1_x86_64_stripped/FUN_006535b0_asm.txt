@@ -1,0 +1,4 @@
+006535b0 ENDBR64
+006535b4 MOV RAX,qword ptr [RDI + 0x10]
+006535b8 MOV EAX,dword ptr [RAX + 0x68]
+006535bb RET

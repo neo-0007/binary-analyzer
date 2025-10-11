@@ -1,0 +1,8 @@
+004cc5b0 ENDBR64
+004cc5b4 MOV RAX,RDI
+004cc5b7 MOV RDI,RSI
+004cc5ba CMP qword ptr [RAX + 0x8],0x0
+004cc5bf JZ 0x004cc5c8
+004cc5c1 RET
+004cc5c8 MOV RSI,qword ptr [RAX]
+004cc5cb JMP 0x00435f80

@@ -1,0 +1,18 @@
+005abae0 ENDBR64
+005abae4 MOV RAX,qword ptr [RSI]
+005abae7 TEST RAX,RAX
+005abaea JZ 0x005abafa
+005abaec MOV R8,qword ptr [RAX + 0x30]
+005abaf0 CMP EDI,0x5
+005abaf3 JNZ 0x005abafa
+005abaf5 TEST R8,R8
+005abaf8 JNZ 0x005abb00
+005abafa MOV EAX,0x1
+005abaff RET
+005abb00 SUB RSP,0x8
+005abb04 LEA RSI,[0x5abb20]
+005abb0b MOV RDI,R8
+005abb0e CALL 0x00435d20
+005abb13 MOV EAX,0x1
+005abb18 ADD RSP,0x8
+005abb1c RET

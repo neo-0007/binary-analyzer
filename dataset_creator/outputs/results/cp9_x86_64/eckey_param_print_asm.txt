@@ -1,0 +1,4 @@
+004db0e0 ENDBR64
+004db0e4 MOV RSI,qword ptr [RSI + 0x20]
+004db0e8 MOV ECX,0x2
+004db0ed JMP 0x004dae00

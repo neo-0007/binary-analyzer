@@ -1,0 +1,9 @@
+006eec87 MOV EAX,dword ptr [RBP + -0x600]
+006eec8d MOV R14,R15
+006eec90 MOV dword ptr FS:[R10],EAX
+006eec94 MOV EDI,dword ptr [RBP + -0x640]
+006eec9a MOV EAX,0xffffffff
+006eec9f TEST EDI,EDI
+006eeca1 CMOVNZ EAX,EDI
+006eeca4 MOV dword ptr [RBP + -0x640],EAX
+006eecaa JMP 0x006ebbc8

@@ -1,0 +1,19 @@
+0068fd30 ENDBR64
+0068fd34 PUSH RBX
+0068fd35 MOV RBX,RDI
+0068fd38 LEA RDI,[RDI + 0x8]
+0068fd3c CALL 0x00670010
+0068fd41 MOV RAX,0x937fa8
+0068fd48 MOV qword ptr [RBX + 0xe0],0x0
+0068fd53 MOV dword ptr [RBX + 0xe8],0x0
+0068fd5d LEA RDX,[RAX + 0x18]
+0068fd61 ADD RAX,0x40
+0068fd65 MOV byte ptr [RBX + 0xec],0x0
+0068fd6c MOV qword ptr [RBX + 0xf0],0x0
+0068fd77 MOV qword ptr [RBX + 0xf8],0x0
+0068fd82 MOV qword ptr [RBX + 0x100],0x0
+0068fd8d MOV qword ptr [RBX + 0x108],0x0
+0068fd98 MOV qword ptr [RBX],RDX
+0068fd9b MOV qword ptr [RBX + 0x8],RAX
+0068fd9f POP RBX
+0068fda0 RET

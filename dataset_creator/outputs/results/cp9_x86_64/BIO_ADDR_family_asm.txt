@@ -1,0 +1,3 @@
+005ac2e0 ENDBR64
+005ac2e4 MOVZX EAX,word ptr [RDI]
+005ac2e7 RET

@@ -1,0 +1,10 @@
+004c4ba0 CMP ESI,0x0
+004c4ba3 JZ 0x004c4bbf
+004c4ba5 LEA RDX,[RDX + RCX*0x8]
+004c4ba9 MOV RAX,qword ptr [RDI]
+004c4bac LEA RDI,[RDI + 0x8]
+004c4bb0 MOV qword ptr [RDX],RAX
+004c4bb3 LEA RDX,[RDX + 0x100]
+004c4bba SUB ESI,0x1
+004c4bbd JNZ 0x004c4ba9
+004c4bbf RET

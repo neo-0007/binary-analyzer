@@ -1,0 +1,4 @@
+00798ee0 ENDBR64
+00798ee4 MOV RAX,qword ptr [RDI]
+00798ee7 MOV dword ptr [0x009320d0],EAX
+00798eed RET

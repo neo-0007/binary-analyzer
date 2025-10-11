@@ -1,0 +1,3 @@
+0046acb0 ENDBR64
+0046acb4 LEA RAX,[0x8ef9a0]
+0046acbb RET

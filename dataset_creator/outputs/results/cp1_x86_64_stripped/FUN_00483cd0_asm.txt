@@ -1,0 +1,18 @@
+00483cd0 ENDBR64
+00483cd4 LEA RDX,[RSI + 0x20]
+00483cd8 NOP dword ptr [RAX + RAX*0x1]
+00483ce0 MOV EAX,dword ptr [RDI]
+00483ce2 ADD RSI,0x4
+00483ce6 ADD RDI,0x4
+00483cea SHR EAX,0x18
+00483ced MOV byte ptr [RSI + -0x4],AL
+00483cf0 MOV EAX,dword ptr [RDI + -0x4]
+00483cf3 SHR EAX,0x10
+00483cf6 MOV byte ptr [RSI + -0x3],AL
+00483cf9 MOV EAX,dword ptr [RDI + -0x4]
+00483cfc MOV byte ptr [RSI + -0x2],AH
+00483cff MOV EAX,dword ptr [RDI + -0x4]
+00483d02 MOV byte ptr [RSI + -0x1],AL
+00483d05 CMP RDX,RSI
+00483d08 JNZ 0x00483ce0
+00483d0a RET

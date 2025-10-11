@@ -1,0 +1,2 @@
+004d37e0 MOV RAX,qword ptr [RDI]
+004d37e3 RET

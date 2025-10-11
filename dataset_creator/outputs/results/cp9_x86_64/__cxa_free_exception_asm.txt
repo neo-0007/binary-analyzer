@@ -1,0 +1,13 @@
+006abeb0 ENDBR64
+006abeb4 MOV RAX,qword ptr [0x00938570]
+006abebb ADD RDI,-0x80
+006abebf CMP RDI,RAX
+006abec2 JBE 0x006abee0
+006abec4 ADD RAX,qword ptr [0x00938578]
+006abecb CMP RDI,RAX
+006abece JNC 0x006abee0
+006abed0 SUB RSP,0x8
+006abed4 CALL 0x006abc40
+006abed9 ADD RSP,0x8
+006abedd RET
+006abee0 JMP 0x00706ae0

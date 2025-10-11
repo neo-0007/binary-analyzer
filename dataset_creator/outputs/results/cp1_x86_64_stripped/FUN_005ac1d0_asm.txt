@@ -1,0 +1,3 @@
+005ac1d0 ENDBR64
+005ac1d4 MOV qword ptr [RDI + 0xd8],RSI
+005ac1db RET

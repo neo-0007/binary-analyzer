@@ -1,0 +1,3 @@
+005bf7e0 ENDBR64
+005bf7e4 MOVZX EAX,word ptr [RDI]
+005bf7e7 RET

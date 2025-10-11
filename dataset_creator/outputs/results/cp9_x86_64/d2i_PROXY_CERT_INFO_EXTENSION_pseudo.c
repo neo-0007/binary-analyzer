@@ -1,0 +1,13 @@
+
+PROXY_CERT_INFO_EXTENSION *
+d2i_PROXY_CERT_INFO_EXTENSION(PROXY_CERT_INFO_EXTENSION **a,uchar **in,long len)
+
+{
+  ASN1_ITEM *it;
+  PROXY_CERT_INFO_EXTENSION *pPVar1;
+  
+  it = (ASN1_ITEM *)PROXY_CERT_INFO_EXTENSION_it();
+  pPVar1 = (PROXY_CERT_INFO_EXTENSION *)ASN1_item_d2i((ASN1_VALUE **)a,in,len,it);
+  return pPVar1;
+}
+

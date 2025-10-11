@@ -1,0 +1,4 @@
+00707fa0 ENDBR64
+00707fa4 MOV EAX,dword ptr [RDI + 0x10]
+00707fa7 SUB EAX,dword ptr [RSI + 0x10]
+00707faa RET

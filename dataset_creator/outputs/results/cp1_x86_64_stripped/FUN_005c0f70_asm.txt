@@ -1,0 +1,49 @@
+005c0f70 ENDBR64
+005c0f74 MOV RCX,RDI
+005c0f77 MOV EDI,EDX
+005c0f79 TEST EDX,EDX
+005c0f7b JLE 0x005c0fda
+005c0f7d TEST EDX,0xfffffffc
+005c0f83 JZ 0x005c0fe0
+005c0f85 NOP dword ptr [RAX]
+005c0f88 SUB EDI,0x4
+005c0f8b MOV RAX,qword ptr [RSI]
+005c0f8e ADD RCX,0x40
+005c0f92 ADD RSI,0x20
+005c0f96 MUL RAX
+005c0f99 MOV qword ptr [RCX + -0x38],RDX
+005c0f9d MOV qword ptr [RCX + -0x40],RAX
+005c0fa1 MOV RAX,qword ptr [RSI + -0x18]
+005c0fa5 MUL RAX
+005c0fa8 MOV qword ptr [RCX + -0x28],RDX
+005c0fac MOV qword ptr [RCX + -0x30],RAX
+005c0fb0 MOV RAX,qword ptr [RSI + -0x10]
+005c0fb4 MUL RAX
+005c0fb7 MOV qword ptr [RCX + -0x18],RDX
+005c0fbb MOV qword ptr [RCX + -0x20],RAX
+005c0fbf MOV RAX,qword ptr [RSI + -0x8]
+005c0fc3 MUL RAX
+005c0fc6 MOV qword ptr [RCX + -0x10],RAX
+005c0fca MOV qword ptr [RCX + -0x8],RDX
+005c0fce TEST EDI,0xfffffffc
+005c0fd4 JNZ 0x005c0f88
+005c0fd6 TEST EDI,EDI
+005c0fd8 JNZ 0x005c0fe0
+005c0fda RET
+005c0fe0 MOV RAX,qword ptr [RSI]
+005c0fe3 MUL RAX
+005c0fe6 MOV qword ptr [RCX],RAX
+005c0fe9 MOV qword ptr [RCX + 0x8],RDX
+005c0fed CMP EDI,0x1
+005c0ff0 JZ 0x005c0fda
+005c0ff2 MOV RAX,qword ptr [RSI + 0x8]
+005c0ff6 MUL RAX
+005c0ff9 MOV qword ptr [RCX + 0x10],RAX
+005c0ffd MOV qword ptr [RCX + 0x18],RDX
+005c1001 CMP EDI,0x2
+005c1004 JZ 0x005c0fda
+005c1006 MOV RAX,qword ptr [RSI + 0x10]
+005c100a MUL RAX
+005c100d MOV qword ptr [RCX + 0x20],RAX
+005c1011 MOV qword ptr [RCX + 0x28],RDX
+005c1015 RET

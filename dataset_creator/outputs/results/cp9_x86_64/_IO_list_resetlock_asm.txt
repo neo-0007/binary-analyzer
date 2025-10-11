@@ -1,0 +1,4 @@
+006fe9c0 ENDBR64
+006fe9c4 MOV qword ptr [0x00939930],0x0
+006fe9cf MOV qword ptr [0x00939938],0x0
+006fe9da RET

@@ -1,0 +1,19 @@
+00504fb0 MOV RAX,qword ptr [RSI]
+00504fb3 ADD qword ptr [RDI],RAX
+00504fb6 MOV RAX,qword ptr [RSI + 0x8]
+00504fba ADD qword ptr [RDI + 0x8],RAX
+00504fbe MOV RAX,qword ptr [RSI + 0x10]
+00504fc2 ADD qword ptr [RDI + 0x10],RAX
+00504fc6 MOV RAX,qword ptr [RSI + 0x18]
+00504fca ADD qword ptr [RDI + 0x18],RAX
+00504fce MOV RAX,qword ptr [RSI + 0x20]
+00504fd2 ADD qword ptr [RDI + 0x20],RAX
+00504fd6 MOV RAX,qword ptr [RSI + 0x28]
+00504fda ADD qword ptr [RDI + 0x28],RAX
+00504fde MOV RAX,qword ptr [RSI + 0x30]
+00504fe2 ADD qword ptr [RDI + 0x30],RAX
+00504fe6 MOV RAX,qword ptr [RSI + 0x38]
+00504fea ADD qword ptr [RDI + 0x38],RAX
+00504fee MOV RAX,qword ptr [RSI + 0x40]
+00504ff2 ADD qword ptr [RDI + 0x40],RAX
+00504ff6 RET

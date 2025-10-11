@@ -1,0 +1,8 @@
+0063aed0 ENDBR64
+0063aed4 CMP RDI,0x9452c0
+0063aedb JNZ 0x0063aee0
+0063aedd RET
+0063aee0 MOV dword ptr [RDI + 0x10],0x0
+0063aee7 MOV qword ptr [RDI],RSI
+0063aeea MOV dword ptr [RDI + RSI*0x4 + 0x18],0x0
+0063aef2 RET

@@ -1,0 +1,7 @@
+0064e9d0 ENDBR64
+0064e9d4 LEA RDX,[RDI + 0x10]
+0064e9d8 MOV qword ptr [RDI + 0x8],0x0
+0064e9e0 MOV RAX,RDI
+0064e9e3 MOV qword ptr [RDI],RDX
+0064e9e6 MOV byte ptr [RDI + 0x10],0x0
+0064e9ea RET

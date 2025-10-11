@@ -1,0 +1,7 @@
+006c7dc0 ENDBR64
+006c7dc4 SUB RSP,0x8
+006c7dc8 MOV RCX,qword ptr [RDX + 0x8]
+006c7dcc MOV RDX,qword ptr [RDX]
+006c7dcf CALL 0x006c6900
+006c7dd4 ADD RSP,0x8
+006c7dd8 RET

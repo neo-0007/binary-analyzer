@@ -1,0 +1,4 @@
+006aeeb0 ENDBR64
+006aeeb4 MOV qword ptr [R8],RDX
+006aeeb7 MOV EAX,0x3
+006aeebc RET

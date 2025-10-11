@@ -1,0 +1,14 @@
+005bafb0 ENDBR64
+005bafb4 PUSH RBX
+005bafb5 MOV RBX,RSI
+005bafb8 CALL 0x005babf0
+005bafbd CMP EAX,0x1
+005bafc0 JZ 0x005bafc8
+005bafc2 POP RBX
+005bafc3 RET
+005bafc8 MOV EDX,dword ptr [RBX + 0x4]
+005bafcb AND EDX,0x100
+005bafd1 OR EDX,0x2
+005bafd4 MOV dword ptr [RBX + 0x4],EDX
+005bafd7 POP RBX
+005bafd8 RET

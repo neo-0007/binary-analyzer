@@ -1,0 +1,4 @@
+004a0b80 ENDBR64
+004a0b84 MOV EAX,dword ptr [RDI]
+004a0b86 SUB EAX,dword ptr [RSI]
+004a0b88 RET

@@ -1,0 +1,8 @@
+005afa70 ENDBR64
+005afa74 TEST RDI,RDI
+005afa77 JZ 0x005afa88
+005afa79 MOV RAX,qword ptr [RDI + 0x50]
+005afa7d MOV RAX,qword ptr [RAX + 0x8]
+005afa81 RET
+005afa88 XOR EAX,EAX
+005afa8a RET

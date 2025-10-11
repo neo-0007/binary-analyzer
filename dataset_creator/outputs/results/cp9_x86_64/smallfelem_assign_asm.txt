@@ -1,0 +1,10 @@
+004f0280 ENDBR64
+004f0284 MOV RAX,qword ptr [RSI]
+004f0287 MOV qword ptr [RDI],RAX
+004f028a MOV RAX,qword ptr [RSI + 0x8]
+004f028e MOV qword ptr [RDI + 0x8],RAX
+004f0292 MOV RAX,qword ptr [RSI + 0x10]
+004f0296 MOV qword ptr [RDI + 0x10],RAX
+004f029a MOV RAX,qword ptr [RSI + 0x18]
+004f029e MOV qword ptr [RDI + 0x18],RAX
+004f02a2 RET

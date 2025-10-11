@@ -1,0 +1,3 @@
+004ef780 ENDBR64
+004ef784 MOV RAX,qword ptr [RDI + 0x8]
+004ef788 RET

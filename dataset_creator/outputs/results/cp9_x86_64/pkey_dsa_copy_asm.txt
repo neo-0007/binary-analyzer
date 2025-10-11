@@ -1,0 +1,39 @@
+004cdb40 ENDBR64
+004cdb44 PUSH RBP
+004cdb45 MOV EDX,0x28
+004cdb4a MOV RBP,RSI
+004cdb4d LEA RSI,[0x7e0aac]
+004cdb54 PUSH RBX
+004cdb55 MOV RBX,RDI
+004cdb58 MOV EDI,0x20
+004cdb5d SUB RSP,0x8
+004cdb61 CALL 0x004197a0
+004cdb66 TEST RAX,RAX
+004cdb69 JZ 0x004cdbd0
+004cdb6b LEA RDX,[RAX + 0x10]
+004cdb6f MOV qword ptr [RAX + 0x8],0x0
+004cdb77 MOV RDI,0xe000000800
+004cdb81 MOV qword ptr [RAX],RDI
+004cdb84 MOV qword ptr [RAX + 0x18],0x0
+004cdb8c MOV qword ptr [RBX + 0x98],RAX
+004cdb93 MOV qword ptr [RBX + 0x68],RDX
+004cdb97 MOV RDX,qword ptr [RBP + 0x98]
+004cdb9e MOV dword ptr [RBX + 0x70],0x2
+004cdba5 MOV ECX,dword ptr [RDX]
+004cdba7 MOV dword ptr [RAX],ECX
+004cdba9 MOV ECX,dword ptr [RDX + 0x4]
+004cdbac MOV dword ptr [RAX + 0x4],ECX
+004cdbaf MOV RCX,qword ptr [RDX + 0x8]
+004cdbb3 MOV RDX,qword ptr [RDX + 0x18]
+004cdbb7 MOV qword ptr [RAX + 0x8],RCX
+004cdbbb MOV qword ptr [RAX + 0x18],RDX
+004cdbbf ADD RSP,0x8
+004cdbc3 MOV EAX,0x1
+004cdbc8 POP RBX
+004cdbc9 POP RBP
+004cdbca RET
+004cdbd0 ADD RSP,0x8
+004cdbd4 XOR EAX,EAX
+004cdbd6 POP RBX
+004cdbd7 POP RBP
+004cdbd8 RET

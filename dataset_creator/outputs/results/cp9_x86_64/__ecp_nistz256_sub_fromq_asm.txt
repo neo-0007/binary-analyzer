@@ -1,0 +1,23 @@
+005ed0a0 SUB R12,qword ptr [RBX]
+005ed0a3 SBB R13,qword ptr [RBX + 0x8]
+005ed0a7 MOV RAX,R12
+005ed0aa SBB R8,qword ptr [RBX + 0x10]
+005ed0ae SBB R9,qword ptr [RBX + 0x18]
+005ed0b2 MOV RBP,R13
+005ed0b5 SBB R11,R11
+005ed0b8 ADD R12,-0x1
+005ed0bc MOV RCX,R8
+005ed0bf ADC R13,R14
+005ed0c2 ADC R8,0x0
+005ed0c6 MOV R10,R9
+005ed0c9 ADC R9,R15
+005ed0cc TEST R11,R11
+005ed0cf CMOVZ R12,RAX
+005ed0d3 CMOVZ R13,RBP
+005ed0d7 MOV qword ptr [RDI],R12
+005ed0da CMOVZ R8,RCX
+005ed0de MOV qword ptr [RDI + 0x8],R13
+005ed0e2 CMOVZ R9,R10
+005ed0e6 MOV qword ptr [RDI + 0x10],R8
+005ed0ea MOV qword ptr [RDI + 0x18],R9
+005ed0ee RET

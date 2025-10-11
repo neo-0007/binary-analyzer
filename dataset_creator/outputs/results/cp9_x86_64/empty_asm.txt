@@ -1,0 +1,4 @@
+006a8f30 ENDBR64
+006a8f34 CMP qword ptr [RDI + 0x8],0x0
+006a8f39 SETZ AL
+006a8f3c RET

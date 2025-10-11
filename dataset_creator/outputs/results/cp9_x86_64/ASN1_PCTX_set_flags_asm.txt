@@ -1,0 +1,3 @@
+005a9d60 ENDBR64
+005a9d64 MOV qword ptr [RDI],RSI
+005a9d67 RET

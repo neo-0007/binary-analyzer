@@ -1,0 +1,4 @@
+004dbba0 ENDBR64
+004dbba4 MOV ECX,0x2
+004dbba9 MOV EDX,0x4
+004dbbae JMP 0x004dae00

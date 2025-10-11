@@ -1,0 +1,10 @@
+005ecd60 MOVDQU XMM0,xmmword ptr [RSI]
+005ecd64 SHL EDX,0x6
+005ecd67 MOVDQU XMM1,xmmword ptr [RSI + 0x10]
+005ecd6c MOVDQU XMM2,xmmword ptr [RSI + 0x20]
+005ecd71 MOVDQU XMM3,xmmword ptr [RSI + 0x30]
+005ecd76 MOVDQA xmmword ptr [RDI + RDX*0x1],XMM0
+005ecd7b MOVDQA xmmword ptr [RDI + RDX*0x1 + 0x10],XMM1
+005ecd81 MOVDQA xmmword ptr [RDI + RDX*0x1 + 0x20],XMM2
+005ecd87 MOVDQA xmmword ptr [RDI + RDX*0x1 + 0x30],XMM3
+005ecd8d RET

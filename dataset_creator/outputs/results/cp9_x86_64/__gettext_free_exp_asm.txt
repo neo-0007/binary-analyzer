@@ -1,0 +1,327 @@
+006dca20 ENDBR64
+006dca24 TEST RDI,RDI
+006dca27 JZ 0x006dcd90
+006dca2d PUSH R15
+006dca2f PUSH R14
+006dca31 PUSH R13
+006dca33 PUSH R12
+006dca35 PUSH RBP
+006dca36 MOV EAX,dword ptr [RDI]
+006dca38 MOV RBP,RDI
+006dca3b CMP EAX,0x2
+006dca3e JZ 0x006dca90
+006dca40 CMP EAX,0x3
+006dca43 JZ 0x006dca60
+006dca45 CMP EAX,0x1
+006dca48 JZ 0x006dcac0
+006dca4a MOV RDI,RBP
+006dca4d POP RBP
+006dca4e POP R12
+006dca50 POP R13
+006dca52 POP R14
+006dca54 POP R15
+006dca56 JMP 0x00706ae0
+006dca60 MOV R12,qword ptr [RDI + 0x18]
+006dca64 TEST R12,R12
+006dca67 JZ 0x006dca90
+006dca69 MOV EAX,dword ptr [R12]
+006dca6d CMP EAX,0x2
+006dca70 JZ 0x006dcdf2
+006dca76 CMP EAX,0x3
+006dca79 JZ 0x006dcde8
+006dca7f CMP EAX,0x1
+006dca82 JZ 0x006dcdfc
+006dca88 MOV RDI,R12
+006dca8b CALL 0x00706ae0
+006dca90 MOV R12,qword ptr [RBP + 0x10]
+006dca94 TEST R12,R12
+006dca97 JZ 0x006dcac0
+006dca99 MOV EAX,dword ptr [R12]
+006dca9d CMP EAX,0x2
+006dcaa0 JZ 0x006dcbaa
+006dcaa6 CMP EAX,0x3
+006dcaa9 JZ 0x006dcba0
+006dcaaf CMP EAX,0x1
+006dcab2 JZ 0x006dcbdb
+006dcab8 MOV RDI,R12
+006dcabb CALL 0x00706ae0
+006dcac0 MOV R12,qword ptr [RBP + 0x8]
+006dcac4 TEST R12,R12
+006dcac7 JZ 0x006dca4a
+006dcac9 MOV EAX,dword ptr [R12]
+006dcacd CMP EAX,0x2
+006dcad0 JZ 0x006dcb21
+006dcad2 CMP EAX,0x3
+006dcad5 JZ 0x006dcaf0
+006dcad7 CMP EAX,0x1
+006dcada JZ 0x006dcb58
+006dcadc MOV RDI,R12
+006dcadf CALL 0x00706ae0
+006dcae4 JMP 0x006dca4a
+006dcaf0 MOV R13,qword ptr [R12 + 0x18]
+006dcaf5 TEST R13,R13
+006dcaf8 JZ 0x006dcb21
+006dcafa MOV EAX,dword ptr [R13]
+006dcafe CMP EAX,0x2
+006dcb01 JZ 0x006dcf19
+006dcb07 CMP EAX,0x3
+006dcb0a JZ 0x006dcf10
+006dcb10 CMP EAX,0x1
+006dcb13 JZ 0x006dcf22
+006dcb19 MOV RDI,R13
+006dcb1c CALL 0x00706ae0
+006dcb21 MOV R13,qword ptr [R12 + 0x10]
+006dcb26 TEST R13,R13
+006dcb29 JZ 0x006dcb58
+006dcb2b MOV EAX,dword ptr [R13]
+006dcb2f CMP EAX,0x2
+006dcb32 JZ 0x006dcd19
+006dcb38 CMP EAX,0x3
+006dcb3b JZ 0x006dcd10
+006dcb41 CMP EAX,0x1
+006dcb44 JZ 0x006dcd48
+006dcb4a MOV RDI,R13
+006dcb4d CALL 0x00706ae0
+006dcb52 NOP word ptr [RAX + RAX*0x1]
+006dcb58 MOV R13,qword ptr [R12 + 0x8]
+006dcb5d TEST R13,R13
+006dcb60 JZ 0x006dcadc
+006dcb66 MOV EAX,dword ptr [R13]
+006dcb6a CMP EAX,0x2
+006dcb6d JZ 0x006dcc21
+006dcb73 CMP EAX,0x3
+006dcb76 JZ 0x006dcc18
+006dcb7c CMP EAX,0x1
+006dcb7f JZ 0x006dcc50
+006dcb85 MOV RDI,R13
+006dcb88 CALL 0x00706ae0
+006dcb8d MOV RDI,R12
+006dcb90 CALL 0x00706ae0
+006dcb95 JMP 0x006dca4a
+006dcba0 MOV RDI,qword ptr [R12 + 0x18]
+006dcba5 CALL 0x006dca20
+006dcbaa MOV R13,qword ptr [R12 + 0x10]
+006dcbaf TEST R13,R13
+006dcbb2 JZ 0x006dcbdb
+006dcbb4 MOV EAX,dword ptr [R13]
+006dcbb8 CMP EAX,0x2
+006dcbbb JZ 0x006dce49
+006dcbc1 CMP EAX,0x3
+006dcbc4 JZ 0x006dce40
+006dcbca CMP EAX,0x1
+006dcbcd JZ 0x006dce52
+006dcbd3 MOV RDI,R13
+006dcbd6 CALL 0x00706ae0
+006dcbdb MOV R13,qword ptr [R12 + 0x8]
+006dcbe0 TEST R13,R13
+006dcbe3 JZ 0x006dcab8
+006dcbe9 MOV EAX,dword ptr [R13]
+006dcbed CMP EAX,0x2
+006dcbf0 JZ 0x006dcc99
+006dcbf6 CMP EAX,0x3
+006dcbf9 JZ 0x006dcc90
+006dcbff CMP EAX,0x1
+006dcc02 JZ 0x006dccc8
+006dcc08 MOV RDI,R13
+006dcc0b CALL 0x00706ae0
+006dcc10 JMP 0x006dcab8
+006dcc18 MOV RDI,qword ptr [R13 + 0x18]
+006dcc1c CALL 0x006dca20
+006dcc21 MOV R14,qword ptr [R13 + 0x10]
+006dcc25 TEST R14,R14
+006dcc28 JZ 0x006dcc50
+006dcc2a MOV EAX,dword ptr [R14]
+006dcc2d CMP EAX,0x2
+006dcc30 JZ 0x006dced9
+006dcc36 CMP EAX,0x3
+006dcc39 JZ 0x006dced0
+006dcc3f CMP EAX,0x1
+006dcc42 JZ 0x006dcee2
+006dcc48 MOV RDI,R14
+006dcc4b CALL 0x00706ae0
+006dcc50 MOV R14,qword ptr [R13 + 0x8]
+006dcc54 TEST R14,R14
+006dcc57 JZ 0x006dcb85
+006dcc5d MOV EAX,dword ptr [R14]
+006dcc60 CMP EAX,0x2
+006dcc63 JZ 0x006dcda1
+006dcc69 CMP EAX,0x3
+006dcc6c JZ 0x006dcd98
+006dcc72 CMP EAX,0x1
+006dcc75 JZ 0x006dcdaa
+006dcc7b MOV RDI,R14
+006dcc7e CALL 0x00706ae0
+006dcc83 JMP 0x006dcb85
+006dcc90 MOV RDI,qword ptr [R13 + 0x18]
+006dcc94 CALL 0x006dca20
+006dcc99 MOV R14,qword ptr [R13 + 0x10]
+006dcc9d TEST R14,R14
+006dcca0 JZ 0x006dccc8
+006dcca2 MOV EAX,dword ptr [R14]
+006dcca5 CMP EAX,0x2
+006dcca8 JZ 0x006dcf59
+006dccae CMP EAX,0x3
+006dccb1 JZ 0x006dcf50
+006dccb7 CMP EAX,0x1
+006dccba JZ 0x006dcf62
+006dccc0 MOV RDI,R14
+006dccc3 CALL 0x00706ae0
+006dccc8 MOV R14,qword ptr [R13 + 0x8]
+006dcccc TEST R14,R14
+006dcccf JZ 0x006dcc08
+006dccd5 MOV EAX,dword ptr [R14]
+006dccd8 CMP EAX,0x2
+006dccdb JZ 0x006dceb9
+006dcce1 CMP EAX,0x3
+006dcce4 JZ 0x006dceb0
+006dccea CMP EAX,0x1
+006dcced JZ 0x006dcec2
+006dccf3 MOV RDI,R14
+006dccf6 CALL 0x00706ae0
+006dccfb MOV RDI,R13
+006dccfe CALL 0x00706ae0
+006dcd03 JMP 0x006dcab8
+006dcd10 MOV RDI,qword ptr [R13 + 0x18]
+006dcd14 CALL 0x006dca20
+006dcd19 MOV R14,qword ptr [R13 + 0x10]
+006dcd1d TEST R14,R14
+006dcd20 JZ 0x006dcd48
+006dcd22 MOV EAX,dword ptr [R14]
+006dcd25 CMP EAX,0x2
+006dcd28 JZ 0x006dcf79
+006dcd2e CMP EAX,0x3
+006dcd31 JZ 0x006dcf70
+006dcd37 CMP EAX,0x1
+006dcd3a JZ 0x006dcf82
+006dcd40 MOV RDI,R14
+006dcd43 CALL 0x00706ae0
+006dcd48 MOV R14,qword ptr [R13 + 0x8]
+006dcd4c TEST R14,R14
+006dcd4f JZ 0x006dcb4a
+006dcd55 MOV EAX,dword ptr [R14]
+006dcd58 CMP EAX,0x2
+006dcd5b JZ 0x006dce99
+006dcd61 CMP EAX,0x3
+006dcd64 JZ 0x006dce90
+006dcd6a CMP EAX,0x1
+006dcd6d JZ 0x006dcea2
+006dcd73 MOV RDI,R14
+006dcd76 CALL 0x00706ae0
+006dcd7b MOV RDI,R13
+006dcd7e CALL 0x00706ae0
+006dcd83 JMP 0x006dcb58
+006dcd90 RET
+006dcd98 MOV RDI,qword ptr [R14 + 0x18]
+006dcd9c CALL 0x006dca20
+006dcda1 MOV RDI,qword ptr [R14 + 0x10]
+006dcda5 CALL 0x006dca20
+006dcdaa MOV R15,qword ptr [R14 + 0x8]
+006dcdae TEST R15,R15
+006dcdb1 JZ 0x006dcc7b
+006dcdb7 MOV EAX,dword ptr [R15]
+006dcdba CMP EAX,0x2
+006dcdbd JZ 0x006dcef9
+006dcdc3 CMP EAX,0x3
+006dcdc6 JZ 0x006dcef0
+006dcdcc CMP EAX,0x1
+006dcdcf JZ 0x006dcf02
+006dcdd5 MOV RDI,R15
+006dcdd8 CALL 0x00706ae0
+006dcddd JMP 0x006dcc7b
+006dcde8 MOV RDI,qword ptr [R12 + 0x18]
+006dcded CALL 0x006dca20
+006dcdf2 MOV RDI,qword ptr [R12 + 0x10]
+006dcdf7 CALL 0x006dca20
+006dcdfc MOV R13,qword ptr [R12 + 0x8]
+006dce01 TEST R13,R13
+006dce04 JZ 0x006dca88
+006dce0a MOV EAX,dword ptr [R13]
+006dce0e CMP EAX,0x2
+006dce11 JZ 0x006dcf39
+006dce17 CMP EAX,0x3
+006dce1a JZ 0x006dcf30
+006dce20 CMP EAX,0x1
+006dce23 JZ 0x006dcf42
+006dce29 MOV RDI,R13
+006dce2c CALL 0x00706ae0
+006dce31 JMP 0x006dca88
+006dce40 MOV RDI,qword ptr [R13 + 0x18]
+006dce44 CALL 0x006dca20
+006dce49 MOV RDI,qword ptr [R13 + 0x10]
+006dce4d CALL 0x006dca20
+006dce52 MOV R14,qword ptr [R13 + 0x8]
+006dce56 TEST R14,R14
+006dce59 JZ 0x006dcbd3
+006dce5f MOV EAX,dword ptr [R14]
+006dce62 CMP EAX,0x2
+006dce65 JZ 0x006dcf99
+006dce6b CMP EAX,0x3
+006dce6e JZ 0x006dcf90
+006dce74 CMP EAX,0x1
+006dce77 JZ 0x006dcfa2
+006dce7d MOV RDI,R14
+006dce80 CALL 0x00706ae0
+006dce85 JMP 0x006dcbd3
+006dce90 MOV RDI,qword ptr [R14 + 0x18]
+006dce94 CALL 0x006dca20
+006dce99 MOV RDI,qword ptr [R14 + 0x10]
+006dce9d CALL 0x006dca20
+006dcea2 MOV RDI,qword ptr [R14 + 0x8]
+006dcea6 CALL 0x006dca20
+006dceab JMP 0x006dcd73
+006dceb0 MOV RDI,qword ptr [R14 + 0x18]
+006dceb4 CALL 0x006dca20
+006dceb9 MOV RDI,qword ptr [R14 + 0x10]
+006dcebd CALL 0x006dca20
+006dcec2 MOV RDI,qword ptr [R14 + 0x8]
+006dcec6 CALL 0x006dca20
+006dcecb JMP 0x006dccf3
+006dced0 MOV RDI,qword ptr [R14 + 0x18]
+006dced4 CALL 0x006dca20
+006dced9 MOV RDI,qword ptr [R14 + 0x10]
+006dcedd CALL 0x006dca20
+006dcee2 MOV RDI,qword ptr [R14 + 0x8]
+006dcee6 CALL 0x006dca20
+006dceeb JMP 0x006dcc48
+006dcef0 MOV RDI,qword ptr [R15 + 0x18]
+006dcef4 CALL 0x006dca20
+006dcef9 MOV RDI,qword ptr [R15 + 0x10]
+006dcefd CALL 0x006dca20
+006dcf02 MOV RDI,qword ptr [R15 + 0x8]
+006dcf06 CALL 0x006dca20
+006dcf0b JMP 0x006dcdd5
+006dcf10 MOV RDI,qword ptr [R13 + 0x18]
+006dcf14 CALL 0x006dca20
+006dcf19 MOV RDI,qword ptr [R13 + 0x10]
+006dcf1d CALL 0x006dca20
+006dcf22 MOV RDI,qword ptr [R13 + 0x8]
+006dcf26 CALL 0x006dca20
+006dcf2b JMP 0x006dcb19
+006dcf30 MOV RDI,qword ptr [R13 + 0x18]
+006dcf34 CALL 0x006dca20
+006dcf39 MOV RDI,qword ptr [R13 + 0x10]
+006dcf3d CALL 0x006dca20
+006dcf42 MOV RDI,qword ptr [R13 + 0x8]
+006dcf46 CALL 0x006dca20
+006dcf4b JMP 0x006dce29
+006dcf50 MOV RDI,qword ptr [R14 + 0x18]
+006dcf54 CALL 0x006dca20
+006dcf59 MOV RDI,qword ptr [R14 + 0x10]
+006dcf5d CALL 0x006dca20
+006dcf62 MOV RDI,qword ptr [R14 + 0x8]
+006dcf66 CALL 0x006dca20
+006dcf6b JMP 0x006dccc0
+006dcf70 MOV RDI,qword ptr [R14 + 0x18]
+006dcf74 CALL 0x006dca20
+006dcf79 MOV RDI,qword ptr [R14 + 0x10]
+006dcf7d CALL 0x006dca20
+006dcf82 MOV RDI,qword ptr [R14 + 0x8]
+006dcf86 CALL 0x006dca20
+006dcf8b JMP 0x006dcd40
+006dcf90 MOV RDI,qword ptr [R14 + 0x18]
+006dcf94 CALL 0x006dca20
+006dcf99 MOV RDI,qword ptr [R14 + 0x10]
+006dcf9d CALL 0x006dca20
+006dcfa2 MOV RDI,qword ptr [R14 + 0x8]
+006dcfa6 CALL 0x006dca20
+006dcfab JMP 0x006dce7d

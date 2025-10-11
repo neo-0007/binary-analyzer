@@ -1,0 +1,7 @@
+006fae90 ENDBR64
+006fae94 MOV R8D,dword ptr [RDI + 0x70]
+006fae98 TEST byte ptr [RDI + 0x74],0x2
+006fae9c MOV EDI,R8D
+006fae9f JNZ 0x006faeb0
+006faea1 JMP 0x00763fc0
+006faeb0 JMP 0x00764d70

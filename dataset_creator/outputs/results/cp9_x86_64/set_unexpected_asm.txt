@@ -1,0 +1,9 @@
+006acdb0 ENDBR64
+006acdb4 MOV RAX,RDI
+006acdb7 TEST RDI,RDI
+006acdba JZ 0x006acdd0
+006acdbc MOV RDX,0x9305a0
+006acdc3 XCHG qword ptr [RDX],RAX
+006acdc6 RET
+006acdd0 MOV RAX,0x6acd70
+006acdd7 JMP 0x006acdbc

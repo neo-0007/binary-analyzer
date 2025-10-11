@@ -1,0 +1,12 @@
+
+X509_NAME_ENTRY * X509_NAME_ENTRY_dup(X509_NAME_ENTRY *ne)
+
+{
+  ASN1_ITEM *it;
+  X509_NAME_ENTRY *pXVar1;
+  
+  it = (ASN1_ITEM *)X509_NAME_ENTRY_it();
+  pXVar1 = (X509_NAME_ENTRY *)ASN1_item_dup(it,ne);
+  return pXVar1;
+}
+

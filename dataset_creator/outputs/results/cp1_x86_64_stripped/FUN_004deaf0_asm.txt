@@ -1,0 +1,10 @@
+004deaf0 ENDBR64
+004deaf4 SUB RSP,0x8
+004deaf8 PUSH qword ptr [RSP + 0x18]
+004deafc PUSH qword ptr [RSP + 0x18]
+004deb00 PUSH R9
+004deb02 MOV R9D,0x40
+004deb08 PUSH 0x1
+004deb0a CALL 0x004de760
+004deb0f ADD RSP,0x28
+004deb13 RET

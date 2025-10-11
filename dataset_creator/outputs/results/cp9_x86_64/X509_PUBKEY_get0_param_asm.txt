@@ -1,0 +1,19 @@
+0059ca90 ENDBR64
+0059ca94 TEST RDI,RDI
+0059ca97 JZ 0x0059caa2
+0059ca99 MOV RAX,qword ptr [R8]
+0059ca9c MOV RAX,qword ptr [RAX]
+0059ca9f MOV qword ptr [RDI],RAX
+0059caa2 TEST RSI,RSI
+0059caa5 JZ 0x0059cab6
+0059caa7 MOV RAX,qword ptr [R8 + 0x8]
+0059caab MOV RDI,qword ptr [RAX + 0x8]
+0059caaf MOV EAX,dword ptr [RAX]
+0059cab1 MOV qword ptr [RSI],RDI
+0059cab4 MOV dword ptr [RDX],EAX
+0059cab6 TEST RCX,RCX
+0059cab9 JZ 0x0059cac1
+0059cabb MOV RAX,qword ptr [R8]
+0059cabe MOV qword ptr [RCX],RAX
+0059cac1 MOV EAX,0x1
+0059cac6 RET

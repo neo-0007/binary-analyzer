@@ -1,0 +1,6 @@
+00422bb0 ENDBR64
+00422bb4 MOV RAX,qword ptr [RSI]
+00422bb7 MOV RSI,qword ptr [RAX + 0x8]
+00422bbb MOV RAX,qword ptr [RDI]
+00422bbe MOV RDI,qword ptr [RAX + 0x8]
+00422bc2 JMP 0x004011f0

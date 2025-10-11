@@ -1,0 +1,6 @@
+0060f0b0 ENDBR64
+0060f0b4 MOV RAX,qword ptr [RDI]
+0060f0b7 MOV RDX,qword ptr [RSI]
+0060f0ba MOV EAX,dword ptr [RAX]
+0060f0bc SUB EAX,dword ptr [RDX]
+0060f0be RET

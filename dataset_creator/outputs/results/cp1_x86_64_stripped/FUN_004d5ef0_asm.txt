@@ -1,0 +1,7 @@
+004d5ef0 ENDBR64
+004d5ef4 MOV RDI,qword ptr [RDI + 0x8]
+004d5ef8 TEST RDI,RDI
+004d5efb JZ 0x004d5f08
+004d5efd JMP 0x004b7bb0
+004d5f08 MOV EAX,0xffffffff
+004d5f0d RET

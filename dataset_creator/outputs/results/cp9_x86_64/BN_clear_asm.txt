@@ -1,0 +1,16 @@
+004afaf0 ENDBR64
+004afaf4 TEST RDI,RDI
+004afaf7 JZ 0x004afb28
+004afaf9 PUSH RBX
+004afafa MOV RBX,RDI
+004afafd MOV RDI,qword ptr [RDI]
+004afb00 TEST RDI,RDI
+004afb03 JZ 0x004afb12
+004afb05 MOVSXD RSI,dword ptr [RBX + 0xc]
+004afb09 SHL RSI,0x3
+004afb0d CALL 0x004211c0
+004afb12 MOV dword ptr [RBX + 0x10],0x0
+004afb19 MOV dword ptr [RBX + 0x8],0x0
+004afb20 POP RBX
+004afb21 RET
+004afb28 RET

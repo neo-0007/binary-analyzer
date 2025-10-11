@@ -1,0 +1,3 @@
+006fe8a0 ENDBR64
+006fe8a4 MOV EAX,0xffffffff
+006fe8a9 RET

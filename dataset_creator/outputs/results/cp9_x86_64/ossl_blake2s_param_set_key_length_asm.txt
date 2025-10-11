@@ -1,0 +1,3 @@
+0044f0c0 ENDBR64
+0044f0c4 MOV byte ptr [RDI + 0x1],SIL
+0044f0c8 RET

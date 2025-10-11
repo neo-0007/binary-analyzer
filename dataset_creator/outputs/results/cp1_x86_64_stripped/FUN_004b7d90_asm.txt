@@ -1,0 +1,18 @@
+004b7d90 ENDBR64
+004b7d94 MOV RAX,qword ptr [RSI]
+004b7d97 MOV qword ptr [RDI],RAX
+004b7d9a MOV EAX,dword ptr [RSI + 0x8]
+004b7d9d MOV dword ptr [RDI + 0x8],EAX
+004b7da0 MOV EAX,dword ptr [RSI + 0xc]
+004b7da3 MOV dword ptr [RDI + 0xc],EAX
+004b7da6 MOV EAX,dword ptr [RSI + 0x10]
+004b7da9 MOV dword ptr [RDI + 0x10],EAX
+004b7dac MOV EAX,dword ptr [RSI + 0x14]
+004b7daf AND EAX,0xfffffffe
+004b7db2 OR EAX,EDX
+004b7db4 MOV EDX,dword ptr [RDI + 0x14]
+004b7db7 AND EDX,0x1
+004b7dba OR EAX,EDX
+004b7dbc OR EAX,0x2
+004b7dbf MOV dword ptr [RDI + 0x14],EAX
+004b7dc2 RET

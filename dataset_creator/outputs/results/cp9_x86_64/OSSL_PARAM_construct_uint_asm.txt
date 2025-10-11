@@ -1,0 +1,8 @@
+0041b8e0 ENDBR64
+0041b8e4 MOV qword ptr [RDI],RSI
+0041b8e7 MOV RAX,RDI
+0041b8ea MOV dword ptr [RDI + 0x8],0x2
+0041b8f1 MOV qword ptr [RDI + 0x10],RDX
+0041b8f5 MOV qword ptr [RDI + 0x18],0x4
+0041b8fd MOV qword ptr [RDI + 0x20],-0x1
+0041b905 RET

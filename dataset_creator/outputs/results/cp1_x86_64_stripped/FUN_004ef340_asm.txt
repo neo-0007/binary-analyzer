@@ -1,0 +1,5 @@
+004ef340 ENDBR64
+004ef344 MOV qword ptr [RDI + 0x50],RSI
+004ef348 MOV qword ptr [RDI + 0x58],RDX
+004ef34c MOV qword ptr [RDI + 0x60],RCX
+004ef350 RET

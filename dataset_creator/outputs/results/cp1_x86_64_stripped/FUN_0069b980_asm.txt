@@ -1,0 +1,71 @@
+0069b980 ENDBR64
+0069b984 PUSH R13
+0069b986 PUSH R12
+0069b988 PUSH RBP
+0069b989 MOV RBP,RDI
+0069b98c PUSH RBX
+0069b98d MOV RBX,RSI
+0069b990 SUB RSP,0x8
+0069b994 MOV RAX,qword ptr [RSI + 0x10]
+0069b998 MOV RCX,qword ptr [RSI + 0x18]
+0069b99c XOR ESI,ESI
+0069b99e MOV RDX,qword ptr [RAX + -0x18]
+0069b9a2 MOV qword ptr [RDI],RAX
+0069b9a5 MOV qword ptr [RDI + RDX*0x1],RCX
+0069b9a9 MOV qword ptr [RDI + 0x8],0x0
+0069b9b1 MOV RDI,qword ptr [RAX + -0x18]
+0069b9b5 ADD RDI,RBP
+0069b9b8 CALL 0x0066fda0
+0069b9bd MOV RAX,qword ptr [RBX + 0x20]
+0069b9c1 XOR ESI,ESI
+0069b9c3 MOV qword ptr [RBP + 0x10],RAX
+0069b9c7 MOV RAX,qword ptr [RAX + -0x18]
+0069b9cb LEA RDI,[RBP + RAX*0x1 + 0x10]
+0069b9d0 MOV RAX,qword ptr [RBX + 0x28]
+0069b9d4 MOV qword ptr [RDI],RAX
+0069b9d7 CALL 0x0066fda0
+0069b9dc MOV RAX,qword ptr [RBX + 0x8]
+0069b9e0 MOV RDX,qword ptr [RBX + 0x30]
+0069b9e4 LEA RDI,[RBP + 0x50]
+0069b9e8 LEA R12,[RBP + 0x18]
+0069b9ec MOV qword ptr [RBP],RAX
+0069b9f0 MOV RAX,qword ptr [RAX + -0x18]
+0069b9f4 MOV qword ptr [RBP + RAX*0x1],RDX
+0069b9f9 MOV RAX,qword ptr [RBX + 0x38]
+0069b9fd MOV qword ptr [RBP + 0x10],RAX
+0069ba01 MOV RAX,qword ptr [RBX]
+0069ba04 MOV RDX,qword ptr [RBX + 0x40]
+0069ba08 MOV qword ptr [RBP],RAX
+0069ba0c MOV RAX,qword ptr [RAX + -0x18]
+0069ba10 MOV qword ptr [RBP + RAX*0x1],RDX
+0069ba15 MOV RAX,qword ptr [RBX + 0x48]
+0069ba19 MOV qword ptr [RBP + 0x20],0x0
+0069ba21 MOV qword ptr [RBP + 0x10],RAX
+0069ba25 MOV RAX,0x938918
+0069ba2c MOV qword ptr [RBP + 0x28],0x0
+0069ba34 ADD RAX,0x10
+0069ba38 MOV qword ptr [RBP + 0x30],0x0
+0069ba40 MOV qword ptr [RBP + 0x18],RAX
+0069ba44 MOV qword ptr [RBP + 0x38],0x0
+0069ba4c MOV qword ptr [RBP + 0x40],0x0
+0069ba54 MOV qword ptr [RBP + 0x48],0x0
+0069ba5c CALL 0x006274c0
+0069ba61 MOV RAX,0x938498
+0069ba68 MOV RSI,R12
+0069ba6b MOV qword ptr [RBP + 0x68],0x0
+0069ba73 MOV dword ptr [RBP + 0x58],0x18
+0069ba7a ADD RAX,0x10
+0069ba7e MOV dword ptr [RBP + 0x70],0x0
+0069ba85 MOV qword ptr [RBP + 0x18],RAX
+0069ba89 LEA RAX,[RBP + 0x70]
+0069ba8d MOV qword ptr [RBP + 0x60],RAX
+0069ba91 MOV RAX,qword ptr [RBP]
+0069ba95 MOV RDI,qword ptr [RAX + -0x18]
+0069ba99 ADD RDI,RBP
+0069ba9c CALL 0x0066fda0
+0069baa1 ADD RSP,0x8
+0069baa5 POP RBX
+0069baa6 POP RBP
+0069baa7 POP R12
+0069baa9 POP R13
+0069baab RET

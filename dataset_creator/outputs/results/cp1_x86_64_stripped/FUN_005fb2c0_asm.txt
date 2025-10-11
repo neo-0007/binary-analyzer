@@ -1,0 +1,3 @@
+005fb2c0 ENDBR64
+005fb2c4 MOV dword ptr [0x009427e0],EDI
+005fb2ca RET

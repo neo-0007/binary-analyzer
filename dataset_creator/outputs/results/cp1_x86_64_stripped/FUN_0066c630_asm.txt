@@ -1,0 +1,78 @@
+0066c630 ENDBR64
+0066c634 PUSH R12
+0066c636 MOV R12,RDI
+0066c639 PUSH RBX
+0066c63a MOV RBX,RSI
+0066c63d SUB RSP,0x8
+0066c641 CALL 0x0066beb0
+0066c646 MOV RSI,RBX
+0066c649 MOV RDI,R12
+0066c64c CALL 0x0069dcb0
+0066c651 MOV RDX,qword ptr [RBX + 0x68]
+0066c655 MOV RAX,qword ptr [R12 + 0x68]
+0066c65a MOV qword ptr [R12 + 0x68],RDX
+0066c65f MOVZX EDX,byte ptr [RBX + 0x70]
+0066c663 MOV qword ptr [RBX + 0x68],RAX
+0066c667 MOVZX EAX,byte ptr [R12 + 0x70]
+0066c66d MOV byte ptr [R12 + 0x70],DL
+0066c672 MOV byte ptr [RBX + 0x70],AL
+0066c675 MOV EAX,dword ptr [RBX + 0x78]
+0066c678 MOV dword ptr [RBX + 0x78],0x0
+0066c67f MOV dword ptr [R12 + 0x78],EAX
+0066c684 MOV RAX,qword ptr [RBX + 0x7c]
+0066c688 MOV qword ptr [R12 + 0x7c],RAX
+0066c68d MOV RAX,qword ptr [RBX + 0x84]
+0066c694 MOV qword ptr [R12 + 0x84],RAX
+0066c69c MOV RAX,qword ptr [RBX + 0x8c]
+0066c6a3 MOV qword ptr [R12 + 0x8c],RAX
+0066c6ab MOV RAX,qword ptr [RBX + 0x98]
+0066c6b2 MOV qword ptr [RBX + 0x98],0x0
+0066c6bd MOV qword ptr [R12 + 0x98],RAX
+0066c6c5 MOV RAX,qword ptr [RBX + 0xa0]
+0066c6cc MOV qword ptr [RBX + 0xa0],0x1
+0066c6d7 MOV qword ptr [R12 + 0xa0],RAX
+0066c6df MOVZX EAX,byte ptr [RBX + 0xa8]
+0066c6e6 MOV byte ptr [RBX + 0xa8],0x0
+0066c6ed MOV byte ptr [R12 + 0xa8],AL
+0066c6f5 MOV RAX,qword ptr [RBX + 0xd0]
+0066c6fc MOV qword ptr [RBX + 0xd0],0x0
+0066c707 MOV qword ptr [R12 + 0xd0],RAX
+0066c70f MOV RAX,qword ptr [RBX + 0xd8]
+0066c716 MOV qword ptr [RBX + 0xd8],0x0
+0066c721 MOV qword ptr [R12 + 0xd8],RAX
+0066c729 MOV RAX,qword ptr [RBX + 0xe0]
+0066c730 MOV qword ptr [RBX + 0xe0],0x0
+0066c73b MOV qword ptr [R12 + 0xe0],RAX
+0066c743 MOV RAX,qword ptr [RBX + 0xe8]
+0066c74a MOV qword ptr [RBX + 0xe8],0x0
+0066c755 MOV qword ptr [R12 + 0xe8],RAX
+0066c75d MOVZX EAX,byte ptr [RBX + 0xa9]
+0066c764 MOV byte ptr [RBX + 0xa9],0x0
+0066c76b MOV byte ptr [R12 + 0xa9],AL
+0066c773 MOVZX EAX,byte ptr [RBX + 0xaa]
+0066c77a MOV byte ptr [RBX + 0xaa],0x0
+0066c781 MOV byte ptr [R12 + 0xaa],AL
+0066c789 MOV RAX,qword ptr [RBX + 0xb0]
+0066c790 MOV qword ptr [RBX + 0xb0],0x0
+0066c79b MOV qword ptr [R12 + 0xb0],RAX
+0066c7a3 MOV RAX,qword ptr [RBX + 0xb8]
+0066c7aa MOV qword ptr [RBX + 0xb8],0x0
+0066c7b5 MOV qword ptr [R12 + 0xb8],RAX
+0066c7bd MOVZX EAX,byte ptr [RBX + 0xc0]
+0066c7c4 MOV byte ptr [RBX + 0xc0],0x0
+0066c7cb MOV byte ptr [R12 + 0xc0],AL
+0066c7d3 MOV RAX,qword ptr [RBX + 0x98]
+0066c7da MOV qword ptr [RBX + 0x28],0x0
+0066c7e2 MOV qword ptr [RBX + 0x8],RAX
+0066c7e6 MOV qword ptr [RBX + 0x10],RAX
+0066c7ea MOV qword ptr [RBX + 0x18],RAX
+0066c7ee MOV RAX,qword ptr [RBX + 0x7c]
+0066c7f2 MOV qword ptr [RBX + 0x20],0x0
+0066c7fa MOV qword ptr [RBX + 0x84],RAX
+0066c801 MOV qword ptr [RBX + 0x8c],RAX
+0066c808 MOV RAX,R12
+0066c80b MOV qword ptr [RBX + 0x30],0x0
+0066c813 ADD RSP,0x8
+0066c817 POP RBX
+0066c818 POP R12
+0066c81a RET

@@ -1,0 +1,4 @@
+0063bf50 ENDBR64
+0063bf54 MOV RDX,qword ptr [RDX]
+0063bf57 MOV RCX,qword ptr [RDX + -0x18]
+0063bf5b JMP 0x0063bcf0

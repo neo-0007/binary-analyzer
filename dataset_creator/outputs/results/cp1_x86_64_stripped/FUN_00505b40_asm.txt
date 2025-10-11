@@ -1,0 +1,43 @@
+00505b40 SUB RSP,0x58
+00505b44 PXOR XMM0,XMM0
+00505b48 MOV RDX,RDI
+00505b4b MOV RAX,qword ptr FS:[0x28]
+00505b54 MOV qword ptr [RSP + 0x48],RAX
+00505b59 XOR EAX,EAX
+00505b5b MOV RAX,qword ptr [RSI]
+00505b5e MOVUPS xmmword ptr [RSP + 0x8],XMM0
+00505b63 MOV RDI,RSP
+00505b66 MOVUPS xmmword ptr [RSP + 0x18],XMM0
+00505b6b MOV qword ptr [RSP],RAX
+00505b6f MOV RAX,qword ptr [RSI + 0x8]
+00505b73 MOVUPS xmmword ptr [RSP + 0x28],XMM0
+00505b78 MOV qword ptr [RSP + 0x38],0x0
+00505b81 SHL RAX,0x2
+00505b85 OR qword ptr [RSP + 0x7],RAX
+00505b8a MOV RAX,qword ptr [RSI + 0x10]
+00505b8e SHL RAX,0x4
+00505b92 OR qword ptr [RSP + 0xe],RAX
+00505b97 MOV RAX,qword ptr [RSI + 0x18]
+00505b9b SHL RAX,0x6
+00505b9f OR qword ptr [RSP + 0x15],RAX
+00505ba4 MOV RAX,qword ptr [RSI + 0x20]
+00505ba8 MOV qword ptr [RSP + 0x1d],RAX
+00505bad MOV RAX,qword ptr [RSI + 0x28]
+00505bb1 SHL RAX,0x2
+00505bb5 OR qword ptr [RSP + 0x24],RAX
+00505bba MOV RAX,qword ptr [RSI + 0x30]
+00505bbe SHL RAX,0x4
+00505bc2 OR qword ptr [RSP + 0x2b],RAX
+00505bc7 MOV RAX,qword ptr [RSI + 0x38]
+00505bcb SHL RAX,0x6
+00505bcf OR qword ptr [RSP + 0x32],RAX
+00505bd4 MOV RAX,qword ptr [RSI + 0x40]
+00505bd8 MOV ESI,0x42
+00505bdd MOV qword ptr [RSP + 0x3a],RAX
+00505be2 CALL 0x004b8810
+00505be7 MOV RDX,qword ptr [RSP + 0x48]
+00505bec SUB RDX,qword ptr FS:[0x28]
+00505bf5 JNZ 0x00505bfc
+00505bf7 ADD RSP,0x58
+00505bfb RET
+00505bfc CALL 0x00771f60

@@ -1,0 +1,36 @@
+
+int UI_add_verify_string
+              (UI *ui,char *prompt,int flags,char *result_buf,int minsize,int maxsize,char *test_buf
+              )
+
+{
+  int iVar1;
+  long lVar2;
+  long lVar3;
+  
+  lVar2 = general_allocate_prompt_constprop_0(prompt,0,2,flags,result_buf);
+  if (lVar2 == 0) {
+    iVar1 = -1;
+  }
+  else {
+    lVar3 = *(long *)(ui + 8);
+    if (lVar3 == 0) {
+      lVar3 = OPENSSL_sk_new_null();
+      *(long *)(ui + 8) = lVar3;
+      if (lVar3 == 0) {
+        free_string(lVar2);
+        return -1;
+      }
+    }
+    *(int *)(lVar2 + 0x28) = minsize;
+    *(int *)(lVar2 + 0x2c) = maxsize;
+    *(char **)(lVar2 + 0x30) = test_buf;
+    iVar1 = OPENSSL_sk_push(lVar3,lVar2);
+    if (iVar1 < 1) {
+      free_string(lVar2);
+      return iVar1 + -1;
+    }
+  }
+  return iVar1;
+}
+

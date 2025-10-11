@@ -1,0 +1,15 @@
+005f7c20 LEA EDX,[RDX + RDX*0x2 + -0x3]
+005f7c24 MOVDQA XMM0,xmmword ptr [RSI]
+005f7c28 SHL EDX,0x5
+005f7c2b MOVDQA XMM1,xmmword ptr [RSI + 0x10]
+005f7c30 MOVDQA XMM2,xmmword ptr [RSI + 0x20]
+005f7c35 MOVDQA XMM3,xmmword ptr [RSI + 0x30]
+005f7c3a MOVDQA XMM4,xmmword ptr [RSI + 0x40]
+005f7c3f MOVDQA XMM5,xmmword ptr [RSI + 0x50]
+005f7c44 MOVDQA xmmword ptr [RDI + RDX*0x1],XMM0
+005f7c49 MOVDQA xmmword ptr [RDI + RDX*0x1 + 0x10],XMM1
+005f7c4f MOVDQA xmmword ptr [RDI + RDX*0x1 + 0x20],XMM2
+005f7c55 MOVDQA xmmword ptr [RDI + RDX*0x1 + 0x30],XMM3
+005f7c5b MOVDQA xmmword ptr [RDI + RDX*0x1 + 0x40],XMM4
+005f7c61 MOVDQA xmmword ptr [RDI + RDX*0x1 + 0x50],XMM5
+005f7c67 RET

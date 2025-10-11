@@ -1,0 +1,4 @@
+0066ed20 ENDBR64
+0066ed24 MOV RAX,qword ptr [RDI + 0xd8]
+0066ed2b MOV qword ptr [RDI + 0xd8],RSI
+0066ed32 RET

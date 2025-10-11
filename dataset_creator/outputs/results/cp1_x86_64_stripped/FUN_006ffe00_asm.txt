@@ -1,0 +1,26 @@
+006ffe00 ENDBR64
+006ffe04 PUSH RBX
+006ffe05 MOV EDX,dword ptr [RDI]
+006ffe07 MOV RBX,RDI
+006ffe0a MOV RAX,qword ptr [RDI + 0xa0]
+006ffe11 MOV RDI,qword ptr [RAX + 0x40]
+006ffe15 TEST DH,0x1
+006ffe18 JZ 0x006ffe42
+006ffe1a AND DH,0xfe
+006ffe1d MOVQ XMM0,RDI
+006ffe22 MOV dword ptr [RBX],EDX
+006ffe24 MOV RDX,qword ptr [RAX + 0x8]
+006ffe28 MOVHPS XMM0,qword ptr [RAX + 0x50]
+006ffe2c MOVUPS xmmword ptr [RAX],XMM0
+006ffe2f MOV qword ptr [RAX + 0x50],RDX
+006ffe33 MOV RDX,qword ptr [RAX + 0x10]
+006ffe37 MOV qword ptr [RAX + 0x10],RDI
+006ffe3b MOV qword ptr [RAX + 0x40],RDX
+006ffe3f MOV RDI,RDX
+006ffe42 CALL 0x007104f0
+006ffe47 MOV RAX,qword ptr [RBX + 0xa0]
+006ffe4e PXOR XMM0,XMM0
+006ffe52 MOV qword ptr [RAX + 0x50],0x0
+006ffe5a MOVUPS xmmword ptr [RAX + 0x40],XMM0
+006ffe5e POP RBX
+006ffe5f RET

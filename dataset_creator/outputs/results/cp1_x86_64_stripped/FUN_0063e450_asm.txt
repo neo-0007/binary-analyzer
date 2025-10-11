@@ -1,0 +1,4 @@
+0063e450 ENDBR64
+0063e454 MOV RAX,qword ptr [RDI + 0x10]
+0063e458 MOV EAX,dword ptr [RAX + 0x60]
+0063e45b RET

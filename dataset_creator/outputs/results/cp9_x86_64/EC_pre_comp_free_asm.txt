@@ -1,0 +1,35 @@
+004e2e50 ENDBR64
+004e2e54 PUSH RBX
+004e2e55 CMP dword ptr [RDI + 0x98],0x5
+004e2e5c MOV RBX,RDI
+004e2e5f JA 0x004e2e8c
+004e2e61 MOV EAX,dword ptr [RDI + 0x98]
+004e2e67 LEA RDX,[0x7f3540]
+004e2e6e MOVSXD RAX,dword ptr [RDX + RAX*0x4]
+004e2e72 ADD RAX,RDX
+004e2e75 JMP RAX
+004e2e80 MOV RDI,qword ptr [RDI + 0xa0]
+004e2e87 CALL 0x004e6120
+004e2e8c MOV qword ptr [RBX + 0xa0],0x0
+004e2e97 POP RBX
+004e2e98 RET
+004e2ea0 MOV RDI,qword ptr [RDI + 0xa0]
+004e2ea7 CALL 0x004efb30
+004e2eac MOV qword ptr [RBX + 0xa0],0x0
+004e2eb7 POP RBX
+004e2eb8 RET
+004e2ec0 MOV RDI,qword ptr [RDI + 0xa0]
+004e2ec7 CALL 0x004f7f70
+004e2ecc MOV qword ptr [RBX + 0xa0],0x0
+004e2ed7 POP RBX
+004e2ed8 RET
+004e2ee0 MOV RDI,qword ptr [RDI + 0xa0]
+004e2ee7 CALL 0x004fcf20
+004e2eec MOV qword ptr [RBX + 0xa0],0x0
+004e2ef7 POP RBX
+004e2ef8 RET
+004e2f00 MOV RDI,qword ptr [RDI + 0xa0]
+004e2f07 CALL 0x004ff770
+004e2f0c MOV qword ptr [RBX + 0xa0],0x0
+004e2f17 POP RBX
+004e2f18 RET

@@ -1,0 +1,15 @@
+006f3ec0 ENDBR64
+006f3ec4 MOV RAX,RDI
+006f3ec7 TEST byte ptr [RDI + 0x74],0x1
+006f3ecb JZ 0x006f3f01
+006f3ecd TEST byte ptr [RDI],0x8
+006f3ed0 JZ 0x006f3f01
+006f3ed2 MOV ESI,dword ptr [RDI + 0xc0]
+006f3ed8 LEA RCX,[0x932180]
+006f3edf LEA RDX,[0x932480]
+006f3ee6 TEST ESI,ESI
+006f3ee8 CMOVG RDX,RCX
+006f3eec MOV qword ptr [RDI + 0xd8],RDX
+006f3ef3 MOV RDX,qword ptr [RDI + 0xa0]
+006f3efa MOV qword ptr [RDX + 0xe0],RCX
+006f3f01 RET

@@ -1,0 +1,5 @@
+00423410 ENDBR64
+00423414 MOV RAX,qword ptr [RDI + 0x8]
+00423418 OR dword ptr [RAX + 0x20],0xd
+0042341c MOV dword ptr [RAX + 0x10],0x0
+00423423 RET

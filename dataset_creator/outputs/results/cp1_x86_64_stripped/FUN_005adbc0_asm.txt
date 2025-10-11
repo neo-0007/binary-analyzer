@@ -1,0 +1,4 @@
+005adbc0 ENDBR64
+005adbc4 MOV RSI,qword ptr [RSI]
+005adbc7 LEA RCX,[0x912d80]
+005adbce JMP 0x005bd7d0

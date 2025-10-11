@@ -1,0 +1,3 @@
+00620ad0 ENDBR64
+00620ad4 MOV EAX,dword ptr [RDI + 0x60]
+00620ad7 RET

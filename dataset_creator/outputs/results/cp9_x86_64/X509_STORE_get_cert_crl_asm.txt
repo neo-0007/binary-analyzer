@@ -1,0 +1,3 @@
+0058dcf0 ENDBR64
+0058dcf4 MOV RAX,qword ptr [RDI + 0x58]
+0058dcf8 RET

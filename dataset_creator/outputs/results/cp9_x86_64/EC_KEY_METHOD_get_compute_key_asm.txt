@@ -1,0 +1,6 @@
+004e2bb0 ENDBR64
+004e2bb4 TEST RSI,RSI
+004e2bb7 JZ 0x004e2bc0
+004e2bb9 MOV RAX,qword ptr [RDI + 0x48]
+004e2bbd MOV qword ptr [RSI],RAX
+004e2bc0 RET

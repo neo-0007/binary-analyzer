@@ -1,0 +1,3 @@
+004ce060 ENDBR64
+004ce064 MOV dword ptr [0x00940ff8],0x1
+004ce06e RET

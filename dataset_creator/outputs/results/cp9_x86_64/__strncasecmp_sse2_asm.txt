@@ -1,0 +1,6 @@
+0072b1c0 ENDBR64
+0072b1c4 MOV RAX,-0x78
+0072b1cb MOV RCX,qword ptr FS:[RAX]
+0072b1cf NOP dword ptr [RAX + RAX*0x1]
+0072b1d4 NOP dword ptr CS:[RAX + RAX*0x1]
+0072b1df NOP

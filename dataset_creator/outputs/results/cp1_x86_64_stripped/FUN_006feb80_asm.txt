@@ -1,0 +1,52 @@
+006feb80 ENDBR64
+006feb84 PUSH R12
+006feb86 PUSH RBP
+006feb87 MOV EBP,EDI
+006feb89 PUSH RBX
+006feb8a MOV RBX,RSI
+006feb8d SUB RSP,0x10
+006feb91 MOV EAX,dword ptr [RSI]
+006feb93 AND EAX,0x8000
+006feb98 JNZ 0x006febca
+006feb9a MOV R12,qword ptr FS:[0x10]
+006feba3 MOV RDI,qword ptr [RSI + 0x88]
+006febaa CMP qword ptr [RDI + 0x8],R12
+006febae JZ 0x006febc6
+006febb0 MOV EDX,0x1
+006febb5 CMPXCHG.LOCK dword ptr [RDI],EDX
+006febb9 JNZ 0x006fec30
+006febbb MOV RDI,qword ptr [RBX + 0x88]
+006febc2 MOV qword ptr [RDI + 0x8],R12
+006febc6 ADD dword ptr [RDI + 0x4],0x1
+006febca MOV ESI,0x1
+006febcf MOV RDI,RBX
+006febd2 CALL 0x00701c30
+006febd7 MOV EAX,0xffffffff
+006febdc CMP EBP,-0x1
+006febdf JZ 0x006febeb
+006febe1 MOV ESI,EBP
+006febe3 MOV RDI,RBX
+006febe6 CALL 0x006ffe60
+006febeb TEST dword ptr [RBX],0x8000
+006febf1 JNZ 0x006fec16
+006febf3 MOV RDI,qword ptr [RBX + 0x88]
+006febfa MOV ECX,dword ptr [RDI + 0x4]
+006febfd LEA EDX,[RCX + -0x1]
+006fec00 MOV dword ptr [RDI + 0x4],EDX
+006fec03 TEST EDX,EDX
+006fec05 JNZ 0x006fec16
+006fec07 MOV qword ptr [RDI + 0x8],0x0
+006fec0f XCHG dword ptr [RDI],EDX
+006fec11 CMP EDX,0x1
+006fec14 JG 0x006fec20
+006fec16 ADD RSP,0x10
+006fec1a POP RBX
+006fec1b POP RBP
+006fec1c POP R12
+006fec1e RET
+006fec20 MOV dword ptr [RSP + 0xc],EAX
+006fec24 CALL 0x00709660
+006fec29 MOV EAX,dword ptr [RSP + 0xc]
+006fec2d JMP 0x006fec16
+006fec30 CALL 0x00709590
+006fec35 JMP 0x006febbb

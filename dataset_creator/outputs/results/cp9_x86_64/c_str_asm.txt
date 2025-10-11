@@ -1,0 +1,3 @@
+006aa660 ENDBR64
+006aa664 MOV RAX,qword ptr [RDI]
+006aa667 RET

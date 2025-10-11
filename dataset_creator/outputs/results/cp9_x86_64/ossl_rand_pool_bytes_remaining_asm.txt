@@ -1,0 +1,4 @@
+004306f0 ENDBR64
+004306f4 MOV RAX,qword ptr [RDI + 0x20]
+004306f8 SUB RAX,qword ptr [RDI + 0x8]
+004306fc RET

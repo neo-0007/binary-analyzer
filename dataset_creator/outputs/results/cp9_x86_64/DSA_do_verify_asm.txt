@@ -1,0 +1,3 @@
+004ce250 ENDBR64
+004ce254 MOV RAX,qword ptr [RCX + 0xa0]
+004ce25b JMP qword ptr [RAX + 0x18]

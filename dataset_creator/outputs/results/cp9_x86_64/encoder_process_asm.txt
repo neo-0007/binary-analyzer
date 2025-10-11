@@ -1,0 +1,337 @@
+005ef980 PUSH R15
+005ef982 PUSH R14
+005ef984 XOR R14D,R14D
+005ef987 PUSH R13
+005ef989 MOV R13,RDI
+005ef98c PUSH R12
+005ef98e PUSH RBP
+005ef98f PUSH RBX
+005ef990 SUB RSP,0x248
+005ef997 MOV RAX,qword ptr FS:[0x28]
+005ef9a0 MOV qword ptr [RSP + 0x238],RAX
+005ef9a8 XOR EAX,EAX
+005ef9aa CMP qword ptr [RDI + 0x18],0x0
+005ef9af JZ 0x005efdb8
+005ef9b5 MOV EAX,dword ptr [R13 + 0x10]
+005ef9b9 LEA R12D,[RAX + -0x1]
+005ef9bd TEST EAX,EAX
+005ef9bf JLE 0x005efddb
+005ef9c5 LEA RBP,[RSP + 0x58]
+005ef9ca JMP 0x005efacf
+005ef9d0 MOV RAX,qword ptr [R13]
+005ef9d4 MOV ESI,R12D
+005ef9d7 MOV RDI,qword ptr [RAX + 0x18]
+005ef9db CALL 0x00434d10
+005ef9e0 MOV RBX,RAX
+005ef9e3 MOV RDI,RAX
+005ef9e6 CALL 0x005ef900
+005ef9eb MOV RDI,RBX
+005ef9ee MOV qword ptr [RSP + 0x8],RAX
+005ef9f3 CALL 0x005ef920
+005ef9f8 MOV RDI,RBX
+005ef9fb MOV qword ptr [RSP + 0x10],RAX
+005efa00 CALL 0x005ef940
+005efa05 MOV RDI,RBX
+005efa08 MOV R15,RAX
+005efa0b CALL 0x005ef960
+005efa10 PXOR XMM0,XMM0
+005efa14 MOV RCX,qword ptr [R13]
+005efa18 MOV R9,RAX
+005efa1b MOV EAX,dword ptr [R13 + 0x20]
+005efa1f MOVUPS xmmword ptr [RBP],XMM0
+005efa23 MOVUPS xmmword ptr [RBP + 0x10],XMM0
+005efa27 MOVUPS xmmword ptr [RBP + 0x20],XMM0
+005efa2b MOVUPS xmmword ptr [RBP + 0x30],XMM0
+005efa2f MOV dword ptr [RSP + 0x70],EAX
+005efa33 MOV EAX,dword ptr [R13 + 0x14]
+005efa37 MOV qword ptr [RSP + 0x50],RCX
+005efa3c ADD EAX,0x1
+005efa3f MOV dword ptr [RSP + 0x60],R12D
+005efa44 MOV qword ptr [RSP + 0x68],RBX
+005efa49 MOV dword ptr [RSP + 0x64],EAX
+005efa4d TEST R14D,R14D
+005efa50 JZ 0x005efaf8
+005efa56 MOV RSI,qword ptr [RCX + 0x8]
+005efa5a TEST RSI,RSI
+005efa5d JZ 0x005efa77
+005efa5f MOV RDI,R15
+005efa62 MOV qword ptr [RSP],R9
+005efa66 CALL 0x0041b3d0
+005efa6b TEST EAX,EAX
+005efa6d JNZ 0x005efac5
+005efa6f MOV RCX,qword ptr [R13]
+005efa73 MOV R9,qword ptr [RSP]
+005efa77 MOV RDI,qword ptr [RCX + 0x10]
+005efa7b TEST RDI,RDI
+005efa7e JZ 0x005efa96
+005efa80 TEST R9,R9
+005efa83 JZ 0x005efa96
+005efa85 MOV RSI,R9
+005efa88 CALL 0x0041b3d0
+005efa8d TEST EAX,EAX
+005efa8f JNZ 0x005efac5
+005efa91 ADD dword ptr [R13 + 0x20],0x1
+005efa96 LEA RDI,[RSP + 0x50]
+005efa9b CALL 0x005ef980
+005efaa0 MOV RCX,qword ptr [RSP + 0x80]
+005efaa8 MOV RDI,qword ptr [RSP + 0x78]
+005efaad MOV qword ptr [R13 + 0x30],RCX
+005efab1 MOV RCX,qword ptr [RSP + 0x88]
+005efab9 MOV qword ptr [R13 + 0x28],RDI
+005efabd MOV qword ptr [R13 + 0x38],RCX
+005efac1 TEST EAX,EAX
+005efac3 JNZ 0x005efb20
+005efac5 SUB R12D,0x1
+005efac9 JC 0x005efe30
+005efacf MOV qword ptr [RSP],0x0
+005efad7 TEST R14D,R14D
+005efada JNZ 0x005ef9d0
+005efae0 MOV RDI,qword ptr [R13 + 0x18]
+005efae4 CALL 0x005ef900
+005efae9 MOV qword ptr [RSP],RAX
+005efaed JMP 0x005ef9d0
+005efaf8 MOV RDI,qword ptr [RSP]
+005efafc MOV RSI,R15
+005efaff MOV qword ptr [RSP + 0x18],R9
+005efb04 CALL 0x0050aa80
+005efb09 TEST EAX,EAX
+005efb0b JZ 0x005efac5
+005efb0d MOV RCX,qword ptr [R13]
+005efb11 MOV R9,qword ptr [RSP + 0x18]
+005efb16 JMP 0x005efa77
+005efb20 TEST R12D,R12D
+005efb23 JS 0x005efe30
+005efb29 CMP EAX,-0x1
+005efb2c JZ 0x005efdf4
+005efb32 CMP EAX,0x1
+005efb35 JZ 0x005efc08
+005efb3b XOR EBP,EBP
+005efb3d XOR R15D,R15D
+005efb40 TEST R14D,R14D
+005efb43 JZ 0x005efd21
+005efb49 MOV RDI,qword ptr [R13 + 0x8]
+005efb4d CALL 0x004ae410
+005efb52 MOV R14,RAX
+005efb55 TEST RAX,RAX
+005efb58 JZ 0x005eff08
+005efb5e MOV RAX,qword ptr [R13]
+005efb62 PUSH RDI
+005efb63 MOV RCX,R15
+005efb66 MOV RSI,R14
+005efb69 MOV R9,0x53c2b0
+005efb70 LEA RDX,[RAX + 0x38]
+005efb74 MOV R8D,dword ptr [RAX]
+005efb77 PUSH RDX
+005efb78 MOV RAX,qword ptr [RSP + 0x18]
+005efb7d MOV RDX,RBP
+005efb80 MOV RDI,qword ptr [RSP + 0x20]
+005efb85 CALL qword ptr [RAX + 0x70]
+005efb88 MOV RDI,R14
+005efb8b XOR R14D,R14D
+005efb8e MOV R15D,EAX
+005efb91 CALL 0x004ae390
+005efb96 MOV qword ptr [R13 + 0x28],RBX
+005efb9a MOV RDI,qword ptr [R13 + 0x30]
+005efb9e MOV EDX,0x28e
+005efba3 LEA RSI,[0x80f5e8]
+005efbaa CALL 0x00419770
+005efbaf MOV qword ptr [R13 + 0x30],0x0
+005efbb7 POP R8
+005efbb9 POP R9
+005efbbb NOP dword ptr [RAX + RAX*0x1]
+005efbc0 MOV RDI,R14
+005efbc3 CALL 0x004a84e0
+005efbc8 TEST RBP,RBP
+005efbcb JZ 0x005efbd8
+005efbcd MOV RAX,qword ptr [R13]
+005efbd1 MOV RDI,qword ptr [RAX + 0x30]
+005efbd5 CALL qword ptr [RAX + 0x28]
+005efbd8 MOV RAX,qword ptr [RSP + 0x238]
+005efbe0 SUB RAX,qword ptr FS:[0x28]
+005efbe9 JNZ 0x005efea0
+005efbef ADD RSP,0x248
+005efbf6 MOV EAX,R15D
+005efbf9 POP RBX
+005efbfa POP RBP
+005efbfb POP R12
+005efbfd POP R13
+005efbff POP R14
+005efc01 POP R15
+005efc03 RET
+005efc08 CMP qword ptr [R13 + 0x30],0x0
+005efc0d JZ 0x005efe68
+005efc13 CALL 0x005ef960
+005efc18 LEA R15,[RSP + 0x20]
+005efc1d MOV RDX,qword ptr [R13 + 0x40]
+005efc21 XOR ECX,ECX
+005efc23 LEA RSI,[0x7d7af4]
+005efc2a MOV RDI,R15
+005efc2d MOV qword ptr [RSP],RAX
+005efc31 LEA RBP,[RSP + 0xc8]
+005efc39 CALL 0x0041cca0
+005efc3e MOVDQU XMM1,xmmword ptr [RSP + 0x20]
+005efc44 MOVDQU XMM2,xmmword ptr [RSP + 0x30]
+005efc4a MOV RDX,qword ptr [RSP + 0x40]
+005efc4f MOV RAX,qword ptr [RSP]
+005efc53 MOVAPS xmmword ptr [RSP + 0xa0],XMM1
+005efc5b MOV qword ptr [RSP + 0xc0],RDX
+005efc63 MOVAPS xmmword ptr [RSP + 0xb0],XMM2
+005efc6b TEST RAX,RAX
+005efc6e JZ 0x005efcb5
+005efc70 MOV RDX,RAX
+005efc73 XOR ECX,ECX
+005efc75 LEA RSI,[0x7d7b75]
+005efc7c MOV RDI,R15
+005efc7f CALL 0x0041cca0
+005efc84 MOVDQU XMM7,xmmword ptr [RSP + 0x20]
+005efc8a MOV RAX,qword ptr [RSP + 0x40]
+005efc8f LEA RBP,[RSP + 0xf0]
+005efc97 MOVUPS xmmword ptr [RSP + 0xc8],XMM7
+005efc9f MOVDQU XMM7,xmmword ptr [RSP + 0x30]
+005efca5 MOV qword ptr [RSP + 0xe8],RAX
+005efcad MOVUPS xmmword ptr [RSP + 0xd8],XMM7
+005efcb5 MOV RCX,qword ptr [R13 + 0x38]
+005efcb9 MOV RDX,qword ptr [R13 + 0x30]
+005efcbd MOV RDI,R15
+005efcc0 LEA RSI,[0x80dc4f]
+005efcc7 CALL 0x0041ccf0
+005efccc MOVDQU XMM3,xmmword ptr [RSP + 0x20]
+005efcd2 MOV RDI,R15
+005efcd5 LEA R15,[RSP + 0xa0]
+005efcdd MOVUPS xmmword ptr [RBP],XMM3
+005efce1 MOVDQU XMM4,xmmword ptr [RSP + 0x30]
+005efce7 MOVUPS xmmword ptr [RBP + 0x10],XMM4
+005efceb MOV RAX,qword ptr [RSP + 0x40]
+005efcf0 MOV qword ptr [RBP + 0x20],RAX
+005efcf4 CALL 0x0041ce80
+005efcf9 MOVDQU XMM5,xmmword ptr [RSP + 0x20]
+005efcff MOVUPS xmmword ptr [RBP + 0x28],XMM5
+005efd03 MOVDQU XMM6,xmmword ptr [RSP + 0x30]
+005efd09 MOVUPS xmmword ptr [RBP + 0x38],XMM6
+005efd0d MOV RAX,qword ptr [RSP + 0x40]
+005efd12 MOV qword ptr [RBP + 0x48],RAX
+005efd16 XOR EBP,EBP
+005efd18 TEST R14D,R14D
+005efd1b JNZ 0x005efb49
+005efd21 CALL 0x005ad700
+005efd26 MOV RDI,RAX
+005efd29 CALL 0x004a84d0
+005efd2e MOV R14,RAX
+005efd31 TEST RAX,RAX
+005efd34 JZ 0x005eff08
+005efd3a MOV RDI,RAX
+005efd3d CALL 0x004ae410
+005efd42 MOV R11,RAX
+005efd45 TEST RAX,RAX
+005efd48 JZ 0x005efea5
+005efd4e MOV RAX,qword ptr [R13]
+005efd52 PUSH RDX
+005efd53 MOV RCX,R15
+005efd56 MOV RSI,R11
+005efd59 MOV R9,0x53c2b0
+005efd60 LEA RDX,[RAX + 0x38]
+005efd64 MOV R8D,dword ptr [RAX]
+005efd67 PUSH RDX
+005efd68 MOV RAX,qword ptr [RSP + 0x18]
+005efd6d MOV RDX,RBP
+005efd70 MOV RDI,qword ptr [RSP + 0x20]
+005efd75 MOV qword ptr [RSP + 0x10],R11
+005efd7a CALL qword ptr [RAX + 0x70]
+005efd7d MOV RDI,qword ptr [RSP + 0x10]
+005efd82 MOV R15D,EAX
+005efd85 CALL 0x004ae390
+005efd8a MOV qword ptr [R13 + 0x28],RBX
+005efd8e MOV RDI,qword ptr [R13 + 0x30]
+005efd92 LEA RSI,[0x80f5e8]
+005efd99 MOV EDX,0x28e
+005efd9e CALL 0x00419770
+005efda3 POP RCX
+005efda4 POP RSI
+005efda5 MOV qword ptr [R13 + 0x30],0x0
+005efdad JMP 0x005efed0
+005efdb8 MOV RAX,qword ptr [RDI]
+005efdbb MOV R14D,0x1
+005efdc1 CMP qword ptr [RAX + 0x10],0x1
+005efdc6 SBB EAX,EAX
+005efdc8 MOV dword ptr [RDI + 0x20],EAX
+005efdcb MOV EAX,dword ptr [R13 + 0x10]
+005efdcf LEA R12D,[RAX + -0x1]
+005efdd3 TEST EAX,EAX
+005efdd5 JG 0x005ef9c5
+005efddb TEST R12D,R12D
+005efdde JS 0x005efe30
+005efde0 MOV qword ptr [RSP + 0x8],0x0
+005efde9 XOR EBX,EBX
+005efdeb MOV qword ptr [RSP + 0x10],0x0
+005efdf4 MOV R15D,dword ptr [R13 + 0x20]
+005efdf8 TEST R15D,R15D
+005efdfb JZ 0x005efbd8
+005efe01 MOV RAX,qword ptr [R13]
+005efe05 MOV RDI,RBX
+005efe08 XOR R15D,R15D
+005efe0b MOV RSI,qword ptr [RAX + 0x30]
+005efe0f CALL qword ptr [RAX + 0x20]
+005efe12 MOV RDI,qword ptr [RSP + 0x8]
+005efe17 MOV RBP,RAX
+005efe1a CALL 0x0050aa60
+005efe1f MOV qword ptr [R13 + 0x40],RAX
+005efe23 TEST RBP,RBP
+005efe26 JNZ 0x005efb40
+005efe2c JMP 0x005efe36
+005efe30 MOV R15D,0xffffffff
+005efe36 LEA RBP,[0x80f5e8]
+005efe3d MOV RDI,qword ptr [R13 + 0x30]
+005efe41 MOV EDX,0x28e
+005efe46 MOV RSI,RBP
+005efe49 CALL 0x00419770
+005efe4e MOV qword ptr [R13 + 0x30],0x0
+005efe56 XOR EDI,EDI
+005efe58 CALL 0x004a84e0
+005efe5d JMP 0x005efbd8
+005efe68 CALL 0x00511480
+005efe6d LEA RBP,[0x80f5e8]
+005efe74 MOV ESI,0x246
+005efe79 XOR R15D,R15D
+005efe7c LEA RDX,[0x80f900]
+005efe83 MOV RDI,RBP
+005efe86 CALL 0x005115a0
+005efe8b XOR EDX,EDX
+005efe8d MOV ESI,0xc0103
+005efe92 XOR EAX,EAX
+005efe94 MOV EDI,0x3b
+005efe99 CALL 0x00511950
+005efe9e JMP 0x005efe3d
+005efea0 CALL 0x00768630
+005efea5 XOR EDI,EDI
+005efea7 XOR R15D,R15D
+005efeaa CALL 0x004ae390
+005efeaf MOV qword ptr [R13 + 0x28],RBX
+005efeb3 MOV RDI,qword ptr [R13 + 0x30]
+005efeb7 MOV EDX,0x28e
+005efebc LEA RSI,[0x80f5e8]
+005efec3 CALL 0x00419770
+005efec8 MOV qword ptr [R13 + 0x30],0x0
+005efed0 XOR EDX,EDX
+005efed2 LEA RCX,[RSP + 0x50]
+005efed7 MOV ESI,0x73
+005efedc MOV RDI,R14
+005efedf CALL 0x004a8cc0
+005efee4 MOV RAX,qword ptr [RSP + 0x50]
+005efee9 PXOR XMM0,XMM0
+005efeed MOV RDX,qword ptr [RAX + 0x8]
+005efef1 MOV qword ptr [R13 + 0x30],RDX
+005efef5 MOV RDX,qword ptr [RAX]
+005efef8 MOV qword ptr [R13 + 0x38],RDX
+005efefc MOVUPS xmmword ptr [RAX],XMM0
+005efeff MOVUPS xmmword ptr [RAX + 0x10],XMM0
+005eff03 JMP 0x005efbc0
+005eff08 XOR EDI,EDI
+005eff0a XOR R15D,R15D
+005eff0d CALL 0x004ae390
+005eff12 MOV qword ptr [R13 + 0x28],RBX
+005eff16 MOV RDI,qword ptr [R13 + 0x30]
+005eff1a MOV EDX,0x28e
+005eff1f LEA RSI,[0x80f5e8]
+005eff26 CALL 0x00419770
+005eff2b MOV qword ptr [R13 + 0x30],0x0
+005eff33 JMP 0x005efbc0

@@ -1,0 +1,8 @@
+006b5dc0 ENDBR64
+006b5dc4 LEA RAX,[RDI + 0x10]
+006b5dc8 CMP qword ptr [RDI],RAX
+006b5dcb JZ 0x006b5dd8
+006b5dcd MOV RAX,qword ptr [RDI + 0x10]
+006b5dd1 RET
+006b5dd8 MOV EAX,0x3
+006b5ddd RET

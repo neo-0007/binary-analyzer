@@ -1,0 +1,5 @@
+0063dbc0 ENDBR64
+0063dbc4 MOV RAX,qword ptr [RDI + 0x20]
+0063dbc8 MOVZX ESI,SIL
+0063dbcc MOVZX EAX,byte ptr [RAX + RSI*0x4]
+0063dbd0 RET

@@ -1,0 +1,136 @@
+004fd280 MOV RDX,RSI
+004fd283 MOV RCX,RDI
+004fd286 PUSH R15
+004fd288 MOV EAX,0x3
+004fd28d PUSH R14
+004fd28f MOV R14,qword ptr [RCX + 0x30]
+004fd293 PUSH R13
+004fd295 MOV R15,qword ptr [RCX + 0x38]
+004fd299 PUSH R12
+004fd29b MOV RSI,qword ptr [RSI + 0x50]
+004fd29f MOV RDI,qword ptr [RDX + 0x58]
+004fd2a3 SHLD RDI,RSI,0x20
+004fd2a8 SHL RSI,0x20
+004fd2ac ADD RSI,qword ptr [RDX + 0x40]
+004fd2b0 ADC RDI,qword ptr [RDX + 0x48]
+004fd2b4 MOV R8,RSI
+004fd2b7 MOV R9,RDI
+004fd2ba ADD R8,qword ptr [RCX]
+004fd2bd ADC R9,qword ptr [RCX + 0x8]
+004fd2c1 SUB R14,RSI
+004fd2c4 MOV qword ptr [RCX],R8
+004fd2c7 SBB R15,RDI
+004fd2ca MOV qword ptr [RCX + 0x8],R9
+004fd2ce MOV qword ptr [RCX + 0x30],R14
+004fd2d2 MOV qword ptr [RCX + 0x38],R15
+004fd2d6 MOV RSI,qword ptr [RDX + 0x50]
+004fd2da MOV RDI,qword ptr [RDX + 0x58]
+004fd2de MOV R12,qword ptr [RDX + 0x70]
+004fd2e2 MOV R13,qword ptr [RDX + 0x78]
+004fd2e6 MOV R10,RSI
+004fd2e9 ADD R10,qword ptr [RCX + 0x10]
+004fd2ed MOV R11,RDI
+004fd2f0 ADC R11,qword ptr [RCX + 0x18]
+004fd2f4 SUB R10,R12
+004fd2f7 SBB R11,R13
+004fd2fa ADD R12,qword ptr [RCX + 0x20]
+004fd2fe ADC R13,qword ptr [RCX + 0x28]
+004fd302 MOV qword ptr [RCX + 0x10],R10
+004fd306 SUB R12,RSI
+004fd309 MOV qword ptr [RCX + 0x18],R11
+004fd30d SBB R13,RDI
+004fd310 MOV qword ptr [RCX + 0x20],R12
+004fd314 MOV qword ptr [RCX + 0x28],R13
+004fd318 MOV RSI,qword ptr [RDX + 0x40]
+004fd31c MOV RDI,qword ptr [RDX + 0x48]
+004fd320 SHLD RDI,RSI,0x20
+004fd325 SHL RSI,0x20
+004fd329 SUB R10,RSI
+004fd32c SBB R11,RDI
+004fd32f MOV qword ptr [RCX + 0x10],R10
+004fd333 MOV qword ptr [RCX + 0x18],R11
+004fd337 MOV RSI,qword ptr [RDX + 0x40]
+004fd33b MOV RDI,qword ptr [RDX + 0x48]
+004fd33f SHLD RDI,RSI,0x20
+004fd344 SHL RSI,0x20
+004fd348 ADD R14,RSI
+004fd34b ADC R15,RDI
+004fd34e MOV qword ptr [RCX + 0x30],R14
+004fd352 MOV qword ptr [RCX + 0x38],R15
+004fd356 MOV RSI,qword ptr [RDX + 0x50]
+004fd35a MOV RDI,qword ptr [RDX + 0x58]
+004fd35e SHLD RDI,RSI,0x20
+004fd363 SHL RSI,0x20
+004fd367 SUB R12,RSI
+004fd36a SBB R13,RDI
+004fd36d MOV qword ptr [RCX + 0x20],R12
+004fd371 MOV qword ptr [RCX + 0x28],R13
+004fd375 SUB R8,qword ptr [RDX + 0x60]
+004fd379 SBB R9,qword ptr [RDX + 0x68]
+004fd37d MOV qword ptr [RCX],R8
+004fd380 MOV qword ptr [RCX + 0x8],R9
+004fd384 MOV RSI,qword ptr [RDX + 0x60]
+004fd388 MOV RDI,qword ptr [RDX + 0x68]
+004fd38c SHLD RDI,RSI,0x20
+004fd391 SHL RSI,0x20
+004fd395 SUB R8,RSI
+004fd398 SBB R9,RDI
+004fd39b MOV qword ptr [RCX],R8
+004fd39e MOV qword ptr [RCX + 0x8],R9
+004fd3a2 MOV RSI,qword ptr [RDX + 0x60]
+004fd3a6 MOV RDI,qword ptr [RDX + 0x68]
+004fd3aa SHLD RDI,RSI,0x21
+004fd3af SHL RSI,0x21
+004fd3b3 ADD RSI,R10
+004fd3b6 ADC RDI,R11
+004fd3b9 MOV qword ptr [RCX + 0x10],RSI
+004fd3bd MOV qword ptr [RCX + 0x18],RDI
+004fd3c1 MOV RSI,qword ptr [RDX + 0x60]
+004fd3c5 MOV RDI,qword ptr [RDX + 0x68]
+004fd3c9 SHLD RDI,RSI,0x1
+004fd3ce ADD RSI,RSI
+004fd3d1 ADD R12,RSI
+004fd3d4 ADC R13,RDI
+004fd3d7 MOV qword ptr [RCX + 0x20],R12
+004fd3db MOV qword ptr [RCX + 0x28],R13
+004fd3df MOV RSI,qword ptr [RDX + 0x60]
+004fd3e3 MOV RDI,qword ptr [RDX + 0x68]
+004fd3e7 SHLD RDI,RSI,0x20
+004fd3ec SHL RSI,0x20
+004fd3f0 SUB R14,RSI
+004fd3f3 SBB R15,RDI
+004fd3f6 MOV qword ptr [RCX + 0x30],R14
+004fd3fa MOV qword ptr [RCX + 0x38],R15
+004fd3fe SUB R8,qword ptr [RDX + 0x70]
+004fd402 SBB R9,qword ptr [RDX + 0x78]
+004fd406 MOV qword ptr [RCX],R8
+004fd409 MOV qword ptr [RCX + 0x8],R9
+004fd40d MOV RSI,qword ptr [RDX + 0x70]
+004fd411 MOV RDI,qword ptr [RDX + 0x78]
+004fd415 SHLD RDI,RSI,0x20
+004fd41a SHL RSI,0x20
+004fd41e SUB R8,RSI
+004fd421 SBB R9,RDI
+004fd424 MOV qword ptr [RCX],R8
+004fd427 MOV qword ptr [RCX + 0x8],R9
+004fd42b MOV RSI,qword ptr [RDX + 0x70]
+004fd42f MOV RDI,qword ptr [RDX + 0x78]
+004fd433 SHLD RDI,RSI,0x21
+004fd438 SHL RSI,0x21
+004fd43c ADD RSI,R12
+004fd43f POP R12
+004fd441 ADC RDI,R13
+004fd444 MOV qword ptr [RCX + 0x20],RSI
+004fd448 POP R13
+004fd44a MOV qword ptr [RCX + 0x28],RDI
+004fd44e MOV RSI,qword ptr [RDX + 0x78]
+004fd452 MUL qword ptr [RDX + 0x70]
+004fd456 LEA RSI,[RSI + RSI*0x2]
+004fd45a ADD RDX,RSI
+004fd45d ADD RAX,R14
+004fd460 POP R14
+004fd462 ADC RDX,R15
+004fd465 MOV qword ptr [RCX + 0x30],RAX
+004fd469 POP R15
+004fd46b MOV qword ptr [RCX + 0x38],RDX
+004fd46f RET

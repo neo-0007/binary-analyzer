@@ -1,0 +1,7 @@
+004caaf0 ENDBR64
+004caaf4 MOV RSI,qword ptr [RSI + 0x20]
+004caaf8 MOV RDI,qword ptr [RDI + 0x20]
+004caafc MOV EDX,0x1
+004cab01 ADD RSI,0x8
+004cab05 ADD RDI,0x8
+004cab09 JMP 0x00534760

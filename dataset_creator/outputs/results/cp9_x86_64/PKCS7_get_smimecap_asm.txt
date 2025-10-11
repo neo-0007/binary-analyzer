@@ -1,0 +1,34 @@
+005fbe60 ENDBR64
+005fbe64 PUSH R12
+005fbe66 MOV ESI,0xa7
+005fbe6b SUB RSP,0x10
+005fbe6f MOV RAX,qword ptr FS:[0x28]
+005fbe78 MOV qword ptr [RSP + 0x8],RAX
+005fbe7d XOR EAX,EAX
+005fbe7f CALL 0x00549500
+005fbe84 MOV R12,RAX
+005fbe87 TEST RAX,RAX
+005fbe8a JZ 0x005fbeba
+005fbe8c CMP dword ptr [RAX],0x10
+005fbe8f JNZ 0x005fbed8
+005fbe91 MOV RAX,qword ptr [RAX + 0x8]
+005fbe95 MOV RAX,qword ptr [RAX + 0x8]
+005fbe99 MOV qword ptr [RSP],RAX
+005fbe9d CALL 0x004a5bb0
+005fbea2 MOV RSI,RSP
+005fbea5 XOR EDI,EDI
+005fbea7 MOV RCX,RAX
+005fbeaa MOV RAX,qword ptr [R12 + 0x8]
+005fbeaf MOVSXD RDX,dword ptr [RAX]
+005fbeb2 CALL 0x004a2a20
+005fbeb7 MOV R12,RAX
+005fbeba MOV RAX,qword ptr [RSP + 0x8]
+005fbebf SUB RAX,qword ptr FS:[0x28]
+005fbec8 JNZ 0x005fbedd
+005fbeca ADD RSP,0x10
+005fbece MOV RAX,R12
+005fbed1 POP R12
+005fbed3 RET
+005fbed8 XOR R12D,R12D
+005fbedb JMP 0x005fbeba
+005fbedd CALL 0x00768630

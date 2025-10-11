@@ -1,0 +1,11 @@
+004cbbd0 ENDBR64
+004cbbd4 CMP dword ptr [RDI + 0x88],-0x1
+004cbbdb JZ 0x004cbbf0
+004cbbdd LEA R8,[RDI + 0x48]
+004cbbe1 MOV RDI,qword ptr [RDI]
+004cbbe4 XOR ECX,ECX
+004cbbe6 XOR EDX,EDX
+004cbbe8 XOR ESI,ESI
+004cbbea JMP 0x00538aa0
+004cbbf0 XOR EAX,EAX
+004cbbf2 RET

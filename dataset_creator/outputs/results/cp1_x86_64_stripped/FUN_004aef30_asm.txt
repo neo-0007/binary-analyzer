@@ -1,0 +1,2 @@
+004aef30 ENDBR64
+004aef34 RET

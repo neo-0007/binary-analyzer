@@ -1,0 +1,6 @@
+004eedd0 ENDBR64
+004eedd4 TEST RDI,RDI
+004eedd7 LEA RAX,[0x92b8c0]
+004eedde CMOVZ RDI,RAX
+004eede2 MOV qword ptr [0x0093bf30],RDI
+004eede9 RET

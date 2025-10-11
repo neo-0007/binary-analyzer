@@ -1,0 +1,10 @@
+006ffb10 ENDBR64
+006ffb14 MOV RAX,qword ptr FS:[0x2f8]
+006ffb1d MOV qword ptr [RDI + 0x18],RAX
+006ffb21 XOR EAX,EAX
+006ffb23 MOV AL,byte ptr FS:[0x972]
+006ffb2b MOVZX EAX,AL
+006ffb2e MOV dword ptr [RDI + 0x10],EAX
+006ffb31 MOV byte ptr FS:[0x972],0x0
+006ffb3a MOV qword ptr FS:[0x2f8],RDI
+006ffb43 RET

@@ -1,0 +1,24 @@
+00668c90 ENDBR64
+00668c94 PUSH RBX
+00668c95 MOV RBX,RDI
+00668c98 MOV RDI,qword ptr [RDI]
+00668c9b MOV dword ptr [RDI + 0x78],0x0
+00668ca2 MOV byte ptr [RDI + 0xc0],0x0
+00668ca9 CALL 0x006649b0
+00668cae MOV RAX,qword ptr [RBX]
+00668cb1 XOR EDX,EDX
+00668cb3 MOV word ptr [RAX + 0xa9],DX
+00668cba MOV RDX,qword ptr [RAX + 0x98]
+00668cc1 MOV qword ptr [RAX + 0x28],0x0
+00668cc9 MOV qword ptr [RAX + 0x8],RDX
+00668ccd MOV qword ptr [RAX + 0x10],RDX
+00668cd1 MOV qword ptr [RAX + 0x18],RDX
+00668cd5 MOV RDX,qword ptr [RAX + 0x7c]
+00668cd9 MOV qword ptr [RAX + 0x20],0x0
+00668ce1 MOV qword ptr [RAX + 0x84],RDX
+00668ce8 MOV qword ptr [RAX + 0x30],0x0
+00668cf0 MOV RAX,qword ptr [RBX]
+00668cf3 MOV RDX,qword ptr [RAX + 0x84]
+00668cfa MOV qword ptr [RAX + 0x8c],RDX
+00668d01 POP RBX
+00668d02 RET

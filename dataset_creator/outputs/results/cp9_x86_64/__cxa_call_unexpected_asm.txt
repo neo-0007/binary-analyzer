@@ -1,0 +1,19 @@
+006accb0 ENDBR64
+006accb4 PUSH R14
+006accb6 PUSH R13
+006accb8 PUSH R12
+006accba PUSH RBP
+006accbb PUSH RBX
+006accbc MOV RBX,RDI
+006accbf SUB RSP,0x40
+006accc3 MOV RAX,qword ptr FS:[0x28]
+006acccc MOV qword ptr [RSP + 0x38],RAX
+006accd1 XOR EAX,EAX
+006accd3 CALL 0x006abfb0
+006accd8 MOV RAX,qword ptr [RBX + -0x10]
+006accdc MOV RDI,qword ptr [RBX + -0x40]
+006acce0 MOV R13,qword ptr [RBX + -0x18]
+006acce4 MOV EBP,dword ptr [RBX + -0x24]
+006acce7 MOV qword ptr [RSP + 0x10],RAX
+006accec MOV R12,qword ptr [RBX + -0x38]
+006accf0 CALL 0x006acd90

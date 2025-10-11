@@ -1,0 +1,7 @@
+006ff3a0 ENDBR64
+006ff3a4 MOV RAX,qword ptr [RDI + 0x10]
+006ff3a8 MOV RDX,qword ptr [RDI + 0x28]
+006ff3ac CMP RAX,RDX
+006ff3af CMOVC RAX,RDX
+006ff3b3 SUB RAX,qword ptr [RDI + 0x18]
+006ff3b7 RET

@@ -1,0 +1,17 @@
+006ace50 ENDBR64
+006ace54 PUSH RBX
+006ace55 MOV RBX,RDI
+006ace58 MOV dword ptr [RDI + -0x80],0x0
+006ace5f MOV qword ptr [RDI + -0x70],RSI
+006ace63 MOV qword ptr [RDI + -0x68],RDX
+006ace67 CALL 0x006acde0
+006ace6c MOV qword ptr [RBX + -0x60],RAX
+006ace70 CALL 0x006acd60
+006ace75 MOV qword ptr [RBX + -0x58],RAX
+006ace79 MOV RAX,0x474e5543432b2b00
+006ace83 MOV qword ptr [RBX + -0x20],RAX
+006ace87 LEA RAX,[0x6ace10]
+006ace8e MOV qword ptr [RBX + -0x18],RAX
+006ace92 LEA RAX,[RBX + -0x80]
+006ace96 POP RBX
+006ace97 RET

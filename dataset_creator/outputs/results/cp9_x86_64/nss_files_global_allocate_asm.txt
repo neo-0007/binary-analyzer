@@ -1,0 +1,30 @@
+007a76f0 ENDBR64
+007a76f4 SUB RSP,0x8
+007a76f8 MOV EDI,0xb0
+007a76fd CALL 0x007067a0
+007a7702 TEST RAX,RAX
+007a7705 JZ 0x007a77c1
+007a770b MOV qword ptr [RAX],0x0
+007a7712 MOV dword ptr [RAX + 0x8],0x0
+007a7719 MOV qword ptr [RAX + 0x10],0x0
+007a7721 MOV dword ptr [RAX + 0x18],0x0
+007a7728 MOV qword ptr [RAX + 0x20],0x0
+007a7730 MOV dword ptr [RAX + 0x28],0x0
+007a7737 MOV qword ptr [RAX + 0x30],0x0
+007a773f MOV dword ptr [RAX + 0x38],0x0
+007a7746 MOV qword ptr [RAX + 0x40],0x0
+007a774e MOV dword ptr [RAX + 0x48],0x0
+007a7755 MOV qword ptr [RAX + 0x50],0x0
+007a775d MOV dword ptr [RAX + 0x58],0x0
+007a7764 MOV qword ptr [RAX + 0x60],0x0
+007a776c MOV dword ptr [RAX + 0x68],0x0
+007a7773 MOV qword ptr [RAX + 0x70],0x0
+007a777b MOV dword ptr [RAX + 0x78],0x0
+007a7782 MOV qword ptr [RAX + 0x80],0x0
+007a778d MOV dword ptr [RAX + 0x88],0x0
+007a7797 MOV qword ptr [RAX + 0x90],0x0
+007a77a2 MOV dword ptr [RAX + 0x98],0x0
+007a77ac MOV qword ptr [RAX + 0xa0],0x0
+007a77b7 MOV dword ptr [RAX + 0xa8],0x0
+007a77c1 ADD RSP,0x8
+007a77c5 RET

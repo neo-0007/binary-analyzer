@@ -1,0 +1,19 @@
+0050c4a0 ENDBR64
+0050c4a4 MOV qword ptr [RDI],0x0
+0050c4ab MOV qword ptr [RDI + 0x8],0x0
+0050c4b3 MOV qword ptr [RDI + 0x10],0x0
+0050c4bb MOV qword ptr [RDI + 0x18],0x0
+0050c4c3 MOV qword ptr [RDI + 0x20],0x0
+0050c4cb MOV qword ptr [RDI + 0x30],0x0
+0050c4d3 MOV qword ptr [RDI + 0x38],0x0
+0050c4db MOV qword ptr [RDI + 0x40],0x0
+0050c4e3 MOV qword ptr [RDI + 0x58],0x0
+0050c4eb MOV qword ptr [RDI + 0x60],0x0
+0050c4f3 MOV qword ptr [RDI + 0x68],0x0
+0050c4fb MOV qword ptr [RDI + 0x70],0x0
+0050c503 MOV qword ptr [RDI + 0x78],0x0
+0050c50b MOV qword ptr [RDI + 0x80],0x0
+0050c516 MOV qword ptr [RDI + 0x90],0x0
+0050c521 MOV dword ptr [RDI + 0x98],0x0
+0050c52b MOV qword ptr [RDI + 0xd8],0x0
+0050c536 RET

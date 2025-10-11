@@ -4,12 +4,16 @@ from ghidra.app.decompiler import DecompInterface
 from ghidra.util.task import ConsoleTaskMonitor
 from java.io import File
 import os
+import re
 
 # -----------------------------
 # Step 1: Set the output folder from command line argument
 # -----------------------------
 # Get script arguments from Ghidra
 script_args = getScriptArgs()
+
+#regex to identify aes function:
+aes_pattern = re.compile(r".*aes.*|.*AES.*", re.IGNORECASE)
 
 print("[DEBUG] Script arguments: " + str(script_args))
 print("[DEBUG] Number of arguments: " + str(len(script_args)))
@@ -57,8 +61,12 @@ error_count = 0
 for i, f in enumerate(funcs):
     try:
         func_name = f.getName()
+        #filter only AES functions using regex
+        # if not aes_pattern.match(func_name):
+        #     continue
+
         # Sanitize file name - remove/replace invalid characters
-        func_name = func_name.replace("<", "_").replace(">", "_").replace("/", "_").replace("\\", "_").replace(":", "_").replace("*", "_").replace("?", "_")
+        func_name = re.sub(r"[<>:/\\*?]", "_", func_name)
         
         if (i + 1) % 10 == 0 or i == 0:
             print("[*] Processing function " + str(i + 1) + "/" + str(len(funcs)) + ": " + func_name)

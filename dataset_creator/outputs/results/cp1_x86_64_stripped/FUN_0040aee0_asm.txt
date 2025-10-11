@@ -1,0 +1,8 @@
+0040aee0 ENDBR64
+0040aee4 XOR EAX,EAX
+0040aee6 CMP qword ptr [RDI + 0x30],0x0
+0040aeeb JZ 0x0040aef0
+0040aeed RET
+0040aef0 MOV qword ptr [RDI + 0x30],RSI
+0040aef4 MOV EAX,0x1
+0040aef9 RET

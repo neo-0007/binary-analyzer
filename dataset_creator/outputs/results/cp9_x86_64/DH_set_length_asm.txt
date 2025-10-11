@@ -1,0 +1,5 @@
+004c97e0 ENDBR64
+004c97e4 ADD qword ptr [RDI + 0xc8],0x1
+004c97ec MOV EAX,0x1
+004c97f1 MOV dword ptr [RDI + 0x68],ESI
+004c97f4 RET

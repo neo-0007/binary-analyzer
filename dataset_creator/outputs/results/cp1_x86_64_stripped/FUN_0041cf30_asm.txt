@@ -1,0 +1,8 @@
+0041cf30 ENDBR64
+0041cf34 MOV qword ptr [RDI],RSI
+0041cf37 MOV RAX,RDI
+0041cf3a MOV dword ptr [RDI + 0x8],0x2
+0041cf41 MOV qword ptr [RDI + 0x10],RDX
+0041cf45 MOV qword ptr [RDI + 0x18],0x8
+0041cf4d MOV qword ptr [RDI + 0x20],-0x1
+0041cf55 RET

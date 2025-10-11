@@ -1,0 +1,41 @@
+0068cca0 ENDBR64
+0068cca4 PUSH R12
+0068cca6 LEA R12,[RDI + 0x8]
+0068ccaa PUSH RBP
+0068ccab MOV RBP,RSI
+0068ccae PUSH RBX
+0068ccaf MOV RBX,RDI
+0068ccb2 MOV RDI,R12
+0068ccb5 CALL 0x0066ce70
+0068ccba MOV RAX,0x92b428
+0068ccc1 MOV byte ptr [RBX + 0xec],0x0
+0068ccc8 MOV RDI,R12
+0068cccb MOV qword ptr [RBX + 0xe0],0x0
+0068ccd6 MOV dword ptr [RBX + 0xe8],0x0
+0068cce0 LEA RDX,[RAX + 0x18]
+0068cce4 ADD RAX,0x40
+0068cce8 MOV qword ptr [RBX + 0x8],RAX
+0068ccec MOV RAX,qword ptr [RBP]
+0068ccf0 MOV qword ptr [RBX + 0xf0],0x0
+0068ccfb MOV qword ptr [RBX + 0xf8],0x0
+0068cd06 ADD RBP,qword ptr [RAX + -0x18]
+0068cd0a MOV qword ptr [RBX + 0x100],0x0
+0068cd15 MOV RSI,RBP
+0068cd18 MOV qword ptr [RBX + 0x108],0x0
+0068cd23 MOV qword ptr [RBX],RDX
+0068cd26 CALL 0x0066d210
+0068cd2b LEA RSI,[RBX + 0xd8]
+0068cd32 MOV RDI,R12
+0068cd35 CALL 0x0066c7f0
+0068cd3a MOV RAX,qword ptr [RBP + 0xd8]
+0068cd41 MOV qword ptr [RBX + 0xf0],0x0
+0068cd4c MOV qword ptr [RBP + 0xd8],0x0
+0068cd57 MOV qword ptr [RBX + 0xe0],RAX
+0068cd5e MOV EAX,dword ptr [RBP + 0xe0]
+0068cd64 MOV dword ptr [RBX + 0xe8],EAX
+0068cd6a MOVZX EAX,byte ptr [RBP + 0xe4]
+0068cd71 MOV byte ptr [RBX + 0xec],AL
+0068cd77 POP RBX
+0068cd78 POP RBP
+0068cd79 POP R12
+0068cd7b RET

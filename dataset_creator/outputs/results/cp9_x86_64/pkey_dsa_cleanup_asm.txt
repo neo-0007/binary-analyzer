@@ -1,0 +1,5 @@
+004cdab0 ENDBR64
+004cdab4 MOV RDI,qword ptr [RDI + 0x98]
+004cdabb MOV EDX,0x4a
+004cdac0 LEA RSI,[0x7e0aac]
+004cdac7 JMP 0x00419770

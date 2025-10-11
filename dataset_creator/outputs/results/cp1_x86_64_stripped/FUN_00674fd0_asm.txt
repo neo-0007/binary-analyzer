@@ -1,0 +1,11 @@
+00674fd0 ENDBR64
+00674fd4 MOV RAX,RSI
+00674fd7 MOV RSI,RDX
+00674fda MOV RDX,qword ptr [RAX]
+00674fdd MOV RAX,qword ptr [RAX + 0x8]
+00674fe1 MOV RCX,qword ptr [RDX + -0x18]
+00674fe5 MOV qword ptr [RDI],RDX
+00674fe8 MOV qword ptr [RDI + RCX*0x1],RAX
+00674fec MOV qword ptr [RDI + 0x8],0x0
+00674ff4 ADD RDI,qword ptr [RDX + -0x18]
+00674ff8 JMP 0x0066fda0

@@ -1,0 +1,7 @@
+006b8fd0 JMP 0x006b8fe8
+006b8fd8 CMP dword ptr [RDI],0x2f
+006b8fdb JNZ 0x006b8fed
+006b8fdd TEST ESI,ESI
+006b8fdf JZ 0x006b8ff0
+006b8fe1 MOV RDI,qword ptr [RDI + 0x18]
+006b8fe5 SUB ESI,0x1

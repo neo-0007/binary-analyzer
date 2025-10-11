@@ -1,0 +1,3 @@
+005adbe0 ENDBR64
+005adbe4 LEA RDX,[0x912d80]
+005adbeb JMP 0x004a59a0

@@ -1,0 +1,4 @@
+00638aa0 ENDBR64
+00638aa4 MOV RDX,qword ptr [RDX]
+00638aa7 MOV RCX,qword ptr [RDX + -0x18]
+00638aab JMP 0x006388a0

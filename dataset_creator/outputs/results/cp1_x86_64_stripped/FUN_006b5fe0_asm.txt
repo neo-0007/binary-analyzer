@@ -1,0 +1,4 @@
+006b5fe0 ENDBR64
+006b5fe4 CMP qword ptr [RDI + 0x8],0x0
+006b5fe9 SETZ AL
+006b5fec RET

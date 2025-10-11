@@ -1,0 +1,4 @@
+0066f7a0 ENDBR64
+0066f7a4 MOV dword ptr [RDI + 0x1c],ESI
+0066f7a7 MOV ESI,dword ptr [RDI + 0x20]
+0066f7aa JMP 0x0066f6e0

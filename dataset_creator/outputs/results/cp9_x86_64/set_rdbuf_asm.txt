@@ -1,0 +1,3 @@
+0066c7e0 ENDBR64
+0066c7e4 MOV qword ptr [RDI + 0xe8],RSI
+0066c7eb RET

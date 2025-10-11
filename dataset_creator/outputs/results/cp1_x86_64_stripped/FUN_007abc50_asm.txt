@@ -1,0 +1,38 @@
+007abc50 ENDBR64
+007abc54 MOV EAX,dword ptr FS:[0x18]
+007abc5c TEST EAX,EAX
+007abc5e JNZ 0x007abc70
+007abc60 MOV EAX,0x13
+007abc65 SYSCALL
+007abc67 CMP RAX,-0x1000
+007abc6d JA 0x007abcc0
+007abc6f RET
+007abc70 SUB RSP,0x28
+007abc74 MOV dword ptr [RSP + 0x1c],EDX
+007abc78 MOV qword ptr [RSP + 0x10],RSI
+007abc7d MOV dword ptr [RSP + 0x8],EDI
+007abc81 CALL 0x007a2720
+007abc86 MOV EDX,dword ptr [RSP + 0x1c]
+007abc8a MOV RSI,qword ptr [RSP + 0x10]
+007abc8f MOV R8D,EAX
+007abc92 MOV EDI,dword ptr [RSP + 0x8]
+007abc96 MOV EAX,0x13
+007abc9b SYSCALL
+007abc9d CMP RAX,-0x1000
+007abca3 JA 0x007abcd8
+007abca5 MOV EDI,R8D
+007abca8 MOV qword ptr [RSP + 0x8],RAX
+007abcad CALL 0x007a2790
+007abcb2 MOV RAX,qword ptr [RSP + 0x8]
+007abcb7 ADD RSP,0x28
+007abcbb RET
+007abcc0 MOV RDX,-0x58
+007abcc7 NEG EAX
+007abcc9 MOV dword ptr FS:[RDX],EAX
+007abccc MOV RAX,-0x1
+007abcd3 RET
+007abcd8 MOV RDX,-0x58
+007abcdf NEG EAX
+007abce1 MOV dword ptr FS:[RDX],EAX
+007abce4 MOV RAX,-0x1
+007abceb JMP 0x007abca5

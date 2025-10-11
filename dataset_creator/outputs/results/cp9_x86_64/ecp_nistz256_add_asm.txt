@@ -1,0 +1,34 @@
+005eb320 PUSH R12
+005eb322 PUSH R13
+005eb324 MOV R8,qword ptr [RSI]
+005eb327 XOR R13,R13
+005eb32a MOV R9,qword ptr [RSI + 0x8]
+005eb32e MOV R10,qword ptr [RSI + 0x10]
+005eb332 MOV R11,qword ptr [RSI + 0x18]
+005eb336 LEA RSI,[0x5eb000]
+005eb33d ADD R8,qword ptr [RDX]
+005eb340 ADC R9,qword ptr [RDX + 0x8]
+005eb344 MOV RAX,R8
+005eb347 ADC R10,qword ptr [RDX + 0x10]
+005eb34b ADC R11,qword ptr [RDX + 0x18]
+005eb34f MOV RDX,R9
+005eb352 ADC R13,0x0
+005eb356 SUB R8,qword ptr [RSI]
+005eb359 MOV RCX,R10
+005eb35c SBB R9,qword ptr [RSI + 0x8]
+005eb360 SBB R10,qword ptr [RSI + 0x10]
+005eb364 MOV R12,R11
+005eb367 SBB R11,qword ptr [RSI + 0x18]
+005eb36b SBB R13,0x0
+005eb36f CMOVC R8,RAX
+005eb373 CMOVC R9,RDX
+005eb377 MOV qword ptr [RDI],R8
+005eb37a CMOVC R10,RCX
+005eb37e MOV qword ptr [RDI + 0x8],R9
+005eb382 CMOVC R11,R12
+005eb386 MOV qword ptr [RDI + 0x10],R10
+005eb38a MOV qword ptr [RDI + 0x18],R11
+005eb38e MOV R13,qword ptr [RSP]
+005eb392 MOV R12,qword ptr [RSP + 0x8]
+005eb397 LEA RSP,[RSP + 0x10]
+005eb39c RET

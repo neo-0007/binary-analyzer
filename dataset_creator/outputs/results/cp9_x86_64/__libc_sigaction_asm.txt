@@ -1,0 +1,86 @@
+006dea30 ENDBR64
+006dea34 SUB RSP,0x148
+006dea3b MOV R8,RDX
+006dea3e MOV RAX,qword ptr FS:[0x28]
+006dea47 MOV qword ptr [RSP + 0x138],RAX
+006dea4f XOR EAX,EAX
+006dea51 TEST RSI,RSI
+006dea54 JZ 0x006debd0
+006dea5a MOV RAX,qword ptr [RSI]
+006dea5d MOVDQU XMM0,xmmword ptr [RSI + 0x8]
+006dea62 LEA RDX,[RSP + 0xa0]
+006dea6a MOVDQU XMM1,xmmword ptr [RSI + 0x18]
+006dea6f MOVDQU XMM2,xmmword ptr [RSI + 0x28]
+006dea74 MOVDQU XMM3,xmmword ptr [RSI + 0x38]
+006dea79 MOVDQU XMM4,xmmword ptr [RSI + 0x48]
+006dea7e MOV qword ptr [RSP],RAX
+006dea82 MOV EAX,dword ptr [RSI + 0x88]
+006dea88 MOVDQU XMM5,xmmword ptr [RSI + 0x58]
+006dea8d MOVUPS xmmword ptr [RSP + 0x18],XMM0
+006dea92 MOVDQU XMM6,xmmword ptr [RSI + 0x68]
+006dea97 MOVDQU XMM7,xmmword ptr [RSI + 0x78]
+006dea9c MOVUPS xmmword ptr [RSP + 0x28],XMM1
+006deaa1 MOV RSI,RSP
+006deaa4 OR EAX,0x4000000
+006deaa9 MOVUPS xmmword ptr [RSP + 0x38],XMM2
+006deaae CDQE
+006deab0 MOVUPS xmmword ptr [RSP + 0x48],XMM3
+006deab5 MOV qword ptr [RSP + 0x8],RAX
+006deaba LEA RAX,[0x6dea20]
+006deac1 MOV qword ptr [RSP + 0x10],RAX
+006deac6 XOR EAX,EAX
+006deac8 TEST R8,R8
+006deacb CMOVZ RDX,RAX
+006deacf MOVUPS xmmword ptr [RSP + 0x58],XMM4
+006dead4 MOVUPS xmmword ptr [RSP + 0x68],XMM5
+006dead9 MOVUPS xmmword ptr [RSP + 0x78],XMM6
+006deade MOVUPS xmmword ptr [RSP + 0x88],XMM7
+006deae6 MOV R10D,0x8
+006deaec MOV EAX,0xd
+006deaf1 SYSCALL
+006deaf3 CMP RAX,-0x1000
+006deaf9 JA 0x006debf0
+006deaff MOV R9D,EAX
+006deb02 TEST R8,R8
+006deb05 JZ 0x006debac
+006deb0b TEST EAX,EAX
+006deb0d JS 0x006debac
+006deb13 MOV RAX,qword ptr [RSP + 0xa0]
+006deb1b MOVDQU XMM0,xmmword ptr [RSP + 0xb8]
+006deb24 MOVDQU XMM1,xmmword ptr [RSP + 0xc8]
+006deb2d MOVDQU XMM2,xmmword ptr [RSP + 0xd8]
+006deb36 MOVDQU XMM3,xmmword ptr [RSP + 0xe8]
+006deb3f MOV qword ptr [R8],RAX
+006deb42 MOV RAX,qword ptr [RSP + 0xa8]
+006deb4a MOVUPS xmmword ptr [R8 + 0x8],XMM0
+006deb4f MOVDQU XMM4,xmmword ptr [RSP + 0xf8]
+006deb58 MOVDQU XMM5,xmmword ptr [RSP + 0x108]
+006deb61 MOVUPS xmmword ptr [R8 + 0x18],XMM1
+006deb66 MOVDQU XMM6,xmmword ptr [RSP + 0x118]
+006deb6f MOVDQU XMM7,xmmword ptr [RSP + 0x128]
+006deb78 MOV dword ptr [R8 + 0x88],EAX
+006deb7f MOV RAX,qword ptr [RSP + 0xb0]
+006deb87 MOVUPS xmmword ptr [R8 + 0x28],XMM2
+006deb8c MOVUPS xmmword ptr [R8 + 0x38],XMM3
+006deb91 MOV qword ptr [R8 + 0x90],RAX
+006deb98 MOVUPS xmmword ptr [R8 + 0x48],XMM4
+006deb9d MOVUPS xmmword ptr [R8 + 0x58],XMM5
+006deba2 MOVUPS xmmword ptr [R8 + 0x68],XMM6
+006deba7 MOVUPS xmmword ptr [R8 + 0x78],XMM7
+006debac MOV RAX,qword ptr [RSP + 0x138]
+006debb4 SUB RAX,qword ptr FS:[0x28]
+006debbd JNZ 0x006dec04
+006debbf MOV EAX,R9D
+006debc2 ADD RSP,0x148
+006debc9 RET
+006debd0 XOR ESI,ESI
+006debd2 LEA RDX,[RSP + 0xa0]
+006debda TEST R8,R8
+006debdd CMOVZ RDX,RSI
+006debe1 JMP 0x006deae6
+006debf0 MOV RDX,-0x58
+006debf7 NEG EAX
+006debf9 MOV R9D,0xffffffff
+006debff MOV dword ptr FS:[RDX],EAX
+006dec02 JMP 0x006debac
+006dec04 CALL 0x00768630

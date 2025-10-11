@@ -1,0 +1,57 @@
+006a41b0 ENDBR64
+006a41b4 XOR EAX,EAX
+006a41b6 TEST RSI,RSI
+006a41b9 MOV qword ptr [RDI + 0x10],0x0
+006a41c1 SETNZ AL
+006a41c4 MOV qword ptr [RDI + 0x18],0x0
+006a41cc MOV dword ptr [RDI + 0x8],EAX
+006a41cf MOV RAX,0x938ed8
+006a41d6 MOV qword ptr [RDI + 0x20],0x0
+006a41de ADD RAX,0x10
+006a41e2 MOV qword ptr [RDI + 0x28],0x0
+006a41ea MOV qword ptr [RDI],RAX
+006a41ed MOV qword ptr [RDI + 0x30],0x0
+006a41f5 MOV qword ptr [RDI + 0x38],0x0
+006a41fd MOV qword ptr [RDI + 0x40],0x0
+006a4205 MOV qword ptr [RDI + 0x48],0x0
+006a420d MOV qword ptr [RDI + 0x50],0x0
+006a4215 MOV qword ptr [RDI + 0x58],0x0
+006a421d MOV qword ptr [RDI + 0x60],0x0
+006a4225 MOV qword ptr [RDI + 0x68],0x0
+006a422d MOV qword ptr [RDI + 0x70],0x0
+006a4235 MOV qword ptr [RDI + 0x78],0x0
+006a423d MOV qword ptr [RDI + 0x80],0x0
+006a4248 MOV qword ptr [RDI + 0x88],0x0
+006a4253 MOV qword ptr [RDI + 0x90],0x0
+006a425e MOV qword ptr [RDI + 0x98],0x0
+006a4269 MOV qword ptr [RDI + 0xa0],0x0
+006a4274 MOV qword ptr [RDI + 0xa8],0x0
+006a427f MOV qword ptr [RDI + 0xb0],0x0
+006a428a MOV qword ptr [RDI + 0xb8],0x0
+006a4295 MOV qword ptr [RDI + 0xc0],0x0
+006a42a0 MOV qword ptr [RDI + 0xc8],0x0
+006a42ab MOV qword ptr [RDI + 0xd0],0x0
+006a42b6 MOV qword ptr [RDI + 0xd8],0x0
+006a42c1 MOV qword ptr [RDI + 0xe0],0x0
+006a42cc MOV qword ptr [RDI + 0xe8],0x0
+006a42d7 MOV qword ptr [RDI + 0xf0],0x0
+006a42e2 MOV qword ptr [RDI + 0xf8],0x0
+006a42ed MOV qword ptr [RDI + 0x100],0x0
+006a42f8 MOV qword ptr [RDI + 0x108],0x0
+006a4303 MOV qword ptr [RDI + 0x110],0x0
+006a430e MOV qword ptr [RDI + 0x118],0x0
+006a4319 MOV qword ptr [RDI + 0x120],0x0
+006a4324 MOV qword ptr [RDI + 0x128],0x0
+006a432f MOV qword ptr [RDI + 0x130],0x0
+006a433a MOV qword ptr [RDI + 0x138],0x0
+006a4345 MOV qword ptr [RDI + 0x140],0x0
+006a4350 MOV qword ptr [RDI + 0x148],0x0
+006a435b MOV qword ptr [RDI + 0x150],0x0
+006a4366 MOV qword ptr [RDI + 0x158],0x0
+006a4371 MOV qword ptr [RDI + 0x160],0x0
+006a437c MOV qword ptr [RDI + 0x168],0x0
+006a4387 MOV qword ptr [RDI + 0x170],0x0
+006a4392 MOV qword ptr [RDI + 0x178],0x0
+006a439d MOV qword ptr [RDI + 0x180],0x0
+006a43a8 MOV byte ptr [RDI + 0x188],0x0
+006a43af RET

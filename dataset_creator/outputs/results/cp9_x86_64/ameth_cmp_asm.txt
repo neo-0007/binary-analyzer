@@ -1,0 +1,6 @@
+0049e810 ENDBR64
+0049e814 MOV RAX,qword ptr [RDI]
+0049e817 MOV RDX,qword ptr [RSI]
+0049e81a MOV EAX,dword ptr [RAX]
+0049e81c SUB EAX,dword ptr [RDX]
+0049e81e RET

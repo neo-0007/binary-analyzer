@@ -1,0 +1,6 @@
+004bfec0 ENDBR64
+004bfec4 TEST RDI,RDI
+004bfec7 JZ 0x004bfed0
+004bfec9 MOV RAX,qword ptr [RDI]
+004bfecc JMP qword ptr [RAX + 0x20]
+004bfed0 RET

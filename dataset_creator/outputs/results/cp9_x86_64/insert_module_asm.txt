@@ -1,0 +1,86 @@
+006cacf0 PUSH R15
+006cacf2 PUSH R14
+006cacf4 PUSH R13
+006cacf6 MOV R13,RDI
+006cacf9 PUSH R12
+006cacfb PUSH RBP
+006cacfc PUSH RBX
+006cacfd SUB RSP,0x8
+006cad01 MOV RBP,qword ptr [0x009390b8]
+006cad08 TEST RBP,RBP
+006cad0b JZ 0x006cadf7
+006cad11 MOV R12,qword ptr [RDI]
+006cad14 MOV R14D,ESI
+006cad17 LEA RBX,[0x9390b8]
+006cad1e JMP 0x006cad36
+006cad20 LEA RBX,[RBP + 0x20]
+006cad24 ADD RBP,0x30
+006cad28 TEST EAX,EAX
+006cad2a CMOVNS RBX,RBP
+006cad2e MOV RBP,qword ptr [RBX]
+006cad31 TEST RBP,RBP
+006cad34 JZ 0x006cad90
+006cad36 MOV RSI,qword ptr [RBP]
+006cad3a MOV RDI,R12
+006cad3d CALL 0x004011f0
+006cad42 TEST EAX,EAX
+006cad44 JNZ 0x006cad20
+006cad46 MOV R15,qword ptr [R13 + 0x8]
+006cad4a NOP word ptr [RAX + RAX*0x1]
+006cad50 MOV RSI,qword ptr [RBP + 0x8]
+006cad54 MOV RDI,R15
+006cad57 CALL 0x004011f0
+006cad5c TEST EAX,EAX
+006cad5e JZ 0x006cada8
+006cad60 LEA RBX,[RBP + 0x28]
+006cad64 MOV RBP,qword ptr [RBP + 0x28]
+006cad68 TEST RBP,RBP
+006cad6b JZ 0x006cad90
+006cad6d MOV RSI,qword ptr [RBP]
+006cad71 MOV RDI,R12
+006cad74 CALL 0x004011f0
+006cad79 TEST EAX,EAX
+006cad7b JZ 0x006cad50
+006cad7d LEA RBX,[RBP + 0x28]
+006cad81 MOV RBP,qword ptr [RBP + 0x28]
+006cad85 TEST RBP,RBP
+006cad88 JNZ 0x006cad6d
+006cad8a NOP word ptr [RAX + RAX*0x1]
+006cad90 MOV qword ptr [RBX],R13
+006cad93 ADD RSP,0x8
+006cad97 POP RBX
+006cad98 POP RBP
+006cad99 POP R12
+006cad9b POP R13
+006cad9d POP R14
+006cad9f POP R15
+006cada1 RET
+006cada8 MOV EAX,dword ptr [RBP + 0x10]
+006cadab CMP dword ptr [R13 + 0x10],EAX
+006cadaf JL 0x006cadc6
+006cadb1 JZ 0x006cadbd
+006cadb3 TEST R14D,R14D
+006cadb6 JZ 0x006cad93
+006cadb8 MOV RDI,R13
+006cadbb JMP 0x006cade4
+006cadbd MOV EAX,dword ptr [RBP + 0x14]
+006cadc0 CMP dword ptr [R13 + 0x14],EAX
+006cadc4 JGE 0x006cadb3
+006cadc6 MOV RCX,qword ptr [RBP + 0x20]
+006cadca MOV RDX,qword ptr [RBP + 0x28]
+006cadce MOV RDI,RBP
+006cadd1 MOV RAX,qword ptr [RBP + 0x30]
+006cadd5 MOV qword ptr [R13 + 0x20],RCX
+006cadd9 MOV qword ptr [R13 + 0x28],RDX
+006caddd MOV qword ptr [R13 + 0x30],RAX
+006cade1 MOV qword ptr [RBX],R13
+006cade4 ADD RSP,0x8
+006cade8 POP RBX
+006cade9 POP RBP
+006cadea POP R12
+006cadec POP R13
+006cadee POP R14
+006cadf0 POP R15
+006cadf2 JMP 0x00706ae0
+006cadf7 LEA RBX,[0x9390b8]
+006cadfe JMP 0x006cad90

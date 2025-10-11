@@ -1,0 +1,131 @@
+005cedb0 ENDBR64
+005cedb4 PUSH R14
+005cedb6 MOV R14,RCX
+005cedb9 PUSH R13
+005cedbb MOV R13,R8
+005cedbe PUSH R12
+005cedc0 MOV R12,RDX
+005cedc3 PUSH RBP
+005cedc4 MOV RBP,RDI
+005cedc7 PUSH RBX
+005cedc8 MOV RAX,qword ptr [RDI]
+005cedcb MOV RBX,RSI
+005cedce MOV RCX,qword ptr [RDX + 0x10]
+005cedd2 MOV RDX,qword ptr [RSI + 0x20]
+005cedd6 MOV RSI,qword ptr [RSI + 0x18]
+005cedda CALL qword ptr [RAX + 0xf8]
+005cede0 TEST EAX,EAX
+005cede2 JZ 0x005cee40
+005cede4 MOV RAX,qword ptr [RBP]
+005cede8 MOV RCX,qword ptr [R12 + 0x20]
+005ceded MOV R8,R13
+005cedf0 MOV RDI,RBP
+005cedf3 MOV RDX,qword ptr [RBX + 0x10]
+005cedf7 MOV RSI,qword ptr [R12 + 0x10]
+005cedfc CALL qword ptr [RAX + 0xf8]
+005cee02 TEST EAX,EAX
+005cee04 JZ 0x005cee40
+005cee06 MOV RAX,qword ptr [RBP]
+005cee0a MOV RDX,qword ptr [RBX + 0x20]
+005cee0e MOV RCX,R13
+005cee11 MOV RDI,RBP
+005cee14 MOV RSI,qword ptr [R12 + 0x18]
+005cee19 CALL qword ptr [RAX + 0x100]
+005cee1f TEST EAX,EAX
+005cee21 JZ 0x005cee40
+005cee23 MOV RAX,qword ptr [RBP]
+005cee27 MOV RDX,qword ptr [RBX + 0x10]
+005cee2b MOV RCX,R13
+005cee2e MOV RDI,RBP
+005cee31 MOV RSI,qword ptr [RBX + 0x20]
+005cee35 CALL qword ptr [RAX + 0x100]
+005cee3b TEST EAX,EAX
+005cee3d JNZ 0x005cee50
+005cee3f NOP
+005cee40 XOR EAX,EAX
+005cee42 POP RBX
+005cee43 POP RBP
+005cee44 POP R12
+005cee46 POP R13
+005cee48 POP R14
+005cee4a RET
+005cee50 MOV RDX,qword ptr [R12 + 0x10]
+005cee55 MOV RSI,qword ptr [RBX + 0x18]
+005cee59 MOV RDI,qword ptr [R12 + 0x20]
+005cee5e CALL 0x006184d0
+005cee63 TEST EAX,EAX
+005cee65 JZ 0x005cee40
+005cee67 MOV RSI,qword ptr [R12 + 0x20]
+005cee6c MOV RAX,qword ptr [RBP]
+005cee70 MOV RCX,R13
+005cee73 MOV RDI,RBP
+005cee76 MOV RDX,RSI
+005cee79 CALL qword ptr [RAX + 0x100]
+005cee7f TEST EAX,EAX
+005cee81 JZ 0x005cee40
+005cee83 MOV RSI,qword ptr [R12 + 0x10]
+005cee88 MOV RAX,qword ptr [RBP]
+005cee8c MOV R8,R13
+005cee8f MOV RDI,RBP
+005cee92 MOV RDX,qword ptr [RBX + 0x18]
+005cee96 MOV RCX,RSI
+005cee99 CALL qword ptr [RAX + 0xf8]
+005cee9f TEST EAX,EAX
+005ceea1 JZ 0x005cee40
+005ceea3 MOV RAX,qword ptr [RBP]
+005ceea7 MOV RCX,qword ptr [R14 + 0x10]
+005ceeab MOV R8,R13
+005ceeae MOV RDI,RBP
+005ceeb1 MOV RDX,qword ptr [R12 + 0x20]
+005ceeb6 MOV RSI,qword ptr [RBX + 0x18]
+005ceeba CALL qword ptr [RAX + 0xf8]
+005ceec0 TEST EAX,EAX
+005ceec2 JZ 0x005cee40
+005ceec8 MOV RDI,qword ptr [R12 + 0x10]
+005ceecd MOV RDX,qword ptr [RBX + 0x18]
+005ceed1 MOV RSI,RDI
+005ceed4 CALL 0x006184d0
+005ceed9 TEST EAX,EAX
+005ceedb JZ 0x005cee40
+005ceee1 MOV RAX,qword ptr [RBP]
+005ceee5 MOV RDX,qword ptr [RBX + 0x20]
+005ceee9 MOV RCX,R13
+005ceeec MOV RDI,RBP
+005ceeef MOV RSI,qword ptr [RBX + 0x18]
+005ceef3 CALL qword ptr [RAX + 0x100]
+005ceef9 TEST EAX,EAX
+005ceefb JZ 0x005cee40
+005cef01 MOV RSI,qword ptr [RBX + 0x20]
+005cef05 MOV RAX,qword ptr [RBP]
+005cef09 MOV R8,R13
+005cef0c MOV RDI,RBP
+005cef0f MOV RCX,qword ptr [R12 + 0x18]
+005cef14 MOV RDX,RSI
+005cef17 CALL qword ptr [RAX + 0xf8]
+005cef1d TEST EAX,EAX
+005cef1f JZ 0x005cee40
+005cef25 MOV RSI,qword ptr [R12 + 0x18]
+005cef2a MOV RAX,qword ptr [RBP]
+005cef2e MOV RCX,R13
+005cef31 MOV RDI,RBP
+005cef34 MOV RDX,RSI
+005cef37 CALL qword ptr [RAX + 0x100]
+005cef3d TEST EAX,EAX
+005cef3f JZ 0x005cee40
+005cef45 MOV RSI,qword ptr [R12 + 0x18]
+005cef4a MOV RAX,qword ptr [RBP]
+005cef4e MOV R8,R13
+005cef51 MOV RDI,RBP
+005cef54 MOV RCX,qword ptr [RBP + 0x68]
+005cef58 MOV RDX,RSI
+005cef5b CALL qword ptr [RAX + 0xf8]
+005cef61 TEST EAX,EAX
+005cef63 JZ 0x005cee40
+005cef69 MOV RDX,qword ptr [R12 + 0x18]
+005cef6e MOV RSI,qword ptr [RBX + 0x18]
+005cef72 MOV RDI,qword ptr [RBX + 0x10]
+005cef76 CALL 0x006184d0
+005cef7b TEST EAX,EAX
+005cef7d SETNZ AL
+005cef80 MOVZX EAX,AL
+005cef83 JMP 0x005cee42

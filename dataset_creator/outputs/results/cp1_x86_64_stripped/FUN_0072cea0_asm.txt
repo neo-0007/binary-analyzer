@@ -1,0 +1,320 @@
+0072cea0 ENDBR64
+0072cea4 MOV RAX,RDI
+0072cea7 LEA RCX,[RSI + RDX*0x1]
+0072ceab LEA R9,[RDI + RDX*0x1]
+0072ceaf CMP RDX,0x200
+0072ceb6 JA 0x0072d019
+0072cebc CMP RDX,0x10
+0072cec0 JBE 0x0072cfd5
+0072cec6 CMP RDX,0x100
+0072cecd JC 0x0072cf3e
+0072cecf VMOVUPS ZMM0,zmmword ptr [RSI]
+0072ced5 VMOVUPS ZMM1,zmmword ptr [RSI + 0x40]
+0072cedc VMOVUPS ZMM2,zmmword ptr [RSI + 0x80]
+0072cee3 VMOVUPS ZMM3,zmmword ptr [RSI + 0xc0]
+0072ceea VMOVUPS ZMM4,zmmword ptr [RCX + -0x100]
+0072cef1 VMOVUPS ZMM5,zmmword ptr [RCX + -0xc0]
+0072cef8 VMOVUPS ZMM6,zmmword ptr [RCX + -0x80]
+0072ceff VMOVUPS ZMM7,zmmword ptr [RCX + -0x40]
+0072cf06 VMOVUPS zmmword ptr [RDI],ZMM0
+0072cf0c VMOVUPS zmmword ptr [RDI + 0x40],ZMM1
+0072cf13 VMOVUPS zmmword ptr [RDI + 0x80],ZMM2
+0072cf1a VMOVUPS zmmword ptr [RDI + 0xc0],ZMM3
+0072cf21 VMOVUPS zmmword ptr [R9 + -0x100],ZMM4
+0072cf28 VMOVUPS zmmword ptr [R9 + -0xc0],ZMM5
+0072cf2f VMOVUPS zmmword ptr [R9 + -0x80],ZMM6
+0072cf36 VMOVUPS zmmword ptr [R9 + -0x40],ZMM7
+0072cf3d RET
+0072cf3e CMP DL,0x80
+0072cf41 JC 0x0072cf7a
+0072cf43 VMOVUPS ZMM0,zmmword ptr [RSI]
+0072cf49 VMOVUPS ZMM1,zmmword ptr [RSI + 0x40]
+0072cf50 VMOVUPS ZMM2,zmmword ptr [RCX + -0x80]
+0072cf57 VMOVUPS ZMM3,zmmword ptr [RCX + -0x40]
+0072cf5e VMOVUPS zmmword ptr [RDI],ZMM0
+0072cf64 VMOVUPS zmmword ptr [RDI + 0x40],ZMM1
+0072cf6b VMOVUPS zmmword ptr [R9 + -0x80],ZMM2
+0072cf72 VMOVUPS zmmword ptr [R9 + -0x40],ZMM3
+0072cf79 RET
+0072cf7a CMP DL,0x40
+0072cf7d JC 0x0072cfa8
+0072cf7f VMOVDQU YMM0,ymmword ptr [RSI]
+0072cf83 VMOVDQU YMM1,ymmword ptr [RSI + 0x20]
+0072cf88 VMOVDQU YMM2,ymmword ptr [RCX + -0x40]
+0072cf8d VMOVDQU YMM3,ymmword ptr [RCX + -0x20]
+0072cf92 VMOVDQU ymmword ptr [RDI],YMM0
+0072cf96 VMOVDQU ymmword ptr [RDI + 0x20],YMM1
+0072cf9b VMOVDQU ymmword ptr [R9 + -0x40],YMM2
+0072cfa1 VMOVDQU ymmword ptr [R9 + -0x20],YMM3
+0072cfa7 RET
+0072cfa8 CMP DL,0x20
+0072cfab JC 0x0072cfc1
+0072cfad VMOVDQU YMM0,ymmword ptr [RSI]
+0072cfb1 VMOVDQU YMM1,ymmword ptr [RCX + -0x20]
+0072cfb6 VMOVDQU ymmword ptr [RDI],YMM0
+0072cfba VMOVDQU ymmword ptr [R9 + -0x20],YMM1
+0072cfc0 RET
+0072cfc1 VMOVDQU XMM0,xmmword ptr [RSI]
+0072cfc5 VMOVDQU XMM1,xmmword ptr [RCX + -0x10]
+0072cfca VMOVDQU xmmword ptr [RDI],XMM0
+0072cfce VMOVDQU xmmword ptr [R9 + -0x10],XMM1
+0072cfd4 RET
+0072cfd5 CMP DL,0x8
+0072cfd8 JC 0x0072cfe9
+0072cfda MOV RSI,qword ptr [RSI]
+0072cfdd MOV RCX,qword ptr [RCX + -0x8]
+0072cfe1 MOV qword ptr [RDI],RSI
+0072cfe4 MOV qword ptr [R9 + -0x8],RCX
+0072cfe8 RET
+0072cfe9 CMP DL,0x4
+0072cfec JC 0x0072cffa
+0072cfee MOV ESI,dword ptr [RSI]
+0072cff0 MOV ECX,dword ptr [RCX + -0x4]
+0072cff3 MOV dword ptr [RDI],ESI
+0072cff5 MOV dword ptr [R9 + -0x4],ECX
+0072cff9 RET
+0072cffa CMP DL,0x2
+0072cffd JC 0x0072d00f
+0072cfff MOV SI,word ptr [RSI]
+0072d002 MOV CX,word ptr [RCX + -0x2]
+0072d006 MOV word ptr [RDI],SI
+0072d009 MOV word ptr [R9 + -0x2],CX
+0072d00e RET
+0072d00f CMP DL,0x1
+0072d012 JC 0x0072d018
+0072d014 MOV CL,byte ptr [RSI]
+0072d016 MOV byte ptr [RDI],CL
+0072d018 RET
+0072d019 MOV R8,qword ptr [0x0093d708]
+0072d020 CMP RDX,R8
+0072d023 JNC 0x0072d441
+0072d029 CMP RDX,0x400
+0072d030 JA 0x0072d178
+0072d036 NOP dword ptr [RSI]
+0072d039 NOP dword ptr [RSI + 0x40]
+0072d03d NOP dword ptr [RSI + 0x80]
+0072d044 NOP dword ptr [RSI + 0xc0]
+0072d04b NOP dword ptr [RSI + 0x100]
+0072d052 NOP dword ptr [RSI + 0x140]
+0072d059 NOP dword ptr [RSI + 0x180]
+0072d060 NOP dword ptr [RSI + 0x1c0]
+0072d067 NOP dword ptr [RCX + -0x200]
+0072d06e NOP dword ptr [RCX + -0x1c0]
+0072d075 NOP dword ptr [RCX + -0x180]
+0072d07c NOP dword ptr [RCX + -0x140]
+0072d083 NOP dword ptr [RCX + -0x100]
+0072d08a NOP dword ptr [RCX + -0xc0]
+0072d091 NOP dword ptr [RCX + -0x80]
+0072d095 NOP dword ptr [RCX + -0x40]
+0072d099 VMOVUPS ZMM0,zmmword ptr [RSI]
+0072d09f VMOVUPS ZMM1,zmmword ptr [RSI + 0x40]
+0072d0a6 VMOVUPS ZMM2,zmmword ptr [RSI + 0x80]
+0072d0ad VMOVUPS ZMM3,zmmword ptr [RSI + 0xc0]
+0072d0b4 VMOVUPS ZMM4,zmmword ptr [RSI + 0x100]
+0072d0bb VMOVUPS ZMM5,zmmword ptr [RSI + 0x140]
+0072d0c2 VMOVUPS ZMM6,zmmword ptr [RSI + 0x180]
+0072d0c9 VMOVUPS ZMM7,zmmword ptr [RSI + 0x1c0]
+0072d0d0 VMOVUPS ZMM8,zmmword ptr [RCX + -0x200]
+0072d0d7 VMOVUPS ZMM9,zmmword ptr [RCX + -0x1c0]
+0072d0de VMOVUPS ZMM10,zmmword ptr [RCX + -0x180]
+0072d0e5 VMOVUPS ZMM11,zmmword ptr [RCX + -0x140]
+0072d0ec VMOVUPS ZMM12,zmmword ptr [RCX + -0x100]
+0072d0f3 VMOVUPS ZMM13,zmmword ptr [RCX + -0xc0]
+0072d0fa VMOVUPS ZMM14,zmmword ptr [RCX + -0x80]
+0072d101 VMOVUPS ZMM15,zmmword ptr [RCX + -0x40]
+0072d108 VMOVUPS zmmword ptr [RDI],ZMM0
+0072d10e VMOVUPS zmmword ptr [RDI + 0x40],ZMM1
+0072d115 VMOVUPS zmmword ptr [RDI + 0x80],ZMM2
+0072d11c VMOVUPS zmmword ptr [RDI + 0xc0],ZMM3
+0072d123 VMOVUPS zmmword ptr [RDI + 0x100],ZMM4
+0072d12a VMOVUPS zmmword ptr [RDI + 0x140],ZMM5
+0072d131 VMOVUPS zmmword ptr [RDI + 0x180],ZMM6
+0072d138 VMOVUPS zmmword ptr [RDI + 0x1c0],ZMM7
+0072d13f VMOVUPS zmmword ptr [R9 + -0x200],ZMM8
+0072d146 VMOVUPS zmmword ptr [R9 + -0x1c0],ZMM9
+0072d14d VMOVUPS zmmword ptr [R9 + -0x180],ZMM10
+0072d154 VMOVUPS zmmword ptr [R9 + -0x140],ZMM11
+0072d15b VMOVUPS zmmword ptr [R9 + -0x100],ZMM12
+0072d162 VMOVUPS zmmword ptr [R9 + -0xc0],ZMM13
+0072d169 VMOVUPS zmmword ptr [R9 + -0x80],ZMM14
+0072d170 VMOVUPS zmmword ptr [R9 + -0x40],ZMM15
+0072d177 RET
+0072d178 CMP RDI,RSI
+0072d17b JA 0x0072d2df
+0072d181 SUB R9,0x200
+0072d188 VMOVUPS ZMM8,zmmword ptr [RCX + -0x200]
+0072d18f VMOVUPS ZMM9,zmmword ptr [RCX + -0x1c0]
+0072d196 VMOVUPS ZMM10,zmmword ptr [RCX + -0x180]
+0072d19d VMOVUPS ZMM11,zmmword ptr [RCX + -0x140]
+0072d1a4 VMOVUPS ZMM12,zmmword ptr [RCX + -0x100]
+0072d1ab VMOVUPS ZMM13,zmmword ptr [RCX + -0xc0]
+0072d1b2 VMOVUPS ZMM14,zmmword ptr [RCX + -0x80]
+0072d1b9 VMOVUPS ZMM15,zmmword ptr [RCX + -0x40]
+0072d1c0 NOP dword ptr [RSI]
+0072d1c3 NOP dword ptr [RSI + 0x40]
+0072d1c7 NOP dword ptr [RSI + 0x80]
+0072d1ce NOP dword ptr [RSI + 0xc0]
+0072d1d5 NOP dword ptr [RSI + 0x100]
+0072d1dc NOP dword ptr [RSI + 0x140]
+0072d1e3 NOP dword ptr [RSI + 0x180]
+0072d1ea NOP dword ptr [RSI + 0x1c0]
+0072d1f1 VMOVUPS ZMM0,zmmword ptr [RSI]
+0072d1f7 VMOVUPS ZMM1,zmmword ptr [RSI + 0x40]
+0072d1fe VMOVUPS ZMM2,zmmword ptr [RSI + 0x80]
+0072d205 VMOVUPS ZMM3,zmmword ptr [RSI + 0xc0]
+0072d20c VMOVUPS ZMM4,zmmword ptr [RSI + 0x100]
+0072d213 VMOVUPS ZMM5,zmmword ptr [RSI + 0x140]
+0072d21a VMOVUPS ZMM6,zmmword ptr [RSI + 0x180]
+0072d221 VMOVUPS ZMM7,zmmword ptr [RSI + 0x1c0]
+0072d228 ADD RSI,0x200
+0072d22f NOP dword ptr [RSI]
+0072d232 NOP dword ptr [RSI + 0x40]
+0072d236 NOP dword ptr [RSI + 0x80]
+0072d23d NOP dword ptr [RSI + 0xc0]
+0072d244 NOP dword ptr [RSI + 0x100]
+0072d24b NOP dword ptr [RSI + 0x140]
+0072d252 NOP dword ptr [RSI + 0x180]
+0072d259 NOP dword ptr [RSI + 0x1c0]
+0072d260 VMOVUPS zmmword ptr [RDI],ZMM0
+0072d266 VMOVUPS zmmword ptr [RDI + 0x40],ZMM1
+0072d26d VMOVUPS zmmword ptr [RDI + 0x80],ZMM2
+0072d274 VMOVUPS zmmword ptr [RDI + 0xc0],ZMM3
+0072d27b VMOVUPS zmmword ptr [RDI + 0x100],ZMM4
+0072d282 VMOVUPS zmmword ptr [RDI + 0x140],ZMM5
+0072d289 VMOVUPS zmmword ptr [RDI + 0x180],ZMM6
+0072d290 VMOVUPS zmmword ptr [RDI + 0x1c0],ZMM7
+0072d297 ADD RDI,0x200
+0072d29e CMP RDI,R9
+0072d2a1 JC 0x0072d1f1
+0072d2a7 VMOVUPS zmmword ptr [R9],ZMM8
+0072d2ad VMOVUPS zmmword ptr [R9 + 0x40],ZMM9
+0072d2b4 VMOVUPS zmmword ptr [R9 + 0x80],ZMM10
+0072d2bb VMOVUPS zmmword ptr [R9 + 0xc0],ZMM11
+0072d2c2 VMOVUPS zmmword ptr [R9 + 0x100],ZMM12
+0072d2c9 VMOVUPS zmmword ptr [R9 + 0x140],ZMM13
+0072d2d0 VMOVUPS zmmword ptr [R9 + 0x180],ZMM14
+0072d2d7 VMOVUPS zmmword ptr [R9 + 0x1c0],ZMM15
+0072d2de RET
+0072d2df ADD RDI,0x200
+0072d2e6 VMOVUPS ZMM8,zmmword ptr [RSI + 0x1c0]
+0072d2ed VMOVUPS ZMM9,zmmword ptr [RSI + 0x180]
+0072d2f4 VMOVUPS ZMM10,zmmword ptr [RSI + 0x140]
+0072d2fb VMOVUPS ZMM11,zmmword ptr [RSI + 0x100]
+0072d302 VMOVUPS ZMM12,zmmword ptr [RSI + 0xc0]
+0072d309 VMOVUPS ZMM13,zmmword ptr [RSI + 0x80]
+0072d310 VMOVUPS ZMM14,zmmword ptr [RSI + 0x40]
+0072d317 VMOVUPS ZMM15,zmmword ptr [RSI]
+0072d31d NOP dword ptr [RCX + -0x40]
+0072d321 NOP dword ptr [RCX + -0x80]
+0072d325 NOP dword ptr [RCX + -0xc0]
+0072d32c NOP dword ptr [RCX + -0x100]
+0072d333 NOP dword ptr [RCX + -0x140]
+0072d33a NOP dword ptr [RCX + -0x180]
+0072d341 NOP dword ptr [RCX + -0x1c0]
+0072d348 NOP dword ptr [RCX + -0x200]
+0072d34f VMOVUPS ZMM0,zmmword ptr [RCX + -0x40]
+0072d356 VMOVUPS ZMM1,zmmword ptr [RCX + -0x80]
+0072d35d VMOVUPS ZMM2,zmmword ptr [RCX + -0xc0]
+0072d364 VMOVUPS ZMM3,zmmword ptr [RCX + -0x100]
+0072d36b VMOVUPS ZMM4,zmmword ptr [RCX + -0x140]
+0072d372 VMOVUPS ZMM5,zmmword ptr [RCX + -0x180]
+0072d379 VMOVUPS ZMM6,zmmword ptr [RCX + -0x1c0]
+0072d380 VMOVUPS ZMM7,zmmword ptr [RCX + -0x200]
+0072d387 SUB RCX,0x200
+0072d38e NOP dword ptr [RCX + -0x40]
+0072d392 NOP dword ptr [RCX + -0x80]
+0072d396 NOP dword ptr [RCX + -0xc0]
+0072d39d NOP dword ptr [RCX + -0x100]
+0072d3a4 NOP dword ptr [RCX + -0x140]
+0072d3ab NOP dword ptr [RCX + -0x180]
+0072d3b2 NOP dword ptr [RCX + -0x1c0]
+0072d3b9 NOP dword ptr [RCX + -0x200]
+0072d3c0 VMOVUPS zmmword ptr [R9 + -0x40],ZMM0
+0072d3c7 VMOVUPS zmmword ptr [R9 + -0x80],ZMM1
+0072d3ce VMOVUPS zmmword ptr [R9 + -0xc0],ZMM2
+0072d3d5 VMOVUPS zmmword ptr [R9 + -0x100],ZMM3
+0072d3dc VMOVUPS zmmword ptr [R9 + -0x140],ZMM4
+0072d3e3 VMOVUPS zmmword ptr [R9 + -0x180],ZMM5
+0072d3ea VMOVUPS zmmword ptr [R9 + -0x1c0],ZMM6
+0072d3f1 VMOVUPS zmmword ptr [R9 + -0x200],ZMM7
+0072d3f8 SUB R9,0x200
+0072d3ff CMP R9,RDI
+0072d402 JA 0x0072d34f
+0072d408 VMOVUPS zmmword ptr [RDI + -0x40],ZMM8
+0072d40f VMOVUPS zmmword ptr [RDI + -0x80],ZMM9
+0072d416 VMOVUPS zmmword ptr [RDI + -0xc0],ZMM10
+0072d41d VMOVUPS zmmword ptr [RDI + -0x100],ZMM11
+0072d424 VMOVUPS zmmword ptr [RDI + -0x140],ZMM12
+0072d42b VMOVUPS zmmword ptr [RDI + -0x180],ZMM13
+0072d432 VMOVUPS zmmword ptr [RDI + -0x1c0],ZMM14
+0072d439 VMOVUPS zmmword ptr [RDI + -0x200],ZMM15
+0072d440 RET
+0072d441 CMP RDI,RSI
+0072d444 JA 0x0072d516
+0072d44a VMOVUPS ZMM4,zmmword ptr [RSI]
+0072d450 VMOVUPS ZMM5,zmmword ptr [RSI + 0x40]
+0072d457 MOV R11,RDI
+0072d45a MOV R8,RDI
+0072d45d AND RDI,-0x80
+0072d461 ADD RDI,0x80
+0072d468 SUB R8,RDI
+0072d46b SUB RSI,R8
+0072d46e ADD RDX,R8
+0072d471 NOP dword ptr [RSI + 0x200]
+0072d478 NOP dword ptr [RSI + 0x240]
+0072d47f NOP dword ptr [RSI + 0x280]
+0072d486 NOP dword ptr [RSI + 0x2c0]
+0072d48d NOP dword ptr [RSI + 0x300]
+0072d494 NOP dword ptr [RSI + 0x340]
+0072d49b NOP dword ptr [RSI + 0x380]
+0072d4a2 NOP dword ptr [RSI + 0x3c0]
+0072d4a9 VMOVDQU64 ZMM0,zmmword ptr [RSI]
+0072d4af VMOVDQU64 ZMM1,zmmword ptr [RSI + 0x40]
+0072d4b6 VMOVDQU64 ZMM2,zmmword ptr [RSI + 0x80]
+0072d4bd VMOVDQU64 ZMM3,zmmword ptr [RSI + 0xc0]
+0072d4c4 VMOVNTDQ zmmword ptr [RDI],ZMM0
+0072d4ca VMOVNTDQ zmmword ptr [RDI + 0x40],ZMM1
+0072d4d1 VMOVNTDQ zmmword ptr [RDI + 0x80],ZMM2
+0072d4d8 VMOVNTDQ zmmword ptr [RDI + 0xc0],ZMM3
+0072d4df SUB RDX,0x100
+0072d4e6 ADD RSI,0x100
+0072d4ed ADD RDI,0x100
+0072d4f4 CMP RDX,0x100
+0072d4fb JA 0x0072d471
+0072d501 SFENCE
+0072d504 VMOVUPS zmmword ptr [R11],ZMM4
+0072d50a VMOVUPS zmmword ptr [R11 + 0x40],ZMM5
+0072d511 JMP 0x0072cebc
+0072d516 VMOVUPS ZMM4,zmmword ptr [RCX + -0x80]
+0072d51d VMOVUPS ZMM5,zmmword ptr [RCX + -0x40]
+0072d524 MOV R8,R9
+0072d527 AND R9,-0x80
+0072d52b SUB R8,R9
+0072d52e SUB RCX,R8
+0072d531 SUB RDX,R8
+0072d534 ADD R8,R9
+0072d537 NOP dword ptr [RCX + -0x400]
+0072d53e NOP dword ptr [RCX + -0x3c0]
+0072d545 NOP dword ptr [RCX + -0x380]
+0072d54c NOP dword ptr [RCX + -0x340]
+0072d553 NOP dword ptr [RCX + -0x300]
+0072d55a NOP dword ptr [RCX + -0x2c0]
+0072d561 NOP dword ptr [RCX + -0x280]
+0072d568 NOP dword ptr [RCX + -0x240]
+0072d56f VMOVDQU64 ZMM0,zmmword ptr [RCX + -0x100]
+0072d576 VMOVDQU64 ZMM1,zmmword ptr [RCX + -0xc0]
+0072d57d VMOVDQU64 ZMM2,zmmword ptr [RCX + -0x80]
+0072d584 VMOVDQU64 ZMM3,zmmword ptr [RCX + -0x40]
+0072d58b VMOVNTDQ zmmword ptr [R9 + -0x100],ZMM0
+0072d592 VMOVNTDQ zmmword ptr [R9 + -0xc0],ZMM1
+0072d599 VMOVNTDQ zmmword ptr [R9 + -0x80],ZMM2
+0072d5a0 VMOVNTDQ zmmword ptr [R9 + -0x40],ZMM3
+0072d5a7 SUB RDX,0x100
+0072d5ae SUB RCX,0x100
+0072d5b5 SUB R9,0x100
+0072d5bc CMP RDX,0x100
+0072d5c3 JA 0x0072d537
+0072d5c9 SFENCE
+0072d5cc VMOVUPS zmmword ptr [R8 + -0x80],ZMM4
+0072d5d3 VMOVUPS zmmword ptr [R8 + -0x40],ZMM5
+0072d5da JMP 0x0072cebc

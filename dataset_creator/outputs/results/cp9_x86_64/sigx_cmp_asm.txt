@@ -1,0 +1,9 @@
+0042b210 ENDBR64
+0042b214 MOV RCX,qword ptr [RDI]
+0042b217 MOV RDX,qword ptr [RSI]
+0042b21a MOV EAX,dword ptr [RCX + 0x4]
+0042b21d SUB EAX,dword ptr [RDX + 0x4]
+0042b220 JNZ 0x0042b228
+0042b222 MOV EAX,dword ptr [RCX + 0x8]
+0042b225 SUB EAX,dword ptr [RDX + 0x8]
+0042b228 RET

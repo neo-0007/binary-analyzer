@@ -1,0 +1,20 @@
+004f8720 ENDBR64
+004f8724 MOV RAX,qword ptr [RSI]
+004f8727 MOV qword ptr [RDI],RAX
+004f872a MOV RAX,qword ptr [RSI + 0x8]
+004f872e MOV qword ptr [RDI + 0x8],RAX
+004f8732 MOV RAX,qword ptr [RSI + 0x10]
+004f8736 MOV qword ptr [RDI + 0x10],RAX
+004f873a MOV RAX,qword ptr [RSI + 0x18]
+004f873e MOV qword ptr [RDI + 0x18],RAX
+004f8742 MOV RAX,qword ptr [RSI + 0x20]
+004f8746 MOV qword ptr [RDI + 0x20],RAX
+004f874a MOV RAX,qword ptr [RSI + 0x28]
+004f874e MOV qword ptr [RDI + 0x28],RAX
+004f8752 MOV RAX,qword ptr [RSI + 0x30]
+004f8756 MOV qword ptr [RDI + 0x30],RAX
+004f875a MOV RAX,qword ptr [RSI + 0x38]
+004f875e MOV qword ptr [RDI + 0x38],RAX
+004f8762 MOV RAX,qword ptr [RSI + 0x40]
+004f8766 MOV qword ptr [RDI + 0x40],RAX
+004f876a RET

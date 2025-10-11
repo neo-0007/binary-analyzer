@@ -1,0 +1,8 @@
+Operand Value Range Feature
+File: AES_Poly1305_3.asm
+-------------------------------
+Byte operands   : 10%
+Word operands   : 0%
+DWord operands  : 0%
+QWord operands  : 29%
+Other operands  : 60%

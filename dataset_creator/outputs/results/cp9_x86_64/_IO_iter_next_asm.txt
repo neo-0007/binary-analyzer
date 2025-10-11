@@ -1,0 +1,3 @@
+006fe910 ENDBR64
+006fe914 MOV RAX,qword ptr [RDI + 0x68]
+006fe918 RET

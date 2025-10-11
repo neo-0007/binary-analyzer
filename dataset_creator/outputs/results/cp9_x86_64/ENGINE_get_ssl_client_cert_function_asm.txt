@@ -1,0 +1,3 @@
+0050dec0 ENDBR64
+0050dec4 MOV RAX,qword ptr [RDI + 0x88]
+0050decb RET

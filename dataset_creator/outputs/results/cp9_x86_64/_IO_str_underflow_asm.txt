@@ -1,0 +1,25 @@
+006fe9e0 ENDBR64
+006fe9e4 MOV RAX,qword ptr [RDI + 0x28]
+006fe9e8 MOV RDX,qword ptr [RDI + 0x10]
+006fe9ec CMP RAX,RDX
+006fe9ef JBE 0x006fe9f8
+006fe9f1 MOV qword ptr [RDI + 0x10],RAX
+006fe9f5 MOV RDX,RAX
+006fe9f8 MOV ECX,dword ptr [RDI]
+006fe9fa MOV ESI,ECX
+006fe9fc AND ESI,0xc00
+006fea02 CMP ESI,0xc00
+006fea08 JZ 0x006fea20
+006fea0a MOV RAX,qword ptr [RDI + 0x8]
+006fea0e CMP RAX,RDX
+006fea11 JNC 0x006fea38
+006fea13 MOVZX EAX,byte ptr [RAX]
+006fea16 RET
+006fea20 AND CH,0xf7
+006fea23 MOV qword ptr [RDI + 0x8],RAX
+006fea27 MOV dword ptr [RDI],ECX
+006fea29 MOV RCX,qword ptr [RDI + 0x30]
+006fea2d MOV qword ptr [RDI + 0x28],RCX
+006fea31 JMP 0x006fea0e
+006fea38 MOV EAX,0xffffffff
+006fea3d RET

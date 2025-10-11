@@ -1,0 +1,6 @@
+005b0de0 ENDBR64
+005b0de4 MOV RAX,qword ptr [RDI + 0x150]
+005b0deb TEST RAX,RAX
+005b0dee JZ 0x005b0df3
+005b0df0 MOV RAX,qword ptr [RAX]
+005b0df3 RET

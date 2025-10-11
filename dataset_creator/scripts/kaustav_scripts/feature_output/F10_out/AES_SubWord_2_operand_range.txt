@@ -1,0 +1,8 @@
+Operand Value Range Feature
+File: AES_SubWord_2.asm
+-------------------------------
+Byte operands   : 6%
+Word operands   : 0%
+DWord operands  : 0%
+QWord operands  : 34%
+Other operands  : 58%

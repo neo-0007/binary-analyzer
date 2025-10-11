@@ -1,0 +1,3 @@
+004acc20 ENDBR64
+004acc24 MOV RAX,qword ptr [RDI + 0x38]
+004acc28 RET

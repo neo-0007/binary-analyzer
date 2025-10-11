@@ -1,0 +1,4 @@
+00568dc0 ENDBR64
+00568dc4 MOV RAX,qword ptr [RDI + 0x20]
+00568dc8 MOV RDI,qword ptr [RAX + 0x28]
+00568dcc JMP 0x004b7bb0

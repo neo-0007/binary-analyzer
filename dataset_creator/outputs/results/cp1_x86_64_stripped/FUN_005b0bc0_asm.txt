@@ -1,0 +1,13 @@
+005b0bc0 ENDBR64
+005b0bc4 MOV RAX,qword ptr [RDI + 0x150]
+005b0bcb TEST RAX,RAX
+005b0bce JZ 0x005b0be6
+005b0bd0 MOV RAX,qword ptr [RAX + 0x10]
+005b0bd4 TEST RAX,RAX
+005b0bd7 JZ 0x005b0be6
+005b0bd9 TEST RSI,RSI
+005b0bdc JZ 0x005b0be2
+005b0bde MOV EDX,dword ptr [RAX]
+005b0be0 MOV dword ptr [RSI],EDX
+005b0be2 MOV RAX,qword ptr [RAX + 0x8]
+005b0be6 RET

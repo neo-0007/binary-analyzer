@@ -1,0 +1,4 @@
+006205a0 ENDBR64
+006205a4 MOV qword ptr [RDI + 0x28],RSI
+006205a8 MOV dword ptr [RDI + 0x60],0x0
+006205af RET

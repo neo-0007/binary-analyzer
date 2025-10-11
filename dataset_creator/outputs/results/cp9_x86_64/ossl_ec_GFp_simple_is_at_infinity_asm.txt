@@ -1,0 +1,3 @@
+00500ee0 ENDBR64
+00500ee4 MOV RDI,qword ptr [RSI + 0x20]
+00500ee8 JMP 0x004aff10
