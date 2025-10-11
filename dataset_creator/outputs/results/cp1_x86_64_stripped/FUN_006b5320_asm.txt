@@ -1,0 +1,5 @@
+006b5320 ENDBR64
+006b5324 MOV RAX,qword ptr [RDI]
+006b5327 MOV qword ptr [RDI + 0x8],RSI
+006b532b MOV dword ptr [RAX + RSI*0x4],0x0
+006b5332 RET

@@ -1,0 +1,16 @@
+0059dfd0 MOV RCX,RDX
+0059dfd3 MOV RDX,RDI
+0059dfd6 MOVUPS XMM0,xmmword ptr [RDI]
+0059dfd9 SUB RSP,0x88
+0059dfe0 MOV EAX,dword ptr [RDI + 0x10]
+0059dfe3 MOVAPS xmmword ptr [RSP],XMM0
+0059dfe7 MOV RDI,RSP
+0059dfea MOV dword ptr [RSP + 0x10],EAX
+0059dfee MOV RAX,-0x1
+0059dff5 XSHA1.REP
+0059dff9 MOVAPS XMM0,xmmword ptr [RSP]
+0059dffd MOV EAX,dword ptr [RSP + 0x10]
+0059e001 ADD RSP,0x88
+0059e008 MOVUPS xmmword ptr [RDX],XMM0
+0059e00b MOV dword ptr [RDX + 0x10],EAX
+0059e00e RET

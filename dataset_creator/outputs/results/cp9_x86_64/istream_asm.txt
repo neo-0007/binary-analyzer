@@ -1,0 +1,47 @@
+0066ecd0 ENDBR64
+0066ecd4 PUSH R13
+0066ecd6 LEA R13,[RDI + 0x10]
+0066ecda PUSH R12
+0066ecdc PUSH RBP
+0066ecdd MOV RBP,RSI
+0066ece0 PUSH RBX
+0066ece1 MOV RBX,RDI
+0066ece4 MOV RDI,R13
+0066ece7 SUB RSP,0x8
+0066eceb CALL 0x0066ce70
+0066ecf0 XOR EAX,EAX
+0066ecf2 MOV RDI,R13
+0066ecf5 MOV qword ptr [RBX + 0xe8],0x0
+0066ed00 MOV word ptr [RBX + 0xf0],AX
+0066ed07 MOV RAX,0x92a928
+0066ed0e MOV qword ptr [RBX + 0xf8],0x0
+0066ed19 MOV qword ptr [RBX + 0x100],0x0
+0066ed24 LEA RDX,[RAX + 0x18]
+0066ed28 ADD RAX,0x40
+0066ed2c MOV qword ptr [RBX + 0x10],RAX
+0066ed30 MOV RAX,qword ptr [RBP + 0x8]
+0066ed34 MOV qword ptr [RBX + 0x108],0x0
+0066ed3f MOV qword ptr [RBX + 0x8],RAX
+0066ed43 MOV RAX,qword ptr [RBP]
+0066ed47 MOV qword ptr [RBX + 0x110],0x0
+0066ed52 MOV R12,qword ptr [RAX + -0x18]
+0066ed56 MOV qword ptr [RBX],RDX
+0066ed59 ADD R12,RBP
+0066ed5c MOV RSI,R12
+0066ed5f CALL 0x0066d210
+0066ed64 LEA RSI,[RBX + 0xe0]
+0066ed6b MOV RDI,R13
+0066ed6e CALL 0x0066be40
+0066ed73 MOV RAX,qword ptr [R12 + 0xd8]
+0066ed7b MOV qword ptr [RBX + 0xf8],0x0
+0066ed86 MOV qword ptr [R12 + 0xd8],0x0
+0066ed92 MOV qword ptr [RBX + 0xe8],RAX
+0066ed99 MOVZX EAX,word ptr [R12 + 0xe0]
+0066eda2 MOV qword ptr [RBP + 0x8],0x0
+0066edaa MOV word ptr [RBX + 0xf0],AX
+0066edb1 ADD RSP,0x8
+0066edb5 POP RBX
+0066edb6 POP RBP
+0066edb7 POP R12
+0066edb9 POP R13
+0066edbb RET

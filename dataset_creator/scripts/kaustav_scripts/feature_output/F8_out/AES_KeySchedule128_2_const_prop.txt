@@ -1,0 +1,4 @@
+File: /home/kaustav/sih2025/bn/binary-analyzer/dataset_creator/workspace/feature_extraction/AES_asm_files/AES_KeySchedule128_2.asm
+Total Instructions: 95
+Instructions with Immediate Constants: 430
+Constant Propagation Ratio: 4.5263

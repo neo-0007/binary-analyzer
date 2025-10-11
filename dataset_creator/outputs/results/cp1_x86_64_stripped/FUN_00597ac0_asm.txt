@@ -1,0 +1,3 @@
+00597ac0 ENDBR64
+00597ac4 MOV RAX,qword ptr [0x0093cac0]
+00597acb RET

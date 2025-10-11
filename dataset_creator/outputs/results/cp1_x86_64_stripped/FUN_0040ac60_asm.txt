@@ -1,0 +1,3 @@
+0040ac60 ENDBR64
+0040ac64 MOV RAX,qword ptr [RDI + 0x10]
+0040ac68 RET

@@ -1,0 +1,28 @@
+006ffa50 ENDBR64
+006ffa54 PUSH RBX
+006ffa55 MOV RBX,-0x38
+006ffa5c MOV RDI,qword ptr FS:[RBX]
+006ffa60 TEST RDI,RDI
+006ffa63 JZ 0x006ffa88
+006ffa65 CMP RDI,-0x1
+006ffa69 JZ 0x006ffa80
+006ffa6b MOVZX EAX,byte ptr [RDI + 0x4]
+006ffa6f CMP AL,0x1
+006ffa71 JZ 0x006ffaa8
+006ffa73 CMP AL,0x2
+006ffa75 JZ 0x006ffa90
+006ffa77 CALL 0x00706ae0
+006ffa7c NOP dword ptr [RAX]
+006ffa80 MOV qword ptr FS:[RBX],0x0
+006ffa88 POP RBX
+006ffa89 RET
+006ffa90 MOV RDI,qword ptr [RDI + 0x10]
+006ffa94 CALL 0x00706ae0
+006ffa99 MOV RDI,qword ptr FS:[RBX]
+006ffa9d CALL 0x00706ae0
+006ffaa2 JMP 0x006ffa80
+006ffaa8 MOV RDI,qword ptr [RDI + 0x10]
+006ffaac CALL 0x0077a9d0
+006ffab1 MOV RDI,qword ptr FS:[RBX]
+006ffab5 CALL 0x00706ae0
+006ffaba JMP 0x006ffa80

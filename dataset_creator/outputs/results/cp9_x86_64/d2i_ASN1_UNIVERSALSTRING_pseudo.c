@@ -1,0 +1,12 @@
+
+ASN1_UNIVERSALSTRING * d2i_ASN1_UNIVERSALSTRING(ASN1_UNIVERSALSTRING **a,uchar **in,long len)
+
+{
+  ASN1_ITEM *it;
+  ASN1_UNIVERSALSTRING *pAVar1;
+  
+  it = (ASN1_ITEM *)ASN1_UNIVERSALSTRING_it();
+  pAVar1 = (ASN1_UNIVERSALSTRING *)ASN1_item_d2i((ASN1_VALUE **)a,in,len,it);
+  return pAVar1;
+}
+

@@ -1,0 +1,9 @@
+0059fee0 ENDBR64
+0059fee4 XOR EAX,EAX
+0059fee6 TEST RDI,RDI
+0059fee9 JZ 0x0059fef8
+0059feeb CMP dword ptr [RDI],0x1
+0059feee JNZ 0x0059fef8
+0059fef0 MOV RAX,qword ptr [RDI + 0x8]
+0059fef4 RET
+0059fef8 RET

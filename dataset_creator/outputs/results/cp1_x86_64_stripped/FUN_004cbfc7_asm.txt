@@ -1,0 +1,7 @@
+004cbfc7 LEA RSI,[0x7e9c9d]
+004cbfce XOR EAX,EAX
+004cbfd0 CALL 0x004ae9e0
+004cbfd5 ADD RSP,0x8
+004cbfd9 NOT EAX
+004cbfdb SHR EAX,0x1f
+004cbfde RET

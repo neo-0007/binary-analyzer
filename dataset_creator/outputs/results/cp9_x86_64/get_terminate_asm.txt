@@ -1,0 +1,4 @@
+006acd60 ENDBR64
+006acd64 MOV RAX,0x9306e8
+006acd6b MOV RAX,qword ptr [RAX]
+006acd6e RET

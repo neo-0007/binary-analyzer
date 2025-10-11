@@ -1,0 +1,4 @@
+00595c00 ENDBR64
+00595c04 OR qword ptr [RDI + 0x18],0x2
+00595c09 MOV qword ptr [RDI + 0x8],RSI
+00595c0d RET

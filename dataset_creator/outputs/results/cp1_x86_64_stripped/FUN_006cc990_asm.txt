@@ -1,0 +1,69 @@
+006cc990 PUSH R13
+006cc992 XOR EAX,EAX
+006cc994 MOV ECX,0x1e
+006cc999 PUSH R12
+006cc99b MOV R12,RSI
+006cc99e PUSH RBP
+006cc99f MOV RBP,RDI
+006cc9a2 PUSH RBX
+006cc9a3 MOV RBX,RDX
+006cc9a6 SUB RSP,0x198
+006cc9ad STOSQ.REP RDI
+006cc9b0 LEA R13,[RSP + 0x10]
+006cc9b5 MOV RDI,RBP
+006cc9b8 MOV RSI,R13
+006cc9bb MOV RAX,qword ptr [RSP + 0x1b8]
+006cc9c3 MOV qword ptr [RBP + 0x98],RAX
+006cc9ca MOV RAX,0x4000000000000000
+006cc9d4 MOV qword ptr [RBP + 0xc0],RAX
+006cc9db CALL 0x006cc320
+006cc9e0 TEST EAX,EAX
+006cc9e2 JNZ 0x00404697
+006cc9e8 CMP qword ptr [0x0093af78],0x0
+006cc9f0 JZ 0x006cca80
+006cc9f6 LEA RSI,[0x6caa80]
+006cc9fd LEA RDI,[0x945600]
+006cca04 CALL 0x0070aea0
+006cca09 TEST EAX,EAX
+006cca0b JNZ 0x006cca80
+006cca0d CMP byte ptr [0x00945617],0x8
+006cca14 JNZ 0x00404697
+006cca1a MOV qword ptr [RSP + 0x8],R12
+006cca1f TEST byte ptr [RBP + 0xc7],0x40
+006cca26 JZ 0x006cca2f
+006cca28 MOV byte ptr [RBP + 0xdf],0x0
+006cca2f LEA RAX,[RSP + 0x8]
+006cca34 MOV RSI,R13
+006cca37 MOV RDI,RBP
+006cca3a MOV dword ptr [RSP + 0x150],0x1
+006cca45 MOV qword ptr [RBP + 0x38],RAX
+006cca49 MOV qword ptr [RSP + 0x140],0x7
+006cca55 MOV qword ptr [RSP + 0x138],0x0
+006cca61 CALL 0x006cb630
+006cca66 MOV qword ptr [RBP + 0x98],RBX
+006cca6d ADD RSP,0x198
+006cca74 POP RBX
+006cca75 POP RBP
+006cca76 POP R12
+006cca78 POP R13
+006cca7a RET
+006cca80 CMP byte ptr [0x00945610],0x0
+006cca87 JNZ 0x006cca0d
+006cca89 MOV byte ptr [0x00945610],0x8
+006cca90 MOV byte ptr [0x00945611],0x8
+006cca97 MOV byte ptr [0x00945612],0x8
+006cca9e MOV byte ptr [0x00945613],0x8
+006ccaa5 MOV byte ptr [0x00945614],0x8
+006ccaac MOV byte ptr [0x00945615],0x8
+006ccab3 MOV byte ptr [0x00945616],0x8
+006ccaba MOV byte ptr [0x00945617],0x8
+006ccac1 MOV byte ptr [0x00945618],0x8
+006ccac8 MOV byte ptr [0x00945619],0x8
+006ccacf MOV byte ptr [0x0094561a],0x8
+006ccad6 MOV byte ptr [0x0094561b],0x8
+006ccadd MOV byte ptr [0x0094561c],0x8
+006ccae4 MOV byte ptr [0x0094561d],0x8
+006ccaeb MOV byte ptr [0x0094561e],0x8
+006ccaf2 MOV byte ptr [0x0094561f],0x8
+006ccaf9 MOV byte ptr [0x00945620],0x8
+006ccb00 JMP 0x006cca0d

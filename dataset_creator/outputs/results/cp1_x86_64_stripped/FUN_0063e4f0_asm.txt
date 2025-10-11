@@ -1,0 +1,4 @@
+0063e4f0 ENDBR64
+0063e4f4 MOV RAX,qword ptr [RDI + 0x10]
+0063e4f8 MOVZX EAX,byte ptr [RAX + 0x48]
+0063e4fc RET

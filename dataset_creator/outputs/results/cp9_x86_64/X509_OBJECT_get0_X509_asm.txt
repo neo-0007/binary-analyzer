@@ -1,0 +1,9 @@
+0058cde0 ENDBR64
+0058cde4 XOR EAX,EAX
+0058cde6 TEST RDI,RDI
+0058cde9 JZ 0x0058cdf8
+0058cdeb CMP dword ptr [RDI],0x1
+0058cdee JNZ 0x0058cdf8
+0058cdf0 MOV RAX,qword ptr [RDI + 0x8]
+0058cdf4 RET
+0058cdf8 RET

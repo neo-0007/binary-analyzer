@@ -1,0 +1,14 @@
+004ebcc0 ENDBR64
+004ebcc4 CMP qword ptr [RDI + 0x8],0x0
+004ebcc9 JZ 0x004ebcd8
+004ebccb MOV EAX,0x1
+004ebcd0 RET
+004ebcd8 PUSH RBX
+004ebcd9 CALL 0x004eedf0
+004ebcde MOV RBX,RAX
+004ebce1 CALL 0x004eedb0
+004ebce6 CMP RBX,RAX
+004ebce9 POP RBX
+004ebcea SETNZ AL
+004ebced MOVZX EAX,AL
+004ebcf0 RET

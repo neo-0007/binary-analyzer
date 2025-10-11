@@ -1,0 +1,7 @@
+006a43d0 ENDBR64
+006a43d4 MOVSX R10D,byte ptr [RSP + 0x10]
+006a43da MOV RAX,qword ptr [RDI]
+006a43dd MOV dword ptr [RSP + 0x10],R10D
+006a43e2 MOVSX R10D,byte ptr [RSP + 0x8]
+006a43e8 MOV dword ptr [RSP + 0x8],R10D
+006a43ed JMP qword ptr [RAX + 0x10]

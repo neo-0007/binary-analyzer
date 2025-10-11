@@ -1,0 +1,70 @@
+0069fef0 ENDBR64
+0069fef4 CMP RDI,RSI
+0069fef7 JZ 0x0069ff5a
+0069fef9 MOV RAX,qword ptr [RDI]
+0069fefc LEA RCX,[RDI + 0x10]
+0069ff00 MOV RDX,qword ptr [RSI]
+0069ff03 LEA R8,[RSI + 0x10]
+0069ff07 CMP RCX,RAX
+0069ff0a JZ 0x0069ff60
+0069ff0c MOV R9,qword ptr [RDI + 0x10]
+0069ff10 CMP R8,RDX
+0069ff13 JZ 0x0069ff90
+0069ff15 MOV qword ptr [RDI],RDX
+0069ff18 MOV qword ptr [RSI],RAX
+0069ff1b MOV RAX,qword ptr [RSI + 0x10]
+0069ff1f MOV qword ptr [RDI + 0x10],RAX
+0069ff23 MOV qword ptr [RSI + 0x10],R9
+0069ff27 MOV RAX,qword ptr [RSI + 0x8]
+0069ff2b MOV RDX,qword ptr [RDI + 0x8]
+0069ff2f MOV qword ptr [RDI + 0x8],RAX
+0069ff33 MOV qword ptr [RSI + 0x8],RDX
+0069ff37 RET
+0069ff40 MOVUPS xmmword ptr [RSI + 0x10],XMM0
+0069ff44 MOV RAX,qword ptr [RDI + 0x8]
+0069ff48 MOV qword ptr [RSI + 0x8],RAX
+0069ff4c MOV RAX,qword ptr [RDI]
+0069ff4f MOV qword ptr [RDI + 0x8],0x0
+0069ff57 MOV byte ptr [RAX],0x0
+0069ff5a RET
+0069ff60 CMP R8,RDX
+0069ff63 JZ 0x0069ffa8
+0069ff65 MOV RAX,qword ptr [RSI + 0x10]
+0069ff69 MOVDQU XMM2,xmmword ptr [RDI + 0x10]
+0069ff6e MOVUPS xmmword ptr [RSI + 0x10],XMM2
+0069ff72 MOV qword ptr [RDI],RDX
+0069ff75 MOV RDX,qword ptr [RDI + 0x8]
+0069ff79 MOV qword ptr [RSI],R8
+0069ff7c MOV qword ptr [RDI + 0x10],RAX
+0069ff80 MOV RAX,qword ptr [RSI + 0x8]
+0069ff84 MOV qword ptr [RDI + 0x8],RAX
+0069ff88 MOV qword ptr [RSI + 0x8],RDX
+0069ff8c RET
+0069ff90 MOVDQU XMM3,xmmword ptr [RSI + 0x10]
+0069ff95 MOVUPS xmmword ptr [RDI + 0x10],XMM3
+0069ff99 MOV qword ptr [RSI],RAX
+0069ff9c MOV qword ptr [RDI],RCX
+0069ff9f JMP 0x0069ff23
+0069ffa8 CMP qword ptr [RDI + 0x8],0x0
+0069ffad MOV RAX,qword ptr [RSI + 0x8]
+0069ffb1 JZ 0x0069ffe0
+0069ffb3 MOVDQU XMM0,xmmword ptr [RDI + 0x10]
+0069ffb8 TEST RAX,RAX
+0069ffbb JZ 0x0069ff40
+0069ffbd MOVDQU XMM1,xmmword ptr [RSI + 0x10]
+0069ffc2 MOVUPS xmmword ptr [RSI + 0x10],XMM0
+0069ffc6 MOV RDX,qword ptr [RDI + 0x8]
+0069ffca MOVUPS xmmword ptr [RDI + 0x10],XMM1
+0069ffce MOV RAX,qword ptr [RSI + 0x8]
+0069ffd2 JMP 0x0069ff2f
+0069ffe0 XOR EDX,EDX
+0069ffe2 TEST RAX,RAX
+0069ffe5 JZ 0x0069ff2f
+0069ffeb MOVDQU XMM4,xmmword ptr [RSI + 0x10]
+0069fff0 MOVUPS xmmword ptr [RDI + 0x10],XMM4
+0069fff4 MOV RAX,qword ptr [RSI + 0x8]
+0069fff8 MOV qword ptr [RDI + 0x8],RAX
+0069fffc MOV RAX,qword ptr [RSI]
+0069ffff MOV qword ptr [RSI + 0x8],0x0
+006a0007 MOV byte ptr [RAX],0x0
+006a000a RET

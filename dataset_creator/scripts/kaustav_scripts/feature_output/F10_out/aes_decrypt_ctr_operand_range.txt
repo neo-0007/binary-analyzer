@@ -1,0 +1,8 @@
+Operand Value Range Feature
+File: aes_decrypt_ctr.asm
+-------------------------------
+Byte operands   : 2%
+Word operands   : 0%
+DWord operands  : 0%
+QWord operands  : 33%
+Other operands  : 63%

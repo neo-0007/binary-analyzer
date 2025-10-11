@@ -1,0 +1,6 @@
+004af9e0 ENDBR64
+004af9e4 MOVDQA XMM0,xmmword ptr [0x007dec80]
+004af9ec MOV RAX,qword ptr [0x007dec90]
+004af9f3 MOVUPS xmmword ptr [RDI],XMM0
+004af9f6 MOV qword ptr [RDI + 0x10],RAX
+004af9fa RET

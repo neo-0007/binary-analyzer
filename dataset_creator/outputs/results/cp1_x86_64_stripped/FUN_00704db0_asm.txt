@@ -1,0 +1,9 @@
+00704db0 ENDBR64
+00704db4 OR dword ptr [RDI],0x240c
+00704dba PUSH RBX
+00704dbb MOV RBX,RDI
+00704dbe MOV qword ptr [RDI + 0x90],-0x1
+00704dc9 CALL 0x007061e0
+00704dce MOV dword ptr [RBX + 0x70],0xffffffff
+00704dd5 POP RBX
+00704dd6 RET

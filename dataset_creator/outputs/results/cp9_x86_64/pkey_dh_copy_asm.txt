@@ -1,0 +1,58 @@
+004ca3f0 ENDBR64
+004ca3f4 PUSH R12
+004ca3f6 MOV R12,RSI
+004ca3f9 PUSH RBP
+004ca3fa PUSH RBX
+004ca3fb MOV RBX,RDI
+004ca3fe CALL 0x004ca110
+004ca403 TEST EAX,EAX
+004ca405 JNZ 0x004ca410
+004ca407 POP RBX
+004ca408 XOR EAX,EAX
+004ca40a POP RBP
+004ca40b POP R12
+004ca40d RET
+004ca410 MOV RBP,qword ptr [RBX + 0x98]
+004ca417 MOV RBX,qword ptr [R12 + 0x98]
+004ca41f MOV EAX,dword ptr [RBX]
+004ca421 MOV dword ptr [RBP],EAX
+004ca424 MOV EAX,dword ptr [RBX + 0xc]
+004ca427 MOV dword ptr [RBP + 0xc],EAX
+004ca42a MOV EAX,dword ptr [RBX + 0x4]
+004ca42d MOV dword ptr [RBP + 0x4],EAX
+004ca430 MOV EAX,dword ptr [RBX + 0x8]
+004ca433 MOV dword ptr [RBP + 0x8],EAX
+004ca436 MOV EAX,dword ptr [RBX + 0x10]
+004ca439 MOV dword ptr [RBP + 0x10],EAX
+004ca43c MOV RAX,qword ptr [RBX + 0x18]
+004ca440 MOV qword ptr [RBP + 0x18],RAX
+004ca444 MOV EAX,dword ptr [RBX + 0x20]
+004ca447 MOV dword ptr [RBP + 0x20],EAX
+004ca44a MOVZX EAX,byte ptr [RBX + 0x2c]
+004ca44e MOV byte ptr [RBP + 0x2c],AL
+004ca451 MOV RDI,qword ptr [RBX + 0x30]
+004ca455 CALL 0x0042b020
+004ca45a MOV qword ptr [RBP + 0x30],RAX
+004ca45e TEST RAX,RAX
+004ca461 JZ 0x004ca407
+004ca463 MOV RAX,qword ptr [RBX + 0x38]
+004ca467 MOV RDI,qword ptr [RBX + 0x40]
+004ca46b MOV qword ptr [RBP + 0x38],RAX
+004ca46f TEST RDI,RDI
+004ca472 JZ 0x004ca49e
+004ca474 MOV RSI,qword ptr [RBX + 0x48]
+004ca478 MOV ECX,0x6c
+004ca47d LEA RDX,[0x7e07c8]
+004ca484 CALL 0x0041ad30
+004ca489 MOV qword ptr [RBP + 0x40],RAX
+004ca48d TEST RAX,RAX
+004ca490 JZ 0x004ca407
+004ca496 MOV RAX,qword ptr [RBX + 0x48]
+004ca49a MOV qword ptr [RBP + 0x48],RAX
+004ca49e MOV RAX,qword ptr [RBX + 0x50]
+004ca4a2 MOV qword ptr [RBP + 0x50],RAX
+004ca4a6 MOV EAX,0x1
+004ca4ab POP RBX
+004ca4ac POP RBP
+004ca4ad POP R12
+004ca4af RET

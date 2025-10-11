@@ -1,0 +1,8 @@
+0049ccf0 ENDBR64
+0049ccf4 MOV EDX,dword ptr [RDI + 0x4]
+0049ccf7 MOV RCX,RSI
+0049ccfa MOVSXD RSI,dword ptr [RDI]
+0049ccfd MOV RDI,qword ptr [RDI + 0x8]
+0049cd01 AND EDX,0x100
+0049cd07 CALL 0x0049cb70
+0049cd0c RET

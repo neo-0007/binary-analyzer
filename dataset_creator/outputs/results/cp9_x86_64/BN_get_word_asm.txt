@@ -1,0 +1,10 @@
+004afb30 ENDBR64
+004afb34 CMP dword ptr [RDI + 0x8],0x1
+004afb38 MOV RAX,-0x1
+004afb3f JG 0x004afb48
+004afb41 MOV EAX,0x0
+004afb46 JZ 0x004afb50
+004afb48 RET
+004afb50 MOV RAX,qword ptr [RDI]
+004afb53 MOV RAX,qword ptr [RAX]
+004afb56 RET

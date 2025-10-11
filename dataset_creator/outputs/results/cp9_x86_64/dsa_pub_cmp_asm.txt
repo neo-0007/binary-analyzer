@@ -1,0 +1,13 @@
+004cadd0 ENDBR64
+004cadd4 SUB RSP,0x8
+004cadd8 MOV RAX,qword ptr [RDI + 0x20]
+004caddc MOV R8,RSI
+004caddf MOV RSI,qword ptr [RAX + 0x68]
+004cade3 MOV RAX,qword ptr [R8 + 0x20]
+004cade7 MOV RDI,qword ptr [RAX + 0x68]
+004cadeb CALL 0x004afbb0
+004cadf0 TEST EAX,EAX
+004cadf2 SETZ AL
+004cadf5 ADD RSP,0x8
+004cadf9 MOVZX EAX,AL
+004cadfc RET

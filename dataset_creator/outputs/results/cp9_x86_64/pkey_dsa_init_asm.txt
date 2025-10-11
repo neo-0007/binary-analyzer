@@ -1,0 +1,23 @@
+004cdad0 ENDBR64
+004cdad4 PUSH RBX
+004cdad5 MOV EDX,0x28
+004cdada MOV RBX,RDI
+004cdadd LEA RSI,[0x7e0aac]
+004cdae4 MOV EDI,0x20
+004cdae9 CALL 0x004197a0
+004cdaee TEST RAX,RAX
+004cdaf1 JZ 0x004cdb30
+004cdaf3 MOV RCX,0xe000000800
+004cdafd MOV qword ptr [RAX + 0x8],0x0
+004cdb05 MOV qword ptr [RAX],RCX
+004cdb08 MOV qword ptr [RAX + 0x18],0x0
+004cdb10 MOV qword ptr [RBX + 0x98],RAX
+004cdb17 ADD RAX,0x10
+004cdb1b MOV qword ptr [RBX + 0x68],RAX
+004cdb1f MOV EAX,0x1
+004cdb24 MOV dword ptr [RBX + 0x70],0x2
+004cdb2b POP RBX
+004cdb2c RET
+004cdb30 XOR EAX,EAX
+004cdb32 POP RBX
+004cdb33 RET

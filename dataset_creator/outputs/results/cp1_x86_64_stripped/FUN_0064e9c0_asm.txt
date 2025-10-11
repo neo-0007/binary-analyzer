@@ -1,0 +1,3 @@
+0064e9c0 ENDBR64
+0064e9c4 MOV RAX,qword ptr [RSI]
+0064e9c7 RET

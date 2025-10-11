@@ -1,0 +1,4 @@
+0047b1d0 ENDBR64
+0047b1d4 MOV dword ptr [RDI + 0x8],0x1
+0047b1db MOV EAX,0x1
+0047b1e0 RET

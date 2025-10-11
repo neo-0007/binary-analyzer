@@ -1,0 +1,19 @@
+00692c90 ENDBR64
+00692c94 LEA RAX,[RDI + 0x10]
+00692c98 MOV qword ptr [RDI],RAX
+00692c9b MOV RDX,qword ptr [RSI]
+00692c9e LEA RAX,[RSI + 0x10]
+00692ca2 CMP RDX,RAX
+00692ca5 JZ 0x00692cd0
+00692ca7 MOV qword ptr [RDI],RDX
+00692caa MOV RDX,qword ptr [RSI + 0x10]
+00692cae MOV qword ptr [RDI + 0x10],RDX
+00692cb2 MOV RDX,qword ptr [RSI + 0x8]
+00692cb6 MOV qword ptr [RSI],RAX
+00692cb9 MOV qword ptr [RSI + 0x8],0x0
+00692cc1 MOV qword ptr [RDI + 0x8],RDX
+00692cc5 MOV byte ptr [RSI + 0x10],0x0
+00692cc9 RET
+00692cd0 MOVDQU XMM0,xmmword ptr [RSI + 0x10]
+00692cd5 MOVUPS xmmword ptr [RDI + 0x10],XMM0
+00692cd9 JMP 0x00692cb2

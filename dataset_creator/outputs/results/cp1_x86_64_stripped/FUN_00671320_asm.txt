@@ -1,0 +1,20 @@
+00671320 ENDBR64
+00671324 MOV RAX,qword ptr [RSI]
+00671327 MOV qword ptr [RDI],RAX
+0067132a MOV RAX,qword ptr [RAX + -0x18]
+0067132e MOV RDX,qword ptr [RSI + 0x28]
+00671332 MOV qword ptr [RDI + RAX*0x1],RDX
+00671336 MOV RAX,qword ptr [RSI + 0x30]
+0067133a MOV qword ptr [RDI + 0x10],RAX
+0067133e MOV RAX,qword ptr [RSI + 0x18]
+00671342 MOV qword ptr [RDI + 0x10],RAX
+00671346 MOV RAX,qword ptr [RAX + -0x18]
+0067134a MOV RDX,qword ptr [RSI + 0x20]
+0067134e MOV qword ptr [RDI + RAX*0x1 + 0x10],RDX
+00671353 MOV RAX,qword ptr [RSI + 0x8]
+00671357 MOV qword ptr [RDI],RAX
+0067135a MOV RAX,qword ptr [RAX + -0x18]
+0067135e MOV RDX,qword ptr [RSI + 0x10]
+00671362 MOV qword ptr [RDI + RAX*0x1],RDX
+00671366 MOV qword ptr [RDI + 0x8],0x0
+0067136e RET

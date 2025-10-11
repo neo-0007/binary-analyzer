@@ -1,0 +1,4 @@
+00659bc0 ENDBR64
+00659bc4 MOV RAX,qword ptr [RDI]
+00659bc7 MOVZX ECX,CL
+00659bca JMP qword ptr [RAX + 0x10]

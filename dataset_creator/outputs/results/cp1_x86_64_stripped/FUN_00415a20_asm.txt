@@ -1,0 +1,4 @@
+00415a20 ENDBR64
+00415a24 MOV RAX,qword ptr [RDI + 0x8]
+00415a28 MOV qword ptr [RSI],RAX
+00415a2b RET

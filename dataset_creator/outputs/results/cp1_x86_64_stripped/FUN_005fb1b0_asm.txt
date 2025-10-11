@@ -1,0 +1,3 @@
+005fb1b0 ENDBR64
+005fb1b4 MOVSXD RAX,dword ptr [RDI]
+005fb1b7 RET

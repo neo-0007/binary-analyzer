@@ -1,0 +1,7 @@
+004020d9 MOV RAX,qword ptr [0x009383e0]
+004020e0 MOV RCX,qword ptr [0x009383e8]
+004020e7 MOV qword ptr [RSP + 0x30],RAX
+004020ec MOV RAX,qword ptr [RAX + -0x18]
+004020f0 MOV qword ptr [RSP + RAX*0x1 + 0x30],RCX
+004020f5 MOV qword ptr [RSP + 0x38],0x0
+004020fe JMP 0x004020b8

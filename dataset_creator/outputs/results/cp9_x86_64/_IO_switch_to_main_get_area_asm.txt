@@ -1,0 +1,13 @@
+006fca00 ENDBR64
+006fca04 MOVDQU XMM0,xmmword ptr [RDI + 0x40]
+006fca09 MOV RAX,qword ptr [RDI + 0x10]
+006fca0d MOVDQU XMM2,xmmword ptr [RDI + 0x50]
+006fca12 AND dword ptr [RDI],0xfffffeff
+006fca18 MOV qword ptr [RDI + 0x58],RAX
+006fca1c MOVDQA XMM1,XMM0
+006fca20 MOV RAX,qword ptr [RDI + 0x18]
+006fca24 PUNPCKHQDQ XMM1,XMM2
+006fca28 MOVHPS qword ptr [RDI + 0x18],XMM0
+006fca2c MOV qword ptr [RDI + 0x48],RAX
+006fca30 MOVUPS xmmword ptr [RDI + 0x8],XMM1
+006fca34 RET

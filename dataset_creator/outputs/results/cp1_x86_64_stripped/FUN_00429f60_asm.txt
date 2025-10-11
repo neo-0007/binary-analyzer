@@ -1,0 +1,5 @@
+00429f60 ENDBR64
+00429f64 MOV RAX,qword ptr [RDI]
+00429f67 MOV qword ptr [RDI + 0x30],0x0
+00429f6f MOV qword ptr [RDI],0x0
+00429f76 RET

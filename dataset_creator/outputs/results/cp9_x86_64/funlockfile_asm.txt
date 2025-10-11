@@ -1,0 +1,12 @@
+0078bde0 ENDBR64
+0078bde4 MOV RDI,qword ptr [RDI + 0x88]
+0078bdeb MOV EAX,dword ptr [RDI + 0x4]
+0078bdee SUB EAX,0x1
+0078bdf1 MOV dword ptr [RDI + 0x4],EAX
+0078bdf4 JNZ 0x0078be05
+0078bdf6 MOV qword ptr [RDI + 0x8],0x0
+0078bdfe XCHG dword ptr [RDI],EAX
+0078be00 CMP EAX,0x1
+0078be03 JG 0x0078be10
+0078be05 RET
+0078be10 JMP 0x006ffc50

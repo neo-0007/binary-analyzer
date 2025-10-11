@@ -1,0 +1,15 @@
+005f38e0 ENDBR64
+005f38e4 MOVDQU XMM0,xmmword ptr [RSI]
+005f38e8 MOV EAX,0x1
+005f38ed MOVUPS xmmword ptr [RDI],XMM0
+005f38f0 MOVDQU XMM1,xmmword ptr [RSI + 0x10]
+005f38f5 MOVUPS xmmword ptr [RDI + 0x10],XMM1
+005f38f9 MOVDQU XMM2,xmmword ptr [RSI + 0x20]
+005f38fe MOVUPS xmmword ptr [RDI + 0x20],XMM2
+005f3902 MOVDQU XMM3,xmmword ptr [RSI + 0x30]
+005f3907 MOVUPS xmmword ptr [RDI + 0x30],XMM3
+005f390b MOVDQU XMM4,xmmword ptr [RSI + 0x40]
+005f3910 MOVUPS xmmword ptr [RDI + 0x40],XMM4
+005f3914 MOVDQU XMM5,xmmword ptr [RSI + 0x50]
+005f3919 MOVUPS xmmword ptr [RDI + 0x50],XMM5
+005f391d RET

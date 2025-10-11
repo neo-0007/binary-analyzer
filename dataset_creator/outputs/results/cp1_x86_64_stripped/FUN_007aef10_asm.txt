@@ -1,0 +1,34 @@
+007aef10 ENDBR64
+007aef14 PUSH RBX
+007aef15 MOV RBX,-0x70
+007aef1c MOV RDI,qword ptr FS:[RBX]
+007aef20 MOV ECX,dword ptr [RDI]
+007aef22 TEST ECX,ECX
+007aef24 JNZ 0x007aef2c
+007aef26 MOV dword ptr [RDI],0x5
+007aef2c MOV EDX,dword ptr [RDI + 0x4]
+007aef2f TEST EDX,EDX
+007aef31 JNZ 0x007aef3a
+007aef33 MOV dword ptr [RDI + 0x4],0x2
+007aef3a TEST byte ptr [RDI + 0x8],0x1
+007aef3e JNZ 0x007aef60
+007aef40 MOV qword ptr [RDI + 0x8],0x2c0
+007aef48 CMP word ptr [RDI + 0x44],0x0
+007aef4d JZ 0x007aef7c
+007aef4f MOV ESI,0x1
+007aef54 POP RBX
+007aef55 JMP 0x007aee40
+007aef60 MOV EAX,dword ptr [RDI + 0x10]
+007aef63 TEST EAX,EAX
+007aef65 JLE 0x007aef48
+007aef67 MOV ESI,0x1
+007aef6c CALL 0x007ad930
+007aef71 MOV RDI,qword ptr FS:[RBX]
+007aef75 CMP word ptr [RDI + 0x44],0x0
+007aef7a JNZ 0x007aef4f
+007aef7c CALL 0x007aefa0
+007aef81 MOV RDI,qword ptr FS:[RBX]
+007aef85 MOV ESI,0x1
+007aef8a MOV word ptr [RDI + 0x44],AX
+007aef8e POP RBX
+007aef8f JMP 0x007aee40

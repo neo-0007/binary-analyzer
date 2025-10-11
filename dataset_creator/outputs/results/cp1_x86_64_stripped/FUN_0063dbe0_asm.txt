@@ -1,0 +1,13 @@
+0063dbe0 ENDBR64
+0063dbe4 MOV RAX,RDX
+0063dbe7 CMP RSI,RDX
+0063dbea JNC 0x0063dc08
+0063dbec NOP dword ptr [RAX]
+0063dbf0 MOVZX R8D,byte ptr [RSI]
+0063dbf4 MOV RCX,qword ptr [RDI + 0x20]
+0063dbf8 ADD RSI,0x1
+0063dbfc MOV ECX,dword ptr [RCX + R8*0x4]
+0063dc00 MOV byte ptr [RSI + -0x1],CL
+0063dc03 CMP RAX,RSI
+0063dc06 JNZ 0x0063dbf0
+0063dc08 RET

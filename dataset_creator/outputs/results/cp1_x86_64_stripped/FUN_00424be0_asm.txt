@@ -1,0 +1,6 @@
+00424be0 ENDBR64
+00424be4 MOV RAX,qword ptr [RDI]
+00424be7 MOV RDX,qword ptr [RSI]
+00424bea MOV EAX,dword ptr [RAX]
+00424bec SUB EAX,dword ptr [RDX]
+00424bee RET

@@ -1,0 +1,6 @@
+0049e760 ENDBR64
+0049e764 MOV RAX,qword ptr [RDI]
+0049e767 MOV RDX,qword ptr [RSI]
+0049e76a MOV EAX,dword ptr [RAX]
+0049e76c SUB EAX,dword ptr [RDX]
+0049e76e RET

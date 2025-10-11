@@ -1,0 +1,6 @@
+004513e0 ENDBR64
+004513e4 MOV qword ptr [RDI],0x1010020
+004513eb MOV qword ptr [RDI + 0x8],0x0
+004513f3 MOV qword ptr [RDI + 0x10],0x0
+004513fb MOV qword ptr [RDI + 0x18],0x0
+00451403 RET

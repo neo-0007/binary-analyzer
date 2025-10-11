@@ -1,0 +1,3 @@
+0058ce20 ENDBR64
+0058ce24 MOV EAX,dword ptr [RDI]
+0058ce26 RET

@@ -1,0 +1,4 @@
+0042a110 ENDBR64
+0042a114 MOV RAX,qword ptr [RDI + 0x20]
+0042a118 SUB RAX,qword ptr [RDI + 0x8]
+0042a11c RET

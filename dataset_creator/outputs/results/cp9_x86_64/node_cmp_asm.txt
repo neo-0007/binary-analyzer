@@ -1,0 +1,8 @@
+0061b770 ENDBR64
+0061b774 MOV RAX,qword ptr [RSI]
+0061b777 MOV RAX,qword ptr [RAX]
+0061b77a MOV RSI,qword ptr [RAX + 0x8]
+0061b77e MOV RAX,qword ptr [RDI]
+0061b781 MOV RAX,qword ptr [RAX]
+0061b784 MOV RDI,qword ptr [RAX + 0x8]
+0061b788 JMP 0x0042b180

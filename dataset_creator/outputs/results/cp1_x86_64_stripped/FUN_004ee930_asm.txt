@@ -1,0 +1,5 @@
+004ee930 ENDBR64
+004ee934 NOT ESI
+004ee936 ADD qword ptr [RDI + 0x68],0x1
+004ee93b AND dword ptr [RDI + 0x3c],ESI
+004ee93e RET

@@ -1,0 +1,85 @@
+
+void felem_square(undefined1 (*param_1) [16],ulong *param_2)
+
+{
+  ulong uVar1;
+  ulong uVar2;
+  ulong uVar3;
+  ulong uVar4;
+  undefined1 auVar5 [16];
+  undefined1 auVar6 [16];
+  undefined1 auVar7 [16];
+  undefined1 auVar8 [16];
+  undefined1 auVar9 [16];
+  undefined1 auVar10 [16];
+  undefined1 auVar11 [16];
+  undefined1 auVar12 [16];
+  undefined1 auVar13 [16];
+  undefined1 auVar14 [16];
+  undefined1 auVar15 [16];
+  undefined1 auVar16 [16];
+  undefined1 auVar17 [16];
+  undefined1 auVar18 [16];
+  undefined1 auVar19 [16];
+  undefined1 auVar20 [16];
+  undefined1 auVar21 [16];
+  undefined1 auVar22 [16];
+  undefined1 auVar23 [16];
+  undefined1 auVar24 [16];
+  ulong uVar25;
+  
+  uVar1 = *param_2;
+  uVar2 = param_2[1];
+  uVar3 = param_2[2];
+  uVar4 = param_2[3];
+  auVar5._8_8_ = 0;
+  auVar5._0_8_ = uVar1;
+  auVar15._8_8_ = 0;
+  auVar15._0_8_ = uVar1;
+  uVar25 = uVar3 * 2;
+  *param_1 = auVar5 * auVar15;
+  auVar6._8_8_ = 0;
+  auVar6._0_8_ = uVar1;
+  auVar16._8_8_ = 0;
+  auVar16._0_8_ = uVar2 * 2;
+  param_1[1] = auVar6 * auVar16;
+  auVar7._8_8_ = 0;
+  auVar7._0_8_ = uVar1;
+  auVar17._8_8_ = 0;
+  auVar17._0_8_ = uVar25;
+  auVar8._8_8_ = 0;
+  auVar8._0_8_ = uVar2;
+  auVar18._8_8_ = 0;
+  auVar18._0_8_ = uVar2;
+  param_1[2] = auVar7 * auVar17 + auVar8 * auVar18;
+  auVar9._8_8_ = 0;
+  auVar9._0_8_ = uVar1 * 2;
+  auVar19._8_8_ = 0;
+  auVar19._0_8_ = uVar4;
+  auVar10._8_8_ = 0;
+  auVar10._0_8_ = uVar2;
+  auVar20._8_8_ = 0;
+  auVar20._0_8_ = uVar25;
+  auVar11._8_8_ = 0;
+  auVar11._0_8_ = uVar2 * 2;
+  auVar21._8_8_ = 0;
+  auVar21._0_8_ = uVar4;
+  param_1[3] = auVar9 * auVar19 + auVar10 * auVar20;
+  auVar12._8_8_ = 0;
+  auVar12._0_8_ = uVar3;
+  auVar22._8_8_ = 0;
+  auVar22._0_8_ = uVar3;
+  auVar13._8_8_ = 0;
+  auVar13._0_8_ = uVar25;
+  auVar23._8_8_ = 0;
+  auVar23._0_8_ = uVar4;
+  param_1[4] = auVar11 * auVar21 + auVar12 * auVar22;
+  param_1[5] = auVar13 * auVar23;
+  auVar14._8_8_ = 0;
+  auVar14._0_8_ = uVar4;
+  auVar24._8_8_ = 0;
+  auVar24._0_8_ = uVar4;
+  param_1[6] = auVar14 * auVar24;
+  return;
+}
+

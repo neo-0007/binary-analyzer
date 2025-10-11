@@ -1,0 +1,6 @@
+005a1c40 ENDBR64
+005a1c44 MOV dword ptr [RDI],ESI
+005a1c46 MOV dword ptr [RDI + 0x4],EDX
+005a1c49 MOV dword ptr [RDI + 0x8],ECX
+005a1c4c MOV dword ptr [RDI + 0xc],R8D
+005a1c50 RET

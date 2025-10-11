@@ -1,0 +1,8 @@
+005fb1d0 ENDBR64
+005fb1d4 MOV R8,qword ptr [RDI + 0x8]
+005fb1d8 MOV RCX,qword ptr [RSI + 0x8]
+005fb1dc MOV RDX,qword ptr [RDI + 0x10]
+005fb1e0 MOV RAX,qword ptr [RSI]
+005fb1e3 MOV EDI,dword ptr [RDI]
+005fb1e5 MOV RSI,R8
+005fb1e8 JMP RAX

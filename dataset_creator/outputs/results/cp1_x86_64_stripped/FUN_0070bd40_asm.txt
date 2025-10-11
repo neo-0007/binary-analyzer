@@ -1,0 +1,5 @@
+0070bd40 ENDBR64
+0070bd44 MOV RAX,qword ptr [RDI]
+0070bd47 NOP
+0070bd48 MOV qword ptr [0x0093e0e0],RAX
+0070bd4f RET

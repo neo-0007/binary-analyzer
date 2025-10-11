@@ -1,0 +1,21 @@
+0078dac0 ENDBR64
+0078dac4 PUSH RAX
+0078dac5 POP RAX
+0078dac6 SUB RSP,0x8
+0078daca MOV RAX,-0x8
+0078dad1 MOV RAX,qword ptr FS:[RAX]
+0078dad5 TEST RAX,RAX
+0078dad8 JZ 0x0078db00
+0078dada MOV RDX,qword ptr [RAX]
+0078dadd MOVDQU XMM0,xmmword ptr [RSI]
+0078dae1 MOVUPS xmmword ptr [RDX],XMM0
+0078dae4 MOV RCX,qword ptr [RSI + 0x10]
+0078dae8 MOV ESI,0x1
+0078daed MOV qword ptr [RDX + 0x10],RCX
+0078daf1 MOV RDX,qword ptr [RAX + 0x8]
+0078daf5 MOV dword ptr [RDX],EDI
+0078daf7 LEA RDI,[RAX + 0x10]
+0078dafb CALL 0x00790a50
+0078db00 MOV RCX,qword ptr [RSI + 0x8]
+0078db04 MOV RSI,qword ptr [RSI]
+0078db07 CALL 0x0078da10

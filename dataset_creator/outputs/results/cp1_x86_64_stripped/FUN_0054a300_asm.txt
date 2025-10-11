@@ -1,0 +1,2 @@
+0054a300 ENDBR64
+0054a304 JMP qword ptr [RDX]

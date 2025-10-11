@@ -1,0 +1,17 @@
+007ccef0 ENDBR64
+007ccef4 PUSH RBX
+007ccef5 MOV RBX,qword ptr [0x0094aa58]
+007ccefc TEST RBX,RBX
+007cceff JZ 0x007ccf1f
+007ccf01 NOP dword ptr [RAX]
+007ccf08 MOV RDI,RBX
+007ccf0b MOV RBX,qword ptr [RBX]
+007ccf0e MOV qword ptr [0x0094aa58],RBX
+007ccf15 CALL 0x007104f0
+007ccf1a TEST RBX,RBX
+007ccf1d JNZ 0x007ccf08
+007ccf1f MOV RDI,qword ptr [0x0094aa50]
+007ccf26 CALL 0x007104f0
+007ccf2b POP RBX
+007ccf2c MOV qword ptr [0x0094aa50],0x0
+007ccf37 RET

@@ -1,0 +1,19 @@
+004bfdb0 ENDBR64
+004bfdb4 PUSH RBP
+004bfdb5 MOV RBP,RSI
+004bfdb8 PUSH RBX
+004bfdb9 MOV RBX,RDI
+004bfdbc SUB RSP,0x8
+004bfdc0 MOV RAX,qword ptr [0x00933ff0]
+004bfdc7 TEST RAX,RAX
+004bfdca JZ 0x004bfde0
+004bfdcc MOV RDI,RBX
+004bfdcf CALL qword ptr [RAX + 0x10]
+004bfdd2 MOV qword ptr [RBX + 0x10],RBP
+004bfdd6 ADD RSP,0x8
+004bfdda POP RBX
+004bfddb POP RBP
+004bfddc RET
+004bfde0 CALL 0x005c00b0
+004bfde5 MOV qword ptr [0x00933ff0],RAX
+004bfdec JMP 0x004bfdcc

@@ -1,0 +1,30 @@
+006ff280 ENDBR64
+006ff284 PUSH RBP
+006ff285 MOV RDX,qword ptr [RDI + 0xa0]
+006ff28c MOV RBP,RDI
+006ff28f MOV RDI,qword ptr [RDX + 0x30]
+006ff293 TEST RDI,RDI
+006ff296 JZ 0x006ff29e
+006ff298 TEST byte ptr [RBP + 0x74],0x8
+006ff29c JZ 0x006ff2e8
+006ff29e MOV RAX,qword ptr [RBP + 0x60]
+006ff2a2 TEST RAX,RAX
+006ff2a5 JZ 0x006ff2c0
+006ff2a7 NOP word ptr [RAX + RAX*0x1]
+006ff2b0 MOV qword ptr [RAX + 0x8],0x0
+006ff2b8 MOV RAX,qword ptr [RAX]
+006ff2bb TEST RAX,RAX
+006ff2be JNZ 0x006ff2b0
+006ff2c0 CMP qword ptr [RBP + 0x48],0x0
+006ff2c5 JZ 0x006ff2d8
+006ff2c7 MOV RDI,qword ptr [RDX + 0x40]
+006ff2cb CALL 0x007104f0
+006ff2d0 MOV qword ptr [RBP + 0x48],0x0
+006ff2d8 MOV RDI,RBP
+006ff2db POP RBP
+006ff2dc JMP 0x007061c0
+006ff2e8 CALL 0x007104f0
+006ff2ed MOV RDX,qword ptr [RBP + 0xa0]
+006ff2f4 PXOR XMM0,XMM0
+006ff2f8 MOVUPS xmmword ptr [RDX + 0x30],XMM0
+006ff2fc JMP 0x006ff29e

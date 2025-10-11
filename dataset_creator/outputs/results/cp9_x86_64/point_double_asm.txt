@@ -1,0 +1,233 @@
+004fa710 PUSH R15
+004fa712 PUSH R14
+004fa714 PUSH R13
+004fa716 PUSH R12
+004fa718 MOV R12,RCX
+004fa71b PUSH RBP
+004fa71c PUSH RBX
+004fa71d MOV RBX,R8
+004fa720 SUB RSP,0x348
+004fa727 MOV R8,qword ptr [RCX + 0x18]
+004fa72b MOV R14,qword ptr [RCX]
+004fa72e MOV R13,qword ptr [RCX + 0x8]
+004fa732 MOV RBP,qword ptr [RCX + 0x10]
+004fa736 MOV qword ptr [RSP + 0x8],RDI
+004fa73b LEA R15,[RSP + 0x120]
+004fa743 MOV qword ptr [RSP + 0x28],RSI
+004fa748 MOV RDI,qword ptr [RCX + 0x20]
+004fa74c MOV qword ptr [RSP + 0x20],RDX
+004fa751 MOV RSI,qword ptr [RCX + 0x28]
+004fa755 MOV RDX,qword ptr [R12 + 0x38]
+004fa75a MOV RCX,qword ptr [RCX + 0x30]
+004fa75e MOV RAX,qword ptr FS:[0x28]
+004fa767 MOV qword ptr [RSP + 0x338],RAX
+004fa76f XOR EAX,EAX
+004fa771 MOV RAX,qword ptr [R12 + 0x40]
+004fa776 MOV qword ptr [RSP + 0x1a0],RCX
+004fa77e MOV qword ptr [RSP + 0x188],R8
+004fa786 MOV qword ptr [RSP + 0x1b0],RAX
+004fa78e MOV qword ptr [RSP + 0x1a8],RDX
+004fa796 MOV qword ptr [RSP + 0x170],R14
+004fa79e MOV qword ptr [RSP + 0x178],R13
+004fa7a6 MOV qword ptr [RSP + 0x180],RBP
+004fa7ae MOV qword ptr [RSP + 0x190],RDI
+004fa7b6 MOV qword ptr [RSP + 0x198],RSI
+004fa7be MOV qword ptr [RSP + 0x1c0],R14
+004fa7c6 LEA R14,[RSP + 0x80]
+004fa7ce MOV qword ptr [RSP + 0x1c8],R13
+004fa7d6 LEA R13,[RSP + 0x30]
+004fa7db MOV qword ptr [RSP + 0x1d0],RBP
+004fa7e3 LEA RBP,[RSP + 0x210]
+004fa7eb MOV qword ptr [RSP + 0x1e0],RDI
+004fa7f3 MOV RDI,RBP
+004fa7f6 MOV qword ptr [RSP + 0x1e8],RSI
+004fa7fe MOV RSI,R9
+004fa801 MOV qword ptr [RSP + 0x200],RAX
+004fa809 MOV qword ptr [RSP + 0x1f0],RCX
+004fa811 MOV qword ptr [RSP + 0x18],R9
+004fa816 MOV qword ptr [RSP + 0x1d8],R8
+004fa81e MOV qword ptr [RSP + 0x1f8],RDX
+004fa826 CALL 0x004f9550
+004fa82b MOV RSI,RBP
+004fa82e MOV RDI,R13
+004fa831 CALL 0x004f8ac0
+004fa836 MOV RSI,RBX
+004fa839 MOV RDI,RBP
+004fa83c CALL 0x004f9550
+004fa841 MOV RSI,RBP
+004fa844 MOV RDI,R14
+004fa847 CALL 0x004f8ac0
+004fa84c MOV RDX,R14
+004fa84f MOV RSI,R12
+004fa852 MOV RDI,RBP
+004fa855 CALL 0x004f9910
+004fa85a LEA R8,[RSP + 0xd0]
+004fa862 LEA R12,[RSP + 0x170]
+004fa86a MOV RSI,RBP
+004fa86d MOV RDI,R8
+004fa870 MOV qword ptr [RSP + 0x10],R8
+004fa875 CALL 0x004f8ac0
+004fa87a MOV RDI,R12
+004fa87d MOV RSI,R13
+004fa880 CALL 0x004f8830
+004fa885 LEA RDX,[RSP + 0x1c0]
+004fa88d MOV RSI,R13
+004fa890 MOV RDI,RDX
+004fa893 CALL 0x004f8770
+004fa898 MOV ESI,0x3
+004fa89d CALL 0x004f87c0
+004fa8a2 MOV RSI,R12
+004fa8a5 MOV RDI,RBP
+004fa8a8 CALL 0x004f9910
+004fa8ad MOV RSI,RBP
+004fa8b0 MOV RDI,R15
+004fa8b3 CALL 0x004f8ac0
+004fa8b8 MOV RSI,R15
+004fa8bb MOV RDI,RBP
+004fa8be CALL 0x004f9550
+004fa8c3 MOV RDX,qword ptr [RSP + 0xd0]
+004fa8cb MOV RDI,R12
+004fa8ce MOV ESI,0x8
+004fa8d3 MOV qword ptr [RSP + 0x170],RDX
+004fa8db MOV RDX,qword ptr [RSP + 0xd8]
+004fa8e3 MOV qword ptr [RSP + 0x178],RDX
+004fa8eb MOV RDX,qword ptr [RSP + 0xe0]
+004fa8f3 MOV qword ptr [RSP + 0x180],RDX
+004fa8fb MOV RDX,qword ptr [RSP + 0xe8]
+004fa903 MOV qword ptr [RSP + 0x188],RDX
+004fa90b MOV RDX,qword ptr [RSP + 0xf0]
+004fa913 MOV qword ptr [RSP + 0x190],RDX
+004fa91b MOV RDX,qword ptr [RSP + 0xf8]
+004fa923 MOV qword ptr [RSP + 0x198],RDX
+004fa92b MOV RDX,qword ptr [RSP + 0x100]
+004fa933 MOV qword ptr [RSP + 0x1a0],RDX
+004fa93b MOV RDX,qword ptr [RSP + 0x108]
+004fa943 MOV qword ptr [RSP + 0x1a8],RDX
+004fa94b MOV RDX,qword ptr [RSP + 0x110]
+004fa953 MOV qword ptr [RSP + 0x1b0],RDX
+004fa95b CALL 0x004f87c0
+004fa960 MOV RSI,R12
+004fa963 MOV RDI,RBP
+004fa966 CALL 0x004f88d0
+004fa96b MOV RDI,qword ptr [RSP + 0x8]
+004fa970 MOV RSI,RBP
+004fa973 CALL 0x004f8ac0
+004fa978 MOV RSI,R14
+004fa97b MOV RDI,R13
+004fa97e CALL 0x004f8770
+004fa983 MOV RDX,qword ptr [RBX]
+004fa986 MOV RSI,qword ptr [RSP + 0x18]
+004fa98b MOV RDI,R12
+004fa98e MOV qword ptr [RSP + 0x170],RDX
+004fa996 MOV RDX,qword ptr [RBX + 0x8]
+004fa99a MOV qword ptr [RSP + 0x178],RDX
+004fa9a2 MOV RDX,qword ptr [RBX + 0x10]
+004fa9a6 MOV qword ptr [RSP + 0x180],RDX
+004fa9ae MOV RDX,qword ptr [RBX + 0x18]
+004fa9b2 MOV qword ptr [RSP + 0x188],RDX
+004fa9ba MOV RDX,qword ptr [RBX + 0x20]
+004fa9be MOV qword ptr [RSP + 0x190],RDX
+004fa9c6 MOV RDX,qword ptr [RBX + 0x28]
+004fa9ca MOV qword ptr [RSP + 0x198],RDX
+004fa9d2 MOV RDX,qword ptr [RBX + 0x30]
+004fa9d6 MOV qword ptr [RSP + 0x1a0],RDX
+004fa9de MOV RDX,qword ptr [RBX + 0x38]
+004fa9e2 MOV qword ptr [RSP + 0x1a8],RDX
+004fa9ea MOV RDX,qword ptr [RBX + 0x40]
+004fa9ee MOV qword ptr [RSP + 0x1b0],RDX
+004fa9f6 CALL 0x004f8770
+004fa9fb MOV RSI,R12
+004fa9fe MOV RDI,RBP
+004faa01 LEA R12,[RSP + 0x2a0]
+004faa09 CALL 0x004f9550
+004faa0e MOV RSI,R13
+004faa11 MOV RDI,RBP
+004faa14 CALL 0x004f88d0
+004faa19 MOV RDI,qword ptr [RSP + 0x20]
+004faa1e MOV RSI,RBP
+004faa21 CALL 0x004f8ac0
+004faa26 MOV R8,qword ptr [RSP + 0x10]
+004faa2b MOV ESI,0x4
+004faa30 MOV RDI,R8
+004faa33 CALL 0x004f87c0
+004faa38 MOV RSI,qword ptr [RSP + 0x8]
+004faa3d CALL 0x004f8830
+004faa42 MOV RDX,R8
+004faa45 MOV RSI,R15
+004faa48 MOV RDI,RBP
+004faa4b CALL 0x004f9910
+004faa50 MOV RSI,R14
+004faa53 MOV RDI,R12
+004faa56 CALL 0x004f9550
+004faa5b MOV RAX,qword ptr [RSP + 0x2a0]
+004faa63 MOV RSI,R12
+004faa66 MOV RDI,RBP
+004faa69 MOV RDX,qword ptr [RSP + 0x2a8]
+004faa71 SHLD RDX,RAX,0x3
+004faa76 SHL RAX,0x3
+004faa7a MOV qword ptr [RSP + 0x2a0],RAX
+004faa82 MOV RAX,qword ptr [RSP + 0x2b0]
+004faa8a MOV qword ptr [RSP + 0x2a8],RDX
+004faa92 MOV RDX,qword ptr [RSP + 0x2b8]
+004faa9a SHLD RDX,RAX,0x3
+004faa9f SHL RAX,0x3
+004faaa3 MOV qword ptr [RSP + 0x2b0],RAX
+004faaab MOV RAX,qword ptr [RSP + 0x2c0]
+004faab3 MOV qword ptr [RSP + 0x2b8],RDX
+004faabb MOV RDX,qword ptr [RSP + 0x2c8]
+004faac3 SHLD RDX,RAX,0x3
+004faac8 SHL RAX,0x3
+004faacc MOV qword ptr [RSP + 0x2c0],RAX
+004faad4 MOV RAX,qword ptr [RSP + 0x2d0]
+004faadc MOV qword ptr [RSP + 0x2c8],RDX
+004faae4 MOV RDX,qword ptr [RSP + 0x2d8]
+004faaec SHLD RDX,RAX,0x3
+004faaf1 SHL RAX,0x3
+004faaf5 MOV qword ptr [RSP + 0x2d0],RAX
+004faafd MOV RAX,qword ptr [RSP + 0x2e0]
+004fab05 MOV qword ptr [RSP + 0x2d8],RDX
+004fab0d MOV RDX,qword ptr [RSP + 0x2e8]
+004fab15 SHLD RDX,RAX,0x3
+004fab1a SHL RAX,0x3
+004fab1e MOV qword ptr [RSP + 0x2e0],RAX
+004fab26 MOV RAX,qword ptr [RSP + 0x2f0]
+004fab2e MOV qword ptr [RSP + 0x2e8],RDX
+004fab36 MOV RDX,qword ptr [RSP + 0x2f8]
+004fab3e SHLD RDX,RAX,0x3
+004fab43 SHL RAX,0x3
+004fab47 MOV qword ptr [RSP + 0x2f0],RAX
+004fab4f MOV RAX,qword ptr [RSP + 0x300]
+004fab57 MOV qword ptr [RSP + 0x2f8],RDX
+004fab5f MOV RDX,qword ptr [RSP + 0x308]
+004fab67 SHLD RDX,RAX,0x3
+004fab6c SHL RAX,0x3
+004fab70 MOV qword ptr [RSP + 0x300],RAX
+004fab78 MOV RAX,qword ptr [RSP + 0x310]
+004fab80 MOV qword ptr [RSP + 0x308],RDX
+004fab88 MOV RDX,qword ptr [RSP + 0x318]
+004fab90 SHLD RDX,RAX,0x3
+004fab95 SHL RAX,0x3
+004fab99 MOV qword ptr [RSP + 0x318],RDX
+004faba1 MOV qword ptr [RSP + 0x310],RAX
+004faba9 MOV RAX,qword ptr [RSP + 0x320]
+004fabb1 MOV RDX,qword ptr [RSP + 0x328]
+004fabb9 SHLD RDX,RAX,0x3
+004fabbe SHL RAX,0x3
+004fabc2 MOV qword ptr [RSP + 0x320],RAX
+004fabca MOV qword ptr [RSP + 0x328],RDX
+004fabd2 CALL 0x004f8980
+004fabd7 MOV RDI,qword ptr [RSP + 0x28]
+004fabdc MOV RSI,RBP
+004fabdf CALL 0x004f8ac0
+004fabe4 MOV RAX,qword ptr [RSP + 0x338]
+004fabec SUB RAX,qword ptr FS:[0x28]
+004fabf5 JNZ 0x004fac09
+004fabf7 ADD RSP,0x348
+004fabfe POP RBX
+004fabff POP RBP
+004fac00 POP R12
+004fac02 POP R13
+004fac04 POP R14
+004fac06 POP R15
+004fac08 RET
+004fac09 CALL 0x00768630

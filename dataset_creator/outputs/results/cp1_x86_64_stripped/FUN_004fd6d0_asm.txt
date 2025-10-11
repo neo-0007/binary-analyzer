@@ -1,0 +1,9 @@
+004fd6d0 ENDBR64
+004fd6d4 XOR EAX,EAX
+004fd6d6 CMP dword ptr [RDI + 0x98],0x2
+004fd6dd JZ 0x004fd6e0
+004fd6df RET
+004fd6e0 XOR EAX,EAX
+004fd6e2 CMP qword ptr [RDI + 0xa0],0x0
+004fd6ea SETNZ AL
+004fd6ed RET

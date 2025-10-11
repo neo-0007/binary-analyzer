@@ -1,0 +1,4 @@
+0066f7c0 ENDBR64
+0066f7c4 MOV RAX,qword ptr [RDI + 0xd8]
+0066f7cb MOV qword ptr [RDI + 0xd8],RSI
+0066f7d2 RET

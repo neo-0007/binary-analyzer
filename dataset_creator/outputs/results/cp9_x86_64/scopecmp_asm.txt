@@ -1,0 +1,8 @@
+0075fae0 ENDBR64
+0075fae4 MOV EDX,dword ptr [RSI + 0x4]
+0075fae7 MOV EAX,0xffffffff
+0075faec CMP dword ptr [RDI + 0x4],EDX
+0075faef JA 0x0075faf7
+0075faf1 SETNZ AL
+0075faf4 MOVZX EAX,AL
+0075faf7 RET

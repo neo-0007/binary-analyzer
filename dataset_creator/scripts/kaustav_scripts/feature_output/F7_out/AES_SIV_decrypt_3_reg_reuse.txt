@@ -1,0 +1,4 @@
+File: /home/kaustav/sih2025/bn/binary-analyzer/dataset_creator/workspace/feature_extraction/AES_asm_files/AES_SIV_decrypt_3.asm
+Unique Registers: 13
+Total Register Uses: 78
+Average Register Reuse Frequency: 5.00

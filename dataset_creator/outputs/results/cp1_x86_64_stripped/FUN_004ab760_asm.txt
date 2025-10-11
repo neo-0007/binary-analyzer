@@ -1,0 +1,4 @@
+004ab760 ENDBR64
+004ab764 MOV RAX,qword ptr [RDI + 0x8]
+004ab768 MOV EAX,dword ptr [RAX]
+004ab76a RET

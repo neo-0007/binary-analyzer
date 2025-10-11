@@ -1,0 +1,47 @@
+0040aca0 ENDBR64
+0040aca4 XOR EAX,EAX
+0040aca6 CMP qword ptr [RDI + 0x70],0x0
+0040acab JNZ 0x0040ad90
+0040acb1 PUSH RBX
+0040acb2 MOV RBX,RDI
+0040acb5 MOV ESI,dword ptr [RDI + 0x4]
+0040acb8 MOV EDI,dword ptr [RDI]
+0040acba CALL 0x0040ac70
+0040acbf TEST RAX,RAX
+0040acc2 JZ 0x0040ad8c
+0040acc8 MOVDQU XMM0,xmmword ptr [RBX]
+0040accc MOV RDX,qword ptr [RAX + 0x80]
+0040acd3 MOVUPS xmmword ptr [RAX],XMM0
+0040acd6 MOVDQU XMM1,xmmword ptr [RBX + 0x10]
+0040acdb MOVUPS xmmword ptr [RAX + 0x10],XMM1
+0040acdf MOVDQU XMM2,xmmword ptr [RBX + 0x20]
+0040ace4 MOVUPS xmmword ptr [RAX + 0x20],XMM2
+0040ace8 MOVDQU XMM3,xmmword ptr [RBX + 0x30]
+0040aced MOVUPS xmmword ptr [RAX + 0x30],XMM3
+0040acf1 MOVDQU XMM4,xmmword ptr [RBX + 0x40]
+0040acf6 MOVUPS xmmword ptr [RAX + 0x40],XMM4
+0040acfa MOVDQU XMM5,xmmword ptr [RBX + 0x50]
+0040acff MOVUPS xmmword ptr [RAX + 0x50],XMM5
+0040ad03 MOVDQU XMM6,xmmword ptr [RBX + 0x60]
+0040ad08 MOVUPS xmmword ptr [RAX + 0x60],XMM6
+0040ad0c MOVDQU XMM7,xmmword ptr [RBX + 0x70]
+0040ad11 MOVUPS xmmword ptr [RAX + 0x70],XMM7
+0040ad15 MOVDQU XMM0,xmmword ptr [RBX + 0x80]
+0040ad1d MOVUPS xmmword ptr [RAX + 0x80],XMM0
+0040ad24 MOVDQU XMM1,xmmword ptr [RBX + 0x90]
+0040ad2c MOVUPS xmmword ptr [RAX + 0x90],XMM1
+0040ad33 MOVDQU XMM2,xmmword ptr [RBX + 0xa0]
+0040ad3b MOVUPS xmmword ptr [RAX + 0xa0],XMM2
+0040ad42 MOVDQU XMM3,xmmword ptr [RBX + 0xb0]
+0040ad4a MOVUPS xmmword ptr [RAX + 0xb0],XMM3
+0040ad51 MOVDQU XMM4,xmmword ptr [RBX + 0xc0]
+0040ad59 MOVUPS xmmword ptr [RAX + 0xc0],XMM4
+0040ad60 MOVDQU XMM5,xmmword ptr [RBX + 0xd0]
+0040ad68 MOVUPS xmmword ptr [RAX + 0xd0],XMM5
+0040ad6f MOVDQU XMM6,xmmword ptr [RBX + 0xe0]
+0040ad77 MOV qword ptr [RAX + 0x80],RDX
+0040ad7e MOVUPS xmmword ptr [RAX + 0xe0],XMM6
+0040ad85 MOV dword ptr [RAX + 0x18],0x2
+0040ad8c POP RBX
+0040ad8d RET
+0040ad90 RET

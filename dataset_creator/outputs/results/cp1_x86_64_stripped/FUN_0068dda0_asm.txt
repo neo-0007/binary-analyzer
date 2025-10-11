@@ -1,0 +1,7 @@
+0068dda0 ENDBR64
+0068dda4 MOV RDX,qword ptr [RDI]
+0068dda7 MOVSXD RSI,ESI
+0068ddaa MOV RAX,RDI
+0068ddad MOV RDX,qword ptr [RDX + -0x18]
+0068ddb1 MOV qword ptr [RDI + RDX*0x1 + 0x10],RSI
+0068ddb6 RET

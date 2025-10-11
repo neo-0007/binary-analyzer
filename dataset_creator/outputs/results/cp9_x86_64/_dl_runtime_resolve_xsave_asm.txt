@@ -1,0 +1,41 @@
+00781b80 ENDBR64
+00781b84 PUSH RBX
+00781b85 MOV RBX,RSP
+00781b88 AND RSP,-0x40
+00781b8c SUB RSP,qword ptr [0x0093e000]
+00781b93 MOV qword ptr [RSP],RAX
+00781b97 MOV qword ptr [RSP + 0x8],RCX
+00781b9c MOV qword ptr [RSP + 0x10],RDX
+00781ba1 MOV qword ptr [RSP + 0x18],RSI
+00781ba6 MOV qword ptr [RSP + 0x20],RDI
+00781bab MOV qword ptr [RSP + 0x28],R8
+00781bb0 MOV qword ptr [RSP + 0x30],R9
+00781bb5 MOV EAX,0xee
+00781bba XOR EDX,EDX
+00781bbc MOV qword ptr [RSP + 0x240],RDX
+00781bc4 MOV qword ptr [RSP + 0x248],RDX
+00781bcc MOV qword ptr [RSP + 0x250],RDX
+00781bd4 MOV qword ptr [RSP + 0x258],RDX
+00781bdc MOV qword ptr [RSP + 0x260],RDX
+00781be4 MOV qword ptr [RSP + 0x268],RDX
+00781bec MOV qword ptr [RSP + 0x270],RDX
+00781bf4 MOV qword ptr [RSP + 0x278],RDX
+00781bfc XSAVE [RSP + 0x40]
+00781c01 MOV RSI,qword ptr [RBX + 0x10]
+00781c05 MOV RDI,qword ptr [RBX + 0x8]
+00781c09 CALL 0x007b0c60
+00781c0e MOV R11,RAX
+00781c11 MOV EAX,0xee
+00781c16 XOR EDX,EDX
+00781c18 XRSTOR [RSP + 0x40]
+00781c1d MOV R9,qword ptr [RSP + 0x30]
+00781c22 MOV R8,qword ptr [RSP + 0x28]
+00781c27 MOV RDI,qword ptr [RSP + 0x20]
+00781c2c MOV RSI,qword ptr [RSP + 0x18]
+00781c31 MOV RDX,qword ptr [RSP + 0x10]
+00781c36 MOV RCX,qword ptr [RSP + 0x8]
+00781c3b MOV RAX,qword ptr [RSP]
+00781c3f MOV RSP,RBX
+00781c42 MOV RBX,qword ptr [RSP]
+00781c46 ADD RSP,0x18
+00781c4a JMP R11

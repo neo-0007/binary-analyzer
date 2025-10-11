@@ -1,0 +1,3 @@
+00557ae0 ENDBR64
+00557ae4 OR dword ptr [RDI + 0xa4],ESI
+00557aea RET

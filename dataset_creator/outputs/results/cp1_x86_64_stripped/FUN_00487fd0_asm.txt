@@ -1,0 +1,15 @@
+00487fd0 ENDBR64
+00487fd4 SHR RDX,0x3
+00487fd8 OR byte ptr [RSI + 0x54],0x2
+00487fdc PUSH RBX
+00487fdd MOV RBX,RSI
+00487fe0 MOV dword ptr [RSI],0x6
+00487fe6 MOV qword ptr [RSI + 0x18],-0x1
+00487fee MOV qword ptr [RSI + 0x28],-0x1
+00487ff6 MOV qword ptr [RSI + 0x10],0xc
+00487ffe MOV qword ptr [RSI + 0x8],RDX
+00488002 MOV qword ptr [RSI + 0xf0],RCX
+00488009 CALL 0x00485290
+0048800e MOV qword ptr [RBX + 0xe8],RAX
+00488015 POP RBX
+00488016 RET

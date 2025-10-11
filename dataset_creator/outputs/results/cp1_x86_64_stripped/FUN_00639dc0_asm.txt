@@ -1,0 +1,6 @@
+00639dc0 ENDBR64
+00639dc4 MOV RCX,qword ptr [RCX]
+00639dc7 SUB RDX,RSI
+00639dca SUB RSI,qword ptr [RDI]
+00639dcd MOV R8,qword ptr [RCX + -0x18]
+00639dd1 JMP 0x00639af0

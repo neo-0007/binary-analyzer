@@ -1,0 +1,8 @@
+004bfd70 ENDBR64
+004bfd74 MOV RAX,RDI
+004bfd77 MOV RDI,RSI
+004bfd7a CMP qword ptr [RAX + 0x8],0x0
+004bfd7f JZ 0x004bfd88
+004bfd81 RET
+004bfd88 MOV RSI,qword ptr [RAX]
+004bfd8b JMP 0x004347f0

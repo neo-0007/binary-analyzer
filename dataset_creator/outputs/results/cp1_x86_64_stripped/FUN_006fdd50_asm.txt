@@ -1,0 +1,84 @@
+006fdd50 ENDBR64
+006fdd54 PUSH RBP
+006fdd55 PUSH RBX
+006fdd56 MOV RBX,RDI
+006fdd59 SUB RSP,0x18
+006fdd5d MOV EAX,dword ptr [RDI]
+006fdd5f AND EAX,0x8000
+006fdd64 JNZ 0x006fdd9a
+006fdd66 MOV RBP,qword ptr FS:[0x10]
+006fdd6f MOV RDI,qword ptr [RDI + 0x88]
+006fdd76 CMP qword ptr [RDI + 0x8],RBP
+006fdd7a JZ 0x006fdd96
+006fdd7c MOV EDX,0x1
+006fdd81 CMPXCHG.LOCK dword ptr [RDI],EDX
+006fdd85 JNZ 0x006fde80
+006fdd8b MOV RDI,qword ptr [RBX + 0x88]
+006fdd92 MOV qword ptr [RDI + 0x8],RBP
+006fdd96 ADD dword ptr [RDI + 0x4],0x1
+006fdd9a XOR ECX,ECX
+006fdd9c MOV EDX,0x1
+006fdda1 XOR ESI,ESI
+006fdda3 MOV RDI,RBX
+006fdda6 CALL 0x006fe4a0
+006fddab MOV EDX,dword ptr [RBX]
+006fddad MOV ECX,EDX
+006fddaf AND ECX,0x8000
+006fddb5 AND DH,0x1
+006fddb8 JZ 0x006fde0b
+006fddba CMP RAX,-0x1
+006fddbe JZ 0x006fde20
+006fddc0 MOV ESI,dword ptr [RBX + 0xc0]
+006fddc6 TEST ESI,ESI
+006fddc8 JLE 0x006fde00
+006fddca TEST ECX,ECX
+006fddcc JNZ 0x006fddf2
+006fddce MOV RDI,qword ptr [RBX + 0x88]
+006fddd5 SUB dword ptr [RDI + 0x4],0x1
+006fddd9 JNZ 0x006fddf2
+006fdddb MOV qword ptr [RDI + 0x8],0x0
+006fdde3 XOR EDX,EDX
+006fdde5 XCHG dword ptr [RDI],EDX
+006fdde7 CMP EDX,0x1
+006fddea JG 0x006fde68
+006fddec CMP RAX,-0x1
+006fddf0 JZ 0x006fde45
+006fddf2 ADD RSP,0x18
+006fddf6 POP RBX
+006fddf7 POP RBP
+006fddf8 RET
+006fde00 MOV RDX,qword ptr [RBX + 0x58]
+006fde04 SUB RDX,qword ptr [RBX + 0x48]
+006fde08 SUB RAX,RDX
+006fde0b TEST ECX,ECX
+006fde0d JNZ 0x006fddec
+006fde0f MOV RDI,qword ptr [RBX + 0x88]
+006fde16 SUB dword ptr [RDI + 0x4],0x1
+006fde1a JNZ 0x006fddec
+006fde1c JMP 0x006fdddb
+006fde20 TEST ECX,ECX
+006fde22 JNZ 0x006fde45
+006fde24 MOV RDI,qword ptr [RBX + 0x88]
+006fde2b MOV EAX,dword ptr [RDI + 0x4]
+006fde2e SUB EAX,0x1
+006fde31 MOV dword ptr [RDI + 0x4],EAX
+006fde34 JNZ 0x006fde45
+006fde36 MOV qword ptr [RDI + 0x8],0x0
+006fde3e XCHG dword ptr [RDI],EAX
+006fde40 CMP EAX,0x1
+006fde43 JG 0x006fde8a
+006fde45 MOV RDX,-0x58
+006fde4c MOV RAX,-0x1
+006fde53 MOV ECX,dword ptr FS:[RDX]
+006fde56 TEST ECX,ECX
+006fde58 JNZ 0x006fddf2
+006fde5a MOV dword ptr FS:[RDX],0x5
+006fde61 JMP 0x006fddf2
+006fde68 MOV qword ptr [RSP + 0x8],RAX
+006fde6d CALL 0x00709660
+006fde72 MOV RAX,qword ptr [RSP + 0x8]
+006fde77 JMP 0x006fddec
+006fde80 CALL 0x00709590
+006fde85 JMP 0x006fdd8b
+006fde8a CALL 0x00709660
+006fde8f JMP 0x006fde45

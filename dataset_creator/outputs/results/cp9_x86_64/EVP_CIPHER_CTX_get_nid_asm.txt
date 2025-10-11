@@ -1,0 +1,4 @@
+0040ee90 ENDBR64
+0040ee94 MOV RAX,qword ptr [RDI]
+0040ee97 MOV EAX,dword ptr [RAX]
+0040ee99 RET

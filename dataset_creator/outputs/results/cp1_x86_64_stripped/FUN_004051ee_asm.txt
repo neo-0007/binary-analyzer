@@ -1,0 +1,3 @@
+004051ee MOVDQU XMM0,xmmword ptr [RSI]
+004051f2 MOVAPS xmmword ptr [0x00000000],XMM0
+004051fa UD2

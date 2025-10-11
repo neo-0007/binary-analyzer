@@ -1,0 +1,20 @@
+007aefa0 ENDBR64
+007aefa4 SUB RSP,0x28
+007aefa8 MOV EDI,0x1
+007aefad MOV RAX,qword ptr FS:[0x28]
+007aefb6 MOV qword ptr [RSP + 0x18],RAX
+007aefbb XOR EAX,EAX
+007aefbd MOV RSI,RSP
+007aefc0 CALL 0x00767f90
+007aefc5 MOV RAX,qword ptr [RSP]
+007aefc9 XOR EAX,dword ptr [RSP + 0x8]
+007aefcd MOV EDX,EAX
+007aefcf ROR EDX,0x8
+007aefd2 XOR EAX,EDX
+007aefd4 MOV RDX,qword ptr [RSP + 0x18]
+007aefd9 SUB RDX,qword ptr FS:[0x28]
+007aefe2 JNZ 0x007aefec
+007aefe4 MOVZX EAX,AX
+007aefe7 ADD RSP,0x28
+007aefeb RET
+007aefec CALL 0x00771f60

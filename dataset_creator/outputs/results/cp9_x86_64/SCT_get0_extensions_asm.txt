@@ -1,0 +1,5 @@
+006209e0 ENDBR64
+006209e4 MOV RAX,qword ptr [RDI + 0x30]
+006209e8 MOV qword ptr [RSI],RAX
+006209eb MOV RAX,qword ptr [RDI + 0x38]
+006209ef RET

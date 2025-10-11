@@ -1,0 +1,8 @@
+0061b650 ENDBR64
+0061b654 MOV RAX,qword ptr [RSI]
+0061b657 MOV RAX,qword ptr [RAX]
+0061b65a MOV RSI,qword ptr [RAX + 0x8]
+0061b65e MOV RAX,qword ptr [RDI]
+0061b661 MOV RAX,qword ptr [RAX]
+0061b664 MOV RDI,qword ptr [RAX + 0x8]
+0061b668 JMP 0x00424ba0

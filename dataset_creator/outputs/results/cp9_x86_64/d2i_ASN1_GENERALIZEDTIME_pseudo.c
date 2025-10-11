@@ -1,0 +1,12 @@
+
+ASN1_GENERALIZEDTIME * d2i_ASN1_GENERALIZEDTIME(ASN1_GENERALIZEDTIME **a,uchar **in,long len)
+
+{
+  ASN1_ITEM *it;
+  ASN1_GENERALIZEDTIME *pAVar1;
+  
+  it = (ASN1_ITEM *)ASN1_GENERALIZEDTIME_it();
+  pAVar1 = (ASN1_GENERALIZEDTIME *)ASN1_item_d2i((ASN1_VALUE **)a,in,len,it);
+  return pAVar1;
+}
+

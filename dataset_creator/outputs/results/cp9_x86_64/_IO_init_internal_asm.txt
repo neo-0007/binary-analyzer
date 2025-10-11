@@ -1,0 +1,28 @@
+006fd8b0 ENDBR64
+006fd8b4 MOV EDX,dword ptr [0x0093991c]
+006fd8ba OR ESI,0xfbad0000
+006fd8c0 XOR EAX,EAX
+006fd8c2 PXOR XMM0,XMM0
+006fd8c6 MOV dword ptr [RDI],ESI
+006fd8c8 TEST EDX,EDX
+006fd8ca MOV qword ptr [RDI + 0x68],0x0
+006fd8d2 SETNZ AL
+006fd8d5 XOR ECX,ECX
+006fd8d7 MOVUPS xmmword ptr [RDI + 0x8],XMM0
+006fd8db SHL EAX,0x7
+006fd8de MOV word ptr [RDI + 0x80],CX
+006fd8e5 MOV dword ptr [RDI + 0x74],EAX
+006fd8e8 MOV RAX,qword ptr [RDI + 0x88]
+006fd8ef MOVUPS xmmword ptr [RDI + 0x18],XMM0
+006fd8f3 MOVUPS xmmword ptr [RDI + 0x28],XMM0
+006fd8f7 MOVUPS xmmword ptr [RDI + 0x38],XMM0
+006fd8fb MOVUPS xmmword ptr [RDI + 0x48],XMM0
+006fd8ff MOVUPS xmmword ptr [RDI + 0x58],XMM0
+006fd903 TEST RAX,RAX
+006fd906 JZ 0x006fd917
+006fd908 MOV qword ptr [RAX],0x0
+006fd90f MOV qword ptr [RAX + 0x8],0x0
+006fd917 MOVDQA XMM0,xmmword ptr [0x0081f240]
+006fd91f MOV dword ptr [RDI + 0xc0],0xffffffff
+006fd929 MOVUPS xmmword ptr [RDI + 0xa0],XMM0
+006fd930 RET

@@ -1,0 +1,4 @@
+File: /home/kaustav/sih2025/bn/binary-analyzer/dataset_creator/workspace/feature_extraction/AES_asm_files/AES_CMAC_3.asm
+Unique Registers: 11
+Total Register Uses: 63
+Average Register Reuse Frequency: 4.72

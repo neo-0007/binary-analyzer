@@ -1,0 +1,44 @@
+006fca70 ENDBR64
+006fca74 PUSH RBP
+006fca75 PUSH RBX
+006fca76 MOV RBX,RDI
+006fca79 SUB RSP,0x8
+006fca7d MOV RAX,qword ptr [RDI + 0x28]
+006fca81 CMP RAX,qword ptr [RDI + 0x20]
+006fca85 JBE 0x006fcabf
+006fca87 MOV RBP,qword ptr [RDI + 0xd8]
+006fca8e MOV RAX,0x9329a8
+006fca95 SUB RAX,0x932180
+006fca9c MOV RDX,RBP
+006fca9f SUB RDX,0x932180
+006fcaa6 CMP RAX,RDX
+006fcaa9 JBE 0x006fcb08
+006fcaab MOV ESI,0xffffffff
+006fcab0 MOV RDI,RBX
+006fcab3 CALL qword ptr [RBP + 0x18]
+006fcab6 CMP EAX,-0x1
+006fcab9 JZ 0x006fcaeb
+006fcabb MOV RAX,qword ptr [RBX + 0x28]
+006fcabf MOV EDX,dword ptr [RBX]
+006fcac1 TEST DH,0x1
+006fcac4 JNZ 0x006fcaf8
+006fcac6 MOV RCX,qword ptr [RBX + 0x38]
+006fcaca MOV qword ptr [RBX + 0x18],RCX
+006fcace CMP qword ptr [RBX + 0x10],RAX
+006fcad2 JNC 0x006fcad8
+006fcad4 MOV qword ptr [RBX + 0x10],RAX
+006fcad8 AND DH,0xf7
+006fcadb MOV qword ptr [RBX + 0x8],RAX
+006fcadf MOV dword ptr [RBX],EDX
+006fcae1 MOV qword ptr [RBX + 0x30],RAX
+006fcae5 MOV qword ptr [RBX + 0x20],RAX
+006fcae9 XOR EAX,EAX
+006fcaeb ADD RSP,0x8
+006fcaef POP RBX
+006fcaf0 POP RBP
+006fcaf1 RET
+006fcaf8 MOV RCX,qword ptr [RBX + 0x50]
+006fcafc MOV qword ptr [RBX + 0x18],RCX
+006fcb00 JMP 0x006fcad8
+006fcb08 CALL 0x006f9720
+006fcb0d JMP 0x006fcaab

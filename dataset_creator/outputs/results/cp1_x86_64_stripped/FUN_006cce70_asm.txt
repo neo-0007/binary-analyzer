@@ -1,0 +1,7 @@
+006cce70 ENDBR64
+006cce74 MOV RAX,qword ptr [RDI + 0xc0]
+006cce7b SAR RAX,0x3f
+006cce7f AND EAX,0x1
+006cce82 MOV dword ptr [RSI],EAX
+006cce84 MOV RAX,qword ptr [RDI + 0x98]
+006cce8b RET

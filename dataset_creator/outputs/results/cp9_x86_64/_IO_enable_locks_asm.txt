@@ -1,0 +1,14 @@
+006fd9d0 ENDBR64
+006fd9d4 MOV EAX,dword ptr [0x0093991c]
+006fd9da TEST EAX,EAX
+006fd9dc JNZ 0x006fda08
+006fd9de MOV RAX,qword ptr [0x00930ae0]
+006fd9e5 MOV dword ptr [0x0093991c],0x1
+006fd9ef TEST RAX,RAX
+006fd9f2 JZ 0x006fda08
+006fd9f4 NOP dword ptr [RAX]
+006fd9f8 OR dword ptr [RAX + 0x74],0x80
+006fd9ff MOV RAX,qword ptr [RAX + 0x68]
+006fda03 TEST RAX,RAX
+006fda06 JNZ 0x006fd9f8
+006fda08 RET

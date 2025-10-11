@@ -1,0 +1,3 @@
+006fd0c0 ENDBR64
+006fd0c4 MOV EAX,0xffffffff
+006fd0c9 RET

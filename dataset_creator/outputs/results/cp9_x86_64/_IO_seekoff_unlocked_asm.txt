@@ -1,0 +1,72 @@
+006f4a90 ENDBR64
+006f4a94 CMP EDX,0x2
+006f4a97 JA 0x006f4bc0
+006f4a9d PUSH R12
+006f4a9f MOV R12D,EDX
+006f4aa2 PUSH RBX
+006f4aa3 SUB RSP,0x28
+006f4aa7 TEST ECX,ECX
+006f4aa9 JZ 0x006f4af0
+006f4aab MOV EAX,dword ptr [RDI + 0xc0]
+006f4ab1 TEST EAX,EAX
+006f4ab3 JS 0x006f4b28
+006f4ab5 JZ 0x006f4af0
+006f4ab7 MOV RAX,qword ptr [RDI + 0xa0]
+006f4abe CMP qword ptr [RAX + 0x40],0x0
+006f4ac3 JZ 0x006f4af0
+006f4ac5 CMP EDX,0x1
+006f4ac8 JZ 0x006f4b88
+006f4ace MOV dword ptr [RSP + 0x1c],ECX
+006f4ad2 MOV qword ptr [RSP + 0x10],RSI
+006f4ad7 MOV qword ptr [RSP + 0x8],RDI
+006f4adc CALL 0x006f63f0
+006f4ae1 MOV ECX,dword ptr [RSP + 0x1c]
+006f4ae5 MOV RSI,qword ptr [RSP + 0x10]
+006f4aea MOV RDI,qword ptr [RSP + 0x8]
+006f4aef NOP
+006f4af0 MOV RBX,qword ptr [RDI + 0xd8]
+006f4af7 MOV RAX,0x9329a8
+006f4afe SUB RAX,0x932180
+006f4b05 MOV RDX,RBX
+006f4b08 SUB RDX,0x932180
+006f4b0f CMP RAX,RDX
+006f4b12 JBE 0x006f4b60
+006f4b14 MOV RAX,qword ptr [RBX + 0x48]
+006f4b18 ADD RSP,0x28
+006f4b1c MOV EDX,R12D
+006f4b1f POP RBX
+006f4b20 POP R12
+006f4b22 JMP RAX
+006f4b28 CMP qword ptr [RDI + 0x48],0x0
+006f4b2d JZ 0x006f4af0
+006f4b2f CMP EDX,0x1
+006f4b32 JZ 0x006f4ba0
+006f4b34 MOV dword ptr [RSP + 0x1c],ECX
+006f4b38 MOV qword ptr [RSP + 0x10],RSI
+006f4b3d MOV qword ptr [RSP + 0x8],RDI
+006f4b42 CALL 0x006fcb10
+006f4b47 MOV RDI,qword ptr [RSP + 0x8]
+006f4b4c MOV RSI,qword ptr [RSP + 0x10]
+006f4b51 MOV ECX,dword ptr [RSP + 0x1c]
+006f4b55 JMP 0x006f4af0
+006f4b60 MOV dword ptr [RSP + 0x1c],ECX
+006f4b64 MOV qword ptr [RSP + 0x10],RSI
+006f4b69 MOV qword ptr [RSP + 0x8],RDI
+006f4b6e CALL 0x006f9720
+006f4b73 MOV ECX,dword ptr [RSP + 0x1c]
+006f4b77 MOV RSI,qword ptr [RSP + 0x10]
+006f4b7c MOV RDI,qword ptr [RSP + 0x8]
+006f4b81 JMP 0x006f4b14
+006f4b88 TEST dword ptr [RDI],0x100
+006f4b8e JZ 0x006f4ace
+006f4b94 JMP 0x00404c2e
+006f4ba0 TEST dword ptr [RDI],0x100
+006f4ba6 JZ 0x006f4b34
+006f4ba8 MOV RAX,qword ptr [RDI + 0x10]
+006f4bac SUB RAX,qword ptr [RDI + 0x8]
+006f4bb0 SUB RSI,RAX
+006f4bb3 JMP 0x006f4b34
+006f4bc0 MOV RAX,-0x58
+006f4bc7 MOV dword ptr FS:[RAX],0x16
+006f4bce MOV RAX,-0x1
+006f4bd5 RET

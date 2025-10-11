@@ -1,0 +1,6 @@
+0041e550 ENDBR64
+0041e554 MOV RDX,qword ptr [RSI]
+0041e557 MOV RAX,qword ptr [RDI]
+0041e55a MOV RSI,qword ptr [RDX]
+0041e55d MOV RDI,qword ptr [RAX]
+0041e560 JMP 0x0041c9c0

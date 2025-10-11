@@ -1,0 +1,7 @@
+0047bec0 ENDBR64
+0047bec4 MOV dword ptr [0x00940f00],0xffffffff
+0047bece MOV EAX,0x1
+0047bed3 MOV dword ptr [0x00940f28],0xffffffff
+0047bedd MOV dword ptr [0x00940f50],0xffffffff
+0047bee7 MOV dword ptr [0x00940f78],0xffffffff
+0047bef1 RET

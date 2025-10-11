@@ -1,0 +1,6 @@
+0041cf60 ENDBR64
+0041cf64 MOV RDX,qword ptr [RSI]
+0041cf67 MOV RAX,qword ptr [RDI]
+0041cf6a MOV RSI,qword ptr [RDX]
+0041cf6d MOV RDI,qword ptr [RAX]
+0041cf70 JMP 0x0041b3d0

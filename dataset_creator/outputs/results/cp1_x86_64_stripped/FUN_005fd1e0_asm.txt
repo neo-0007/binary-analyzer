@@ -1,0 +1,5 @@
+005fd1e0 ENDBR64
+005fd1e4 MOV RAX,0x3000000000
+005fd1ee MOV qword ptr [RDI + 0x58],0x0
+005fd1f6 MOV qword ptr [RDI],RAX
+005fd1f9 RET

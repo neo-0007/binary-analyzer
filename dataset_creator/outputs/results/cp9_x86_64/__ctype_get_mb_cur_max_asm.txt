@@ -1,0 +1,6 @@
+006d7290 ENDBR64
+006d7294 MOV RAX,-0xd8
+006d729b MOV RAX,qword ptr FS:[RAX]
+006d729f MOV RAX,qword ptr [RAX]
+006d72a2 MOV EAX,dword ptr [RAX + 0xa8]
+006d72a8 RET

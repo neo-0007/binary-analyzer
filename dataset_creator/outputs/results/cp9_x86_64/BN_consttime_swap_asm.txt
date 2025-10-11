@@ -1,0 +1,52 @@
+004afd90 ENDBR64
+004afd94 MOV RAX,RDX
+004afd97 MOVSXD R9,ECX
+004afd9a CMP RSI,RDX
+004afd9d JZ 0x004afe32
+004afda3 MOV RDX,RDI
+004afda6 SUB RDI,0x1
+004afdaa MOV ECX,dword ptr [RSI + 0x8]
+004afdad NOT RDX
+004afdb0 AND RDI,RDX
+004afdb3 MOV EDX,dword ptr [RAX + 0x8]
+004afdb6 SHR RDI,0x3f
+004afdba XOR EDX,ECX
+004afdbc SUB RDI,0x1
+004afdc0 MOVSXD RDX,EDX
+004afdc3 AND RDX,RDI
+004afdc6 XOR ECX,EDX
+004afdc8 MOV dword ptr [RSI + 0x8],ECX
+004afdcb MOV ECX,dword ptr [RSI + 0x10]
+004afdce XOR dword ptr [RAX + 0x8],EDX
+004afdd1 MOV EDX,dword ptr [RAX + 0x10]
+004afdd4 XOR EDX,ECX
+004afdd6 MOVSXD RDX,EDX
+004afdd9 AND RDX,RDI
+004afddc XOR ECX,EDX
+004afdde MOV dword ptr [RSI + 0x10],ECX
+004afde1 MOV ECX,dword ptr [RSI + 0x14]
+004afde4 XOR dword ptr [RAX + 0x10],EDX
+004afde7 MOV EDX,dword ptr [RAX + 0x14]
+004afdea XOR EDX,ECX
+004afdec AND RDX,RDI
+004afdef AND EDX,0x4
+004afdf2 XOR ECX,EDX
+004afdf4 MOV dword ptr [RSI + 0x14],ECX
+004afdf7 XOR dword ptr [RAX + 0x14],EDX
+004afdfa TEST R9D,R9D
+004afdfd JLE 0x004afe32
+004afdff MOV R8,qword ptr [RSI]
+004afe02 MOV RSI,qword ptr [RAX]
+004afe05 XOR EAX,EAX
+004afe07 NOP word ptr [RAX + RAX*0x1]
+004afe10 MOV RCX,qword ptr [R8 + RAX*0x8]
+004afe14 MOV RDX,qword ptr [RSI + RAX*0x8]
+004afe18 XOR RDX,RCX
+004afe1b AND RDX,RDI
+004afe1e XOR RCX,RDX
+004afe21 MOV qword ptr [R8 + RAX*0x8],RCX
+004afe25 XOR qword ptr [RSI + RAX*0x8],RDX
+004afe29 ADD RAX,0x1
+004afe2d CMP R9,RAX
+004afe30 JNZ 0x004afe10
+004afe32 RET

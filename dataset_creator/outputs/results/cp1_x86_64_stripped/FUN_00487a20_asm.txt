@@ -1,0 +1,9 @@
+00487a20 ENDBR64
+00487a24 SHR RSI,0x3
+00487a28 AND byte ptr [RDI],0xe1
+00487a2b MOV qword ptr [RDI + 0x18],RSI
+00487a2f MOV qword ptr [RDI + 0x8],0x8
+00487a37 MOV qword ptr [RDI + 0x10],0xc
+00487a3f MOV qword ptr [RDI + 0x20],-0x1
+00487a47 MOV qword ptr [RDI + 0x90],RDX
+00487a4e RET

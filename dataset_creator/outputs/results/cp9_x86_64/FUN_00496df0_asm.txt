@@ -1,0 +1,2 @@
+00496df0 MOVUPS xmmword ptr [RAX],XMM2
+00496df3 LEA RAX,[RAX + 0x10]

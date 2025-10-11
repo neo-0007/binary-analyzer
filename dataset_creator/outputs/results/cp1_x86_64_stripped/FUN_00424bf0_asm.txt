@@ -1,0 +1,9 @@
+00424bf0 ENDBR64
+00424bf4 MOV RCX,qword ptr [RDI]
+00424bf7 MOV RDX,qword ptr [RSI]
+00424bfa MOV EAX,dword ptr [RCX + 0x4]
+00424bfd SUB EAX,dword ptr [RDX + 0x4]
+00424c00 JNZ 0x00424c08
+00424c02 MOV EAX,dword ptr [RCX + 0x8]
+00424c05 SUB EAX,dword ptr [RDX + 0x8]
+00424c08 RET

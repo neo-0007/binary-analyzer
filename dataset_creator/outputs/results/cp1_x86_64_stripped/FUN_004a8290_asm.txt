@@ -1,0 +1,5 @@
+004a8290 ENDBR64
+004a8294 MOV RDX,qword ptr [RDI]
+004a8297 MOV RAX,qword ptr [RSI + 0x8]
+004a829b MOV EAX,dword ptr [RDX + RAX*0x1]
+004a829e RET

@@ -1,0 +1,2 @@
+004efab0 ENDBR64
+004efab4 JMP 0x004ef9d0

@@ -1,0 +1,4 @@
+004a5a40 ENDBR64
+004a5a44 MOV RAX,qword ptr [RSI + 0x10]
+004a5a48 ADD RAX,qword ptr [RDI]
+004a5a4b RET

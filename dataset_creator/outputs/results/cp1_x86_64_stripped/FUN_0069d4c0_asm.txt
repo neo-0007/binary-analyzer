@@ -1,0 +1,19 @@
+0069d4c0 ENDBR64
+0069d4c4 MOV RAX,0x938898
+0069d4cb ADD RSI,0x38
+0069d4cf ADD RDI,0x38
+0069d4d3 ADD RAX,0x10
+0069d4d7 MOV qword ptr [RDI + -0x38],RAX
+0069d4db MOV RAX,qword ptr [RSI + -0x30]
+0069d4df MOV qword ptr [RDI + -0x30],RAX
+0069d4e3 MOV RAX,qword ptr [RSI + -0x28]
+0069d4e7 MOV qword ptr [RDI + -0x28],RAX
+0069d4eb MOV RAX,qword ptr [RSI + -0x20]
+0069d4ef MOV qword ptr [RDI + -0x20],RAX
+0069d4f3 MOV RAX,qword ptr [RSI + -0x18]
+0069d4f7 MOV qword ptr [RDI + -0x18],RAX
+0069d4fb MOV RAX,qword ptr [RSI + -0x10]
+0069d4ff MOV qword ptr [RDI + -0x10],RAX
+0069d503 MOV RAX,qword ptr [RSI + -0x8]
+0069d507 MOV qword ptr [RDI + -0x8],RAX
+0069d50b JMP 0x00625160

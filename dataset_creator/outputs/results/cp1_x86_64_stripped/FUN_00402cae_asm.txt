@@ -1,0 +1,2 @@
+00402cae MOV qword ptr [RSP],0x0
+00402cb6 JMP 0x00402c8a

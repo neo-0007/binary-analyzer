@@ -1,0 +1,4 @@
+007a2c50 ENDBR64
+007a2c54 MOV RAX,qword ptr [RDI]
+007a2c57 MOV dword ptr [0x0093f0c0],EAX
+007a2c5d RET

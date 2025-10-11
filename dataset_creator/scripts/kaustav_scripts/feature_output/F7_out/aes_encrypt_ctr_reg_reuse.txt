@@ -1,0 +1,4 @@
+File: /home/kaustav/sih2025/bn/binary-analyzer/dataset_creator/workspace/feature_extraction/AES_asm_files/aes_encrypt_ctr.asm
+Unique Registers: 14
+Total Register Uses: 119
+Average Register Reuse Frequency: 7.50

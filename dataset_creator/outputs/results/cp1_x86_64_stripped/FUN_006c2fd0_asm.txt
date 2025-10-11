@@ -1,0 +1,14 @@
+006c2fd0 ENDBR64
+006c2fd4 SUB RSP,0x8
+006c2fd8 CALL 0x006c2fb0
+006c2fdd MOV RAX,qword ptr [RAX]
+006c2fe0 TEST RAX,RAX
+006c2fe3 JZ 0x006c2fee
+006c2fe5 TEST byte ptr [RAX + 0x50],0x1
+006c2fe9 JNZ 0x006c2ff8
+006c2feb MOV RAX,qword ptr [RAX]
+006c2fee ADD RSP,0x8
+006c2ff2 RET
+006c2ff8 MOV RAX,qword ptr [RAX]
+006c2ffb SUB RAX,0x70
+006c2fff JMP 0x006c2feb

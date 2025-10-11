@@ -1,0 +1,3 @@
+005a3cf0 ENDBR64
+005a3cf4 MOV qword ptr [0x0092fd30],RDI
+005a3cfb RET

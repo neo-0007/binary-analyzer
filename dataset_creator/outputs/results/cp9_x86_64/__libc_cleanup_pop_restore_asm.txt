@@ -1,0 +1,9 @@
+006ffb50 ENDBR64
+006ffb54 MOV RAX,qword ptr [RDI + 0x18]
+006ffb58 MOV qword ptr FS:[0x2f8],RAX
+006ffb61 MOV EAX,dword ptr [RDI + 0x10]
+006ffb64 MOV byte ptr FS:[0x972],AL
+006ffb6c CMP EAX,0x1
+006ffb6f JZ 0x006ffb78
+006ffb71 RET
+006ffb78 JMP 0x00701d70

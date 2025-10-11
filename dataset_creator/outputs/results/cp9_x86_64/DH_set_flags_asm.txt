@@ -1,0 +1,3 @@
+004c98e0 ENDBR64
+004c98e4 OR dword ptr [RDI + 0x80],ESI
+004c98ea RET

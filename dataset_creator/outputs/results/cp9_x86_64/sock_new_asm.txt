@@ -1,0 +1,7 @@
+004adca0 ENDBR64
+004adca4 MOV dword ptr [RDI + 0x28],0x0
+004adcab MOV EAX,0x1
+004adcb0 MOV dword ptr [RDI + 0x38],0x0
+004adcb7 MOV qword ptr [RDI + 0x40],0x0
+004adcbf MOV dword ptr [RDI + 0x30],0x0
+004adcc6 RET

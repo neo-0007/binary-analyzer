@@ -1,0 +1,24 @@
+0066ce70 ENDBR64
+0066ce74 MOV RAX,0x92a598
+0066ce7b MOV qword ptr [RDI + 0x8],0x0
+0066ce83 LEA RCX,[RDI + 0x40]
+0066ce87 LEA RDX,[RDI + 0xc0]
+0066ce8e MOV qword ptr [RDI + 0x10],0x0
+0066ce96 MOV qword ptr [RDI + 0x18],0x0
+0066ce9e ADD RAX,0x10
+0066cea2 MOV dword ptr [RDI + 0x20],0x0
+0066cea9 MOV qword ptr [RDI + 0x28],0x0
+0066ceb1 MOV qword ptr [RDI + 0x30],0x0
+0066ceb9 MOV qword ptr [RDI + 0x38],0x0
+0066cec1 MOV qword ptr [RDI],RAX
+0066cec4 MOV RAX,RCX
+0066cec7 NOP word ptr [RAX + RAX*0x1]
+0066ced0 MOV qword ptr [RAX],0x0
+0066ced7 ADD RAX,0x10
+0066cedb MOV qword ptr [RAX + -0x8],0x0
+0066cee3 CMP RDX,RAX
+0066cee6 JNZ 0x0066ced0
+0066cee8 MOV qword ptr [RDI + 0xc8],RCX
+0066ceef ADD RDI,0xd0
+0066cef6 MOV dword ptr [RDI + -0x10],0x8
+0066cefd JMP 0x00626020

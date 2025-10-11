@@ -1,0 +1,4 @@
+0066ece0 ENDBR64
+0066ece4 MOV EAX,dword ptr [RDI + 0x20]
+0066ece7 AND EAX,0x1
+0066ecea RET

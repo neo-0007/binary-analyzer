@@ -1,0 +1,16 @@
+0067bca0 ENDBR64
+0067bca4 PUSH R12
+0067bca6 MOV R12,RDI
+0067bca9 SUB RSP,0x10
+0067bcad MOV RAX,qword ptr FS:[0x28]
+0067bcb6 MOV qword ptr [RSP + 0x8],RAX
+0067bcbb MOV RAX,qword ptr [RSI]
+0067bcbe CALL qword ptr [RAX + 0x18]
+0067bcc1 MOV RAX,qword ptr [RSP + 0x8]
+0067bcc6 SUB RAX,qword ptr FS:[0x28]
+0067bccf JNZ 0x0067bcdb
+0067bcd1 ADD RSP,0x10
+0067bcd5 MOV RAX,R12
+0067bcd8 POP R12
+0067bcda RET
+0067bcdb CALL 0x00771f60

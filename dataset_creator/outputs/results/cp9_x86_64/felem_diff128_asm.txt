@@ -1,0 +1,79 @@
+004f8980 MOV R9,0x7fffffffffffffc0
+004f898a MOV RDX,RSI
+004f898d MOV RAX,RDI
+004f8990 MOV RSI,qword ptr [RDI]
+004f8993 MOV RDI,qword ptr [RDI + 0x8]
+004f8997 SUB RSI,qword ptr [RDX]
+004f899a SBB RDI,qword ptr [RDX + 0x8]
+004f899e XOR R8D,R8D
+004f89a1 ADD RSI,R8
+004f89a4 MOV R8,qword ptr [RAX + 0x10]
+004f89a8 ADC RDI,R9
+004f89ab MOV qword ptr [RAX],RSI
+004f89ae MOV R9,qword ptr [RAX + 0x18]
+004f89b2 MOV qword ptr [RAX + 0x8],RDI
+004f89b6 SUB R8,qword ptr [RDX + 0x10]
+004f89ba MOV RDI,0x7fffffffffffffe0
+004f89c4 SBB R9,qword ptr [RDX + 0x18]
+004f89c8 XOR ESI,ESI
+004f89ca ADD R8,RSI
+004f89cd ADC R9,RDI
+004f89d0 MOV qword ptr [RAX + 0x10],R8
+004f89d4 MOV R8,qword ptr [RAX + 0x20]
+004f89d8 MOV qword ptr [RAX + 0x18],R9
+004f89dc SUB R8,qword ptr [RDX + 0x20]
+004f89e0 MOV R9,qword ptr [RAX + 0x28]
+004f89e4 SBB R9,qword ptr [RDX + 0x28]
+004f89e8 ADD R8,RSI
+004f89eb ADC R9,RDI
+004f89ee MOV qword ptr [RAX + 0x20],R8
+004f89f2 MOV R8,qword ptr [RAX + 0x30]
+004f89f6 MOV qword ptr [RAX + 0x28],R9
+004f89fa SUB R8,qword ptr [RDX + 0x30]
+004f89fe MOV R9,qword ptr [RAX + 0x38]
+004f8a02 SBB R9,qword ptr [RDX + 0x38]
+004f8a06 ADD R8,RSI
+004f8a09 ADC R9,RDI
+004f8a0c MOV qword ptr [RAX + 0x30],R8
+004f8a10 MOV R8,qword ptr [RAX + 0x40]
+004f8a14 MOV qword ptr [RAX + 0x38],R9
+004f8a18 SUB R8,qword ptr [RDX + 0x40]
+004f8a1c MOV R9,qword ptr [RAX + 0x48]
+004f8a20 SBB R9,qword ptr [RDX + 0x48]
+004f8a24 ADD R8,RSI
+004f8a27 ADC R9,RDI
+004f8a2a MOV qword ptr [RAX + 0x40],R8
+004f8a2e MOV R8,qword ptr [RAX + 0x50]
+004f8a32 MOV qword ptr [RAX + 0x48],R9
+004f8a36 SUB R8,qword ptr [RDX + 0x50]
+004f8a3a MOV R9,qword ptr [RAX + 0x58]
+004f8a3e SBB R9,qword ptr [RDX + 0x58]
+004f8a42 ADD R8,RSI
+004f8a45 ADC R9,RDI
+004f8a48 MOV qword ptr [RAX + 0x50],R8
+004f8a4c MOV R8,qword ptr [RAX + 0x60]
+004f8a50 MOV qword ptr [RAX + 0x58],R9
+004f8a54 SUB R8,qword ptr [RDX + 0x60]
+004f8a58 MOV R9,qword ptr [RAX + 0x68]
+004f8a5c SBB R9,qword ptr [RDX + 0x68]
+004f8a60 ADD R8,RSI
+004f8a63 ADC R9,RDI
+004f8a66 MOV qword ptr [RAX + 0x60],R8
+004f8a6a MOV R8,qword ptr [RAX + 0x70]
+004f8a6e MOV qword ptr [RAX + 0x68],R9
+004f8a72 SUB R8,qword ptr [RDX + 0x70]
+004f8a76 MOV R9,qword ptr [RAX + 0x78]
+004f8a7a SBB R9,qword ptr [RDX + 0x78]
+004f8a7e ADD R8,RSI
+004f8a81 ADC R9,RDI
+004f8a84 MOV qword ptr [RAX + 0x70],R8
+004f8a88 MOV R8,qword ptr [RAX + 0x80]
+004f8a8f MOV qword ptr [RAX + 0x78],R9
+004f8a93 SUB R8,qword ptr [RDX + 0x80]
+004f8a9a MOV R9,qword ptr [RAX + 0x88]
+004f8aa1 SBB R9,qword ptr [RDX + 0x88]
+004f8aa8 ADD R8,RSI
+004f8aab ADC R9,RDI
+004f8aae MOV qword ptr [RAX + 0x80],R8
+004f8ab5 MOV qword ptr [RAX + 0x88],R9
+004f8abc RET

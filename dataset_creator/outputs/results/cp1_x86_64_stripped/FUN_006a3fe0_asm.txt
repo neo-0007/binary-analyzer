@@ -1,0 +1,17 @@
+006a3fe0 ENDBR64
+006a3fe4 MOV RAX,qword ptr [RDI + 0x10]
+006a3fe8 MOV RDX,qword ptr [RAX + 0x58]
+006a3fec MOV qword ptr [RSI],RDX
+006a3fef MOV RDX,qword ptr [RAX + 0x60]
+006a3ff3 MOV qword ptr [RSI + 0x8],RDX
+006a3ff7 MOV RDX,qword ptr [RAX + 0x68]
+006a3ffb MOV qword ptr [RSI + 0x10],RDX
+006a3fff MOV RDX,qword ptr [RAX + 0x70]
+006a4003 MOV qword ptr [RSI + 0x18],RDX
+006a4007 MOV RDX,qword ptr [RAX + 0x78]
+006a400b MOV qword ptr [RSI + 0x20],RDX
+006a400f MOV RDX,qword ptr [RAX + 0x80]
+006a4016 MOV qword ptr [RSI + 0x28],RDX
+006a401a MOV RAX,qword ptr [RAX + 0x88]
+006a4021 MOV qword ptr [RSI + 0x30],RAX
+006a4025 RET

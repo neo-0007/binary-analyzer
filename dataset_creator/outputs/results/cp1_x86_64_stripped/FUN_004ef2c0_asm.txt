@@ -1,0 +1,7 @@
+004ef2c0 ENDBR64
+004ef2c4 TEST byte ptr [RDI + 0x8],0x1
+004ef2c8 JNZ 0x004ef2d0
+004ef2ca RET
+004ef2d0 MOV EDX,0xc5
+004ef2d5 LEA RSI,[0x7fe2b4]
+004ef2dc JMP 0x0041ad60

@@ -1,0 +1,7 @@
+004b7450 ENDBR64
+004b7454 OR dword ptr [RDI + 0x14],0x2
+004b7458 MOV qword ptr [RDI],RSI
+004b745b MOV dword ptr [RDI + 0x8],EDX
+004b745e MOV dword ptr [RDI + 0xc],EDX
+004b7461 MOV dword ptr [RDI + 0x10],0x0
+004b7468 JMP 0x004b8490

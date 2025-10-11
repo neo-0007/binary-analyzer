@@ -1,0 +1,14 @@
+
+undefined8 FUN_0060d470(int param_1,long *param_2)
+
+{
+  if (param_1 == 1) {
+    *(undefined8 *)(*param_2 + 0x10) = 0;
+  }
+  else if (param_1 == 3) {
+    FUN_005ad580(*(undefined8 *)(*param_2 + 0x10));
+    return 1;
+  }
+  return 1;
+}
+

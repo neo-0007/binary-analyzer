@@ -1,0 +1,30 @@
+005ec4c0 MOV ECX,0x80100
+005ec4c5 AND ECX,dword ptr [0x0093e5a0]
+005ec4cb PUSH RBP
+005ec4cc PUSH RBX
+005ec4cd PUSH R12
+005ec4cf PUSH R13
+005ec4d1 PUSH R14
+005ec4d3 PUSH R15
+005ec4d5 CMP ECX,0x80100
+005ec4db JZ 0x005ec500
+005ec4dd MOV RAX,qword ptr [RSI]
+005ec4e0 MOV R14,qword ptr [RSI + 0x8]
+005ec4e4 MOV R15,qword ptr [RSI + 0x10]
+005ec4e8 MOV R8,qword ptr [RSI + 0x18]
+005ec4ec CALL 0x005ec540
+005ec4f1 JMP 0x005ec518
+005ec500 MOV RDX,qword ptr [RSI]
+005ec503 MOV R14,qword ptr [RSI + 0x8]
+005ec507 MOV R15,qword ptr [RSI + 0x10]
+005ec50b MOV R8,qword ptr [RSI + 0x18]
+005ec50f LEA RSI,[RSI + -0x80]
+005ec513 CALL 0x005ec960
+005ec518 MOV R15,qword ptr [RSP]
+005ec51c MOV R14,qword ptr [RSP + 0x8]
+005ec521 MOV R13,qword ptr [RSP + 0x10]
+005ec526 MOV R12,qword ptr [RSP + 0x18]
+005ec52b MOV RBX,qword ptr [RSP + 0x20]
+005ec530 MOV RBP,qword ptr [RSP + 0x28]
+005ec535 LEA RSP,[RSP + 0x30]
+005ec53a RET

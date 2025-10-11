@@ -1,0 +1,34 @@
+006abfb0 ENDBR64
+006abfb4 PUSH RBX
+006abfb5 MOV RBX,RDI
+006abfb8 CALL 0x006ac250
+006abfbd LEA RCX,[RBX + -0x50]
+006abfc1 MOV RDX,-0x474e5543432b2b00
+006abfcb ADD RDX,qword ptr [RBX]
+006abfce MOV R8,qword ptr [RAX]
+006abfd1 CMP RDX,0x1
+006abfd5 JBE 0x006abfe8
+006abfd7 TEST R8,R8
+006abfda JNZ 0x006ac017
+006abfdc MOV qword ptr [RAX],RCX
+006abfdf MOV RAX,R8
+006abfe2 POP RBX
+006abfe3 RET
+006abfe8 MOV EDI,dword ptr [RBX + -0x28]
+006abfeb MOV ESI,0x1
+006abff0 SUB ESI,EDI
+006abff2 LEA EDX,[RDI + 0x1]
+006abff5 TEST EDI,EDI
+006abff7 CMOVS EDX,ESI
+006abffa MOV dword ptr [RBX + -0x28],EDX
+006abffd SUB dword ptr [RAX + 0x8],0x1
+006ac001 CMP R8,RCX
+006ac004 JZ 0x006ac00d
+006ac006 MOV qword ptr [RBX + -0x30],R8
+006ac00a MOV qword ptr [RAX],RCX
+006ac00d MOV R8,qword ptr [RBX + -0x8]
+006ac011 NOP
+006ac012 MOV RAX,R8
+006ac015 POP RBX
+006ac016 RET
+006ac017 CALL 0x006acd70

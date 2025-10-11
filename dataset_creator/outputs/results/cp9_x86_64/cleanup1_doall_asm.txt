@@ -1,0 +1,5 @@
+004299f0 ENDBR64
+004299f4 MOV RAX,qword ptr [RDI + 0x8]
+004299f8 OR dword ptr [RAX + 0x20],0xd
+004299fc MOV dword ptr [RAX + 0x10],0x0
+00429a03 RET

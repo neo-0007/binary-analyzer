@@ -1,0 +1,4 @@
+006d30c0 ENDBR64
+006d30c4 MOV RSI,qword ptr [RSI]
+006d30c7 MOV RDI,qword ptr [RDI]
+006d30ca JMP 0x004011f0

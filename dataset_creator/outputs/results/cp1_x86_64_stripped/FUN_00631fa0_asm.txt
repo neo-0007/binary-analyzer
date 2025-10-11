@@ -1,0 +1,27 @@
+00631fa0 ENDBR64
+00631fa4 LEA RAX,[0x935030]
+00631fab PUSH RBP
+00631fac MOV RBP,RDI
+00631faf MOV qword ptr [RDI],RAX
+00631fb2 MOV RAX,qword ptr [RDI + 0x20]
+00631fb6 MOV RDI,qword ptr [RDI + 0x18]
+00631fba MOV qword ptr [RAX + 0x18],0x0
+00631fc2 MOV qword ptr [RAX + 0x38],0x0
+00631fca MOV qword ptr [RAX + 0x48],0x0
+00631fd2 MOV qword ptr [RAX + 0x58],0x0
+00631fda MOV RAX,0x93ea10
+00631fe1 CMP byte ptr [RAX],0x0
+00631fe4 JZ 0x00632008
+00631fe6 MOV EAX,dword ptr [RDI + 0x8]
+00631fe9 LEA EDX,[RAX + -0x1]
+00631fec MOV dword ptr [RDI + 0x8],EDX
+00631fef CMP EAX,0x1
+00631ff2 JNZ 0x00631ffa
+00631ff4 MOV RAX,qword ptr [RDI]
+00631ff7 CALL qword ptr [RAX + 0x8]
+00631ffa MOV RDI,RBP
+00631ffd POP RBP
+00631ffe JMP 0x0062ae80
+00632008 MOV EAX,0xffffffff
+0063200d XADD.LOCK dword ptr [RDI + 0x8],EAX
+00632012 JMP 0x00631fef

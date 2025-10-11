@@ -1,0 +1,4 @@
+006ae0b0 ENDBR64
+006ae0b4 CMP qword ptr [RDI],0x0
+006ae0b8 SETNZ AL
+006ae0bb RET

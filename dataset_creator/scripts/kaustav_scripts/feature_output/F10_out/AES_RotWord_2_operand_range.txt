@@ -1,0 +1,8 @@
+Operand Value Range Feature
+File: AES_RotWord_2.asm
+-------------------------------
+Byte operands   : 0%
+Word operands   : 0%
+DWord operands  : 0%
+QWord operands  : 45%
+Other operands  : 54%

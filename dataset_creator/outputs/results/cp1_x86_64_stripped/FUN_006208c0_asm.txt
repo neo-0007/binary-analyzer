@@ -1,0 +1,5 @@
+006208c0 ENDBR64
+006208c4 MOV RAX,qword ptr [RDI + 0x30]
+006208c8 MOV qword ptr [RSI],RAX
+006208cb MOV RAX,qword ptr [RDI + 0x38]
+006208cf RET

@@ -1,0 +1,4 @@
+0040a3b0 ENDBR64
+0040a3b4 MOV RAX,qword ptr [RDI]
+0040a3b7 MOV EAX,dword ptr [RAX]
+0040a3b9 RET

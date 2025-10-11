@@ -1,0 +1,3 @@
+0053efa0 ENDBR64
+0053efa4 LEA RAX,[0x90fac0]
+0053efab RET

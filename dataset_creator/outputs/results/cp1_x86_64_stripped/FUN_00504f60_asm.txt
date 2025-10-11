@@ -1,0 +1,20 @@
+00504f60 ENDBR64
+00504f64 MOV RAX,qword ptr [RSI]
+00504f67 MOV qword ptr [RDI],RAX
+00504f6a MOV RAX,qword ptr [RSI + 0x8]
+00504f6e MOV qword ptr [RDI + 0x8],RAX
+00504f72 MOV RAX,qword ptr [RSI + 0x10]
+00504f76 MOV qword ptr [RDI + 0x10],RAX
+00504f7a MOV RAX,qword ptr [RSI + 0x18]
+00504f7e MOV qword ptr [RDI + 0x18],RAX
+00504f82 MOV RAX,qword ptr [RSI + 0x20]
+00504f86 MOV qword ptr [RDI + 0x20],RAX
+00504f8a MOV RAX,qword ptr [RSI + 0x28]
+00504f8e MOV qword ptr [RDI + 0x28],RAX
+00504f92 MOV RAX,qword ptr [RSI + 0x30]
+00504f96 MOV qword ptr [RDI + 0x30],RAX
+00504f9a MOV RAX,qword ptr [RSI + 0x38]
+00504f9e MOV qword ptr [RDI + 0x38],RAX
+00504fa2 MOV RAX,qword ptr [RSI + 0x40]
+00504fa6 MOV qword ptr [RDI + 0x40],RAX
+00504faa RET

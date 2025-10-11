@@ -1,0 +1,4 @@
+005a8ca0 ENDBR64
+005a8ca4 MOV dword ptr [RDI + 0x10],ESI
+005a8ca7 MOV EAX,0x1
+005a8cac RET

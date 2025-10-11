@@ -1,0 +1,4 @@
+004ee8a0 ENDBR64
+004ee8a4 OR dword ptr [RDI + 0x3c],ESI
+004ee8a7 ADD qword ptr [RDI + 0x68],0x1
+004ee8ac RET

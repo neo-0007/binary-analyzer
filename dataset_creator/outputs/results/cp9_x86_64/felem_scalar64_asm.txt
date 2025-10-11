@@ -1,0 +1,27 @@
+004f87c0 MOV RAX,qword ptr [RDI]
+004f87c3 IMUL RAX,RSI
+004f87c7 MOV qword ptr [RDI],RAX
+004f87ca MOV RAX,qword ptr [RDI + 0x8]
+004f87ce IMUL RAX,RSI
+004f87d2 MOV qword ptr [RDI + 0x8],RAX
+004f87d6 MOV RAX,qword ptr [RDI + 0x10]
+004f87da IMUL RAX,RSI
+004f87de MOV qword ptr [RDI + 0x10],RAX
+004f87e2 MOV RAX,qword ptr [RDI + 0x18]
+004f87e6 IMUL RAX,RSI
+004f87ea MOV qword ptr [RDI + 0x18],RAX
+004f87ee MOV RAX,qword ptr [RDI + 0x20]
+004f87f2 IMUL RAX,RSI
+004f87f6 MOV qword ptr [RDI + 0x20],RAX
+004f87fa MOV RAX,qword ptr [RDI + 0x28]
+004f87fe IMUL RAX,RSI
+004f8802 MOV qword ptr [RDI + 0x28],RAX
+004f8806 MOV RAX,qword ptr [RDI + 0x30]
+004f880a IMUL RAX,RSI
+004f880e MOV qword ptr [RDI + 0x30],RAX
+004f8812 MOV RAX,qword ptr [RDI + 0x38]
+004f8816 IMUL RAX,RSI
+004f881a IMUL RSI,qword ptr [RDI + 0x40]
+004f881f MOV qword ptr [RDI + 0x38],RAX
+004f8823 MOV qword ptr [RDI + 0x40],RSI
+004f8827 RET

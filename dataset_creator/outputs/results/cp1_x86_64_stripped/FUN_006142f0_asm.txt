@@ -1,0 +1,6 @@
+006142f0 ENDBR64
+006142f4 MOV RAX,qword ptr [RDI]
+006142f7 MOV RDX,qword ptr [RSI]
+006142fa MOV EAX,dword ptr [RAX]
+006142fc SUB EAX,dword ptr [RDX]
+006142fe RET

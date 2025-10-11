@@ -1,0 +1,8 @@
+005bdcc0 ENDBR64
+005bdcc4 MOV R8,RDI
+005bdcc7 MOV RDI,RSI
+005bdcca CMP qword ptr [R8 + 0x8],0x0
+005bdccf JZ 0x005bdce0
+005bdcd1 MOV RSI,R8
+005bdcd4 JMP 0x00537e50
+005bdce0 RET

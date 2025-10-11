@@ -1,0 +1,3 @@
+00597ab0 ENDBR64
+00597ab4 MOV qword ptr [0x0093cac0],RDI
+00597abb RET

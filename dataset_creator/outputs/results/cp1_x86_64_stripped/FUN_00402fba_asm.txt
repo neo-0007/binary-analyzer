@@ -1,0 +1,8 @@
+00402fba CALL 0x006c2e40
+00402fbf MOV RDI,qword ptr [RBX + 0x10]
+00402fc3 TEST RDI,RDI
+00402fc6 JZ 0x00402fce
+00402fc8 MOV RAX,qword ptr [RDI]
+00402fcb CALL qword ptr [RAX + 0x8]
+00402fce MOV qword ptr [RBX + 0x10],0x0
+00402fd6 CALL 0x006240b0

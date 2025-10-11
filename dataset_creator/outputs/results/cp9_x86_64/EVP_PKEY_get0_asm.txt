@@ -1,0 +1,9 @@
+0052feb0 ENDBR64
+0052feb4 XOR EAX,EAX
+0052feb6 TEST RDI,RDI
+0052feb9 JZ 0x0052fec2
+0052febb CMP qword ptr [RDI + 0x60],0x0
+0052fec0 JZ 0x0052fec8
+0052fec2 RET
+0052fec8 MOV RAX,qword ptr [RDI + 0x20]
+0052fecc RET

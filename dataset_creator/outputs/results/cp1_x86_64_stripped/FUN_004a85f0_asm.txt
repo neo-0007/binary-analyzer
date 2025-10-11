@@ -1,0 +1,4 @@
+004a85f0 ENDBR64
+004a85f4 MOV RAX,qword ptr [RSI + 0x10]
+004a85f8 ADD RAX,qword ptr [RDI]
+004a85fb RET

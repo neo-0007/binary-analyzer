@@ -1,0 +1,111 @@
+
+void FUN_004dd930(long param_1,undefined8 *param_2)
+
+{
+  byte bVar1;
+  long in_FS_OFFSET;
+  undefined1 local_288 [64];
+  undefined1 local_248 [64];
+  undefined1 local_208 [64];
+  undefined1 local_1c8 [64];
+  undefined1 local_188 [64];
+  undefined8 local_148;
+  undefined8 uStack_140;
+  undefined8 local_138;
+  undefined8 uStack_130;
+  undefined8 local_128;
+  undefined8 uStack_120;
+  undefined8 local_118;
+  undefined8 uStack_110;
+  undefined8 local_108;
+  undefined8 uStack_100;
+  undefined8 local_f8;
+  undefined8 uStack_f0;
+  undefined8 local_e8;
+  undefined8 uStack_e0;
+  undefined8 local_d8;
+  undefined8 uStack_d0;
+  undefined8 local_c8;
+  undefined8 uStack_c0;
+  undefined8 local_b8;
+  undefined8 uStack_b0;
+  undefined8 local_a8;
+  undefined8 uStack_a0;
+  undefined8 local_98;
+  undefined8 uStack_90;
+  undefined8 local_88;
+  undefined8 uStack_80;
+  undefined8 local_78;
+  undefined8 uStack_70;
+  undefined8 local_68;
+  undefined8 uStack_60;
+  undefined8 local_58;
+  undefined8 uStack_50;
+  long local_40;
+  
+  local_148 = *param_2;
+  uStack_140 = param_2[1];
+  local_138 = param_2[2];
+  uStack_130 = param_2[3];
+  local_128 = param_2[4];
+  uStack_120 = param_2[5];
+  local_118 = param_2[6];
+  uStack_110 = param_2[7];
+  local_40 = *(long *)(in_FS_OFFSET + 0x28);
+  local_108 = param_2[8];
+  uStack_100 = param_2[9];
+  local_f8 = param_2[10];
+  uStack_f0 = param_2[0xb];
+  local_e8 = param_2[0xc];
+  uStack_e0 = param_2[0xd];
+  local_d8 = param_2[0xe];
+  uStack_d0 = param_2[0xf];
+  local_c8 = param_2[0x10];
+  uStack_c0 = param_2[0x11];
+  local_b8 = param_2[0x12];
+  uStack_b0 = param_2[0x13];
+  local_a8 = param_2[0x14];
+  uStack_a0 = param_2[0x15];
+  local_98 = param_2[0x16];
+  uStack_90 = param_2[0x17];
+  local_88 = param_2[0x18];
+  uStack_80 = param_2[0x19];
+  local_78 = param_2[0x1a];
+  uStack_70 = param_2[0x1b];
+  local_68 = param_2[0x1c];
+  uStack_60 = param_2[0x1d];
+  local_58 = param_2[0x1e];
+  uStack_50 = param_2[0x1f];
+  FUN_005cda50(local_288,&local_148);
+  FUN_005cda50(local_1c8,&local_108);
+  FUN_004df1e0(local_188,local_288,local_1c8);
+  FUN_004df1e0(local_208,&local_108,&local_148);
+  FUN_005cda50(local_248,local_208);
+  FUN_004df0f0(local_248,local_248,local_188);
+  FUN_004df0f0(local_208,local_1c8,local_288);
+  FUN_005cda50(local_288,&local_c8);
+  FUN_004df1e0(local_1c8,local_288,local_288);
+  FUN_004df0f0(local_1c8,local_1c8,local_208);
+  FUN_005cd6f0(local_288,local_1c8,local_248);
+  FUN_005cd6f0(local_248,local_208,local_188);
+  FUN_005cd6f0(local_208,local_188,local_1c8);
+  FUN_004227b0(local_188,0x40);
+  FUN_004db7c0(local_208,local_208,1);
+  FUN_005cd6f0(local_1c8,local_288,local_208);
+  FUN_005cd6f0(local_288,local_248,local_208);
+  *(undefined1 *)(param_1 + 0x38) = 0;
+  FUN_004defc0(param_1,local_288,1);
+  bVar1 = FUN_004df080(local_1c8);
+  *(byte *)(param_1 + 0x38) = *(byte *)(param_1 + 0x38) | bVar1 & 0x80;
+  FUN_004227b0(local_288,0x40);
+  FUN_004227b0(local_248,0x40);
+  FUN_004227b0(local_208,0x40);
+  FUN_004227b0(local_1c8,0x40);
+  FUN_004dd920(&local_148);
+  if (local_40 == *(long *)(in_FS_OFFSET + 0x28)) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  FUN_00771f60();
+}
+

@@ -1,0 +1,3 @@
+0063a380 ENDBR64
+0063a384 MOV RAX,0xffffffffffffffe
+0063a38e RET

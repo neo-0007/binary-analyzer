@@ -1,0 +1,8 @@
+0041c720 ENDBR64
+0041c724 MOV qword ptr [RDI],RSI
+0041c727 MOV RAX,RDI
+0041c72a MOV dword ptr [RDI + 0x8],0x2
+0041c731 MOV qword ptr [RDI + 0x10],RDX
+0041c735 MOV qword ptr [RDI + 0x18],RCX
+0041c739 MOV qword ptr [RDI + 0x20],-0x1
+0041c741 RET

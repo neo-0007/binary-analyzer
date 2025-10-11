@@ -1,0 +1,51 @@
+0074beb0 ENDBR64
+0074beb4 MOV RDX,RDI
+0074beb7 MOV R8,RDI
+0074beba SUB RSP,0x100
+0074bec1 MOV ECX,0x20
+0074bec6 MOV RDI,RSP
+0074bec9 XOR EAX,EAX
+0074becb CLD
+0074becc STOSQ.REP RDI
+0074becf MOV RAX,RSI
+0074bed2 NOP dword ptr CS:[RAX + RAX*0x1]
+0074bedd NOP dword ptr [RAX]
+0074bee0 MOV CL,byte ptr [RAX]
+0074bee2 TEST CL,CL
+0074bee4 JZ 0x0074bf0e
+0074bee6 MOV byte ptr [RSP + RCX*0x1],CL
+0074bee9 MOV CL,byte ptr [RAX + 0x1]
+0074beec TEST CL,0xff
+0074beef JZ 0x0074bf0e
+0074bef1 MOV byte ptr [RSP + RCX*0x1],CL
+0074bef4 MOV CL,byte ptr [RAX + 0x2]
+0074bef7 TEST CL,0xff
+0074befa JZ 0x0074bf0e
+0074befc MOV byte ptr [RSP + RCX*0x1],CL
+0074beff MOV CL,byte ptr [RAX + 0x3]
+0074bf02 ADD RAX,0x4
+0074bf06 MOV byte ptr [RSP + RCX*0x1],CL
+0074bf09 TEST CL,0xff
+0074bf0c JNZ 0x0074bee0
+0074bf0e LEA RAX,[RDX + -0x4]
+0074bf12 NOP dword ptr CS:[RAX + RAX*0x1]
+0074bf1d NOP dword ptr [RAX]
+0074bf20 ADD RAX,0x4
+0074bf24 MOV CL,byte ptr [RAX]
+0074bf26 TEST byte ptr [RSP + RCX*0x1],CL
+0074bf29 JZ 0x0074bf4c
+0074bf2b MOV CL,byte ptr [RAX + 0x1]
+0074bf2e TEST byte ptr [RSP + RCX*0x1],CL
+0074bf31 JZ 0x0074bf49
+0074bf33 MOV CL,byte ptr [RAX + 0x2]
+0074bf36 TEST byte ptr [RSP + RCX*0x1],CL
+0074bf39 JZ 0x0074bf46
+0074bf3b MOV CL,byte ptr [RAX + 0x3]
+0074bf3e TEST byte ptr [RSP + RCX*0x1],CL
+0074bf41 JNZ 0x0074bf20
+0074bf43 INC RAX
+0074bf46 INC RAX
+0074bf49 INC RAX
+0074bf4c ADD RSP,0x100
+0074bf53 SUB RAX,RDX
+0074bf56 RET

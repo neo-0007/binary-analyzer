@@ -1,0 +1,27 @@
+00697070 ENDBR64
+00697074 MOV RAX,qword ptr [RDI + 0x10]
+00697078 MOV RDX,qword ptr [RAX + 0x128]
+0069707f MOV qword ptr [RSI],RDX
+00697082 MOV RDX,qword ptr [RAX + 0x130]
+00697089 MOV qword ptr [RSI + 0x8],RDX
+0069708d MOV RDX,qword ptr [RAX + 0x138]
+00697094 MOV qword ptr [RSI + 0x10],RDX
+00697098 MOV RDX,qword ptr [RAX + 0x140]
+0069709f MOV qword ptr [RSI + 0x18],RDX
+006970a3 MOV RDX,qword ptr [RAX + 0x148]
+006970aa MOV qword ptr [RSI + 0x20],RDX
+006970ae MOV RDX,qword ptr [RAX + 0x150]
+006970b5 MOV qword ptr [RSI + 0x28],RDX
+006970b9 MOV RDX,qword ptr [RAX + 0x158]
+006970c0 MOV qword ptr [RSI + 0x30],RDX
+006970c4 MOV RDX,qword ptr [RAX + 0x160]
+006970cb MOV qword ptr [RSI + 0x38],RDX
+006970cf MOV RDX,qword ptr [RAX + 0x168]
+006970d6 MOV qword ptr [RSI + 0x40],RDX
+006970da MOV RDX,qword ptr [RAX + 0x170]
+006970e1 MOV qword ptr [RSI + 0x48],RDX
+006970e5 MOV RDX,qword ptr [RAX + 0x178]
+006970ec MOV qword ptr [RSI + 0x50],RDX
+006970f0 MOV RAX,qword ptr [RAX + 0x180]
+006970f7 MOV qword ptr [RSI + 0x58],RAX
+006970fb RET

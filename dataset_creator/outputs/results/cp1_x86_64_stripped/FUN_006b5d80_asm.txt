@@ -1,0 +1,5 @@
+006b5d80 ENDBR64
+006b5d84 MOV RDX,qword ptr [RSI]
+006b5d87 MOV RAX,RDI
+006b5d8a MOV qword ptr [RDI],RDX
+006b5d8d RET

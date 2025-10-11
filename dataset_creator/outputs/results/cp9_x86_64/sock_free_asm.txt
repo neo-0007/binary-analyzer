@@ -1,0 +1,22 @@
+004adcd0 ENDBR64
+004adcd4 TEST RDI,RDI
+004adcd7 JZ 0x004add08
+004adcd9 PUSH RBX
+004adcda MOV EDX,dword ptr [RDI + 0x2c]
+004adcdd MOV RBX,RDI
+004adce0 MOV EAX,0x1
+004adce5 TEST EDX,EDX
+004adce7 JZ 0x004add03
+004adce9 MOV EAX,dword ptr [RDI + 0x28]
+004adcec TEST EAX,EAX
+004adcee JNZ 0x004add10
+004adcf0 MOV dword ptr [RBX + 0x28],0x0
+004adcf7 MOV EAX,0x1
+004adcfc MOV dword ptr [RBX + 0x30],0x0
+004add03 POP RBX
+004add04 RET
+004add08 XOR EAX,EAX
+004add0a RET
+004add10 MOV EDI,dword ptr [RDI + 0x38]
+004add13 CALL 0x004acfe0
+004add18 JMP 0x004adcf0

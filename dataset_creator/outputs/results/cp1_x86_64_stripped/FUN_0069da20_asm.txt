@@ -1,0 +1,16 @@
+0069da20 ENDBR64
+0069da24 MOV RAX,qword ptr [RDI + 0x10]
+0069da28 CMP qword ptr [RDI + 0x8],RAX
+0069da2c JNC 0x0069da40
+0069da2e LEA RDX,[RAX + -0x4]
+0069da32 MOV EAX,dword ptr [RAX + -0x4]
+0069da35 MOV qword ptr [RDI + 0x10],RDX
+0069da39 RET
+0069da40 MOV RAX,qword ptr [RDI]
+0069da43 MOV RDX,qword ptr [RAX + 0x58]
+0069da47 CMP RDX,0x69c9f0
+0069da4e MOV EAX,0xffffffff
+0069da53 JNZ 0x0069da60
+0069da55 RET
+0069da60 MOV ESI,0xffffffff
+0069da65 JMP RDX

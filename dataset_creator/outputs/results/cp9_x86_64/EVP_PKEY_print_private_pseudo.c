@@ -1,0 +1,15 @@
+
+int EVP_PKEY_print_private(BIO *out,EVP_PKEY *pkey,int indent,ASN1_PCTX *pctx)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  
+  uVar2 = 0;
+  if (*(long *)&pkey->references != 0) {
+    uVar2 = *(undefined8 *)(*(long *)&pkey->references + 0x50);
+  }
+  iVar1 = print_pkey_constprop_0(pkey,out,indent,0x87,uVar2,pctx);
+  return iVar1;
+}
+

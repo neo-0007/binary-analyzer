@@ -1,0 +1,19 @@
+0040fba0 ENDBR64
+0040fba4 CMP qword ptr [RDI + 0x20],0x0
+0040fba9 JZ 0x0040fbd0
+0040fbab MOV RAX,qword ptr [RDI + 0x60]
+0040fbaf TEST RAX,RAX
+0040fbb2 JZ 0x0040fbc0
+0040fbb4 MOV RAX,qword ptr [RAX + 0x10]
+0040fbb8 TEST RAX,RAX
+0040fbbb JZ 0x0040fbc0
+0040fbbd RET
+0040fbc0 MOV RAX,qword ptr [RDI + 0x8]
+0040fbc4 TEST RAX,RAX
+0040fbc7 JZ 0x0040fbbd
+0040fbc9 MOV RAX,qword ptr [RAX + 0x18]
+0040fbcd RET
+0040fbd0 MOV RAX,qword ptr [RDI + 0x68]
+0040fbd4 TEST RAX,RAX
+0040fbd7 JNZ 0x0040fbab
+0040fbd9 RET

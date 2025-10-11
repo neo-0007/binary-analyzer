@@ -1,0 +1,4 @@
+0058bb50 ENDBR64
+0058bb54 MOV RSI,qword ptr [RSI + 0x18]
+0058bb58 MOV RDI,qword ptr [RDI + 0x18]
+0058bb5c JMP 0x0058b9b0

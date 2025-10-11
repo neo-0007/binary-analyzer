@@ -1,0 +1,21 @@
+0069dcb0 ENDBR64
+0069dcb4 PUSH R12
+0069dcb6 MOV RAX,qword ptr [RSI + 0x8]
+0069dcba MOV R12,RDI
+0069dcbd ADD RSI,0x38
+0069dcc1 LEA RDI,[RDI + 0x38]
+0069dcc5 MOV qword ptr [RDI + -0x30],RAX
+0069dcc9 MOV RAX,qword ptr [RSI + -0x28]
+0069dccd MOV qword ptr [RDI + -0x28],RAX
+0069dcd1 MOV RAX,qword ptr [RSI + -0x20]
+0069dcd5 MOV qword ptr [RDI + -0x20],RAX
+0069dcd9 MOV RAX,qword ptr [RSI + -0x18]
+0069dcdd MOV qword ptr [RDI + -0x18],RAX
+0069dce1 MOV RAX,qword ptr [RSI + -0x10]
+0069dce5 MOV qword ptr [RDI + -0x10],RAX
+0069dce9 MOV RAX,qword ptr [RSI + -0x8]
+0069dced MOV qword ptr [RDI + -0x8],RAX
+0069dcf1 CALL 0x006258d0
+0069dcf6 MOV RAX,R12
+0069dcf9 POP R12
+0069dcfb RET

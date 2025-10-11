@@ -1,0 +1,45 @@
+0040eda0 ENDBR64
+0040eda4 PUSH RBX
+0040eda5 MOV RBX,RDI
+0040eda8 SUB RSP,0x10
+0040edac MOV RAX,qword ptr FS:[0x28]
+0040edb5 MOV qword ptr [RSP + 0x8],RAX
+0040edba MOV RAX,qword ptr [RDI + 0x8]
+0040edbe MOV qword ptr [RSP],0x0
+0040edc6 MOV RDI,qword ptr [RDI + 0x28]
+0040edca TEST RAX,RAX
+0040edcd JZ 0x0040ee40
+0040edcf CMP qword ptr [RBX + 0x28],0x0
+0040edd4 JZ 0x0040ede6
+0040edd6 MOV RDX,qword ptr [RBX + 0x28]
+0040edda MOV qword ptr [RBX + 0x28],0x0
+0040ede2 MOV qword ptr [RBX + 0x20],RDX
+0040ede6 MOV RAX,qword ptr [RAX + 0xa8]
+0040eded TEST RAX,RAX
+0040edf0 JZ 0x0040edf7
+0040edf2 MOV RDI,RBX
+0040edf5 CALL RAX
+0040edf7 MOV qword ptr [RBX + 0x20],0x0
+0040edff MOV RDI,qword ptr [RSP]
+0040ee03 CALL 0x0051a270
+0040ee08 MOV RDI,qword ptr [RBX + 0x10]
+0040ee0c CALL 0x0051a270
+0040ee11 MOV qword ptr [RBX + 0x10],0x0
+0040ee19 MOV RDI,qword ptr [RBX + 0x18]
+0040ee1d CALL 0x0051a270
+0040ee22 MOV qword ptr [RBX + 0x18],0x0
+0040ee2a MOV RAX,qword ptr [RSP + 0x8]
+0040ee2f SUB RAX,qword ptr FS:[0x28]
+0040ee38 JNZ 0x0040ee59
+0040ee3a ADD RSP,0x10
+0040ee3e POP RBX
+0040ee3f RET
+0040ee40 TEST RDI,RDI
+0040ee43 JZ 0x0040ee03
+0040ee45 MOV ESI,dword ptr [RBX]
+0040ee47 MOV RDI,RSP
+0040ee4a CALL 0x004a1430
+0040ee4f TEST RAX,RAX
+0040ee52 JZ 0x0040edff
+0040ee54 JMP 0x0040edcf
+0040ee59 CALL 0x00771f60

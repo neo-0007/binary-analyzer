@@ -1,0 +1,73 @@
+005fcea0 MOV R10D,ECX
+005fcea3 MOV R9,RDX
+005fcea6 LEA RCX,[0x81a3a0]
+005fcead TEST RDI,RDI
+005fceb0 JZ 0x005fcec1
+005fceb2 TEST byte ptr [RDI + 0x5c],0x2
+005fceb6 LEA RAX,[0x81a340]
+005fcebd CMOVNZ RCX,RAX
+005fcec1 XOR R8D,R8D
+005fcec4 TEST R10D,R10D
+005fcec7 JG 0x005fcf26
+005fcec9 JMP 0x005fcf68
+005fced0 MOVZX EAX,byte ptr [R9 + 0x1]
+005fced5 ADD R9,0x3
+005fced9 SHL RAX,0x8
+005fcedd OR RAX,RDX
+005fcee0 MOVZX EDX,byte ptr [R9 + -0x1]
+005fcee5 MOV RDI,RAX
+005fcee8 SHR RDI,0x12
+005fceec OR RDX,RAX
+005fceef SHR RAX,0xc
+005fcef3 MOVZX EDI,byte ptr [RCX + RDI*0x1]
+005fcef7 AND EAX,0x3f
+005fcefa MOV byte ptr [RSI + -0x4],DIL
+005fcefe MOVZX EAX,byte ptr [RCX + RAX*0x1]
+005fcf02 MOV byte ptr [RSI + -0x3],AL
+005fcf05 MOV RAX,RDX
+005fcf08 AND EDX,0x3f
+005fcf0b SHR RAX,0x6
+005fcf0f AND EAX,0x3f
+005fcf12 MOVZX EAX,byte ptr [RCX + RAX*0x1]
+005fcf16 MOV byte ptr [RSI + -0x2],AL
+005fcf19 MOVZX EAX,byte ptr [RCX + RDX*0x1]
+005fcf1d MOV byte ptr [RSI + -0x1],AL
+005fcf20 SUB R10D,0x3
+005fcf24 JZ 0x005fcf68
+005fcf26 MOVZX EDX,byte ptr [R9]
+005fcf2a MOV RDI,RSI
+005fcf2d ADD R8D,0x4
+005fcf31 ADD RSI,0x4
+005fcf35 SHL RDX,0x10
+005fcf39 CMP R10D,0x2
+005fcf3d JG 0x005fced0
+005fcf3f JZ 0x005fcf70
+005fcf41 MOV RAX,RDX
+005fcf44 SHR RDX,0xc
+005fcf48 SHR RAX,0x12
+005fcf4c AND EDX,0x3f
+005fcf4f MOVZX EAX,byte ptr [RCX + RAX*0x1]
+005fcf53 MOV byte ptr [RDI],AL
+005fcf55 MOVZX EAX,byte ptr [RCX + RDX*0x1]
+005fcf59 MOV byte ptr [RDI + 0x1],AL
+005fcf5c MOV EAX,0x3d
+005fcf61 MOV byte ptr [RDI + 0x2],AL
+005fcf64 MOV byte ptr [RDI + 0x3],0x3d
+005fcf68 MOV byte ptr [RSI],0x0
+005fcf6b MOV EAX,R8D
+005fcf6e RET
+005fcf70 MOVZX EAX,byte ptr [R9 + 0x1]
+005fcf75 SHL RAX,0x8
+005fcf79 OR RAX,RDX
+005fcf7c SHR RDX,0x12
+005fcf80 MOVZX EDX,byte ptr [RCX + RDX*0x1]
+005fcf84 MOV byte ptr [RDI],DL
+005fcf86 MOV RDX,RAX
+005fcf89 SHR RAX,0x6
+005fcf8d SHR RDX,0xc
+005fcf91 AND EAX,0x3f
+005fcf94 AND EDX,0x3f
+005fcf97 MOVZX EDX,byte ptr [RCX + RDX*0x1]
+005fcf9b MOV byte ptr [RDI + 0x1],DL
+005fcf9e MOVZX EAX,byte ptr [RCX + RAX*0x1]
+005fcfa2 JMP 0x005fcf61

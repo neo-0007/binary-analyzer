@@ -1,0 +1,6 @@
+005bfda0 ENDBR64
+005bfda4 XOR EAX,EAX
+005bfda6 TEST RDI,RDI
+005bfda9 JZ 0x005bfdae
+005bfdab MOV EAX,dword ptr [RDI + 0x10]
+005bfdae RET

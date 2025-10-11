@@ -1,0 +1,57 @@
+
+uint ec_to_type_specific_no_pub_der_encode
+               (undefined8 *param_1,undefined8 param_2,long param_3,long param_4,uint param_5,
+               long param_6,undefined8 param_7)
+
+{
+  int iVar1;
+  BIO *a;
+  char *pcVar2;
+  code *pcVar3;
+  code *pcVar4;
+  uint uVar5;
+  
+  if (param_4 != 0) {
+LAB_0045e16f:
+    ERR_new();
+    ERR_set_debug("../providers/implementations/encode_decode/encode_key2any.c",0x522,
+                  "ec_to_type_specific_no_pub_der_encode");
+    ERR_set_error(0x39,0x80106,0);
+    return 0;
+  }
+  uVar5 = param_5 & 1;
+  if ((param_5 & 1) == 0) {
+    if ((param_5 & 0x84) == 0) goto LAB_0045e16f;
+    if (param_3 == 0) goto LAB_0045e270;
+    a = (BIO *)ossl_bio_new_from_core_bio(*param_1);
+    if (a == (BIO *)0x0) goto LAB_0045e1f4;
+    pcVar4 = i2d_ECParameters;
+    pcVar3 = (code *)0x0;
+    pcVar2 = "EC PARAMETERS";
+  }
+  else {
+    if (param_3 == 0) {
+LAB_0045e270:
+      ERR_new();
+      ERR_set_debug("../providers/implementations/encode_decode/encode_key2any.c",0x416,
+                    "key2any_encode");
+      ERR_set_error(0x39,0xc0102,0);
+      return 0;
+    }
+    a = (BIO *)ossl_bio_new_from_core_bio(*param_1);
+    if ((a == (BIO *)0x0) ||
+       ((param_6 != 0 &&
+        (iVar1 = ossl_pw_set_ossl_passphrase_cb(param_1 + 3,param_6,param_7), iVar1 == 0)))) {
+      uVar5 = 0;
+      goto LAB_0045e1f4;
+    }
+    pcVar4 = i2d_ECPrivateKey;
+    pcVar3 = prepare_ec_params;
+    pcVar2 = "EC PRIVATE KEY";
+  }
+  uVar5 = key_to_type_specific_der_bio(a,param_3,0x198,pcVar2,pcVar3,pcVar4,param_1);
+LAB_0045e1f4:
+  BIO_free(a);
+  return uVar5;
+}
+

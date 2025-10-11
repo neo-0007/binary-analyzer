@@ -1,0 +1,6 @@
+005bfdc0 ENDBR64
+005bfdc4 XOR EAX,EAX
+005bfdc6 TEST RDI,RDI
+005bfdc9 JZ 0x005bfdcf
+005bfdcb MOV RAX,qword ptr [RDI + 0x18]
+005bfdcf RET

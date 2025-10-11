@@ -1,0 +1,36 @@
+004aeaa0 ENDBR64
+004aeaa4 SUB RSP,0x38
+004aeaa8 MOV R8,RCX
+004aeaab MOV R9,RDX
+004aeaae MOV qword ptr [RSP + 0x8],RDI
+004aeab3 LEA RCX,[RSP + 0x20]
+004aeab8 MOV RDX,RSP
+004aeabb LEA RDI,[RSP + 0x8]
+004aeac0 MOV qword ptr [RSP],RSI
+004aeac4 SUB RSP,0x8
+004aeac8 XOR ESI,ESI
+004aeaca MOV RAX,qword ptr FS:[0x28]
+004aead3 MOV qword ptr [RSP + 0x30],RAX
+004aead8 XOR EAX,EAX
+004aeada PUSH R8
+004aeadc LEA R8,[RSP + 0x2c]
+004aeae1 CALL 0x004adbd0
+004aeae6 POP RDX
+004aeae7 POP RCX
+004aeae8 TEST EAX,EAX
+004aeaea JZ 0x004aeb20
+004aeaec MOV EAX,dword ptr [RSP + 0x1c]
+004aeaf0 TEST EAX,EAX
+004aeaf2 JNZ 0x004aeb20
+004aeaf4 MOV RAX,qword ptr [RSP + 0x20]
+004aeaf9 MOV EDX,0xffffffff
+004aeafe CMP RAX,0x7fffffff
+004aeb04 CMOVA EAX,EDX
+004aeb07 MOV RDX,qword ptr [RSP + 0x28]
+004aeb0c SUB RDX,qword ptr FS:[0x28]
+004aeb15 JNZ 0x004aeb27
+004aeb17 ADD RSP,0x38
+004aeb1b RET
+004aeb20 MOV EAX,0xffffffff
+004aeb25 JMP 0x004aeb07
+004aeb27 CALL 0x00771f60

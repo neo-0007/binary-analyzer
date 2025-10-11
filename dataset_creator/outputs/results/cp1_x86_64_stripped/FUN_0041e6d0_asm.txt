@@ -1,0 +1,6 @@
+0041e6d0 ENDBR64
+0041e6d4 MOV qword ptr [RDI],0x0
+0041e6db MOV qword ptr [RDI + 0x18],RDX
+0041e6df MOV qword ptr [RDI + 0x10],RSI
+0041e6e3 MOV dword ptr [RDI + 0x8],0x7f
+0041e6ea RET

@@ -1,0 +1,3 @@
+0040fb90 ENDBR64
+0040fb94 MOV qword ptr [RDI + 0x30],RSI
+0040fb98 RET

@@ -1,0 +1,5 @@
+004ccfc0 ENDBR64
+004ccfc4 MOV RCX,qword ptr [RCX]
+004ccfc7 XOR R9D,R9D
+004ccfca XOR R8D,R8D
+004ccfcd JMP 0x004ccb50

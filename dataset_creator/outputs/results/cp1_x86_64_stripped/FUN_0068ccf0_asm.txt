@@ -1,0 +1,9 @@
+0068ccf0 ENDBR64
+0068ccf4 MOV RAX,RSI
+0068ccf7 MOV RSI,RDX
+0068ccfa MOV RDX,qword ptr [RAX]
+0068ccfd MOV RAX,qword ptr [RAX + 0x8]
+0068cd01 MOV qword ptr [RDI],RDX
+0068cd04 ADD RDI,qword ptr [RDX + -0x18]
+0068cd08 MOV qword ptr [RDI],RAX
+0068cd0b JMP 0x0066f450

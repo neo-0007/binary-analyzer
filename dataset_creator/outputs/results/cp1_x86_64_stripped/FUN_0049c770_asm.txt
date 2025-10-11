@@ -1,0 +1,9 @@
+0049c770 LEA R10,[0x49c7e0]
+0049c777 MOVDQA XMM10,xmmword ptr [R10 + -0x20]
+0049c77d MOVDQA XMM11,xmmword ptr [R10 + -0x10]
+0049c783 MOVDQA XMM9,xmmword ptr [R10]
+0049c788 MOVDQA XMM13,xmmword ptr [R10 + 0x30]
+0049c78e MOVDQA XMM12,xmmword ptr [R10 + 0x40]
+0049c794 MOVDQA XMM15,xmmword ptr [R10 + 0x50]
+0049c79a MOVDQA XMM14,xmmword ptr [R10 + 0x60]
+0049c7a0 RET

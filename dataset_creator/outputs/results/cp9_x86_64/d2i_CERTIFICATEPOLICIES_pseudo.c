@@ -1,0 +1,12 @@
+
+CERTIFICATEPOLICIES * d2i_CERTIFICATEPOLICIES(CERTIFICATEPOLICIES **a,uchar **in,long len)
+
+{
+  ASN1_ITEM *it;
+  ASN1_VALUE *pAVar1;
+  
+  it = (ASN1_ITEM *)CERTIFICATEPOLICIES_it();
+  pAVar1 = ASN1_item_d2i((ASN1_VALUE **)a,in,len,it);
+  return (CERTIFICATEPOLICIES *)pAVar1;
+}
+

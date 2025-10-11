@@ -1,0 +1,23 @@
+0062dde0 MOV EAX,dword ptr [RSI]
+0062dde2 TEST AL,0x4
+0062dde4 JNZ 0x0062ddf0
+0062dde6 RET
+0062ddf0 MOV RDX,qword ptr [RDI]
+0062ddf3 MOV RCX,qword ptr [RDI + 0x8]
+0062ddf7 SUB RCX,RDX
+0062ddfa CMP RCX,0x1
+0062ddfe JBE 0x0062dde6
+0062de00 CMP word ptr [RDX],-0x2
+0062de04 JZ 0x0062de20
+0062de06 CMP word ptr [RDX],0xfeff
+0062de0b JNZ 0x0062dde6
+0062de0d ADD RDX,0x2
+0062de11 OR EAX,0x1
+0062de14 MOV qword ptr [RDI],RDX
+0062de17 MOV dword ptr [RSI],EAX
+0062de19 RET
+0062de20 ADD RDX,0x2
+0062de24 AND EAX,0xfffffffe
+0062de27 MOV qword ptr [RDI],RDX
+0062de2a MOV dword ptr [RSI],EAX
+0062de2c RET

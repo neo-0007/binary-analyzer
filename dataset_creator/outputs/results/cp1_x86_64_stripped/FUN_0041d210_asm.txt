@@ -1,0 +1,8 @@
+0041d210 ENDBR64
+0041d214 MOV qword ptr [RDI],RSI
+0041d217 MOV RAX,RDI
+0041d21a MOV dword ptr [RDI + 0x8],0x1
+0041d221 MOV qword ptr [RDI + 0x10],RDX
+0041d225 MOV qword ptr [RDI + 0x18],0x4
+0041d22d MOV qword ptr [RDI + 0x20],-0x1
+0041d235 RET

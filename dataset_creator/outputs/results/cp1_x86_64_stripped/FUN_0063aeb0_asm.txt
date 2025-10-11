@@ -1,0 +1,3 @@
+0063aeb0 ENDBR64
+0063aeb4 MOV dword ptr [RDI + 0x10],0xffffffff
+0063aebb RET

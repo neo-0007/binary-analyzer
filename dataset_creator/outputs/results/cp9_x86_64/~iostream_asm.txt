@@ -1,0 +1,20 @@
+0066da10 ENDBR64
+0066da14 MOV RAX,qword ptr [RSI]
+0066da17 MOV qword ptr [RDI],RAX
+0066da1a MOV RAX,qword ptr [RAX + -0x18]
+0066da1e MOV RDX,qword ptr [RSI + 0x28]
+0066da22 MOV qword ptr [RDI + RAX*0x1],RDX
+0066da26 MOV RAX,qword ptr [RSI + 0x30]
+0066da2a MOV qword ptr [RDI + 0x10],RAX
+0066da2e MOV RAX,qword ptr [RSI + 0x18]
+0066da32 MOV qword ptr [RDI + 0x10],RAX
+0066da36 MOV RAX,qword ptr [RAX + -0x18]
+0066da3a MOV RDX,qword ptr [RSI + 0x20]
+0066da3e MOV qword ptr [RDI + RAX*0x1 + 0x10],RDX
+0066da43 MOV RAX,qword ptr [RSI + 0x8]
+0066da47 MOV qword ptr [RDI],RAX
+0066da4a MOV RAX,qword ptr [RAX + -0x18]
+0066da4e MOV RDX,qword ptr [RSI + 0x10]
+0066da52 MOV qword ptr [RDI + RAX*0x1],RDX
+0066da56 MOV qword ptr [RDI + 0x8],0x0
+0066da5e RET

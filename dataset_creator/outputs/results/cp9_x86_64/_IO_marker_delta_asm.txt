@@ -1,0 +1,17 @@
+006fe5a0 ENDBR64
+006fe5a4 MOV RAX,qword ptr [RDI + 0x8]
+006fe5a8 TEST RAX,RAX
+006fe5ab JZ 0x006fe5d1
+006fe5ad MOV RDX,qword ptr [RAX + 0x8]
+006fe5b1 TEST dword ptr [RAX],0x100
+006fe5b7 JNZ 0x006fe5c8
+006fe5b9 SUB EDX,dword ptr [RAX + 0x18]
+006fe5bc MOV EAX,dword ptr [RDI + 0x10]
+006fe5bf SUB EAX,EDX
+006fe5c1 RET
+006fe5c8 SUB EDX,dword ptr [RAX + 0x10]
+006fe5cb MOV EAX,dword ptr [RDI + 0x10]
+006fe5ce SUB EAX,EDX
+006fe5d0 RET
+006fe5d1 MOV EAX,0xffffffff
+006fe5d6 RET

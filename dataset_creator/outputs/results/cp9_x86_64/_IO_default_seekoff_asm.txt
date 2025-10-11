@@ -1,0 +1,3 @@
+006fdbd0 ENDBR64
+006fdbd4 MOV RAX,-0x1
+006fdbdb RET

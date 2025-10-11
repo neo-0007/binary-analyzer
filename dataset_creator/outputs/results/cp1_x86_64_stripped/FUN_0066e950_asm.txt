@@ -1,0 +1,47 @@
+0066e950 ENDBR64
+0066e954 PUSH RBP
+0066e955 MOV RBP,RSI
+0066e958 PUSH RBX
+0066e959 MOV RBX,RDI
+0066e95c LEA RDI,[RDI + 0x18]
+0066e960 SUB RSP,0x8
+0066e964 MOV RAX,qword ptr [RSI]
+0066e967 MOV qword ptr [RDI + -0x18],RAX
+0066e96b MOV RAX,qword ptr [RAX + -0x18]
+0066e96f MOV RDX,qword ptr [RSI + 0x40]
+0066e973 MOV qword ptr [RDI + RAX*0x1 + -0x18],RDX
+0066e978 MOV RAX,qword ptr [RSI + 0x48]
+0066e97c MOV qword ptr [RDI + -0x8],RAX
+0066e980 MOV RAX,0x936cb8
+0066e987 ADD RAX,0x10
+0066e98b MOV qword ptr [RDI],RAX
+0066e98e CALL 0x0066beb0
+0066e993 LEA RDI,[RBX + 0x80]
+0066e99a CALL 0x006c3f10
+0066e99f MOV RAX,0x938918
+0066e9a6 LEA RDI,[RBX + 0x50]
+0066e9aa ADD RAX,0x10
+0066e9ae MOV qword ptr [RBX + 0x18],RAX
+0066e9b2 CALL 0x00625980
+0066e9b7 MOV RAX,qword ptr [RBP + 0x8]
+0066e9bb MOV qword ptr [RBX],RAX
+0066e9be MOV RAX,qword ptr [RAX + -0x18]
+0066e9c2 MOV RDX,qword ptr [RBP + 0x30]
+0066e9c6 MOV qword ptr [RBX + RAX*0x1],RDX
+0066e9ca MOV RAX,qword ptr [RBP + 0x38]
+0066e9ce MOV qword ptr [RBX + 0x10],RAX
+0066e9d2 MOV RAX,qword ptr [RBP + 0x20]
+0066e9d6 MOV qword ptr [RBX + 0x10],RAX
+0066e9da MOV RAX,qword ptr [RAX + -0x18]
+0066e9de MOV RDX,qword ptr [RBP + 0x28]
+0066e9e2 MOV qword ptr [RBX + RAX*0x1 + 0x10],RDX
+0066e9e7 MOV RAX,qword ptr [RBP + 0x10]
+0066e9eb MOV qword ptr [RBX],RAX
+0066e9ee MOV RAX,qword ptr [RAX + -0x18]
+0066e9f2 MOV RDX,qword ptr [RBP + 0x18]
+0066e9f6 MOV qword ptr [RBX + RAX*0x1],RDX
+0066e9fa MOV qword ptr [RBX + 0x8],0x0
+0066ea02 ADD RSP,0x8
+0066ea06 POP RBX
+0066ea07 POP RBP
+0066ea08 RET

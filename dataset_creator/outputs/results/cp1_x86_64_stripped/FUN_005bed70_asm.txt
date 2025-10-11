@@ -1,0 +1,84 @@
+005bed70 ENDBR64
+005bed74 PUSH R15
+005bed76 PUSH R14
+005bed78 MOV R14,RSI
+005bed7b PUSH R13
+005bed7d PUSH R12
+005bed7f PUSH RBP
+005bed80 PUSH RBX
+005bed81 SUB RSP,0x48
+005bed85 MOV ESI,dword ptr [R8]
+005bed88 MOV EBX,dword ptr [R9]
+005bed8b MOV qword ptr [RSP + 0x18],R9
+005bed90 BSWAP ESI
+005bed92 MOV RAX,qword ptr FS:[0x28]
+005bed9b MOV qword ptr [RSP + 0x38],RAX
+005beda0 XOR EAX,EAX
+005beda2 MOV EAX,dword ptr [R8 + 0x4]
+005beda6 MOV dword ptr [RSP + 0x28],ESI
+005bedaa BSWAP ESI
+005bedac MOV dword ptr [RSP + 0x30],ESI
+005bedb0 BSWAP EAX
+005bedb2 MOV dword ptr [RSP + 0x2c],EAX
+005bedb6 BSWAP EAX
+005bedb8 MOV dword ptr [RSP + 0x34],EAX
+005bedbc TEST RDX,RDX
+005bedbf JZ 0x005bee62
+005bedc5 LEA RAX,[RSP + 0x28]
+005bedca MOV R15,RDI
+005bedcd MOV R12,R8
+005bedd0 MOV RBP,RDI
+005bedd3 MOV qword ptr [RSP + 0x10],RAX
+005bedd8 XOR R13D,R13D
+005beddb JMP 0x005bee08
+005bede0 MOVSXD RSI,EBX
+005bede3 ADD R14,0x1
+005bede7 MOVZX EAX,byte ptr [RBP]
+005bedeb ADD RBP,0x1
+005bedef XOR AL,byte ptr [RSP + RSI*0x1 + 0x30]
+005bedf3 ADD EBX,0x1
+005bedf6 MOV byte ptr [R14 + -0x1],AL
+005bedfa MOV RAX,R15
+005bedfd AND EBX,0x7
+005bee00 SUB RAX,RBP
+005bee03 ADD RAX,RDX
+005bee06 JZ 0x005bee48
+005bee08 TEST EBX,EBX
+005bee0a JNZ 0x005bede0
+005bee0c MOV RDI,qword ptr [RSP + 0x10]
+005bee11 MOV RSI,RCX
+005bee14 MOV qword ptr [RSP],RCX
+005bee18 ADD R13D,0x1
+005bee1c MOV qword ptr [RSP + 0x8],RDX
+005bee21 CALL 0x005be050
+005bee26 MOV EAX,dword ptr [RSP + 0x28]
+005bee2a MOV RDX,qword ptr [RSP + 0x8]
+005bee2f MOV RCX,qword ptr [RSP]
+005bee33 BSWAP EAX
+005bee35 MOV dword ptr [RSP + 0x30],EAX
+005bee39 MOV EAX,dword ptr [RSP + 0x2c]
+005bee3d BSWAP EAX
+005bee3f MOV dword ptr [RSP + 0x34],EAX
+005bee43 JMP 0x005bede0
+005bee48 TEST R13D,R13D
+005bee4b JZ 0x005bee62
+005bee4d MOV EDX,dword ptr [RSP + 0x28]
+005bee51 MOV EAX,dword ptr [RSP + 0x2c]
+005bee55 BSWAP EDX
+005bee57 BSWAP EAX
+005bee59 MOV dword ptr [R12],EDX
+005bee5d MOV dword ptr [R12 + 0x4],EAX
+005bee62 MOV RAX,qword ptr [RSP + 0x18]
+005bee67 MOV dword ptr [RAX],EBX
+005bee69 MOV RAX,qword ptr [RSP + 0x38]
+005bee6e SUB RAX,qword ptr FS:[0x28]
+005bee77 JNZ 0x005bee88
+005bee79 ADD RSP,0x48
+005bee7d POP RBX
+005bee7e POP RBP
+005bee7f POP R12
+005bee81 POP R13
+005bee83 POP R14
+005bee85 POP R15
+005bee87 RET
+005bee88 CALL 0x00771f60

@@ -1,0 +1,5 @@
+005cbe70 ENDBR64
+005cbe74 LEA RDX,[0x5cbad0]
+005cbe7b LEA RSI,[0x5cbaf0]
+005cbe82 LEA RDI,[0x7e9ed3]
+005cbe89 JMP 0x004cdaf0

@@ -1,0 +1,13 @@
+
+void FUN_0078a8f0(void)
+
+{
+  DAT_0094ae40 = &DAT_0094ae40;
+  puRam000000000094ae48 = &DAT_0094ae40;
+  DAT_0094ae30 = &DAT_0094ae30;
+  puRam000000000094ae38 = &DAT_0094ae30;
+  DAT_0094ae20 = &DAT_0094ae20;
+  DAT_0094ae28 = &DAT_0094ae20;
+  return;
+}
+

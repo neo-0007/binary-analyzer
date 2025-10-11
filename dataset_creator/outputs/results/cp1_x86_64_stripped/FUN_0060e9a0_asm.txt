@@ -1,0 +1,26 @@
+0060e9a0 ENDBR64
+0060e9a4 TEST RSI,RSI
+0060e9a7 JZ 0x0060e9ad
+0060e9a9 MOV EAX,dword ptr [RDI]
+0060e9ab MOV dword ptr [RSI],EAX
+0060e9ad CMP dword ptr [RDI],0x8
+0060e9b0 JA 0x004021ac
+0060e9b6 MOV EAX,dword ptr [RDI]
+0060e9b8 LEA RDX,[0x81b72c]
+0060e9bf MOVSXD RAX,dword ptr [RDX + RAX*0x4]
+0060e9c3 ADD RAX,RDX
+0060e9c6 JMP RAX
+0060e9d0 MOV RAX,qword ptr [RDI + 0x8]
+0060e9d4 RET
+0060e9d8 MOV RAX,qword ptr [RDI + 0x8]
+0060e9dc RET
+0060e9e0 MOV RAX,qword ptr [RDI + 0x8]
+0060e9e4 RET
+0060e9e8 MOV RAX,qword ptr [RDI + 0x8]
+0060e9ec RET
+0060e9f0 MOV RAX,qword ptr [RDI + 0x8]
+0060e9f4 RET
+0060e9f8 MOV RAX,qword ptr [RDI + 0x8]
+0060e9fc RET
+0060ea00 MOV RAX,qword ptr [RDI + 0x8]
+0060ea04 RET

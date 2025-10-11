@@ -1,0 +1,5 @@
+0078d2b9 NOP dword ptr [RAX]
+0078d2c0 ENDBR64
+0078d2c4 MOV RAX,qword ptr [RAX + 0x8]
+0078d2c8 SUB RAX,qword ptr FS:[0x0]
+0078d2d1 RET

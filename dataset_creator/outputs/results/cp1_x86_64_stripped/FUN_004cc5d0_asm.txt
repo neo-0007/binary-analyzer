@@ -1,0 +1,4 @@
+004cc5d0 ENDBR64
+004cc5d4 MOV RSI,qword ptr [RSI]
+004cc5d7 MOV RDI,qword ptr [RDI]
+004cc5da JMP 0x004011f0

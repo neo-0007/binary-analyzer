@@ -1,0 +1,8 @@
+Operand Value Range Feature
+File: AES_GCM_decrypt_3.asm
+-------------------------------
+Byte operands   : 7%
+Word operands   : 0%
+DWord operands  : 0%
+QWord operands  : 27%
+Other operands  : 64%

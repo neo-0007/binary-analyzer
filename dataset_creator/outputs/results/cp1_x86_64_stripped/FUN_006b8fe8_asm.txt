@@ -1,0 +1,6 @@
+006b8fe8 TEST RDI,RDI
+006b8feb JNZ 0x006b8fd8
+006b8fed XOR EAX,EAX
+006b8fef RET
+006b8ff0 MOV RAX,qword ptr [RDI + 0x10]
+006b8ff4 RET

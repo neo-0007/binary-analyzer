@@ -1,0 +1,101 @@
+
+void FUN_004e0030(undefined2 *param_1,int *param_2)
+
+{
+  uint uVar1;
+  int iVar2;
+  int iVar3;
+  int iVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  int iVar9;
+  int iVar10;
+  uint uVar11;
+  uint uVar12;
+  uint uVar13;
+  uint uVar14;
+  uint uVar15;
+  uint uVar16;
+  uint uVar17;
+  uint uVar18;
+  uint uVar19;
+  uint uVar20;
+  uint uVar21;
+  uint uVar22;
+  uint uVar23;
+  uint uVar24;
+  uint uVar25;
+  uint uVar26;
+  char local_44;
+  char local_3c;
+  char local_34;
+  
+  iVar2 = param_2[9];
+  iVar3 = param_2[1];
+  iVar4 = param_2[2];
+  iVar5 = param_2[3];
+  iVar6 = param_2[4];
+  iVar7 = param_2[5];
+  iVar8 = param_2[6];
+  iVar9 = param_2[7];
+  iVar10 = param_2[8];
+  uVar11 = (((((((((((iVar2 * 0x13 + 0x1000000 >> 0x19) + *param_2 >> 0x1a) + iVar3 >> 0x19) + iVar4
+                  >> 0x1a) + iVar5 >> 0x19) + iVar6 >> 0x1a) + iVar7 >> 0x19) + iVar8 >> 0x1a) +
+              iVar9 >> 0x19) + iVar10 >> 0x1a) + iVar2 >> 0x19) * 0x13 + *param_2;
+  uVar12 = uVar11 & 0x3ffffff;
+  *param_1 = (short)uVar12;
+  uVar22 = ((int)uVar11 >> 0x1a) + iVar3;
+  uVar21 = ((int)uVar22 >> 0x19) + iVar4;
+  uVar25 = uVar22 & 0x1ffffff;
+  uVar11 = ((int)uVar21 >> 0x1a) + iVar5;
+  uVar13 = uVar21 & 0x3ffffff;
+  uVar1 = ((int)uVar11 >> 0x19) + iVar6;
+  uVar14 = uVar11 & 0x1ffffff;
+  uVar26 = uVar1 & 0x3ffffff;
+  uVar15 = ((int)uVar1 >> 0x1a) + iVar7;
+  uVar16 = uVar15 & 0x1ffffff;
+  uVar20 = ((int)uVar15 >> 0x19) + iVar8;
+  uVar24 = uVar20 & 0x3ffffff;
+  uVar19 = ((int)uVar20 >> 0x1a) + iVar9;
+  uVar23 = uVar19 & 0x1ffffff;
+  uVar18 = ((int)uVar19 >> 0x19) + iVar10;
+  uVar17 = uVar18 & 0x3ffffff;
+  uVar15 = iVar2 + ((int)uVar18 >> 0x1a);
+  *(byte *)((long)param_1 + 3) = (char)uVar22 * '\x04' | (byte)(uVar12 >> 0x18);
+  uVar22 = uVar15 & 0x1ffffff;
+  *(char *)(param_1 + 2) = (char)((int)uVar25 >> 6);
+  *(char *)(param_1 + 1) = (char)(uVar12 >> 0x10);
+  *(char *)((long)param_1 + 5) = (char)((int)uVar25 >> 0xe);
+  *(byte *)(param_1 + 3) = (char)uVar21 * '\b' | (byte)((int)uVar25 >> 0x16);
+  *(char *)((long)param_1 + 7) = (char)((int)uVar13 >> 5);
+  *(char *)(param_1 + 4) = (char)((int)uVar13 >> 0xd);
+  local_44 = (char)uVar11;
+  *(byte *)((long)param_1 + 9) = local_44 << 5 | (byte)((int)uVar13 >> 0x15);
+  param_1[8] = (short)uVar16;
+  local_34 = (char)uVar15;
+  *(char *)(param_1 + 5) = (char)((int)uVar14 >> 3);
+  *(char *)((long)param_1 + 0xb) = (char)((int)uVar14 >> 0xb);
+  local_3c = (char)uVar1;
+  *(byte *)(param_1 + 6) = local_3c << 6 | (byte)((int)uVar14 >> 0x13);
+  *(char *)((long)param_1 + 0xd) = (char)((int)uVar26 >> 2);
+  *(char *)(param_1 + 7) = (char)((int)uVar26 >> 10);
+  *(char *)((long)param_1 + 0xf) = (char)((int)uVar26 >> 0x12);
+  *(char *)(param_1 + 9) = (char)(uVar16 >> 0x10);
+  *(char *)(param_1 + 10) = (char)((int)uVar24 >> 7);
+  *(byte *)((long)param_1 + 0x13) = (char)uVar20 * '\x02' | (byte)(uVar16 >> 0x18);
+  *(char *)((long)param_1 + 0x15) = (char)((int)uVar24 >> 0xf);
+  *(byte *)(param_1 + 0xb) = (char)uVar19 * '\b' | (byte)((int)uVar24 >> 0x17);
+  *(char *)((long)param_1 + 0x17) = (char)((int)uVar23 >> 5);
+  *(char *)(param_1 + 0xc) = (char)((int)uVar23 >> 0xd);
+  *(byte *)((long)param_1 + 0x19) = (char)uVar18 * '\x10' | (byte)((int)uVar23 >> 0x15);
+  *(char *)(param_1 + 0xd) = (char)((int)uVar17 >> 4);
+  *(char *)((long)param_1 + 0x1b) = (char)((int)uVar17 >> 0xc);
+  *(byte *)(param_1 + 0xe) = local_34 << 6 | (byte)((int)uVar17 >> 0x14);
+  *(char *)((long)param_1 + 0x1d) = (char)((int)uVar22 >> 2);
+  *(char *)((long)param_1 + 0x1f) = (char)((int)uVar22 >> 0x12);
+  *(char *)(param_1 + 0xf) = (char)((int)uVar22 >> 10);
+  return;
+}
+

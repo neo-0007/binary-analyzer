@@ -1,0 +1,8 @@
+007c0050 ENDBR64
+007c0054 MOV qword ptr [0x0094ae08],RDI
+007c005b MOV RDX,qword ptr [RDI]
+007c005e MOV RAX,qword ptr [RDI + 0x8]
+007c0062 MOV qword ptr [RDX + 0x8],RAX
+007c0066 MOV qword ptr [RAX],RDX
+007c0069 MOV qword ptr [0x0094ae08],0x0
+007c0074 RET

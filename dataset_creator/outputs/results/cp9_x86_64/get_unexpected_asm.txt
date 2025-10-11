@@ -1,0 +1,4 @@
+006acde0 ENDBR64
+006acde4 MOV RAX,0x9305a0
+006acdeb MOV RAX,qword ptr [RAX]
+006acdee RET

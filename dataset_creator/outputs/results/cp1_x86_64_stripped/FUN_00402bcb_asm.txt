@@ -1,0 +1,7 @@
+00402bcb MOV qword ptr [RSP],0x0
+00402bd3 MOV qword ptr [RSP + 0x8],0x0
+00402bdc CALL 0x006c2e40
+00402be1 MOV RDI,qword ptr [RBX + 0x10]
+00402be5 TEST RDI,RDI
+00402be8 JZ 0x00402b8a
+00402bea JMP 0x00402b84

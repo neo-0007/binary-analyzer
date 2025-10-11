@@ -1,0 +1,19 @@
+006dfd70 ENDBR64
+006dfd74 SUB dword ptr [RSI + 0x30],0x1
+006dfd78 MOVSXD RDX,EDI
+006dfd7b MOV RDI,RSI
+006dfd7e JNZ 0x006dfdc0
+006dfd80 CMP dword ptr [RSI + 0x18],0x2
+006dfd84 JZ 0x006dfdb9
+006dfd86 LEA RAX,[0x946160]
+006dfd8d MOV RAX,qword ptr [RAX + RDX*0x8]
+006dfd91 CMP RSI,qword ptr [RAX + 0x10]
+006dfd95 JZ 0x006dfdaa
+006dfd97 NOP word ptr [RAX + RAX*0x1]
+006dfda0 MOV RAX,qword ptr [RAX + 0x18]
+006dfda4 CMP qword ptr [RAX + 0x10],RDI
+006dfda8 JNZ 0x006dfda0
+006dfdaa MOV dword ptr [RAX + 0x8],0x0
+006dfdb1 MOV qword ptr [RAX + 0x10],0x0
+006dfdb9 JMP 0x006e03d0
+006dfdc0 RET

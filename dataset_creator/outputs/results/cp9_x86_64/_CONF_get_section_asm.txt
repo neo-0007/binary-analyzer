@@ -1,0 +1,24 @@
+005bdda0 ENDBR64
+005bdda4 SUB RSP,0x28
+005bdda8 MOV RAX,qword ptr FS:[0x28]
+005bddb1 MOV qword ptr [RSP + 0x18],RAX
+005bddb6 XOR EAX,EAX
+005bddb8 TEST RDI,RDI
+005bddbb JZ 0x005bddf8
+005bddbd TEST RSI,RSI
+005bddc0 JZ 0x005bddf8
+005bddc2 MOV RDI,qword ptr [RDI + 0x10]
+005bddc6 MOV qword ptr [RSP],RSI
+005bddca MOV qword ptr [RSP + 0x8],0x0
+005bddd3 TEST RDI,RDI
+005bddd6 JZ 0x005bddf8
+005bddd8 MOV RSI,RSP
+005bdddb CALL 0x00537fd0
+005bdde0 MOV RDX,qword ptr [RSP + 0x18]
+005bdde5 SUB RDX,qword ptr FS:[0x28]
+005bddee JNZ 0x005bddfc
+005bddf0 ADD RSP,0x28
+005bddf4 RET
+005bddf8 XOR EAX,EAX
+005bddfa JMP 0x005bdde0
+005bddfc CALL 0x00768630

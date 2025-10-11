@@ -1,0 +1,11 @@
+file,n_lines,loops,conditionals,xor_ops,add_ops,mul_ops,entropy,sbox_ops
+aes_encrypt_cbc_pseudo.c,46,1,2,0,5,13,4.784033261147178,0
+aes_decrypt_ccm_pseudo.c,71,0,5,0,5,23,4.767807004805645,0
+aes_encrypt_pseudo.c,133,0,3,0,18,10,5.017400854207511,0
+aes_encrypt_ccm_pseudo.c,68,0,5,0,8,13,4.742866720017312,0
+aes_decrypt_ctr_pseudo.c,9,0,0,0,0,0,4.365966494787086,0
+aes_encrypt_cbc_mac_pseudo.c,45,1,2,0,4,13,4.78402098631182,0
+aes_decrypt_pseudo.c,129,0,3,0,18,10,5.090313863392203,0
+aes_encrypt_ctr_pseudo.c,35,1,3,0,5,10,4.881581946838995,0
+aes_decrypt_cbc_pseudo.c,46,1,2,0,5,13,4.784552635136245,0
+aes_key_setup_pseudo.c,71,2,7,2,17,27,4.730330291342948,0

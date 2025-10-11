@@ -1,0 +1,5 @@
+006ab710 ENDBR64
+006ab714 MOV RAX,qword ptr [RSI]
+006ab717 CMP qword ptr [RDI],RAX
+006ab71a SETZ AL
+006ab71d RET

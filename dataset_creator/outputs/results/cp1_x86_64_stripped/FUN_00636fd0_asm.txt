@@ -1,0 +1,6 @@
+00636fd0 ENDBR64
+00636fd4 MOV RDX,qword ptr [RSI]
+00636fd7 MOV RAX,RDI
+00636fda ADD RDX,qword ptr [RDX + -0x18]
+00636fde MOV qword ptr [RDI],RDX
+00636fe1 RET

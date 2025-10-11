@@ -1,0 +1,6 @@
+0059a270 ENDBR64
+0059a274 MOV RAX,qword ptr [RDI]
+0059a277 MOV RDX,qword ptr [RSI]
+0059a27a MOV EAX,dword ptr [RAX]
+0059a27c SUB EAX,dword ptr [RDX]
+0059a27e RET

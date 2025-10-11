@@ -1,0 +1,3 @@
+0056b090 ENDBR64
+0056b094 MOV RAX,qword ptr [RCX + 0x18]
+0056b098 JMP qword ptr [RAX + 0x20]

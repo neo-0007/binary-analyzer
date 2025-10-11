@@ -1,0 +1,13 @@
+004a17a0 ENDBR64
+004a17a4 MOV R9,qword ptr [RDI + 0x8]
+004a17a8 MOV R8,qword ptr [RDI + 0x10]
+004a17ac MOV RAX,RDI
+004a17af MOV ECX,0x28
+004a17b4 MOV RDX,qword ptr [RDI + 0x18]
+004a17b8 MOV R10,qword ptr [RDI]
+004a17bb MOVSQ.REP RDI,RSI
+004a17be MOV qword ptr [RAX + 0x8],R9
+004a17c2 MOV qword ptr [RAX],R10
+004a17c5 MOV qword ptr [RAX + 0x10],R8
+004a17c9 MOV qword ptr [RAX + 0x18],RDX
+004a17cd RET

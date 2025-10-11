@@ -1,0 +1,13 @@
+004edac0 ENDBR64
+004edac4 MOV RAX,qword ptr [RDI + 0x18]
+004edac8 PUSH RBX
+004edac9 MOV RBX,RDI
+004edacc MOV RAX,qword ptr [RAX]
+004edacf CALL qword ptr [RAX + 0x148]
+004edad5 CMP EAX,0x1
+004edad8 JZ 0x004edae0
+004edada POP RBX
+004edadb RET
+004edae0 ADD qword ptr [RBX + 0x68],0x1
+004edae5 POP RBX
+004edae6 RET

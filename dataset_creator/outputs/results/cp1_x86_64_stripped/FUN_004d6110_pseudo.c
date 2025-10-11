@@ -1,0 +1,7 @@
+
+uint FUN_004d6110(long param_1,uint param_2)
+
+{
+  return *(uint *)(param_1 + 0x80) & param_2;
+}
+

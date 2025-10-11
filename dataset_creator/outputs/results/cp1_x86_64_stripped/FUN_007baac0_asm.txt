@@ -1,0 +1,89 @@
+007baac0 PUSH R12
+007baac2 PUSH RBX
+007baac3 MOV RBX,RDI
+007baac6 SUB RSP,0x8
+007baaca MOV EAX,dword ptr [RDI]
+007baacc TEST EAX,EAX
+007baace JZ 0x007baada
+007baad0 CMP dword ptr [RDI + 0x4],0x66
+007baad4 JZ 0x007babc8
+007baada MOV R9,qword ptr [RBX + 0x28]
+007baade MOV RDX,qword ptr [RBX + 0x18]
+007baae2 MOV RDI,qword ptr [RBX + 0x10]
+007baae6 TEST R9,R9
+007baae9 JZ 0x007bab98
+007baaef CMP R9,RDX
+007baaf2 JLE 0x007bab30
+007baaf4 MOV R12D,0x30
+007baafa MOV ECX,0xa
+007baaff MOV RSI,RDI
+007bab02 CALL 0x006f35e0
+007bab07 TEST RAX,RAX
+007bab0a JZ 0x007bab20
+007bab0c MOV RDX,qword ptr [RBX + 0x18]
+007bab10 MOV RCX,qword ptr [RBX + 0x10]
+007bab14 LEA RSI,[RDX + 0x1]
+007bab18 MOV qword ptr [RBX + 0x18],RSI
+007bab1c MOV qword ptr [RCX + RDX*0x8],RAX
+007bab20 ADD RSP,0x8
+007bab24 MOV EAX,R12D
+007bab27 POP RBX
+007bab28 POP R12
+007bab2a RET
+007bab30 MOV R10,qword ptr [RBX + 0x30]
+007bab34 MOV R8,qword ptr [RBX + 0x20]
+007bab38 MOV RCX,RDX
+007bab3b XOR ESI,ESI
+007bab3d MOV RDX,RDI
+007bab40 MOV RDI,R10
+007bab43 CALL 0x007c7980
+007bab48 MOV RDX,qword ptr [RBX + 0x30]
+007bab4c MOV R8,RAX
+007bab4f MOV RAX,qword ptr [RBX + 0x18]
+007bab53 SUB RAX,qword ptr [RBX + 0x28]
+007bab57 MOV qword ptr [RDX + RAX*0x8],R8
+007bab5b MOV R12,qword ptr [RDX]
+007bab5e MOV RDX,qword ptr [RBX + 0x28]
+007bab62 MOV qword ptr [RBX + 0x18],RDX
+007bab66 TEST RDX,RDX
+007bab69 JZ 0x007babf0
+007bab6f MOV RDI,qword ptr [RBX + 0x10]
+007bab73 JMP 0x007bab82
+007bab78 SUB RDX,0x1
+007bab7c MOV qword ptr [RBX + 0x18],RDX
+007bab80 JZ 0x007babf0
+007bab82 CMP qword ptr [RDI + RDX*0x8 + -0x8],0x0
+007bab88 JZ 0x007bab78
+007bab8a ADD R12D,0x30
+007bab8e JMP 0x007baafa
+007bab98 LEA RBX,[RDI + RDX*0x8 + -0x8]
+007bab9d MOV ECX,0xa
+007baba2 SUB RDX,0x1
+007baba6 MOV RSI,RDI
+007baba9 MOV R12,qword ptr [RBX]
+007babac CALL 0x006f35e0
+007babb1 MOV qword ptr [RBX],RAX
+007babb4 ADD R12D,0x30
+007babb8 ADD RSP,0x8
+007babbc MOV EAX,R12D
+007babbf POP RBX
+007babc0 POP R12
+007babc2 RET
+007babc8 MOV EAX,dword ptr [RDI + 0x8]
+007babcb MOV R12D,0x30
+007babd1 LEA EDX,[RAX + -0x1]
+007babd4 MOV dword ptr [RDI + 0x8],EDX
+007babd7 TEST EAX,EAX
+007babd9 JLE 0x007baada
+007babdf ADD RSP,0x8
+007babe3 MOV EAX,R12D
+007babe6 POP RBX
+007babe7 POP R12
+007babe9 RET
+007babf0 MOV qword ptr [RBX + 0x18],0x1
+007babf8 ADD R12D,0x30
+007babfc ADD RSP,0x8
+007bac00 MOV EAX,R12D
+007bac03 POP RBX
+007bac04 POP R12
+007bac06 RET

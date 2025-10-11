@@ -1,0 +1,8 @@
+Operand Value Range Feature
+File: AES_EncryptBlock_2.asm
+-------------------------------
+Byte operands   : 7%
+Word operands   : 0%
+DWord operands  : 0%
+QWord operands  : 28%
+Other operands  : 64%

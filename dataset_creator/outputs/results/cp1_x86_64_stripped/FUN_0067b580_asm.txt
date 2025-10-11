@@ -1,0 +1,7 @@
+0067b580 ENDBR64
+0067b584 MOV RAX,qword ptr [RDI + 0x10]
+0067b588 MOV RDX,qword ptr [RAX + 0x10]
+0067b58c MOV qword ptr [RSI],RDX
+0067b58f MOV RAX,qword ptr [RAX + 0x18]
+0067b593 MOV qword ptr [RSI + 0x8],RAX
+0067b597 RET

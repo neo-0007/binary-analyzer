@@ -1,0 +1,3 @@
+0068dbc0 ENDBR64
+0068dbc4 MOVZX EAX,byte ptr [RDI]
+0068dbc7 RET

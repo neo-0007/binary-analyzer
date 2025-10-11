@@ -1,0 +1,8 @@
+0059def0 MOV EDX,dword ptr [RDI + 0xf0]
+0059def6 MOV EAX,dword ptr [RDI]
+0059def8 BSWAP EAX
+0059defa MOV dword ptr [RDI],EAX
+0059defc LEA RDI,[RDI + 0x4]
+0059df00 SUB EDX,0x1
+0059df03 JNZ 0x0059def6
+0059df05 RET

@@ -1,0 +1,57 @@
+00697100 ENDBR64
+00697104 XOR EAX,EAX
+00697106 TEST RSI,RSI
+00697109 MOV qword ptr [RDI + 0x10],0x0
+00697111 SETNZ AL
+00697114 MOV qword ptr [RDI + 0x18],0x0
+0069711c MOV dword ptr [RDI + 0x8],EAX
+0069711f MOV RAX,0x92bad8
+00697126 MOV qword ptr [RDI + 0x20],0x0
+0069712e ADD RAX,0x10
+00697132 MOV qword ptr [RDI + 0x28],0x0
+0069713a MOV qword ptr [RDI],RAX
+0069713d MOV qword ptr [RDI + 0x30],0x0
+00697145 MOV qword ptr [RDI + 0x38],0x0
+0069714d MOV qword ptr [RDI + 0x40],0x0
+00697155 MOV qword ptr [RDI + 0x48],0x0
+0069715d MOV qword ptr [RDI + 0x50],0x0
+00697165 MOV qword ptr [RDI + 0x58],0x0
+0069716d MOV qword ptr [RDI + 0x60],0x0
+00697175 MOV qword ptr [RDI + 0x68],0x0
+0069717d MOV qword ptr [RDI + 0x70],0x0
+00697185 MOV qword ptr [RDI + 0x78],0x0
+0069718d MOV qword ptr [RDI + 0x80],0x0
+00697198 MOV qword ptr [RDI + 0x88],0x0
+006971a3 MOV qword ptr [RDI + 0x90],0x0
+006971ae MOV qword ptr [RDI + 0x98],0x0
+006971b9 MOV qword ptr [RDI + 0xa0],0x0
+006971c4 MOV qword ptr [RDI + 0xa8],0x0
+006971cf MOV qword ptr [RDI + 0xb0],0x0
+006971da MOV qword ptr [RDI + 0xb8],0x0
+006971e5 MOV qword ptr [RDI + 0xc0],0x0
+006971f0 MOV qword ptr [RDI + 0xc8],0x0
+006971fb MOV qword ptr [RDI + 0xd0],0x0
+00697206 MOV qword ptr [RDI + 0xd8],0x0
+00697211 MOV qword ptr [RDI + 0xe0],0x0
+0069721c MOV qword ptr [RDI + 0xe8],0x0
+00697227 MOV qword ptr [RDI + 0xf0],0x0
+00697232 MOV qword ptr [RDI + 0xf8],0x0
+0069723d MOV qword ptr [RDI + 0x100],0x0
+00697248 MOV qword ptr [RDI + 0x108],0x0
+00697253 MOV qword ptr [RDI + 0x110],0x0
+0069725e MOV qword ptr [RDI + 0x118],0x0
+00697269 MOV qword ptr [RDI + 0x120],0x0
+00697274 MOV qword ptr [RDI + 0x128],0x0
+0069727f MOV qword ptr [RDI + 0x130],0x0
+0069728a MOV qword ptr [RDI + 0x138],0x0
+00697295 MOV qword ptr [RDI + 0x140],0x0
+006972a0 MOV qword ptr [RDI + 0x148],0x0
+006972ab MOV qword ptr [RDI + 0x150],0x0
+006972b6 MOV qword ptr [RDI + 0x158],0x0
+006972c1 MOV qword ptr [RDI + 0x160],0x0
+006972cc MOV qword ptr [RDI + 0x168],0x0
+006972d7 MOV qword ptr [RDI + 0x170],0x0
+006972e2 MOV qword ptr [RDI + 0x178],0x0
+006972ed MOV qword ptr [RDI + 0x180],0x0
+006972f8 MOV byte ptr [RDI + 0x188],0x0
+006972ff RET

@@ -1,0 +1,68 @@
+004bcb60 ENDBR64
+004bcb64 TEST RSI,RSI
+004bcb67 JNZ 0x004bcb70
+004bcb69 MOV EAX,0x1
+004bcb6e RET
+004bcb70 PUSH R12
+004bcb72 MOV R12,RDI
+004bcb75 PUSH RBP
+004bcb76 MOV RBP,RSI
+004bcb79 SUB RSP,0x18
+004bcb7d CALL 0x004b7ba0
+004bcb82 TEST EAX,EAX
+004bcb84 JNZ 0x004bcc10
+004bcb8a MOV ESI,dword ptr [R12 + 0x10]
+004bcb8f TEST ESI,ESI
+004bcb91 JNZ 0x004bcc40
+004bcb97 MOV RCX,qword ptr [R12]
+004bcb9b MOV EAX,dword ptr [R12 + 0x8]
+004bcba0 MOV RDX,qword ptr [RCX]
+004bcba3 CMP EAX,0x1
+004bcba6 JZ 0x004bcbf0
+004bcba8 CMP RBP,RDX
+004bcbab JBE 0x004bcbcb
+004bcbad NOP dword ptr [RAX]
+004bcbb0 SUB RDX,RBP
+004bcbb3 ADD RCX,0x8
+004bcbb7 ADD ESI,0x1
+004bcbba MOV EBP,0x1
+004bcbbf MOV qword ptr [RCX + -0x8],RDX
+004bcbc3 MOV RDX,qword ptr [RCX]
+004bcbc6 TEST RDX,RDX
+004bcbc9 JZ 0x004bcbb0
+004bcbcb SUB RDX,RBP
+004bcbce MOV qword ptr [RCX],RDX
+004bcbd1 JZ 0x004bcbe0
+004bcbd3 MOV EAX,0x1
+004bcbd8 ADD RSP,0x18
+004bcbdc POP RBP
+004bcbdd POP R12
+004bcbdf RET
+004bcbe0 SUB EAX,0x1
+004bcbe3 CMP EAX,ESI
+004bcbe5 JNZ 0x004bcbd3
+004bcbe7 MOV dword ptr [R12 + 0x8],ESI
+004bcbec JMP 0x004bcbd3
+004bcbf0 CMP RBP,RDX
+004bcbf3 JBE 0x004bcbcb
+004bcbf5 SUB RBP,RDX
+004bcbf8 MOV qword ptr [RCX],RBP
+004bcbfb MOV dword ptr [R12 + 0x10],0x1
+004bcc04 JMP 0x004bcbd8
+004bcc10 MOV RSI,RBP
+004bcc13 MOV RDI,R12
+004bcc16 CALL 0x004b8190
+004bcc1b TEST EAX,EAX
+004bcc1d JZ 0x004bcbd8
+004bcc1f MOV ESI,0x1
+004bcc24 MOV RDI,R12
+004bcc27 MOV dword ptr [RSP + 0xc],EAX
+004bcc2b CALL 0x004b7c90
+004bcc30 MOV EAX,dword ptr [RSP + 0xc]
+004bcc34 JMP 0x004bcbd8
+004bcc40 MOV dword ptr [R12 + 0x10],0x0
+004bcc49 MOV RSI,RBP
+004bcc4c MOV RDI,R12
+004bcc4f CALL 0x004bcc70
+004bcc54 MOV dword ptr [R12 + 0x10],0x1
+004bcc5d JMP 0x004bcbd8

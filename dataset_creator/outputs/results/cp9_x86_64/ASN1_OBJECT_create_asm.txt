@@ -1,0 +1,19 @@
+0049e4a0 ENDBR64
+0049e4a4 SUB RSP,0x38
+0049e4a8 MOV RAX,qword ptr FS:[0x28]
+0049e4b1 MOV qword ptr [RSP + 0x28],RAX
+0049e4b6 XOR EAX,EAX
+0049e4b8 MOV dword ptr [RSP + 0x10],EDI
+0049e4bc MOV RDI,RSP
+0049e4bf MOV dword ptr [RSP + 0x14],EDX
+0049e4c3 MOV qword ptr [RSP],RCX
+0049e4c7 MOV qword ptr [RSP + 0x8],R8
+0049e4cc MOV qword ptr [RSP + 0x18],RSI
+0049e4d1 MOV dword ptr [RSP + 0x20],0xd
+0049e4d9 CALL 0x0042b020
+0049e4de MOV RDX,qword ptr [RSP + 0x28]
+0049e4e3 SUB RDX,qword ptr FS:[0x28]
+0049e4ec JNZ 0x0049e4f3
+0049e4ee ADD RSP,0x38
+0049e4f2 RET
+0049e4f3 CALL 0x00768630

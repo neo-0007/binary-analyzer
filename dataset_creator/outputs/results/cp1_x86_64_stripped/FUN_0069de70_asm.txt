@@ -1,0 +1,5 @@
+0069de70 ENDBR64
+0069de74 MOV RAX,qword ptr [RDI]
+0069de77 MOV qword ptr [RDI + 0x8],RSI
+0069de7b MOV byte ptr [RAX + RSI*0x1],0x0
+0069de7f RET

@@ -1,0 +1,35 @@
+006bae30 MOV RDX,qword ptr [RDI + 0x18]
+006bae34 MOVZX EAX,byte ptr [RDX]
+006bae37 CMP AL,0x4c
+006bae39 JZ 0x006baea0
+006bae3b JG 0x006bae50
+006bae3d SUB EAX,0x49
+006bae40 CMP AL,0x1
+006bae42 JA 0x006bae98
+006bae44 ADD RDX,0x1
+006bae48 MOV qword ptr [RDI + 0x18],RDX
+006bae4c JMP 0x006baeb0
+006bae50 CMP AL,0x58
+006bae52 JNZ 0x006bae98
+006bae54 PUSH RBX
+006bae55 ADD RDX,0x1
+006bae59 SUB RSP,0x10
+006bae5d MOV qword ptr [RDI + 0x18],RDX
+006bae61 MOV EBX,dword ptr [RDI + 0x4c]
+006bae64 MOV dword ptr [RDI + 0x4c],0x1
+006bae6b MOV qword ptr [RSP + 0x8],RDI
+006bae70 CALL 0x006bb140
+006bae75 MOV RDI,qword ptr [RSP + 0x8]
+006bae7a MOV RDX,qword ptr [RDI + 0x18]
+006bae7e MOV dword ptr [RDI + 0x4c],EBX
+006bae81 CMP byte ptr [RDX],0x45
+006bae84 JNZ 0x006baea8
+006bae86 ADD RDX,0x1
+006bae8a MOV qword ptr [RDI + 0x18],RDX
+006bae8e ADD RSP,0x10
+006bae92 POP RBX
+006bae93 RET
+006bae98 JMP 0x006b9850
+006baea0 JMP 0x006bac40
+006baea8 XOR EAX,EAX
+006baeaa JMP 0x006bae8e

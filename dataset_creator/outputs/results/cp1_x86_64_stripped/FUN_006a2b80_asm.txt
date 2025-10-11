@@ -1,0 +1,9 @@
+006a2b80 ENDBR64
+006a2b84 MOV RAX,qword ptr [RDI]
+006a2b87 MOV RAX,qword ptr [RAX + 0x18]
+006a2b8b CMP RAX,0x6a10e0
+006a2b92 JNZ 0x006a2ba0
+006a2b94 MOV RAX,qword ptr [RDI + 0x10]
+006a2b98 MOV EAX,dword ptr [RAX + 0x28]
+006a2b9b RET
+006a2ba0 JMP RAX

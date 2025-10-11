@@ -1,0 +1,4 @@
+0059fd10 ENDBR64
+0059fd14 MOV dword ptr [RDI + 0xf0],0x0
+0059fd1e MOV EAX,0x1
+0059fd23 RET

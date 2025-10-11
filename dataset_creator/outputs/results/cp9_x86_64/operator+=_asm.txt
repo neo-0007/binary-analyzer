@@ -1,0 +1,9 @@
+006aa3c0 ENDBR64
+006aa3c4 MOV RAX,0xfffffffffffffff
+006aa3ce SUB RAX,qword ptr [RDI + 0x8]
+006aa3d2 CMP RDX,RAX
+006aa3d5 JA 0x006aa3dc
+006aa3d7 JMP 0x006aa1d0
+006aa3dc PUSH RAX
+006aa3dd LEA RDI,[0x813716]
+006aa3e4 CALL 0x004034da

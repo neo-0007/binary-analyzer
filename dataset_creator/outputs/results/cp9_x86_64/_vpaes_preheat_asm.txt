@@ -1,0 +1,9 @@
+0049a3f0 LEA R10,[0x49a460]
+0049a3f7 MOVDQA XMM10,xmmword ptr [R10 + -0x20]
+0049a3fd MOVDQA XMM11,xmmword ptr [R10 + -0x10]
+0049a403 MOVDQA XMM9,xmmword ptr [R10]
+0049a408 MOVDQA XMM13,xmmword ptr [R10 + 0x30]
+0049a40e MOVDQA XMM12,xmmword ptr [R10 + 0x40]
+0049a414 MOVDQA XMM15,xmmword ptr [R10 + 0x50]
+0049a41a MOVDQA XMM14,xmmword ptr [R10 + 0x60]
+0049a420 RET

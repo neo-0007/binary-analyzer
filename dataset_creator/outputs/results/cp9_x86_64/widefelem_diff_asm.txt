@@ -1,0 +1,93 @@
+004ec1b0 MOV R11,0xffffffffffffff
+004ec1ba PUSH R15
+004ec1bc MOV R15,0x100000000000000
+004ec1c6 PUSH R14
+004ec1c8 XOR R14D,R14D
+004ec1cb MOV R9,R15
+004ec1ce MOV RDX,R11
+004ec1d1 PUSH R12
+004ec1d3 MOV R8,R14
+004ec1d6 MOV R12,RSI
+004ec1d9 PUSH RBP
+004ec1da MOV RBP,RDI
+004ec1dd PUSH RBX
+004ec1de ADD R8,qword ptr [RDI]
+004ec1e1 MOV RBX,0xfffeffffffffff
+004ec1eb ADC R9,qword ptr [RDI + 0x8]
+004ec1ef XOR R10D,R10D
+004ec1f2 MOV qword ptr [RDI],R8
+004ec1f5 MOV qword ptr [RDI + 0x8],R9
+004ec1f9 MOV RSI,R10
+004ec1fc MOV RDI,R11
+004ec1ff ADD RSI,qword ptr [RBP + 0x10]
+004ec203 MOV RAX,R10
+004ec206 ADC RDI,qword ptr [RBP + 0x18]
+004ec20a ADD RAX,qword ptr [RBP + 0x20]
+004ec20e MOV qword ptr [RBP + 0x10],RSI
+004ec212 ADC RDX,qword ptr [RBP + 0x28]
+004ec216 ADD R14,qword ptr [RBP + 0x30]
+004ec21a MOV qword ptr [RBP + 0x18],RDI
+004ec21e ADC R15,qword ptr [RBP + 0x38]
+004ec222 XOR ECX,ECX
+004ec224 ADD RCX,qword ptr [RBP + 0x40]
+004ec228 MOV qword ptr [RBP + 0x20],RAX
+004ec22c ADC RBX,qword ptr [RBP + 0x48]
+004ec230 MOV qword ptr [RSP + -0x20],RCX
+004ec235 MOV RCX,R10
+004ec238 MOV qword ptr [RSP + -0x18],RBX
+004ec23d MOVDQA XMM0,xmmword ptr [RSP + -0x20]
+004ec243 MOV RBX,R11
+004ec246 MOV qword ptr [RBP + 0x28],RDX
+004ec24a MOV qword ptr [RBP + 0x30],R14
+004ec24e MOV qword ptr [RBP + 0x38],R15
+004ec252 MOVAPS xmmword ptr [RBP + 0x40],XMM0
+004ec256 ADD RCX,qword ptr [RBP + 0x50]
+004ec25a ADC RBX,qword ptr [RBP + 0x58]
+004ec25e MOV qword ptr [RSP + -0x10],RCX
+004ec263 MOV RCX,R10
+004ec266 ADD RCX,qword ptr [RBP + 0x60]
+004ec26a MOV qword ptr [RSP + -0x8],RBX
+004ec26f MOVDQA XMM1,xmmword ptr [RSP + -0x10]
+004ec275 MOV RBX,R11
+004ec278 ADC RBX,qword ptr [RBP + 0x68]
+004ec27c MOV qword ptr [RBP + 0x60],RCX
+004ec280 MOV qword ptr [RBP + 0x68],RBX
+004ec284 MOVAPS xmmword ptr [RBP + 0x50],XMM1
+004ec288 SUB R8,qword ptr [R12]
+004ec28c SBB R9,qword ptr [R12 + 0x8]
+004ec291 MOV qword ptr [RBP + 0x8],R9
+004ec295 MOV qword ptr [RBP],R8
+004ec299 SUB RSI,qword ptr [R12 + 0x10]
+004ec29e SBB RDI,qword ptr [R12 + 0x18]
+004ec2a3 MOV qword ptr [RBP + 0x10],RSI
+004ec2a7 MOV qword ptr [RBP + 0x18],RDI
+004ec2ab SUB RAX,qword ptr [R12 + 0x20]
+004ec2b0 SBB RDX,qword ptr [R12 + 0x28]
+004ec2b5 MOV qword ptr [RBP + 0x20],RAX
+004ec2b9 MOV qword ptr [RBP + 0x28],RDX
+004ec2bd SUB R14,qword ptr [R12 + 0x30]
+004ec2c2 SBB R15,qword ptr [R12 + 0x38]
+004ec2c7 MOV qword ptr [RBP + 0x30],R14
+004ec2cb MOV qword ptr [RBP + 0x38],R15
+004ec2cf MOV RAX,qword ptr [RSP + -0x20]
+004ec2d4 MOV RDX,qword ptr [RSP + -0x18]
+004ec2d9 SUB RAX,qword ptr [R12 + 0x40]
+004ec2de SBB RDX,qword ptr [R12 + 0x48]
+004ec2e3 MOV qword ptr [RBP + 0x40],RAX
+004ec2e7 MOV qword ptr [RBP + 0x48],RDX
+004ec2eb MOV RAX,qword ptr [RSP + -0x10]
+004ec2f0 MOV RDX,qword ptr [RSP + -0x8]
+004ec2f5 SUB RAX,qword ptr [R12 + 0x50]
+004ec2fa SBB RDX,qword ptr [R12 + 0x58]
+004ec2ff MOV qword ptr [RBP + 0x50],RAX
+004ec303 MOV qword ptr [RBP + 0x58],RDX
+004ec307 SUB RCX,qword ptr [R12 + 0x60]
+004ec30c SBB RBX,qword ptr [R12 + 0x68]
+004ec311 MOV qword ptr [RBP + 0x60],RCX
+004ec315 MOV qword ptr [RBP + 0x68],RBX
+004ec319 POP RBX
+004ec31a POP RBP
+004ec31b POP R12
+004ec31d POP R14
+004ec31f POP R15
+004ec321 RET

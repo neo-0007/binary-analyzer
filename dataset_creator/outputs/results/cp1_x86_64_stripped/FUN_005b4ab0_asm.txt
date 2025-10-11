@@ -1,0 +1,6 @@
+005b4ab0 ENDBR64
+005b4ab4 MOV RAX,qword ptr [RSI]
+005b4ab7 MOV byte ptr [RAX],DIL
+005b4aba MOV EAX,0x1
+005b4abf ADD qword ptr [RSI],0x1
+005b4ac3 RET

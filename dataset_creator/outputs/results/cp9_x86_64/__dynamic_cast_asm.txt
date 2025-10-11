@@ -1,0 +1,90 @@
+006abb10 ENDBR64
+006abb14 PUSH R13
+006abb16 PUSH R12
+006abb18 PUSH RBP
+006abb19 PUSH RBX
+006abb1a SUB RSP,0x28
+006abb1e MOV RAX,qword ptr FS:[0x28]
+006abb27 MOV qword ptr [RSP + 0x18],RAX
+006abb2c XOR EAX,EAX
+006abb2e TEST RDI,RDI
+006abb31 JZ 0x006abbce
+006abb37 MOV RAX,qword ptr [RDI]
+006abb3a MOV RBX,RDI
+006abb3d MOV R8,qword ptr [RAX + -0x10]
+006abb41 ADD R8,RDI
+006abb44 MOV RDI,qword ptr [RAX + -0x8]
+006abb48 MOV qword ptr [RSP],0x0
+006abb50 MOV RAX,0x1000000000
+006abb5a MOV qword ptr [RSP + 0x10],RAX
+006abb5f MOV RAX,qword ptr [R8]
+006abb62 MOV qword ptr [RSP + 0x8],0x0
+006abb6b CMP qword ptr [RAX + -0x8],RDI
+006abb6f JNZ 0x006abbce
+006abb71 MOV RAX,qword ptr [RDI]
+006abb74 MOV RBP,RDX
+006abb77 MOV R13,RCX
+006abb7a MOV RDX,RSP
+006abb7d PUSH RDX
+006abb7e MOV R9,RSI
+006abb81 MOV RCX,RBP
+006abb84 MOV EDX,0x6
+006abb89 PUSH RBX
+006abb8a MOV R12,RSI
+006abb8d MOV RSI,R13
+006abb90 CALL qword ptr [RAX + 0x38]
+006abb93 MOV RDX,qword ptr [RSP + 0x10]
+006abb98 POP RCX
+006abb99 POP RSI
+006abb9a MOV RAX,RDX
+006abb9d TEST RDX,RDX
+006abba0 JZ 0x006abbce
+006abba2 MOV EDI,dword ptr [RSP + 0x10]
+006abba6 MOV ECX,EDI
+006abba8 AND ECX,0x6
+006abbab CMP ECX,0x6
+006abbae JZ 0x006abbd0
+006abbb0 MOV ECX,dword ptr [RSP + 0xc]
+006abbb4 MOV ESI,dword ptr [RSP + 0x8]
+006abbb8 AND ESI,ECX
+006abbba AND ESI,0x6
+006abbbd CMP ESI,0x6
+006abbc0 JZ 0x006abbd0
+006abbc2 AND ECX,0x5
+006abbc5 CMP ECX,0x4
+006abbc8 JZ 0x006abbce
+006abbca TEST EDI,EDI
+006abbcc JZ 0x006abbf0
+006abbce XOR EAX,EAX
+006abbd0 MOV RDX,qword ptr [RSP + 0x18]
+006abbd5 SUB RDX,qword ptr FS:[0x28]
+006abbde JNZ 0x006abc33
+006abbe0 ADD RSP,0x28
+006abbe4 POP RBX
+006abbe5 POP RBP
+006abbe6 POP R12
+006abbe8 POP R13
+006abbea RET
+006abbf0 TEST R13,R13
+006abbf3 JS 0x006abc08
+006abbf5 LEA RCX,[RDX + R13*0x1]
+006abbf9 CMP RBX,RCX
+006abbfc JNZ 0x006abbce
+006abbfe NOP
+006abc00 MOV RAX,RDX
+006abc03 JMP 0x006abbd0
+006abc08 CMP R13,-0x2
+006abc0c JZ 0x006abbce
+006abc0e MOV RAX,qword ptr [RBP]
+006abc12 MOV R8,RBX
+006abc15 MOV RCX,R12
+006abc18 MOV RSI,R13
+006abc1b MOV RDI,RBP
+006abc1e CALL qword ptr [RAX + 0x40]
+006abc21 MOV dword ptr [RSP + 0x10],EAX
+006abc25 AND EAX,0x6
+006abc28 CMP EAX,0x6
+006abc2b JNZ 0x006abbce
+006abc2d MOV RDX,qword ptr [RSP]
+006abc31 JMP 0x006abc00
+006abc33 CALL 0x00768630

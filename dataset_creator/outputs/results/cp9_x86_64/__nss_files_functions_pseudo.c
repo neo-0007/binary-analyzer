@@ -1,0 +1,71 @@
+
+void __nss_files_functions(undefined8 *param_1)
+
+{
+  param_1[0xe] = 0;
+  param_1[0x13] = 0;
+  param_1[0x23] = 0;
+  *param_1 = _nss_files_endaliasent;
+  param_1[1] = _nss_files_endetherent;
+  param_1[2] = _nss_files_endgrent;
+  param_1[3] = _nss_files_endhostent;
+  param_1[0xf] = _nss_files_getetherent_r;
+  param_1[0x10] = _nss_files_getgrent_r;
+  param_1[0x11] = _nss_files_getgrgid_r;
+  param_1[0x12] = _nss_files_getgrnam_r;
+  param_1[0x14] = _nss_files_gethostbyaddr_r;
+  param_1[0x15] = _nss_files_gethostbyname2_r;
+  param_1[0x16] = _nss_files_gethostbyname3_r;
+  param_1[0x17] = _nss_files_gethostbyname4_r;
+  param_1[0x18] = _nss_files_gethostbyname_r;
+  param_1[0x19] = _nss_files_gethostent_r;
+  param_1[0x1a] = _nss_files_gethostton_r;
+  param_1[0x1b] = _nss_files_getnetbyaddr_r;
+  param_1[0x1c] = _nss_files_getnetbyname_r;
+  param_1[0x1d] = _nss_files_getnetent_r;
+  param_1[0x1e] = _nss_files_getnetgrent_r;
+  param_1[4] = _nss_files_endnetent;
+  param_1[5] = _nss_files_endnetgrent;
+  param_1[0x1f] = _nss_files_getntohost_r;
+  param_1[0x20] = _nss_files_getprotobyname_r;
+  param_1[6] = _nss_files_endprotoent;
+  param_1[7] = _nss_files_endpwent;
+  param_1[0x21] = _nss_files_getprotobynumber_r;
+  param_1[0x22] = _nss_files_getprotoent_r;
+  param_1[8] = _nss_files_endrpcent;
+  param_1[9] = _nss_files_endservent;
+  param_1[0x24] = _nss_files_getpwent_r;
+  param_1[0x25] = _nss_files_getpwnam_r;
+  param_1[10] = _nss_files_endsgent;
+  param_1[0xb] = _nss_files_endspent;
+  param_1[0x26] = _nss_files_getpwuid_r;
+  param_1[0xc] = _nss_files_getaliasbyname_r;
+  param_1[0xd] = _nss_files_getaliasent_r;
+  param_1[0x27] = _nss_files_getrpcbyname_r;
+  param_1[0x28] = _nss_files_getrpcbynumber_r;
+  param_1[0x29] = _nss_files_getrpcent_r;
+  param_1[0x2b] = _nss_files_getservbyname_r;
+  param_1[0x2c] = _nss_files_getservbyport_r;
+  param_1[0x2d] = _nss_files_getservent_r;
+  param_1[0x2e] = _nss_files_getsgent_r;
+  param_1[0x2f] = _nss_files_getsgnam_r;
+  param_1[0x30] = _nss_files_getspent_r;
+  param_1[0x31] = _nss_files_getspnam_r;
+  param_1[0x32] = _nss_files_initgroups_dyn;
+  param_1[0x34] = _nss_files_setaliasent;
+  param_1[0x35] = _nss_files_setetherent;
+  param_1[0x36] = _nss_files_setgrent;
+  param_1[0x37] = _nss_files_sethostent;
+  param_1[0x38] = _nss_files_setnetent;
+  param_1[0x39] = _nss_files_setnetgrent;
+  param_1[0x3a] = _nss_files_setprotoent;
+  param_1[0x3b] = _nss_files_setpwent;
+  param_1[0x3c] = _nss_files_setrpcent;
+  param_1[0x3d] = _nss_files_setservent;
+  param_1[0x3e] = _nss_files_setsgent;
+  param_1[0x2a] = 0;
+  param_1[0x33] = 0;
+  param_1[0x3f] = _nss_files_setspent;
+  return;
+}
+

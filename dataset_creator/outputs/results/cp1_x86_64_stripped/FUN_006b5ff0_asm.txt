@@ -1,0 +1,4 @@
+006b5ff0 ENDBR64
+006b5ff4 MOV RAX,qword ptr [RDI]
+006b5ff7 LEA RAX,[RAX + RSI*0x4]
+006b5ffb RET

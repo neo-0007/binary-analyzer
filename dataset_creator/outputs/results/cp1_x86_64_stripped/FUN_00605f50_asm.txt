@@ -1,0 +1,6 @@
+00605f50 ENDBR64
+00605f54 MOV RAX,qword ptr [RSI]
+00605f57 MOV RSI,qword ptr [RAX + 0x8]
+00605f5b MOV RAX,qword ptr [RDI]
+00605f5e MOV RDI,qword ptr [RAX + 0x8]
+00605f62 JMP 0x00424ba0

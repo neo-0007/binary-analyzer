@@ -1,0 +1,23 @@
+00679f10 ENDBR64
+00679f14 XOR EAX,EAX
+00679f16 TEST RSI,RSI
+00679f19 MOV qword ptr [RDI + 0x10],0x0
+00679f21 SETNZ AL
+00679f24 MOV qword ptr [RDI + 0x18],0x0
+00679f2c MOV dword ptr [RDI + 0x8],EAX
+00679f2f MOV RAX,0x933f48
+00679f36 MOV byte ptr [RDI + 0x22],0x0
+00679f3a ADD RAX,0x10
+00679f3e MOV qword ptr [RDI + 0x28],0x0
+00679f46 MOV qword ptr [RDI],RAX
+00679f49 XOR EAX,EAX
+00679f4b MOV word ptr [RDI + 0x20],AX
+00679f4f MOV qword ptr [RDI + 0x30],0x0
+00679f57 MOV qword ptr [RDI + 0x38],0x0
+00679f5f MOV qword ptr [RDI + 0x40],0x0
+00679f67 MOV qword ptr [RDI + 0x48],0x0
+00679f6f MOV qword ptr [RDI + 0x50],0x0
+00679f77 MOV qword ptr [RDI + 0x58],0x0
+00679f7f MOV dword ptr [RDI + 0x60],0x0
+00679f86 MOV byte ptr [RDI + 0x6f],0x0
+00679f8a RET

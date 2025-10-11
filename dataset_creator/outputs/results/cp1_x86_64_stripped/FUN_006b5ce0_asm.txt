@@ -1,0 +1,7 @@
+006b5ce0 ENDBR64
+006b5ce4 MOV RCX,qword ptr [RSI + 0x8]
+006b5ce8 MOV RDX,qword ptr [RSI]
+006b5ceb MOV RAX,RDI
+006b5cee LEA RDX,[RDX + RCX*0x4]
+006b5cf2 MOV qword ptr [RDI],RDX
+006b5cf5 RET

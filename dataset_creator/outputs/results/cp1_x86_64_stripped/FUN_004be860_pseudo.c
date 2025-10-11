@@ -1,0 +1,117 @@
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_004be860(undefined1 (*param_1) [32],long param_2,undefined4 param_3)
+
+{
+  undefined1 auVar1 [16];
+  undefined1 auVar2 [32];
+  undefined1 auVar3 [32];
+  undefined1 auVar4 [32];
+  undefined1 auVar5 [32];
+  undefined1 auVar6 [32];
+  undefined1 auVar7 [32];
+  undefined1 auVar8 [32];
+  undefined1 auVar9 [32];
+  undefined1 auVar10 [32];
+  undefined1 auVar11 [32];
+  undefined1 auVar12 [32];
+  undefined1 auVar13 [32];
+  undefined1 auVar14 [32];
+  undefined1 auVar15 [32];
+  undefined1 auVar16 [32];
+  undefined1 auVar17 [32];
+  undefined1 auVar18 [32];
+  undefined1 auVar19 [32];
+  undefined1 auVar20 [32];
+  undefined1 auVar21 [32];
+  undefined1 auVar22 [32];
+  undefined1 auVar23 [32];
+  int iVar24;
+  undefined1 (*pauVar25) [32];
+  undefined1 auVar26 [32];
+  
+  auVar23 = _DAT_004beb00;
+  auVar26._4_4_ = param_3;
+  auVar26._0_4_ = param_3;
+  auVar26._8_4_ = param_3;
+  auVar26._12_4_ = param_3;
+  auVar26._16_4_ = param_3;
+  auVar26._20_4_ = param_3;
+  auVar26._24_4_ = param_3;
+  auVar26._28_4_ = param_3;
+  auVar2 = vpaddd_avx2(_DAT_004beb20,_DAT_004beb60);
+  auVar7 = vpcmpeqd_avx2(_DAT_004beb20,auVar26);
+  auVar3 = vpaddd_avx2(_DAT_004beb40,_DAT_004beb60);
+  auVar8 = vpcmpeqd_avx2(_DAT_004beb40,auVar26);
+  auVar4 = vpaddd_avx2(auVar2,_DAT_004beb60);
+  auVar9 = vpcmpeqd_avx2(auVar2,auVar26);
+  auVar2 = vpaddd_avx2(auVar3,_DAT_004beb60);
+  auVar10 = vpcmpeqd_avx2(auVar3,auVar26);
+  auVar3 = vpaddd_avx2(auVar4,_DAT_004beb60);
+  auVar11 = vpcmpeqd_avx2(auVar4,auVar26);
+  auVar4 = vpaddd_avx2(auVar2,_DAT_004beb60);
+  auVar12 = vpcmpeqd_avx2(auVar2,auVar26);
+  auVar2 = vpaddd_avx2(auVar3,_DAT_004beb60);
+  auVar13 = vpcmpeqd_avx2(auVar3,auVar26);
+  auVar3 = vpaddd_avx2(auVar4,_DAT_004beb60);
+  auVar14 = vpcmpeqd_avx2(auVar4,auVar26);
+  auVar4 = vpaddd_avx2(auVar2,_DAT_004beb60);
+  auVar15 = vpcmpeqd_avx2(auVar2,auVar26);
+  auVar2 = vpaddd_avx2(auVar3,_DAT_004beb60);
+  auVar16 = vpcmpeqd_avx2(auVar3,auVar26);
+  auVar3 = vpaddd_avx2(auVar4,_DAT_004beb60);
+  auVar17 = vpcmpeqd_avx2(auVar4,auVar26);
+  auVar4 = vpaddd_avx2(auVar2,_DAT_004beb60);
+  auVar18 = vpcmpeqd_avx2(auVar2,auVar26);
+  auVar2 = vpaddd_avx2(auVar3,_DAT_004beb60);
+  auVar19 = vpcmpeqd_avx2(auVar3,auVar26);
+  auVar3 = vpaddd_avx2(auVar4,_DAT_004beb60);
+  auVar4 = vpcmpeqd_avx2(auVar4,auVar26);
+  auVar2 = vpcmpeqd_avx2(auVar2,auVar26);
+  auVar3 = vpcmpeqd_avx2(auVar3,auVar26);
+  pauVar25 = (undefined1 (*) [32])(param_2 + 0x80);
+  iVar24 = 9;
+  do {
+    auVar26 = vpand_avx2(pauVar25[-4],auVar7);
+    auVar5 = vpand_avx2(pauVar25[-3],auVar8);
+    auVar6 = vpand_avx2(pauVar25[-2],auVar9);
+    auVar20 = vpor_avx2(auVar5,auVar26);
+    auVar26 = vpand_avx2(pauVar25[-1],auVar10);
+    auVar21 = vpor_avx2(auVar26,auVar6);
+    auVar26 = vpand_avx2(*pauVar25,auVar11);
+    auVar5 = vpand_avx2(pauVar25[1],auVar12);
+    auVar6 = vpand_avx2(pauVar25[2],auVar13);
+    auVar22 = vpor_avx2(auVar20,auVar26);
+    auVar26 = vpand_avx2(pauVar25[3],auVar14);
+    auVar20 = vpand_avx2(auVar15,pauVar25[4]);
+    auVar21 = vpor_avx2(auVar21,auVar5);
+    auVar5 = vpand_avx2(auVar16,pauVar25[5]);
+    auVar22 = vpor_avx2(auVar22,auVar6);
+    auVar6 = vpand_avx2(auVar17,pauVar25[6]);
+    auVar21 = vpor_avx2(auVar21,auVar26);
+    auVar26 = vpand_avx2(auVar18,pauVar25[7]);
+    auVar22 = vpor_avx2(auVar22,auVar20);
+    auVar20 = vpand_avx2(auVar19,pauVar25[8]);
+    auVar21 = vpor_avx2(auVar21,auVar5);
+    auVar5 = vpand_avx2(auVar4,pauVar25[9]);
+    auVar22 = vpor_avx2(auVar22,auVar6);
+    auVar6 = vpand_avx2(auVar2,pauVar25[10]);
+    auVar21 = vpor_avx2(auVar21,auVar26);
+    auVar26 = vpand_avx2(auVar3,pauVar25[0xb]);
+    pauVar25 = pauVar25 + 0x10;
+    auVar20 = vpor_avx2(auVar22,auVar20);
+    auVar5 = vpor_avx2(auVar21,auVar5);
+    auVar6 = vpor_avx2(auVar20,auVar6);
+    auVar26 = vpor_avx2(auVar5,auVar26);
+    auVar26 = vpor_avx2(auVar6,auVar26);
+    auVar1 = vpor_avx(auVar26._16_16_,auVar26._0_16_);
+    auVar26 = vpermd_avx2(auVar23,ZEXT1632(auVar1));
+    *param_1 = auVar26;
+    param_1 = param_1 + 1;
+    iVar24 = iVar24 + -1;
+  } while (iVar24 != 0);
+  *param_1 = (undefined1  [32])0x0;
+  return;
+}
+

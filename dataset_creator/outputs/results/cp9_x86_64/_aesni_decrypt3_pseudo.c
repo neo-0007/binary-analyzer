@@ -1,0 +1,112 @@
+
+undefined8
+_aesni_decrypt3(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4,
+               undefined8 param_5)
+
+{
+  undefined1 auVar1 [16];
+  undefined1 auVar2 [16];
+  undefined1 auVar3 [16];
+  undefined1 auVar4 [16];
+  undefined1 auVar5 [16];
+  undefined1 auVar6 [16];
+  int in_EAX;
+  ulong uVar7;
+  long lVar8;
+  uint *in_RCX;
+  uint uVar9;
+  uint uVar10;
+  uint uVar11;
+  uint uVar12;
+  uint uVar13;
+  uint uVar14;
+  uint uVar15;
+  uint uVar16;
+  uint in_XMM2_Dc;
+  uint in_XMM2_Dd;
+  undefined1 auVar17 [16];
+  uint in_XMM3_Dc;
+  uint in_XMM3_Dd;
+  undefined1 auVar18 [16];
+  uint in_XMM4_Dc;
+  uint in_XMM4_Dd;
+  undefined1 auVar19 [16];
+  
+  uVar9 = *in_RCX;
+  uVar10 = in_RCX[1];
+  uVar11 = in_RCX[2];
+  uVar12 = in_RCX[3];
+  uVar7 = (ulong)(uint)(in_EAX << 4);
+  uVar13 = in_RCX[4];
+  uVar14 = in_RCX[5];
+  uVar15 = in_RCX[6];
+  uVar16 = in_RCX[7];
+  auVar17._0_4_ = (uint)param_3 ^ uVar9;
+  auVar17._4_4_ = (uint)((ulong)param_3 >> 0x20) ^ uVar10;
+  auVar17._8_4_ = in_XMM2_Dc ^ uVar11;
+  auVar17._12_4_ = in_XMM2_Dd ^ uVar12;
+  auVar18._0_4_ = (uint)param_4 ^ uVar9;
+  auVar18._4_4_ = (uint)((ulong)param_4 >> 0x20) ^ uVar10;
+  auVar18._8_4_ = in_XMM3_Dc ^ uVar11;
+  auVar18._12_4_ = in_XMM3_Dd ^ uVar12;
+  auVar19._0_4_ = (uint)param_5 ^ uVar9;
+  auVar19._4_4_ = (uint)((ulong)param_5 >> 0x20) ^ uVar10;
+  auVar19._8_4_ = in_XMM4_Dc ^ uVar11;
+  auVar19._12_4_ = in_XMM4_Dd ^ uVar12;
+  uVar9 = in_RCX[8];
+  uVar10 = in_RCX[9];
+  uVar11 = in_RCX[10];
+  uVar12 = in_RCX[0xb];
+  lVar8 = 0x10 - uVar7;
+  do {
+    auVar1._4_4_ = uVar14;
+    auVar1._0_4_ = uVar13;
+    auVar1._8_4_ = uVar15;
+    auVar1._12_4_ = uVar16;
+    auVar17 = aesdec(auVar17,auVar1);
+    auVar5._4_4_ = uVar14;
+    auVar5._0_4_ = uVar13;
+    auVar5._8_4_ = uVar15;
+    auVar5._12_4_ = uVar16;
+    auVar18 = aesdec(auVar18,auVar5);
+    auVar6._4_4_ = uVar14;
+    auVar6._0_4_ = uVar13;
+    auVar6._8_4_ = uVar15;
+    auVar6._12_4_ = uVar16;
+    auVar19 = aesdec(auVar19,auVar6);
+    auVar1 = *(undefined1 (*) [16])((long)in_RCX + lVar8 + uVar7 + 0x20);
+    uVar13 = auVar1._0_4_;
+    uVar14 = auVar1._4_4_;
+    uVar15 = auVar1._8_4_;
+    uVar16 = auVar1._12_4_;
+    lVar8 = lVar8 + 0x20;
+    auVar2._4_4_ = uVar10;
+    auVar2._0_4_ = uVar9;
+    auVar2._8_4_ = uVar11;
+    auVar2._12_4_ = uVar12;
+    auVar17 = aesdec(auVar17,auVar2);
+    auVar3._4_4_ = uVar10;
+    auVar3._0_4_ = uVar9;
+    auVar3._8_4_ = uVar11;
+    auVar3._12_4_ = uVar12;
+    auVar18 = aesdec(auVar18,auVar3);
+    auVar4._4_4_ = uVar10;
+    auVar4._0_4_ = uVar9;
+    auVar4._8_4_ = uVar11;
+    auVar4._12_4_ = uVar12;
+    auVar19 = aesdec(auVar19,auVar4);
+    auVar2 = *(undefined1 (*) [16])((long)in_RCX + lVar8 + uVar7 + 0x10);
+    uVar9 = auVar2._0_4_;
+    uVar10 = auVar2._4_4_;
+    uVar11 = auVar2._8_4_;
+    uVar12 = auVar2._12_4_;
+  } while (lVar8 != 0);
+  auVar17 = aesdec(auVar17,auVar1);
+  auVar18 = aesdec(auVar18,auVar1);
+  auVar19 = aesdec(auVar19,auVar1);
+  aesdeclast(auVar17,auVar2);
+  aesdeclast(auVar18,auVar2);
+  aesdeclast(auVar19,auVar2);
+  return auVar2._0_8_;
+}
+

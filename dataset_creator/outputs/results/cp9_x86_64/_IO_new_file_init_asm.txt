@@ -1,0 +1,9 @@
+006fb3a0 ENDBR64
+006fb3a4 OR dword ptr [RDI],0x240c
+006fb3aa PUSH RBX
+006fb3ab MOV RBX,RDI
+006fb3ae MOV qword ptr [RDI + 0x90],-0x1
+006fb3b9 CALL 0x006fc7d0
+006fb3be MOV dword ptr [RBX + 0x70],0xffffffff
+006fb3c5 POP RBX
+006fb3c6 RET

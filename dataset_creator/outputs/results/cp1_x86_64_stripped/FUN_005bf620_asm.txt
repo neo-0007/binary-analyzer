@@ -1,0 +1,45 @@
+005bf620 ENDBR64
+005bf624 MOVZX EAX,word ptr [RSI]
+005bf627 CMP AX,0x2
+005bf62b JZ 0x005bf640
+005bf62d CMP AX,0xa
+005bf631 JZ 0x005bf658
+005bf633 XOR R8D,R8D
+005bf636 CMP AX,0x1
+005bf63a JZ 0x005bf680
+005bf63c MOV EAX,R8D
+005bf63f RET
+005bf640 MOVDQU XMM0,xmmword ptr [RSI]
+005bf644 MOV R8D,0x1
+005bf64a MOV EAX,R8D
+005bf64d MOVUPS xmmword ptr [RDI],XMM0
+005bf650 RET
+005bf658 MOVDQU XMM1,xmmword ptr [RSI]
+005bf65c MOV R8D,0x1
+005bf662 MOVUPS xmmword ptr [RDI],XMM1
+005bf665 MOV RAX,qword ptr [RSI + 0x10]
+005bf669 MOV qword ptr [RDI + 0x10],RAX
+005bf66d MOV EAX,dword ptr [RSI + 0x18]
+005bf670 MOV dword ptr [RDI + 0x18],EAX
+005bf673 MOV EAX,R8D
+005bf676 RET
+005bf680 MOVDQU XMM2,xmmword ptr [RSI]
+005bf684 MOV R8D,0x1
+005bf68a MOVUPS xmmword ptr [RDI],XMM2
+005bf68d MOVDQU XMM3,xmmword ptr [RSI + 0x10]
+005bf692 MOVUPS xmmword ptr [RDI + 0x10],XMM3
+005bf696 MOVDQU XMM4,xmmword ptr [RSI + 0x20]
+005bf69b MOVUPS xmmword ptr [RDI + 0x20],XMM4
+005bf69f MOVDQU XMM5,xmmword ptr [RSI + 0x30]
+005bf6a4 MOVUPS xmmword ptr [RDI + 0x30],XMM5
+005bf6a8 MOVDQU XMM6,xmmword ptr [RSI + 0x40]
+005bf6ad MOVUPS xmmword ptr [RDI + 0x40],XMM6
+005bf6b1 MOVDQU XMM7,xmmword ptr [RSI + 0x50]
+005bf6b6 MOVUPS xmmword ptr [RDI + 0x50],XMM7
+005bf6ba MOV RAX,qword ptr [RSI + 0x60]
+005bf6be MOV qword ptr [RDI + 0x60],RAX
+005bf6c2 MOV EAX,dword ptr [RSI + 0x68]
+005bf6c5 MOV dword ptr [RDI + 0x68],EAX
+005bf6c8 MOVZX EAX,word ptr [RSI + 0x6c]
+005bf6cc MOV word ptr [RDI + 0x6c],AX
+005bf6d0 JMP 0x005bf63c

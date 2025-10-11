@@ -1,0 +1,12 @@
+00416bd0 ENDBR64
+00416bd4 MOV EAX,dword ptr [RSI]
+00416bd6 CMP dword ptr [RDI + 0x8],EAX
+00416bd9 JZ 0x00416be0
+00416bdb RET
+00416be0 MOVSXD RAX,dword ptr [RSI + 0x10]
+00416be4 MOV RCX,qword ptr [RDI]
+00416be7 MOV RDX,qword ptr [RSI + 0x8]
+00416beb LEA EDI,[RAX + 0x1]
+00416bee MOV dword ptr [RSI + 0x10],EDI
+00416bf1 MOV qword ptr [RDX + RAX*0x8],RCX
+00416bf5 RET

@@ -1,0 +1,3 @@
+0040af60 ENDBR64
+0040af64 MOV EAX,dword ptr [RDI + 0x48]
+0040af67 RET

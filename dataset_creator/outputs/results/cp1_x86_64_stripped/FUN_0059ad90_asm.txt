@@ -1,0 +1,3 @@
+0059ad90 ENDBR64
+0059ad94 MOV RAX,qword ptr [RDI + 0x18]
+0059ad98 RET

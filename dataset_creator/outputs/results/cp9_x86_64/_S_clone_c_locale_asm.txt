@@ -1,0 +1,3 @@
+006ae8f0 ENDBR64
+006ae8f4 MOV RDI,qword ptr [RDI]
+006ae8f7 JMP 0x006d8090

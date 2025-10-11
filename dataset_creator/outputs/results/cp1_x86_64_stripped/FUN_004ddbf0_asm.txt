@@ -1,0 +1,75 @@
+004ddbf0 ENDBR64
+004ddbf4 PUSH R15
+004ddbf6 XOR EDX,EDX
+004ddbf8 PUSH R14
+004ddbfa PUSH R13
+004ddbfc PUSH R12
+004ddbfe PUSH RBP
+004ddbff MOV RBP,RDI
+004ddc02 SUB RSP,0x110
+004ddc09 MOVDQA XMM0,xmmword ptr [RSI]
+004ddc0d MOVDQA XMM1,xmmword ptr [RSI + 0x10]
+004ddc12 MOV RAX,qword ptr FS:[0x28]
+004ddc1b MOV qword ptr [RSP + 0x108],RAX
+004ddc23 XOR EAX,EAX
+004ddc25 MOVDQA XMM2,xmmword ptr [RSI + 0x20]
+004ddc2a MOVDQA XMM3,xmmword ptr [RSI + 0x30]
+004ddc2f MOV R13,RSP
+004ddc32 MOVDQA XMM5,xmmword ptr [RSI + 0x50]
+004ddc37 MOVDQA XMM6,xmmword ptr [RSI + 0x60]
+004ddc3c MOVAPS xmmword ptr [RSP],XMM0
+004ddc40 LEA R15,[RSP + 0xc0]
+004ddc48 MOVDQA XMM0,xmmword ptr [RSI + 0x80]
+004ddc50 MOVDQA XMM7,xmmword ptr [RSI + 0x70]
+004ddc55 MOVAPS xmmword ptr [RSP + 0x10],XMM1
+004ddc5a LEA R12,[RSP + 0x40]
+004ddc5f MOVDQA XMM1,xmmword ptr [RSI + 0x90]
+004ddc67 MOVDQA XMM4,xmmword ptr [RSI + 0x40]
+004ddc6c MOVAPS xmmword ptr [RSP + 0x20],XMM2
+004ddc71 MOV RDI,R15
+004ddc74 MOVDQA XMM2,xmmword ptr [RSI + 0xa0]
+004ddc7c MOVAPS xmmword ptr [RSP + 0x30],XMM3
+004ddc81 MOVDQA XMM3,xmmword ptr [RSI + 0xb0]
+004ddc89 LEA R14,[RSP + 0x80]
+004ddc91 MOVAPS xmmword ptr [RSP + 0x80],XMM0
+004ddc99 MOVAPS xmmword ptr [RSP + 0x90],XMM1
+004ddca1 MOVAPS xmmword ptr [RSP + 0xa0],XMM2
+004ddca9 MOVAPS xmmword ptr [RSP + 0xb0],XMM3
+004ddcb1 MOVAPS xmmword ptr [RSP + 0x50],XMM5
+004ddcb6 MOVAPS xmmword ptr [RSP + 0x60],XMM6
+004ddcbb MOVAPS xmmword ptr [RSP + 0x70],XMM7
+004ddcc0 MOVAPS xmmword ptr [RSP + 0x40],XMM4
+004ddcc5 MOVDQA XMM4,xmmword ptr [RSI + 0xc0]
+004ddccd MOVDQA XMM5,xmmword ptr [RSI + 0xd0]
+004ddcd5 MOVDQA XMM6,xmmword ptr [RSI + 0xe0]
+004ddcdd MOVDQA XMM7,xmmword ptr [RSI + 0xf0]
+004ddce5 MOV RSI,R13
+004ddce8 MOVAPS xmmword ptr [RSP + 0xc0],XMM4
+004ddcf0 MOVAPS xmmword ptr [RSP + 0xd0],XMM5
+004ddcf8 MOVAPS xmmword ptr [RSP + 0xe0],XMM6
+004ddd00 MOVAPS xmmword ptr [RSP + 0xf0],XMM7
+004ddd08 CALL 0x004db7c0
+004ddd0d MOV RDX,R12
+004ddd10 MOV RSI,R15
+004ddd13 MOV RDI,R14
+004ddd16 CALL 0x005cd6f0
+004ddd1b MOV RSI,R14
+004ddd1e MOV RDI,R12
+004ddd21 CALL 0x005cda50
+004ddd26 MOV RDI,RBP
+004ddd29 MOV EDX,0x1
+004ddd2e MOV RSI,R12
+004ddd31 CALL 0x004defc0
+004ddd36 MOV RDI,R13
+004ddd39 CALL 0x004dd920
+004ddd3e MOV RAX,qword ptr [RSP + 0x108]
+004ddd46 SUB RAX,qword ptr FS:[0x28]
+004ddd4f JNZ 0x004ddd62
+004ddd51 ADD RSP,0x110
+004ddd58 POP RBP
+004ddd59 POP R12
+004ddd5b POP R13
+004ddd5d POP R14
+004ddd5f POP R15
+004ddd61 RET
+004ddd62 CALL 0x00771f60

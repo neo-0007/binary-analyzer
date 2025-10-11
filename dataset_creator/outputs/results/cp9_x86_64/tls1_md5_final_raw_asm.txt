@@ -1,0 +1,36 @@
+00481870 ENDBR64
+00481874 MOV ECX,dword ptr [RDI]
+00481876 MOV byte ptr [RSI],CL
+00481878 MOV ECX,dword ptr [RDI]
+0048187a MOV byte ptr [RSI + 0x1],CH
+0048187d MOV ECX,dword ptr [RDI]
+0048187f SHR ECX,0x10
+00481882 MOV byte ptr [RSI + 0x2],CL
+00481885 MOV ECX,dword ptr [RDI]
+00481887 SHR ECX,0x18
+0048188a MOV byte ptr [RSI + 0x3],CL
+0048188d MOV ECX,dword ptr [RDI + 0x4]
+00481890 MOV byte ptr [RSI + 0x4],CL
+00481893 MOV ECX,dword ptr [RDI + 0x4]
+00481896 MOV byte ptr [RSI + 0x5],CH
+00481899 MOVZX ECX,word ptr [RDI + 0x6]
+0048189d MOV byte ptr [RSI + 0x6],CL
+004818a0 MOVZX ECX,byte ptr [RDI + 0x7]
+004818a4 MOV byte ptr [RSI + 0x7],CL
+004818a7 MOV ECX,dword ptr [RDI + 0x8]
+004818aa MOV byte ptr [RSI + 0x8],CL
+004818ad MOV ECX,dword ptr [RDI + 0x8]
+004818b0 MOV byte ptr [RSI + 0x9],CH
+004818b3 MOVZX ECX,word ptr [RDI + 0xa]
+004818b7 MOV byte ptr [RSI + 0xa],CL
+004818ba MOVZX ECX,byte ptr [RDI + 0xb]
+004818be MOV byte ptr [RSI + 0xb],CL
+004818c1 MOV ECX,dword ptr [RDI + 0xc]
+004818c4 MOV byte ptr [RSI + 0xc],CL
+004818c7 MOV ECX,dword ptr [RDI + 0xc]
+004818ca MOV byte ptr [RSI + 0xd],CH
+004818cd MOVZX ECX,word ptr [RDI + 0xe]
+004818d1 MOV byte ptr [RSI + 0xe],CL
+004818d4 MOVZX EDX,byte ptr [RDI + 0xf]
+004818d8 MOV byte ptr [RSI + 0xf],DL
+004818db RET

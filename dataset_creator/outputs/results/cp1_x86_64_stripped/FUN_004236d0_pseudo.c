@@ -1,0 +1,16 @@
+
+void FUN_004236d0(void)
+
+{
+  if (DAT_0093fd30 != 0) {
+    FUN_00545d80(DAT_0093fd30,0);
+    FUN_00545bd0(DAT_0093fd30,FUN_00423410);
+    FUN_00545bd0(DAT_0093fd30,FUN_00423430);
+    FUN_00545bd0(DAT_0093fd30,FUN_00423440);
+    FUN_00545790(DAT_0093fd30);
+    DAT_0093fd30 = 0;
+    return;
+  }
+  return;
+}
+

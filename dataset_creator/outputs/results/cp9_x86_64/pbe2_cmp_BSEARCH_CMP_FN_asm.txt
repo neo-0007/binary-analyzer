@@ -1,0 +1,7 @@
+005f45a0 ENDBR64
+005f45a4 MOV EAX,dword ptr [RDI]
+005f45a6 SUB EAX,dword ptr [RSI]
+005f45a8 JNZ 0x005f45b0
+005f45aa MOV EAX,dword ptr [RDI + 0x4]
+005f45ad SUB EAX,dword ptr [RSI + 0x4]
+005f45b0 RET

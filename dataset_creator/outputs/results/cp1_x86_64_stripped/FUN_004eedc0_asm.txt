@@ -1,0 +1,3 @@
+004eedc0 ENDBR64
+004eedc4 MOV RAX,qword ptr [0x0093bf30]
+004eedcb RET

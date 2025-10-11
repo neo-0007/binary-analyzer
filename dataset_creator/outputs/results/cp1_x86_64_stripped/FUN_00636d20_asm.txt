@@ -1,0 +1,4 @@
+00636d20 ENDBR64
+00636d24 MOV RAX,qword ptr [RDI]
+00636d27 ADD RAX,qword ptr [RAX + -0x18]
+00636d2b RET

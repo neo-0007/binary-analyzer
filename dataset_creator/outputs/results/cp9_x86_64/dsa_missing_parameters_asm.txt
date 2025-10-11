@@ -1,0 +1,14 @@
+004ca4d0 ENDBR64
+004ca4d4 MOV RAX,qword ptr [RDI + 0x20]
+004ca4d8 MOV R8D,0x1
+004ca4de TEST RAX,RAX
+004ca4e1 JZ 0x004ca4fd
+004ca4e3 CMP qword ptr [RAX + 0x8],0x0
+004ca4e8 JZ 0x004ca4fd
+004ca4ea CMP qword ptr [RAX + 0x10],0x0
+004ca4ef JZ 0x004ca4fd
+004ca4f1 XOR R8D,R8D
+004ca4f4 CMP qword ptr [RAX + 0x18],0x0
+004ca4f9 SETZ R8B
+004ca4fd MOV EAX,R8D
+004ca500 RET

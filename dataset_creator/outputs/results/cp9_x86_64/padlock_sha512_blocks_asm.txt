@@ -1,0 +1,12 @@
+0059e0a0 MOV RCX,RDX
+0059e0a3 MOV RDX,RDI
+0059e0a6 MOVUPS XMM0,xmmword ptr [RDI]
+0059e0a9 SUB RSP,0x88
+0059e0b0 MOVUPS XMM1,xmmword ptr [RDI + 0x10]
+0059e0b4 MOVUPS XMM2,xmmword ptr [RDI + 0x20]
+0059e0b8 MOVUPS XMM3,xmmword ptr [RDI + 0x30]
+0059e0bc MOVAPS xmmword ptr [RSP],XMM0
+0059e0c0 MOV RDI,RSP
+0059e0c3 MOVAPS xmmword ptr [RSP + 0x10],XMM1
+0059e0c8 MOVAPS xmmword ptr [RSP + 0x20],XMM2
+0059e0cd MOVAPS xmmword ptr [RSP + 0x30],XMM3

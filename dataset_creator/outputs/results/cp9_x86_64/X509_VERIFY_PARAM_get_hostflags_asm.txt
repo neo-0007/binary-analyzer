@@ -1,0 +1,3 @@
+00595dc0 ENDBR64
+00595dc4 MOV EAX,dword ptr [RDI + 0x40]
+00595dc7 RET

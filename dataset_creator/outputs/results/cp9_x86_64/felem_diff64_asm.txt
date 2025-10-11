@@ -1,0 +1,39 @@
+004f8830 MOV RCX,RSI
+004f8833 MOV RDX,qword ptr [RDI]
+004f8836 SUB RDX,qword ptr [RSI]
+004f8839 MOV RSI,0x3fffffffffffffe0
+004f8843 ADD RDX,RSI
+004f8846 MOV RSI,qword ptr [RDI + 0x8]
+004f884a MOV qword ptr [RDI],RDX
+004f884d SUB RSI,qword ptr [RCX + 0x8]
+004f8851 MOV RDX,0x3ffffffffffffff0
+004f885b ADD RSI,RDX
+004f885e MOV qword ptr [RDI + 0x8],RSI
+004f8862 MOV RSI,qword ptr [RDI + 0x10]
+004f8866 ADD RSI,RDX
+004f8869 SUB RSI,qword ptr [RCX + 0x10]
+004f886d MOV qword ptr [RDI + 0x10],RSI
+004f8871 MOV RSI,qword ptr [RDI + 0x18]
+004f8875 ADD RSI,RDX
+004f8878 SUB RSI,qword ptr [RCX + 0x18]
+004f887c MOV qword ptr [RDI + 0x18],RSI
+004f8880 MOV RSI,qword ptr [RDI + 0x20]
+004f8884 ADD RSI,RDX
+004f8887 SUB RSI,qword ptr [RCX + 0x20]
+004f888b MOV qword ptr [RDI + 0x20],RSI
+004f888f MOV RSI,qword ptr [RDI + 0x28]
+004f8893 ADD RSI,RDX
+004f8896 SUB RSI,qword ptr [RCX + 0x28]
+004f889a MOV qword ptr [RDI + 0x28],RSI
+004f889e MOV RSI,qword ptr [RDI + 0x30]
+004f88a2 ADD RSI,RDX
+004f88a5 SUB RSI,qword ptr [RCX + 0x30]
+004f88a9 MOV qword ptr [RDI + 0x30],RSI
+004f88ad MOV RSI,qword ptr [RDI + 0x38]
+004f88b1 ADD RSI,RDX
+004f88b4 SUB RSI,qword ptr [RCX + 0x38]
+004f88b8 ADD RDX,qword ptr [RDI + 0x40]
+004f88bc MOV qword ptr [RDI + 0x38],RSI
+004f88c0 SUB RDX,qword ptr [RCX + 0x40]
+004f88c4 MOV qword ptr [RDI + 0x40],RDX
+004f88c8 RET

@@ -1,0 +1,17 @@
+00696f80 ENDBR64
+00696f84 MOV RAX,qword ptr [RDI + 0x10]
+00696f88 MOV RDX,qword ptr [RAX + 0x90]
+00696f8f MOV qword ptr [RSI],RDX
+00696f92 MOV RDX,qword ptr [RAX + 0x98]
+00696f99 MOV qword ptr [RSI + 0x8],RDX
+00696f9d MOV RDX,qword ptr [RAX + 0xa0]
+00696fa4 MOV qword ptr [RSI + 0x10],RDX
+00696fa8 MOV RDX,qword ptr [RAX + 0xa8]
+00696faf MOV qword ptr [RSI + 0x18],RDX
+00696fb3 MOV RDX,qword ptr [RAX + 0xb0]
+00696fba MOV qword ptr [RSI + 0x20],RDX
+00696fbe MOV RDX,qword ptr [RAX + 0xb8]
+00696fc5 MOV qword ptr [RSI + 0x28],RDX
+00696fc9 MOV RAX,qword ptr [RAX + 0xc0]
+00696fd0 MOV qword ptr [RSI + 0x30],RAX
+00696fd4 RET

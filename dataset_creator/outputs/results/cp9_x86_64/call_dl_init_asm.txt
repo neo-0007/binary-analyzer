@@ -1,0 +1,6 @@
+0077bf90 ENDBR64
+0077bf94 MOV RCX,qword ptr [RDI + 0x18]
+0077bf98 MOV RDX,qword ptr [RDI + 0x10]
+0077bf9c MOV ESI,dword ptr [RDI + 0x8]
+0077bf9f MOV RDI,qword ptr [RDI]
+0077bfa2 JMP 0x007a9280

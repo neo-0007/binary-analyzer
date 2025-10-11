@@ -1,0 +1,9 @@
+
+void FUN_00597b20(void)
+
+{
+  DAT_0093cb38 = FUN_00419290(0xe,0,0,FUN_00597ad0,FUN_00597b60,FUN_00597b00);
+  DAT_00942720 = 1;
+  return;
+}
+

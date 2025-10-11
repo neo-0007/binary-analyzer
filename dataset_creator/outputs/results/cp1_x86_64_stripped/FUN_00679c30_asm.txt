@@ -1,0 +1,3 @@
+00679c30 ENDBR64
+00679c34 MOV RAX,qword ptr [RDI]
+00679c37 JMP qword ptr [RAX + 0x48]

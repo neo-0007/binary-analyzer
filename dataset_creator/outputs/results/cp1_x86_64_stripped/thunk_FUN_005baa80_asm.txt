@@ -1,0 +1,2 @@
+005bafa0 ENDBR64
+005bafa4 JMP 0x005baa80

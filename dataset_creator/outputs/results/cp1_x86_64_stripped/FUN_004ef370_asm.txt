@@ -1,0 +1,28 @@
+004ef370 ENDBR64
+004ef374 MOV RAX,RDI
+004ef377 MOV RDI,qword ptr [RSP + 0x8]
+004ef37c TEST RSI,RSI
+004ef37f JZ 0x004ef388
+004ef381 MOV R10,qword ptr [RAX + 0x10]
+004ef385 MOV qword ptr [RSI],R10
+004ef388 TEST RDX,RDX
+004ef38b JZ 0x004ef394
+004ef38d MOV RSI,qword ptr [RAX + 0x18]
+004ef391 MOV qword ptr [RDX],RSI
+004ef394 TEST RCX,RCX
+004ef397 JZ 0x004ef3a0
+004ef399 MOV RDX,qword ptr [RAX + 0x20]
+004ef39d MOV qword ptr [RCX],RDX
+004ef3a0 TEST R8,R8
+004ef3a3 JZ 0x004ef3ac
+004ef3a5 MOV RDX,qword ptr [RAX + 0x28]
+004ef3a9 MOV qword ptr [R8],RDX
+004ef3ac TEST R9,R9
+004ef3af JZ 0x004ef3b8
+004ef3b1 MOV RDX,qword ptr [RAX + 0x30]
+004ef3b5 MOV qword ptr [R9],RDX
+004ef3b8 TEST RDI,RDI
+004ef3bb JZ 0x004ef3c4
+004ef3bd MOV RAX,qword ptr [RAX + 0x38]
+004ef3c1 MOV qword ptr [RDI],RAX
+004ef3c4 RET

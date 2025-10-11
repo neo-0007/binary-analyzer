@@ -1,0 +1,5 @@
+006dba50 ENDBR64
+006dba54 MOV RSI,qword ptr [RSI]
+006dba57 MOV RDI,qword ptr [RDI]
+006dba5a LEA RDX,[0x92cc40]
+006dba61 JMP 0x004010d0

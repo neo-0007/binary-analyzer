@@ -1,0 +1,5 @@
+0060ffe0 ENDBR64
+0060ffe4 MOVSXD R8,dword ptr [RSI]
+0060ffe7 MOV RDI,qword ptr [RSI + 0x8]
+0060ffeb MOV RSI,R8
+0060ffee JMP 0x0041b3a0

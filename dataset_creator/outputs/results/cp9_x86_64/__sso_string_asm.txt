@@ -1,0 +1,19 @@
+006b60b0 ENDBR64
+006b60b4 LEA RAX,[RDI + 0x10]
+006b60b8 MOV qword ptr [RDI],RAX
+006b60bb MOV RDX,qword ptr [RSI]
+006b60be LEA RAX,[RSI + 0x10]
+006b60c2 CMP RDX,RAX
+006b60c5 JZ 0x006b60f0
+006b60c7 MOV qword ptr [RDI],RDX
+006b60ca MOV RDX,qword ptr [RSI + 0x10]
+006b60ce MOV qword ptr [RDI + 0x10],RDX
+006b60d2 MOV RDX,qword ptr [RSI + 0x8]
+006b60d6 MOV qword ptr [RSI],RAX
+006b60d9 MOV qword ptr [RSI + 0x8],0x0
+006b60e1 MOV qword ptr [RDI + 0x8],RDX
+006b60e5 MOV byte ptr [RSI + 0x10],0x0
+006b60e9 RET
+006b60f0 MOVDQU XMM0,xmmword ptr [RSI + 0x10]
+006b60f5 MOVUPS xmmword ptr [RDI + 0x10],XMM0
+006b60f9 JMP 0x006b60d2

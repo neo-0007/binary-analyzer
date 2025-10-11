@@ -1,0 +1,17 @@
+0075bb30 ENDBR64
+0075bb34 JMP 0x0075bb6a
+0075bb40 MOV EAX,dword ptr [RSI]
+0075bb42 CMP dword ptr [RDI],EAX
+0075bb44 JNZ 0x0075bba0
+0075bb46 MOV EAX,dword ptr [RSI + 0x4]
+0075bb49 CMP dword ptr [RDI + 0x4],EAX
+0075bb4c JNZ 0x0075bba0
+0075bb4e MOV EAX,dword ptr [RSI + 0x8]
+0075bb51 CMP dword ptr [RDI + 0x8],EAX
+0075bb54 JNZ 0x0075bba0
+0075bb56 MOV EAX,dword ptr [RSI + 0xc]
+0075bb59 CMP dword ptr [RDI + 0xc],EAX
+0075bb5c JNZ 0x0075bba0
+0075bb5e ADD RDI,0x10
+0075bb62 ADD RSI,0x10
+0075bb66 SUB RDX,0x4

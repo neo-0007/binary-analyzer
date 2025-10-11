@@ -1,0 +1,86 @@
+
+void FUN_004fcaf0(ulong *param_1,ulong *param_2)
+
+{
+  ulong uVar1;
+  ulong uVar2;
+  ulong uVar3;
+  ulong uVar4;
+  ulong uVar5;
+  ulong uVar6;
+  ulong uVar7;
+  ulong uVar8;
+  ulong uVar9;
+  ulong uVar10;
+  ulong uVar11;
+  ulong uVar12;
+  ulong uVar13;
+  ulong uVar14;
+  ulong uVar15;
+  ulong uVar16;
+  ulong uVar17;
+  
+  uVar1 = param_1[5];
+  uVar2 = param_1[4];
+  uVar7 = *param_1 - 0xc0;
+  uVar11 = param_1[1] + 0x3f + (ulong)(0xbf < *param_1);
+  uVar14 = param_1[2] + 0x10000000000;
+  uVar15 = param_1[3] + 0x40 + (ulong)(0xfffffeffffffffff < param_1[2]);
+  *param_1 = uVar7;
+  param_1[1] = uVar11;
+  param_1[2] = uVar14;
+  param_1[3] = uVar15;
+  param_1[4] = uVar2;
+  param_1[5] = uVar1 + 0x40;
+  uVar12 = param_1[6] - 0x13fffffffc0;
+  uVar13 = param_1[7] + 0x3f + (ulong)(0x13fffffffbf < param_1[6]);
+  uVar16 = param_1[8] - 0x40;
+  param_1[6] = uVar12;
+  uVar17 = param_1[9] + 0x3f + (ulong)(0x3f < param_1[8]);
+  uVar4 = param_1[10] - 0x40;
+  param_1[7] = uVar13;
+  uVar8 = param_1[0xb] + 0x3f + (ulong)(0x3f < param_1[10]);
+  param_1[8] = uVar16;
+  param_1[9] = uVar17;
+  param_1[10] = uVar4;
+  param_1[0xb] = uVar8;
+  uVar5 = param_1[0xc] - 0x40;
+  uVar9 = param_1[0xd] + 0x3f + (ulong)(0x3f < param_1[0xc]);
+  uVar6 = param_1[0xe] - 0x40;
+  uVar10 = param_1[0xf] + 0x3f + (ulong)(0x3f < param_1[0xe]);
+  param_1[0xe] = uVar6;
+  param_1[0xf] = uVar10;
+  param_1[0xc] = uVar5;
+  param_1[0xd] = uVar9;
+  uVar3 = *param_2;
+  param_1[1] = (uVar11 - param_2[1]) - (ulong)(uVar7 < *param_2);
+  *param_1 = uVar7 - uVar3;
+  uVar3 = param_2[2];
+  uVar7 = param_2[3];
+  param_1[2] = uVar14 - param_2[2];
+  param_1[3] = (uVar15 - uVar7) - (ulong)(uVar14 < uVar3);
+  uVar3 = param_2[4];
+  uVar7 = param_2[5];
+  param_1[4] = uVar2 - param_2[4];
+  param_1[5] = ((uVar1 + 0x40) - uVar7) - (ulong)(uVar2 < uVar3);
+  uVar1 = param_2[6];
+  uVar2 = param_2[7];
+  param_1[6] = uVar12 - param_2[6];
+  param_1[7] = (uVar13 - uVar2) - (ulong)(uVar12 < uVar1);
+  uVar1 = param_2[8];
+  uVar2 = param_2[9];
+  param_1[8] = uVar16 - param_2[8];
+  param_1[9] = (uVar17 - uVar2) - (ulong)(uVar16 < uVar1);
+  uVar1 = param_2[10];
+  param_1[0xb] = (uVar8 - param_2[0xb]) - (ulong)(uVar4 < param_2[10]);
+  param_1[10] = uVar4 - uVar1;
+  uVar1 = param_2[0xc];
+  param_1[0xd] = (uVar9 - param_2[0xd]) - (ulong)(uVar5 < param_2[0xc]);
+  param_1[0xc] = uVar5 - uVar1;
+  uVar1 = param_2[0xe];
+  uVar2 = param_2[0xf];
+  param_1[0xe] = uVar6 - param_2[0xe];
+  param_1[0xf] = (uVar10 - uVar2) - (ulong)(uVar6 < uVar1);
+  return;
+}
+

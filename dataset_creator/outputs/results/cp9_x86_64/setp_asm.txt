@@ -1,0 +1,5 @@
+00690b00 ENDBR64
+00690b04 MOV qword ptr [RDI + 0x28],RSI
+00690b08 MOV qword ptr [RDI + 0x20],RSI
+00690b0c MOV qword ptr [RDI + 0x30],RDX
+00690b10 RET

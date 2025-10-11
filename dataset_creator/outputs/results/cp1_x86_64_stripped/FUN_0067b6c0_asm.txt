@@ -1,0 +1,27 @@
+0067b6c0 ENDBR64
+0067b6c4 MOV RAX,qword ptr [RDI + 0x10]
+0067b6c8 MOV RDX,qword ptr [RAX + 0xc8]
+0067b6cf MOV qword ptr [RSI],RDX
+0067b6d2 MOV RDX,qword ptr [RAX + 0xd0]
+0067b6d9 MOV qword ptr [RSI + 0x8],RDX
+0067b6dd MOV RDX,qword ptr [RAX + 0xd8]
+0067b6e4 MOV qword ptr [RSI + 0x10],RDX
+0067b6e8 MOV RDX,qword ptr [RAX + 0xe0]
+0067b6ef MOV qword ptr [RSI + 0x18],RDX
+0067b6f3 MOV RDX,qword ptr [RAX + 0xe8]
+0067b6fa MOV qword ptr [RSI + 0x20],RDX
+0067b6fe MOV RDX,qword ptr [RAX + 0xf0]
+0067b705 MOV qword ptr [RSI + 0x28],RDX
+0067b709 MOV RDX,qword ptr [RAX + 0xf8]
+0067b710 MOV qword ptr [RSI + 0x30],RDX
+0067b714 MOV RDX,qword ptr [RAX + 0x100]
+0067b71b MOV qword ptr [RSI + 0x38],RDX
+0067b71f MOV RDX,qword ptr [RAX + 0x108]
+0067b726 MOV qword ptr [RSI + 0x40],RDX
+0067b72a MOV RDX,qword ptr [RAX + 0x110]
+0067b731 MOV qword ptr [RSI + 0x48],RDX
+0067b735 MOV RDX,qword ptr [RAX + 0x118]
+0067b73c MOV qword ptr [RSI + 0x50],RDX
+0067b740 MOV RAX,qword ptr [RAX + 0x120]
+0067b747 MOV qword ptr [RSI + 0x58],RAX
+0067b74b RET

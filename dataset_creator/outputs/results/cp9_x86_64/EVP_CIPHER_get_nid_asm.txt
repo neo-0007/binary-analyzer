@@ -1,0 +1,3 @@
+0040ed30 ENDBR64
+0040ed34 MOV EAX,dword ptr [RDI]
+0040ed36 RET

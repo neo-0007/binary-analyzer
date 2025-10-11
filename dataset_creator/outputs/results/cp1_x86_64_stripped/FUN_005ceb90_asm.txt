@@ -1,0 +1,15 @@
+005ceb90 ENDBR64
+005ceb94 PUSH RBX
+005ceb95 MOV RBX,RDI
+005ceb98 MOV RDI,qword ptr [RDI + 0x40]
+005ceb9c CALL 0x004b7f20
+005ceba1 MOV RDI,qword ptr [RBX + 0x60]
+005ceba5 CALL 0x004b7f20
+005cebaa MOV RDI,qword ptr [RBX + 0x68]
+005cebae CALL 0x004b7f20
+005cebb3 MOV qword ptr [RBX + 0x48],0x0
+005cebbb MOV RAX,-0x100000000
+005cebc5 MOV qword ptr [RBX + 0x50],0x0
+005cebcd MOV qword ptr [RBX + 0x58],RAX
+005cebd1 POP RBX
+005cebd2 RET

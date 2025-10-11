@@ -1,0 +1,4 @@
+006c8cf0 ENDBR64
+006c8cf4 MOV RAX,-0x58
+006c8cfb ADD RAX,qword ptr FS:[0x0]
+006c8d04 RET

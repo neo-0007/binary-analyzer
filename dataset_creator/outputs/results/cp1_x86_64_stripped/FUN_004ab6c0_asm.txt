@@ -1,0 +1,4 @@
+004ab6c0 ENDBR64
+004ab6c4 NOT ESI
+004ab6c6 AND dword ptr [RDI + 0x30],ESI
+004ab6c9 RET

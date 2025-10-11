@@ -1,0 +1,3 @@
+006c34f0 ENDBR64
+006c34f4 MOV RAX,qword ptr [RDI + 0xa8]
+006c34fb RET

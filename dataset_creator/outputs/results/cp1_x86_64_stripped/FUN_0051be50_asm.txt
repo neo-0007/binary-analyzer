@@ -1,0 +1,3 @@
+0051be50 ENDBR64
+0051be54 MOV RAX,qword ptr [RDI + 0x80]
+0051be5b RET

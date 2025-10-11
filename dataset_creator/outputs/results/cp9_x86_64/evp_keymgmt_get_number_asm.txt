@@ -1,0 +1,3 @@
+0052af10 ENDBR64
+0052af14 MOV EAX,dword ptr [RDI + 0x4]
+0052af17 RET

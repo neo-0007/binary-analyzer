@@ -1,0 +1,79 @@
+006cdce0 PUSH RBP
+006cdce1 MOV RBP,RDI
+006cdce4 PUSH RBX
+006cdce5 LEA RBX,[RDI + 0x9]
+006cdce9 MOV RDI,RBX
+006cdcec SUB RSP,0x18
+006cdcf0 CALL 0x004010a0
+006cdcf5 MOVZX ECX,byte ptr [RBP + 0x8]
+006cdcf9 LEA RAX,[RBX + RAX*0x1 + 0x1]
+006cdcfe CMP CL,0x3
+006cdd01 JA 0x006cdde0
+006cdd07 CMP byte ptr [RBP + 0x9],0x7a
+006cdd0b JZ 0x006cdd20
+006cdd0d XOR R8D,R8D
+006cdd10 ADD RSP,0x18
+006cdd14 MOV EAX,R8D
+006cdd17 POP RBX
+006cdd18 POP RBP
+006cdd19 RET
+006cdd20 ADD RAX,0x1
+006cdd24 CMP byte ptr [RAX + -0x1],0x0
+006cdd28 JS 0x006cdd20
+006cdd2a NOP word ptr [RAX + RAX*0x1]
+006cdd30 MOV RDX,RAX
+006cdd33 ADD RAX,0x1
+006cdd37 CMP byte ptr [RAX + -0x1],0x0
+006cdd3b JS 0x006cdd30
+006cdd3d CMP CL,0x1
+006cdd40 JZ 0x006cddd0
+006cdd46 NOP word ptr CS:[RAX + RAX*0x1]
+006cdd50 ADD RAX,0x1
+006cdd54 CMP byte ptr [RAX + -0x1],0x0
+006cdd58 JS 0x006cdd50
+006cdd5a LEA RBX,[RBP + 0xa]
+006cdd5e NOP
+006cdd60 ADD RAX,0x1
+006cdd64 CMP byte ptr [RAX + -0x1],0x0
+006cdd68 JS 0x006cdd60
+006cdd6a MOVZX EDX,byte ptr [RBP + 0xa]
+006cdd6e LEA RBP,[RSP + 0x8]
+006cdd73 CMP DL,0x52
+006cdd76 JNZ 0x006cdd9b
+006cdd78 JMP 0x006cddc0
+006cdd80 CMP DL,0x4c
+006cdd83 JZ 0x006cdd8a
+006cdd85 CMP DL,0x42
+006cdd88 JNZ 0x006cdd0d
+006cdd8a MOVZX EDX,byte ptr [RBX + 0x1]
+006cdd8e ADD RBX,0x1
+006cdd92 ADD RAX,0x1
+006cdd96 CMP DL,0x52
+006cdd99 JZ 0x006cddc0
+006cdd9b CMP DL,0x50
+006cdd9e JNZ 0x006cdd80
+006cdda0 MOVZX EDI,byte ptr [RAX]
+006cdda3 LEA RDX,[RAX + 0x1]
+006cdda7 MOV RCX,RBP
+006cddaa XOR ESI,ESI
+006cddac ADD RBX,0x1
+006cddb0 AND EDI,0x7f
+006cddb3 CALL 0x006cdb90
+006cddb8 MOVZX EDX,byte ptr [RBX]
+006cddbb CMP DL,0x52
+006cddbe JNZ 0x006cdd9b
+006cddc0 MOVZX R8D,byte ptr [RAX]
+006cddc4 ADD RSP,0x18
+006cddc8 POP RBX
+006cddc9 POP RBP
+006cddca MOV EAX,R8D
+006cddcd RET
+006cddd0 LEA RAX,[RDX + 0x2]
+006cddd4 JMP 0x006cdd5a
+006cdde0 CMP byte ptr [RAX],0x8
+006cdde3 MOV R8D,0xff
+006cdde9 JNZ 0x006cdd10
+006cddef CMP byte ptr [RAX + 0x1],0x0
+006cddf3 JNZ 0x006cdd10
+006cddf9 ADD RAX,0x2
+006cddfd JMP 0x006cdd07

@@ -1,0 +1,30 @@
+0054dc40 XOR RAX,RAX
+0054dc43 MOV qword ptr [RDI],RAX
+0054dc46 MOV qword ptr [RDI + 0x8],RAX
+0054dc4a MOV qword ptr [RDI + 0x10],RAX
+0054dc4e LEA R10,[0x54dce0]
+0054dc55 LEA R11,[0x54ec40]
+0054dc5c MOV RAX,0xffffffc0fffffff
+0054dc66 MOV RCX,0xffffffc0ffffffc
+0054dc70 AND RAX,qword ptr [RSI]
+0054dc73 MOV R8,0xfffffffffff
+0054dc7d AND RCX,qword ptr [RSI + 0x8]
+0054dc81 MOV R9,0xfffffffffff
+0054dc8b AND R8,RAX
+0054dc8e SHRD RAX,RCX,0x2c
+0054dc93 MOV qword ptr [RDI + 0x28],R8
+0054dc97 AND RAX,R9
+0054dc9a SHR RCX,0x18
+0054dc9e MOV qword ptr [RDI + 0x30],RAX
+0054dca2 LEA RAX,[RAX + RAX*0x4]
+0054dca6 MOV qword ptr [RDI + 0x38],RCX
+0054dcaa SHL RAX,0x2
+0054dcae LEA RCX,[RCX + RCX*0x4]
+0054dcb2 SHL RCX,0x2
+0054dcb6 MOV qword ptr [RDI + 0x18],RAX
+0054dcba MOV qword ptr [RDI + 0x20],RCX
+0054dcbe MOV qword ptr [RDI + 0x40],-0x1
+0054dcc6 MOV qword ptr [RDX],R10
+0054dcc9 MOV qword ptr [RDX + 0x8],R11
+0054dccd MOV EAX,0x1
+0054dcd2 RET

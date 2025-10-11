@@ -1,0 +1,4 @@
+004158e0 ENDBR64
+004158e4 MOV qword ptr [RDI + 0x40],RSI
+004158e8 MOV qword ptr [RDI + 0x48],RDX
+004158ec RET

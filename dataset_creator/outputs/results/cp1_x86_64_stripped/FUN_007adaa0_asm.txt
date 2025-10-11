@@ -1,0 +1,36 @@
+007adaa0 ENDBR64
+007adaa4 PUSH RBP
+007adaa5 MOV RBP,RDI
+007adaa8 PUSH RBX
+007adaa9 SUB RSP,0x8
+007adaad MOV EDI,dword ptr [RDI + 0x1f4]
+007adab3 TEST EDI,EDI
+007adab5 JS 0x007adacd
+007adab7 CALL 0x0076e4b0
+007adabc AND dword ptr [RBP + 0x1f8],0xfffffffc
+007adac3 MOV dword ptr [RBP + 0x1f4],0xffffffff
+007adacd MOV EAX,dword ptr [RBP + 0x10]
+007adad0 XOR EBX,EBX
+007adad2 TEST EAX,EAX
+007adad4 JLE 0x007adb28
+007adad6 MOV RDI,qword ptr [RBP + RBX*0x8 + 0x218]
+007adade TEST RDI,RDI
+007adae1 JZ 0x007adb20
+007adae3 MOV R8D,dword ptr [RBP + RBX*0x4 + 0x208]
+007adaeb CMP R8D,-0x1
+007adaef JZ 0x007adb0c
+007adaf1 MOV EDI,R8D
+007adaf4 CALL 0x0076e4b0
+007adaf9 MOV dword ptr [RBP + RBX*0x4 + 0x208],0xffffffff
+007adb04 MOV RDI,qword ptr [RBP + RBX*0x8 + 0x218]
+007adb0c CALL 0x007104f0
+007adb11 MOV qword ptr [RBP + RBX*0x8 + 0x218],0x0
+007adb1d MOV EAX,dword ptr [RBP + 0x10]
+007adb20 ADD RBX,0x1
+007adb24 CMP EAX,EBX
+007adb26 JG 0x007adad6
+007adb28 ADD RSP,0x8
+007adb2c MOV RDI,RBP
+007adb2f POP RBX
+007adb30 POP RBP
+007adb31 JMP 0x007b04c0

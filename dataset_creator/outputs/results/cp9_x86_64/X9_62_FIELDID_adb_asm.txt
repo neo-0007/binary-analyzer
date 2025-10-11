@@ -1,0 +1,3 @@
+004dbbf0 ENDBR64
+004dbbf4 LEA RAX,[0x8fa3a0]
+004dbbfb RET

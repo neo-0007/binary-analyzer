@@ -1,0 +1,4 @@
+006a11c0 ENDBR64
+006a11c4 MOV RAX,qword ptr [RDI + 0x10]
+006a11c8 MOV EAX,dword ptr [RAX + 0x4c]
+006a11cb RET

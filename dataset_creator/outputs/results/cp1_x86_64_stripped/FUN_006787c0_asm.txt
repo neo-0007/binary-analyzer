@@ -1,0 +1,4 @@
+006787c0 ENDBR64
+006787c4 MOV RAX,qword ptr [RDI + 0x10]
+006787c8 MOV EAX,dword ptr [RAX + 0x5c]
+006787cb RET

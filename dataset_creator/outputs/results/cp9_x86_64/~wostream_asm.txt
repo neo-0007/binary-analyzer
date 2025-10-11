@@ -1,0 +1,7 @@
+0068c650 ENDBR64
+0068c654 MOV RAX,qword ptr [RSI]
+0068c657 MOV qword ptr [RDI],RAX
+0068c65a MOV RAX,qword ptr [RAX + -0x18]
+0068c65e MOV RDX,qword ptr [RSI + 0x8]
+0068c662 MOV qword ptr [RDI + RAX*0x1],RDX
+0068c666 RET

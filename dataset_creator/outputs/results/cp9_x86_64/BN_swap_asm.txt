@@ -1,0 +1,30 @@
+004afa90 ENDBR64
+004afa94 MOV RAX,RSI
+004afa97 MOV RDX,RDI
+004afa9a MOV ESI,dword ptr [RDI + 0x14]
+004afa9d MOV R9,qword ptr [RDI]
+004afaa0 MOV R10,qword ptr [RAX]
+004afaa3 MOV EDI,dword ptr [RDI + 0x10]
+004afaa6 MOV ECX,dword ptr [RAX + 0x14]
+004afaa9 MOV R8,qword ptr [RDX + 0x8]
+004afaad MOV qword ptr [RDX],R10
+004afab0 MOV R10D,dword ptr [RAX + 0x8]
+004afab4 MOV dword ptr [RDX + 0x8],R10D
+004afab8 MOV R10D,dword ptr [RAX + 0xc]
+004afabc MOV dword ptr [RDX + 0xc],R10D
+004afac0 MOV R10D,dword ptr [RAX + 0x10]
+004afac4 MOV dword ptr [RDX + 0x10],R10D
+004afac8 MOV qword ptr [RAX + 0x8],R8
+004afacc MOV R8D,ECX
+004afacf AND ECX,0x1
+004afad2 MOV dword ptr [RAX + 0x10],EDI
+004afad5 MOV EDI,ESI
+004afad7 AND R8D,0xe
+004afadb AND ESI,0xe
+004afade AND EDI,0x1
+004afae1 OR ECX,ESI
+004afae3 MOV qword ptr [RAX],R9
+004afae6 OR EDI,R8D
+004afae9 MOV dword ptr [RDX + 0x14],EDI
+004afaec MOV dword ptr [RAX + 0x14],ECX
+004afaef RET

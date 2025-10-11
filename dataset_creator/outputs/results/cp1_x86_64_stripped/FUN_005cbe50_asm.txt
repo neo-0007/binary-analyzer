@@ -1,0 +1,8 @@
+005cbe50 ENDBR64
+005cbe54 SHL RSI,0x4
+005cbe58 ADD RDI,RSI
+005cbe5b MOV RAX,qword ptr [RDI]
+005cbe5e MOV qword ptr [RDX],RAX
+005cbe61 MOV RAX,qword ptr [RDI + 0x8]
+005cbe65 MOV qword ptr [RCX],RAX
+005cbe68 RET

@@ -1,0 +1,7 @@
+005a7b40 ENDBR64
+005a7b44 LEA RAX,[0x5a4b00]
+005a7b4b MOV qword ptr [RDI + 0x28],RSI
+005a7b4f MOV qword ptr [RDI + 0x40],RAX
+005a7b53 LEA RAX,[0x5a2ba0]
+005a7b5a MOV qword ptr [RDI + 0x78],RAX
+005a7b5e RET

@@ -1,0 +1,4 @@
+006ab3d0 ENDBR64
+006ab3d4 LEA RAX,[RDI + 0x10]
+006ab3d8 MOV qword ptr [RDI],RAX
+006ab3db JMP 0x006ab2e0

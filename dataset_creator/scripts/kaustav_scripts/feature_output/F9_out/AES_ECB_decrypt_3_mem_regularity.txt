@@ -1,0 +1,3 @@
+File: /home/kaustav/sih2025/bn/binary-analyzer/dataset_creator/workspace/feature_extraction/AES_asm_files/AES_ECB_decrypt_3.asm
+Memory Access Count: 23
+Memory Access Regularity (Std. Dev. of Offsets): 14.8514

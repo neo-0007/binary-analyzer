@@ -1,0 +1,3 @@
+005afca0 ENDBR64
+005afca4 LEA RAX,[0x912e20]
+005afcab RET

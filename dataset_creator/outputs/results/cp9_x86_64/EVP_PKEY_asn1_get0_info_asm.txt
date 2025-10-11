@@ -1,0 +1,28 @@
+0049eb90 ENDBR64
+0049eb94 MOV RAX,RSI
+0049eb97 TEST R9,R9
+0049eb9a JZ 0x0049ebe0
+0049eb9c TEST RDI,RDI
+0049eb9f JZ 0x0049eba6
+0049eba1 MOV ESI,dword ptr [R9]
+0049eba4 MOV dword ptr [RDI],ESI
+0049eba6 TEST RAX,RAX
+0049eba9 JZ 0x0049ebb1
+0049ebab MOV ESI,dword ptr [R9 + 0x4]
+0049ebaf MOV dword ptr [RAX],ESI
+0049ebb1 TEST RDX,RDX
+0049ebb4 JZ 0x0049ebbc
+0049ebb6 MOV RAX,qword ptr [R9 + 0x8]
+0049ebba MOV dword ptr [RDX],EAX
+0049ebbc TEST RCX,RCX
+0049ebbf JZ 0x0049ebc8
+0049ebc1 MOV RAX,qword ptr [R9 + 0x18]
+0049ebc5 MOV qword ptr [RCX],RAX
+0049ebc8 MOV EAX,0x1
+0049ebcd TEST R8,R8
+0049ebd0 JZ 0x0049ebe2
+0049ebd2 MOV RDX,qword ptr [R9 + 0x10]
+0049ebd6 MOV qword ptr [R8],RDX
+0049ebd9 RET
+0049ebe0 XOR EAX,EAX
+0049ebe2 RET

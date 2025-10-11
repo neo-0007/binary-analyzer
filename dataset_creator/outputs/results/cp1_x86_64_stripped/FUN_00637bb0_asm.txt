@@ -1,0 +1,8 @@
+00637bb0 ENDBR64
+00637bb4 CMP RDI,0x9452a0
+00637bbb JNZ 0x00637bc0
+00637bbd RET
+00637bc0 MOV dword ptr [RDI + 0x10],0x0
+00637bc7 MOV qword ptr [RDI],RSI
+00637bca MOV byte ptr [RDI + RSI*0x1 + 0x18],0x0
+00637bcf RET

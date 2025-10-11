@@ -1,0 +1,23 @@
+00402b5c CALL 0x006c2e40
+00402b61 MOV RDI,qword ptr [RBX + 0x10]
+00402b65 TEST RDI,RDI
+00402b68 JZ 0x00402bc6
+00402b6a MOV qword ptr [RSP],0x0
+00402b72 MOV qword ptr [RSP + 0x8],0x0
+00402b7b MOV qword ptr [RSP + 0x10],0x0
+00402b84 MOV RAX,qword ptr [RDI]
+00402b87 CALL qword ptr [RAX + 0x8]
+00402b8a CMP qword ptr [RSP + 0x10],0x0
+00402b90 MOV qword ptr [RBX + 0x10],0x0
+00402b98 JZ 0x00402ba4
+00402b9a MOV RDI,qword ptr [RSP + 0x10]
+00402b9f CALL 0x006c2cb0
+00402ba4 CMP qword ptr [RSP + 0x8],0x0
+00402baa JZ 0x00402bb6
+00402bac MOV RDI,qword ptr [RSP + 0x8]
+00402bb1 CALL 0x006c2cb0
+00402bb6 CMP qword ptr [RSP],0x0
+00402bbb JZ 0x00402bc6
+00402bbd MOV RDI,qword ptr [RSP]
+00402bc1 CALL 0x006c2cb0
+00402bc6 CALL 0x006240b0

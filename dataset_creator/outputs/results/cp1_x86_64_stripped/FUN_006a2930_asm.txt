@@ -1,0 +1,22 @@
+006a2930 ENDBR64
+006a2934 XOR EAX,EAX
+006a2936 TEST RSI,RSI
+006a2939 MOV qword ptr [RDI + 0x10],0x0
+006a2941 SETNZ AL
+006a2944 MOV qword ptr [RDI + 0x18],0x0
+006a294c MOV dword ptr [RDI + 0x8],EAX
+006a294f MOV RAX,0x933f88
+006a2956 MOV byte ptr [RDI + 0x20],0x0
+006a295a ADD RAX,0x10
+006a295e MOV qword ptr [RDI + 0x24],0x0
+006a2966 MOV qword ptr [RDI],RAX
+006a2969 MOV qword ptr [RDI + 0x30],0x0
+006a2971 MOV qword ptr [RDI + 0x38],0x0
+006a2979 MOV qword ptr [RDI + 0x40],0x0
+006a2981 MOV qword ptr [RDI + 0x48],0x0
+006a2989 MOV qword ptr [RDI + 0x50],0x0
+006a2991 MOV qword ptr [RDI + 0x58],0x0
+006a2999 MOV qword ptr [RDI + 0x60],0x0
+006a29a1 MOV dword ptr [RDI + 0x68],0x0
+006a29a8 MOV byte ptr [RDI + 0x98],0x0
+006a29af RET

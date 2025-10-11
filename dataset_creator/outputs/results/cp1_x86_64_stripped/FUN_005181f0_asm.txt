@@ -1,0 +1,4 @@
+005181f0 ENDBR64
+005181f4 MOV RAX,qword ptr [RDI + 0x18]
+005181f8 MOV RAX,qword ptr [RAX + 0x18]
+005181fc RET

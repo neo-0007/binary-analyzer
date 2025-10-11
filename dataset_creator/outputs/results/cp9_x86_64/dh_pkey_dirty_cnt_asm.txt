@@ -1,0 +1,4 @@
+004c5980 ENDBR64
+004c5984 MOV RAX,qword ptr [RDI + 0x20]
+004c5988 MOV RAX,qword ptr [RAX + 0xc8]
+004c598f RET

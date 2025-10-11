@@ -1,0 +1,20 @@
+006b6bf0 MOV ECX,dword ptr [RDI + 0x28]
+006b6bf3 CMP ECX,dword ptr [RDI + 0x2c]
+006b6bf6 JGE 0x006b6c30
+006b6bf8 MOVSXD RAX,ECX
+006b6bfb ADD ECX,0x1
+006b6bfe SHL RAX,0x5
+006b6c02 ADD RAX,qword ptr [RDI + 0x20]
+006b6c06 MOV qword ptr [RAX + 0x4],0x0
+006b6c0e MOV dword ptr [RDI + 0x28],ECX
+006b6c11 TEST RSI,RSI
+006b6c14 JZ 0x006b6c30
+006b6c16 TEST EDX,EDX
+006b6c18 JLE 0x006b6c30
+006b6c1a MOV qword ptr [RAX],0x0
+006b6c21 MOV dword ptr [RAX + 0x8],0x0
+006b6c28 MOV qword ptr [RAX + 0x10],RSI
+006b6c2c MOV dword ptr [RAX + 0x18],EDX
+006b6c2f RET
+006b6c30 XOR EAX,EAX
+006b6c32 RET

@@ -1,0 +1,8 @@
+Operand Value Range Feature
+File: aes_invsbox.asm
+-------------------------------
+Byte operands   : 0%
+Word operands   : 0%
+DWord operands  : 0%
+QWord operands  : 0%
+Other operands  : 0%

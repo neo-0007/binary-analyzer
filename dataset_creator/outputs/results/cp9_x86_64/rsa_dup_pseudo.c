@@ -1,0 +1,15 @@
+
+undefined8 rsa_dup(undefined8 param_1,uint param_2)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  
+  iVar1 = ossl_prov_is_running();
+  if ((iVar1 != 0) && ((param_2 & 3) != 0)) {
+    uVar2 = ossl_rsa_dup(param_1,param_2);
+    return uVar2;
+  }
+  return 0;
+}
+

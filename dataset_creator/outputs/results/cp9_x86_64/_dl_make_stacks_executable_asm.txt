@@ -1,0 +1,85 @@
+007bde70 ENDBR64
+007bde74 PUSH RBP
+007bde75 PUSH RBX
+007bde76 MOV RBX,RDI
+007bde79 SUB RSP,0x18
+007bde7d MOV RSI,qword ptr [0x00931b38]
+007bde84 MOV EDX,dword ptr [0x0092ded0]
+007bde8a MOV RDI,RSI
+007bde8d NEG RDI
+007bde90 AND RDI,qword ptr [RBX]
+007bde93 CALL 0x007656b0
+007bde98 TEST EAX,EAX
+007bde9a JNZ 0x007bdfa0
+007bdea0 MOV qword ptr [RBX],0x0
+007bdea7 OR dword ptr [0x00931b28],0x1
+007bdeae XOR EAX,EAX
+007bdeb0 MOV EDX,0x1
+007bdeb5 CMPXCHG.LOCK dword ptr [0x0093de00],EDX
+007bdebd JNZ 0x007bdfc0
+007bdec3 MOV RBX,qword ptr [0x0093de40]
+007bdeca LEA RBP,[0x93de40]
+007bded1 CMP RBX,RBP
+007bded4 JNZ 0x007bdee8
+007bded6 JMP 0x007bdf38
+007bdee0 MOV RBX,qword ptr [RBX]
+007bdee3 CMP RBX,RBP
+007bdee6 JZ 0x007bdf38
+007bdee8 MOV RDI,qword ptr [RBX + 0x3e0]
+007bdeef MOV RSI,qword ptr [RBX + 0x3d8]
+007bdef6 MOV EDX,0x7
+007bdefb SUB RSI,RDI
+007bdefe ADD RDI,qword ptr [RBX + 0x3d0]
+007bdf05 CALL 0x007656b0
+007bdf0a TEST EAX,EAX
+007bdf0c JZ 0x007bdee0
+007bdf0e MOV RAX,-0x58
+007bdf15 MOV EAX,dword ptr FS:[RAX]
+007bdf18 TEST EAX,EAX
+007bdf1a JZ 0x007bdee0
+007bdf1c XOR EDX,EDX
+007bdf1e XCHG dword ptr [0x0093de00],EDX
+007bdf24 CMP EDX,0x1
+007bdf27 JG 0x007bdfd8
+007bdf2d ADD RSP,0x18
+007bdf31 POP RBX
+007bdf32 POP RBP
+007bdf33 RET
+007bdf38 MOV RBX,qword ptr [0x0093de20]
+007bdf3f LEA RBP,[0x93de20]
+007bdf46 CMP RBX,RBP
+007bdf49 JNZ 0x007bdf58
+007bdf4b JMP 0x007bdf94
+007bdf50 MOV RBX,qword ptr [RBX]
+007bdf53 CMP RBX,RBP
+007bdf56 JZ 0x007bdf94
+007bdf58 MOV RDI,qword ptr [RBX + 0x3e0]
+007bdf5f MOV RSI,qword ptr [RBX + 0x3d8]
+007bdf66 MOV EDX,0x7
+007bdf6b SUB RSI,RDI
+007bdf6e ADD RDI,qword ptr [RBX + 0x3d0]
+007bdf75 CALL 0x007656b0
+007bdf7a TEST EAX,EAX
+007bdf7c JZ 0x007bdf50
+007bdf7e MOV RAX,-0x58
+007bdf85 MOV EAX,dword ptr FS:[RAX]
+007bdf88 TEST EAX,EAX
+007bdf8a JNZ 0x007bdf1c
+007bdf8c MOV RBX,qword ptr [RBX]
+007bdf8f CMP RBX,RBP
+007bdf92 JNZ 0x007bdf58
+007bdf94 XOR EAX,EAX
+007bdf96 JMP 0x007bdf1c
+007bdfa0 MOV RAX,-0x58
+007bdfa7 MOV EAX,dword ptr FS:[RAX]
+007bdfaa TEST EAX,EAX
+007bdfac JNZ 0x007bdf2d
+007bdfb2 JMP 0x007bdeae
+007bdfc0 LEA RDI,[0x93de00]
+007bdfc7 CALL 0x006ffb80
+007bdfcc JMP 0x007bdec3
+007bdfd8 LEA RDI,[0x93de00]
+007bdfdf MOV dword ptr [RSP + 0xc],EAX
+007bdfe3 CALL 0x006ffc50
+007bdfe8 MOV EAX,dword ptr [RSP + 0xc]
+007bdfec JMP 0x007bdf2d

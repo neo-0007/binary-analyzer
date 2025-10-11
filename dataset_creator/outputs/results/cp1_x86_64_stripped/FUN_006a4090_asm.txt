@@ -1,0 +1,27 @@
+006a4090 ENDBR64
+006a4094 MOV RAX,qword ptr [RDI + 0x10]
+006a4098 MOV RDX,qword ptr [RAX + 0xc8]
+006a409f MOV qword ptr [RSI],RDX
+006a40a2 MOV RDX,qword ptr [RAX + 0xd0]
+006a40a9 MOV qword ptr [RSI + 0x8],RDX
+006a40ad MOV RDX,qword ptr [RAX + 0xd8]
+006a40b4 MOV qword ptr [RSI + 0x10],RDX
+006a40b8 MOV RDX,qword ptr [RAX + 0xe0]
+006a40bf MOV qword ptr [RSI + 0x18],RDX
+006a40c3 MOV RDX,qword ptr [RAX + 0xe8]
+006a40ca MOV qword ptr [RSI + 0x20],RDX
+006a40ce MOV RDX,qword ptr [RAX + 0xf0]
+006a40d5 MOV qword ptr [RSI + 0x28],RDX
+006a40d9 MOV RDX,qword ptr [RAX + 0xf8]
+006a40e0 MOV qword ptr [RSI + 0x30],RDX
+006a40e4 MOV RDX,qword ptr [RAX + 0x100]
+006a40eb MOV qword ptr [RSI + 0x38],RDX
+006a40ef MOV RDX,qword ptr [RAX + 0x108]
+006a40f6 MOV qword ptr [RSI + 0x40],RDX
+006a40fa MOV RDX,qword ptr [RAX + 0x110]
+006a4101 MOV qword ptr [RSI + 0x48],RDX
+006a4105 MOV RDX,qword ptr [RAX + 0x118]
+006a410c MOV qword ptr [RSI + 0x50],RDX
+006a4110 MOV RAX,qword ptr [RAX + 0x120]
+006a4117 MOV qword ptr [RSI + 0x58],RAX
+006a411b RET

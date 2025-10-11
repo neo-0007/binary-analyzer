@@ -1,0 +1,14 @@
+006fc9d0 ENDBR64
+006fc9d4 MOV RDX,qword ptr [RDI + 0x60]
+006fc9d8 MOV RAX,RSI
+006fc9db SUB RAX,qword ptr [RDI + 0x18]
+006fc9df TEST RDX,RDX
+006fc9e2 JZ 0x006fc9fb
+006fc9e4 NOP dword ptr [RAX]
+006fc9e8 MOVSXD RCX,dword ptr [RDX + 0x10]
+006fc9ec MOV RDX,qword ptr [RDX]
+006fc9ef CMP RAX,RCX
+006fc9f2 CMOVG RAX,RCX
+006fc9f6 TEST RDX,RDX
+006fc9f9 JNZ 0x006fc9e8
+006fc9fb RET

@@ -1,0 +1,3 @@
+004cab60 ENDBR64
+004cab64 MOV RDI,qword ptr [RDI + 0x20]
+004cab68 JMP 0x004cc5b0

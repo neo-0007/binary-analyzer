@@ -1,0 +1,27 @@
+006fe690 ENDBR64
+006fe694 PUSH RBX
+006fe695 CMP qword ptr [RDI + 0x60],0x0
+006fe69a MOV RBX,RDI
+006fe69d JZ 0x006fe6a7
+006fe69f MOV qword ptr [RDI + 0x60],0x0
+006fe6a7 MOV RDI,qword ptr [RBX + 0x48]
+006fe6ab TEST RDI,RDI
+006fe6ae JZ 0x006fe6ed
+006fe6b0 MOV EAX,dword ptr [RBX]
+006fe6b2 TEST AH,0x1
+006fe6b5 JZ 0x006fe6d8
+006fe6b7 AND AH,0xfe
+006fe6ba MOVQ XMM0,RDI
+006fe6bf MOV dword ptr [RBX],EAX
+006fe6c1 MOV RAX,qword ptr [RBX + 0x18]
+006fe6c5 MOVHPS XMM0,qword ptr [RBX + 0x58]
+006fe6c9 MOV qword ptr [RBX + 0x18],RDI
+006fe6cd MOV qword ptr [RBX + 0x48],RAX
+006fe6d1 MOV RDI,RAX
+006fe6d4 MOVUPS xmmword ptr [RBX + 0x8],XMM0
+006fe6d8 CALL 0x00706ae0
+006fe6dd MOV qword ptr [RBX + 0x58],0x0
+006fe6e5 PXOR XMM0,XMM0
+006fe6e9 MOVUPS xmmword ptr [RBX + 0x48],XMM0
+006fe6ed POP RBX
+006fe6ee RET

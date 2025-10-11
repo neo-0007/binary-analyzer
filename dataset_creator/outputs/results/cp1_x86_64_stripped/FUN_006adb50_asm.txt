@@ -1,0 +1,11 @@
+006adb50 ENDBR64
+006adb54 MOV RAX,qword ptr [RDI]
+006adb57 MOV R10,qword ptr [RSP + 0x8]
+006adb5c MOV R11,qword ptr [RSP + 0x10]
+006adb61 MOV RAX,qword ptr [RAX + 0x28]
+006adb65 CMP RAX,0x6adb40
+006adb6c MOV qword ptr [RSP + 0x8],R10
+006adb71 MOV qword ptr [RSP + 0x10],R11
+006adb76 JNZ 0x006adb80
+006adb78 JMP 0x006ad090
+006adb80 JMP RAX

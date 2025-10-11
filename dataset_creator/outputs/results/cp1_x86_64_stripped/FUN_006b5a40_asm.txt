@@ -1,0 +1,6 @@
+006b5a40 ENDBR64
+006b5a44 LEA RAX,[RDI + 0x10]
+006b5a48 MOV qword ptr [RDI + 0x8],0x0
+006b5a50 MOV qword ptr [RDI],RAX
+006b5a53 MOV dword ptr [RDI + 0x10],0x0
+006b5a5a RET

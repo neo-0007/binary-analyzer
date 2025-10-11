@@ -1,0 +1,5 @@
+00421db0 ENDBR64
+00421db4 OR byte ptr [RDI + 0xc8],0x1
+00421dbb MOV EAX,0x1
+00421dc0 MOV qword ptr [RDI + 0xc0],RSI
+00421dc7 RET
